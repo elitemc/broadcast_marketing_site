@@ -1,0 +1,41 @@
+.callWe {
+  text-align: center;
+  padding: 8.3333% 0 8.222%;
+  background-color: rosybrown;
+}
+
+.callWe h1 {
+  font-size: 36px;
+  color: #2e313c;
+}
+
+.callWe small {
+  font-size: 20px;
+  color: #495b70;
+}
+
+.callTit {
+  margin: 7.709% 14.027% 7.43%;
+}
+
+.callTit h4 {
+  text-align: center;
+  font-size: 30px;
+  color: #2e313c;
+}
+
+.callTit .row {
+  justify-content: space-between;
+}
+
+.linkItem {
+  color: #495b70;
+  border-bottom: 1px solid #eff2f6;
+}
+
+.linkItem b {
+  display: block;
+  padding: 7px;
+  font-size: 20px;
+  color: 2e313c;
+}

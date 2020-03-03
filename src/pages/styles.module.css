@@ -1,68 +1,592 @@
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- * @format
- */
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
- .container{
-   padding: 20px;
- }
- .headerImg{
+.homeSplashFade {
   position: relative;
- }
- .headerImg>img{
-   width: 100%;
-   height: 350px;
- }
- .freeUseBtn{
-   position: absolute;
-   top: 60%;
-   left: 60%;
-   background-color: #F59A23;
-   border: none;
-   width: 10%;
-   height: 2.8vw;
-   font-size: 1.5vw;
+  width: 100%;
+  padding-bottom: 40.1389%;
+  background-size: 38.659%;
+  background-position: 50%;
+  background-color: #0d6fde;
+  font-size: 100px;
+  /* color: red; */
 }
-.freeUseBtn:hover{
-  background-color: red;
+
+.navbar {
+  background: blueviolet;
 }
-/* .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
+
+
+.homeSplashFade .homeTitle {
+  position: absolute;
+  top: 141px;
+  left: 121px;
+  color: #fff;
+}
+
+.homeSplashFade .banner {
+  position: absolute;
+  top: 20%;
+  background-color: blueviolet;
+  right: 9.51%;
+  width: 40.1389%;
+}
+
+.homeSplashFade .banner img {
+  width: 100px;
+}
+
+.homeSplashFade h2 {
+  margin: 0;
+  font-size: 0.44em;
+  color: #fff;
+}
+
+.homeSplashFade p,
+.homeSplashFade span,
+.homeSplashFade button {
+  font-weight: lighter;
+  font-stretch: normal;
+  letter-spacing: 0px;
+
+  font-size: 14px;
+}
+
+.homeSplashFade .function {
+  padding: 34px 0 36px;
+}
+
+.homeSplashFade .funList {
   position: relative;
+  padding-left: 12px;
+}
+
+.homeSplashFade .funList:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  width: 6px;
+  height: 6px;
+  transform: rotate(45deg);
+  background: #fff;
+  content: '';
+}
+
+.homeSplashFade .freeUse {
+  display: block;
+  font-weight: bold;
+  color: #223954;
+}
+
+
+
+.detailCar {
   overflow: hidden;
 }
 
-@media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem;
+.detailCar ul {
+  padding: 0;
+}
+
+.detailCar li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 8%;
+
+}
+
+.detailCar li .carDetail {
+  width: 50%;
+}
+
+
+
+.detailCar li:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+
+.detail b {
+  font-size: 28px;
+  color: #2e313c;
+}
+
+.detail p {
+  width: 400px;
+}
+
+.detailCar li .carImg,
+.detailCar li .carDetail {
+  vertical-align: middle;
+}
+
+.detailCar .carImg {
+  width: 500px;
+  height: 300px;
+  background: blueviolet;
+}
+
+.carDetail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* 功能列表 */
+.container {
+  margin: 20px 147px 0;
+}
+
+.title {
+  margin: 9.8% auto 4.93%;
+  text-align: center;
+}
+
+.functionCarList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.functionCarList>li {
+  display: flex;
+  width: 43%;
+  padding: 25px;
+  margin-bottom: 30px;
+  border: 1px solid #eff2f6;
+  transition: all .3s;
+}
+
+.functionCarList>li:hover {
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.13);
+}
+
+.functionCarList>li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.functionCarList>li .functionCarIcon {
+  float: left;
+  width: 50px;
+  height: 50px;
+  background: red;
+}
+
+.functionCarList>li .functionItem {
+  margin-left: 40px;
+  width: 70%;
+  box-sizing: border-box;
+}
+
+.functionItem b {
+  display: block;
+  margin-bottom: 10px;
+  color: #2e313c;
+}
+
+.functionItem ul {
+  display: flex;
+  flex-wrap: wrap;
+  color: #495b70;
+}
+
+
+.functionItem ul li span {
+  padding: 0 15px;
+}
+
+.supportList li {
+  height: min-content;
+  background: red;
+}
+
+.supportList h4 {
+  text-align: center;
+  color: #2e313c;
+}
+
+.supportList small {
+  color: #495b70;
+}
+
+/* 客户评价 */
+.commentList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.commentList li {
+  height: fit-content;
+  padding: 31px 40px 50px;
+  border: 1px solid #f1f1f1;
+  width: 366px;
+  border-radius: 10px;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.commentList li:hover {
+  box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.clientMsg i {
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  margin-right: 10px;
+  line-height: 54px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px #efefef solid;
+  background: royalblue;
+}
+
+.clientMsg span {
+  font-weight: bold;
+  color: #2e313c;
+}
+
+.commentList li p {
+  margin-top: 30px;
+  color: #495b70;
+}
+
+
+/* 兼容处理 */
+
+@media screen and (max-width: 1290px) {
+  .container {
+    margin: 20px 87px 0;
+  }
+
+  .detailCar li .carDetail,
+  .detailCar li .carImg {
+    width: 45%;
+  }
+
+  .functionCarList>li {
+    width: 49%;
+    margin: 10px auto;
+  }
+
+  .supportList li {
+    width: 38%;
+    margin: 30px;
+  }
+
+  .commentList li {
+    padding: 21px 30px 40px;
+    width: 286px;
   }
 }
 
-.buttons {
+
+/* 技术支持 */
+.supportList {
+  /* margin: 0 10%; */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.features {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;
+.supportList li {
+  overflow: hidden;
+  width: 28.138%;
+  margin: 0 24px;
+  border: 1px solid #e4e4e4;
+  border-radius: 15px;
+  transition: all .3s;
 }
 
-.featureImage {
-  height: 200px;
-  width: 200px;
-} */
+.supportList li:hover {
+  box-shadow: 0px 2px 13px 0px rgba(0, 0, 0, 0.13);
+}
+
+.supportTitle {
+  text-align: center;
+  margin: 30px 0 20px;
+  color: #2e313c;
+}
+
+.supportTitle+p {
+  padding: 0 20px;
+  color: #495b70;
+}
 
 
+
+
+
+.useLive {
+  margin: 123px auto 55px;
+  padding: 63px 0 58px;
+  text-align: center;
+  color: #fff;
+  background: #0d6fde;
+  border-radius: 10px;
+}
+
+.useLive h3 {
+  color: #fff;
+  font-size: 36px;
+}
+
+.useLive p {
+  font-weight: lighter;
+}
+
+.useLive .linkBtn {
+  margin-top: 41px;
+}
+
+.useLive button {
+  margin: 0 20px;
+}
+
+
+@media screen and (max-width: 1127px) {
+  .homeSplashFade {
+    font-size: 50px;
+    /* background-color: aquamarine; */
+  }
+
+  .homeSplashFade .homeTitle {
+    top: 80px;
+    left: 80px;
+    right: 0;
+    margin: auto;
+    /* color: red; */
+  }
+
+  .homeSplashFade .function {
+    padding: 24px 0 26px;
+  }
+
+  .detailCar li .carDetail {
+    width: 45%;
+  }
+
+  .carDetail b {
+    font-size: 24px;
+  }
+
+  .detailCar li .carImg {
+    width: 45%;
+  }
+
+  .supportList li {
+    width: 36%;
+    margin: 30px;
+  }
+
+  .commentList {
+    justify-content: start;
+  }
+
+  .commentList li {
+    height: fit-content;
+    margin-left: 20px;
+    padding: 31px 40px 50px;
+    width: 45%;
+  }
+
+}
+
+
+
+@media screen and (max-width: 1060px) {
+
+  .detailCar li .carDetail {
+    width: 100%;
+  }
+
+  .carDetail .detail b {
+    font-size: 24px;
+  }
+
+  .carDetail .detail p {
+    margin: auto;
+  }
+
+  .carDetail b {
+    font-size: 18px;
+  }
+
+  .detailCar li .carImg {
+    width: 100%;
+  }
+
+  .detailCar li {
+    margin-top: 16px;
+  }
+
+  .carDetail .detail b {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+  }
+
+  .functionCarList>li {
+    width: 60%;
+    margin: 10px auto;
+  }
+
+
+  .supportList li {
+    margin: 20px;
+    width: 40.138%;
+  }
+
+  .commentList li {
+    height: fit-content;
+    margin-left: 20px;
+    padding: 31px 40px 50px;
+    width: 45%;
+  }
+
+}
+
+@media screen and (max-width: 960px) {
+  .functionCarList>li {
+    width: 68%;
+    margin: 10px auto;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .container {
+    margin: 20px 57px 0;
+  }
+
+  .homeSplashFade {
+    font-size: 50px;
+  }
+
+  .homeSplashFade .homeTitle {
+    top: 40px;
+    left: 20%;
+  }
+
+  .homeSplashFade .function {
+    padding: 14px 0 16px;
+  }
+
+  .functionCarList>li {
+    width: 73%;
+    margin: 10px auto;
+  }
+
+  .supportList {
+    justify-content: center;
+  }
+
+  .supportList li {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 714px) {
+  .container {
+    margin: 20px 27px 0;
+  }
+
+  .functionItem ul li span {
+    padding: 0 13px;
+  }
+
+  .homeSplashFade .freeUse {
+    display: none;
+  }
+
+  .functionCarList>li {
+    width: 78%;
+    margin: 10px auto;
+  }
+
+  .supportList li {
+    width: 75.138%;
+    margin-top: 20px;
+  }
+
+  .commentList {
+    justify-content: space-around;
+  }
+
+  .commentList li {
+    height: fit-content;
+    margin: 20px;
+    padding: 31px 40px 50px;
+    width: 68%;
+  }
+
+  .useLive {
+
+    padding: 43px 0 28px;
+    margin: 83px auto 25px;
+  }
+
+  .useLive .linkBtn {
+    margin-top: 21px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .functionItem ul li span {
+    padding: 0 6px;
+  }
+
+  .commentList li {
+    height: fit-content;
+    width: 78%;
+  }
+
+  .functionCarList>li {
+    width: 79%;
+    margin: 10px auto;
+  }
+
+  .useLive {
+    margin: 53px auto 15px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .container {
+    margin: 20px 8px 0;
+  }
+
+  .functionItem ul li span {
+    padding: 0 2px;
+  }
+
+  .homeSplashFade {
+    font-size: 50px;
+  }
+
+  .homeSplashFade .homeTitle {
+    top: 8%;
+    left: 20%;
+  }
+
+  .homeSplashFade .function {
+    padding: 4px 0 6px;
+  }
+
+  .carDetail .detail b {
+    font-size: 18px;
+  }
+
+  .supportList li {
+    width: 75.138%;
+  }
+}
