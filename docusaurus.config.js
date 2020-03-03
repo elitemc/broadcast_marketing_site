@@ -23,10 +23,10 @@ module.exports = {
         src: 'img/loginTitle.png',
       },
       links: [
-        { to: '#solution', label: '解决方案' },
-        { to: '#case', label: '客户案例' },
-        { to: '/usehelp', label: '使用帮助' },
-        { to: '/purchase', label: '购买' },
+        {to: '#solution', label: '解决方案'},
+        {to: '#case', label: '客户案例'},
+        {to: '/usehelp', label: '使用帮助'},
+        {to: '/purchase', label: '购买'},
         // Please keep GitHub link to the right for consistency.
         {
           href: 'https://www.yingliboke.cn/user/login',
@@ -36,14 +36,12 @@ module.exports = {
         {
           href: 'https://www.yingliboke.cn/user/register',
           label: '免费使用',
-          position: 'right'
+          position: 'right',
         },
-
       ],
-
     },
     footer: {
-      style: 'dark',
+      style: 'highlight',
       links: [
         {
           title: '产品',
@@ -89,14 +87,14 @@ module.exports = {
             {
               label: '联系我们',
               to: '/contact',
-            }
+            },
           ],
         },
       ],
       // Please do not remove the credits, help to publicize Docusaurus :)
       copyright: `Copyright © ${new Date().getFullYear()} 广东英荔国际教育科技有限公司 粤ICP备13044168号-3`,
     },
-    disableDarkMode: true
+    disableDarkMode: true,
   },
   presets: [
     [

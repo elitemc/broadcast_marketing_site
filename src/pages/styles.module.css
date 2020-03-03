@@ -19,7 +19,6 @@ ul {
   background: blueviolet;
 }
 
-
 .homeSplashFade .homeTitle {
   position: absolute;
   top: 141px;
@@ -83,8 +82,6 @@ ul {
   color: #223954;
 }
 
-
-
 .detailCar {
   overflow: hidden;
 }
@@ -98,19 +95,15 @@ ul {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 8%;
-
 }
 
 .detailCar li .carDetail {
   width: 50%;
 }
 
-
-
 .detailCar li:nth-child(2n) {
   flex-direction: row-reverse;
 }
-
 
 .detail b {
   font-size: 28px;
@@ -138,7 +131,6 @@ ul {
   align-items: center;
 }
 
-
 /* 功能列表 */
 .container {
   margin: 20px 147px 0;
@@ -155,33 +147,33 @@ ul {
   justify-content: space-between;
 }
 
-.functionCarList>li {
+.functionCarList > li {
   display: flex;
   width: 43%;
   padding: 25px;
   margin-bottom: 30px;
   border: 1px solid #eff2f6;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
-.functionCarList>li:hover {
+.functionCarList > li:hover {
   box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.13);
 }
 
-.functionCarList>li {
+.functionCarList > li {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.functionCarList>li .functionCarIcon {
+.functionCarList > li .functionCarIcon {
   float: left;
   width: 50px;
   height: 50px;
   background: red;
 }
 
-.functionCarList>li .functionItem {
+.functionCarList > li .functionItem {
   margin-left: 40px;
   width: 70%;
   box-sizing: border-box;
@@ -198,7 +190,6 @@ ul {
   flex-wrap: wrap;
   color: #495b70;
 }
-
 
 .functionItem ul li span {
   padding: 0 15px;
@@ -231,7 +222,7 @@ ul {
   border: 1px solid #f1f1f1;
   width: 366px;
   border-radius: 10px;
-  transition: all .3s;
+  transition: all 0.3s;
   cursor: pointer;
 }
 
@@ -261,7 +252,6 @@ ul {
   color: #495b70;
 }
 
-
 /* 兼容处理 */
 
 @media screen and (max-width: 1290px) {
@@ -274,7 +264,7 @@ ul {
     width: 45%;
   }
 
-  .functionCarList>li {
+  .functionCarList > li {
     width: 49%;
     margin: 10px auto;
   }
@@ -290,7 +280,6 @@ ul {
   }
 }
 
-
 /* 技术支持 */
 .supportList {
   /* margin: 0 10%; */
@@ -305,7 +294,7 @@ ul {
   margin: 0 24px;
   border: 1px solid #e4e4e4;
   border-radius: 15px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .supportList li:hover {
@@ -318,14 +307,10 @@ ul {
   color: #2e313c;
 }
 
-.supportTitle+p {
+.supportTitle + p {
   padding: 0 20px;
   color: #495b70;
 }
-
-
-
-
 
 .useLive {
   margin: 123px auto 55px;
@@ -352,7 +337,6 @@ ul {
 .useLive button {
   margin: 0 20px;
 }
-
 
 @media screen and (max-width: 1127px) {
   .homeSplashFade {
@@ -399,13 +383,9 @@ ul {
     padding: 31px 40px 50px;
     width: 45%;
   }
-
 }
 
-
-
 @media screen and (max-width: 1060px) {
-
   .detailCar li .carDetail {
     width: 100%;
   }
@@ -436,11 +416,10 @@ ul {
     margin: 10px auto;
   }
 
-  .functionCarList>li {
+  .functionCarList > li {
     width: 60%;
     margin: 10px auto;
   }
-
 
   .supportList li {
     margin: 20px;
@@ -453,11 +432,10 @@ ul {
     padding: 31px 40px 50px;
     width: 45%;
   }
-
 }
 
 @media screen and (max-width: 960px) {
-  .functionCarList>li {
+  .functionCarList > li {
     width: 68%;
     margin: 10px auto;
   }
@@ -481,7 +459,7 @@ ul {
     padding: 14px 0 16px;
   }
 
-  .functionCarList>li {
+  .functionCarList > li {
     width: 73%;
     margin: 10px auto;
   }
@@ -508,7 +486,7 @@ ul {
     display: none;
   }
 
-  .functionCarList>li {
+  .functionCarList > li {
     width: 78%;
     margin: 10px auto;
   }
@@ -530,7 +508,6 @@ ul {
   }
 
   .useLive {
-
     padding: 43px 0 28px;
     margin: 83px auto 25px;
   }
@@ -550,7 +527,7 @@ ul {
     width: 78%;
   }
 
-  .functionCarList>li {
+  .functionCarList > li {
     width: 79%;
     margin: 10px auto;
   }
@@ -589,4 +566,9 @@ ul {
   .supportList li {
     width: 75.138%;
   }
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
