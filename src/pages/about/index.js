@@ -7,6 +7,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 import 'antd/dist/antd.css';
 import {} from 'antd';
+import SideBar from '../sidebar';
 
 class Contact extends React.Component {
   constructor(props) {
@@ -37,6 +38,7 @@ class Contact extends React.Component {
             </p>
           </div>
         </div>
+        <SideBar />
       </Layout>
     );
   }
