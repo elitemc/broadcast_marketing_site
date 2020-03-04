@@ -147,7 +147,7 @@ ul {
   justify-content: space-between;
 }
 
-.functionCarList>li {
+.functionCarList > li {
   display: flex;
   width: 43%;
   padding: 25px;
@@ -156,24 +156,24 @@ ul {
   transition: all 0.3s;
 }
 
-.functionCarList>li:hover {
+.functionCarList > li:hover {
   box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.13);
 }
 
-.functionCarList>li {
+.functionCarList > li {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.functionCarList>li .functionCarIcon {
+.functionCarList > li .functionCarIcon {
   float: left;
   width: 50px;
   height: 50px;
   background: red;
 }
 
-.functionCarList>li .functionItem {
+.functionCarList > li .functionItem {
   margin-left: 40px;
   width: 70%;
   box-sizing: border-box;
@@ -252,7 +252,6 @@ ul {
   color: #495b70;
 }
 
-
 /* 客户列表 */
 .clientContainer {
   overflow: hidden;
@@ -267,12 +266,12 @@ ul {
   vertical-align: middle;
 }
 
-.clientList>li {
+.clientList > li {
   display: inline-block;
 }
 
 .clientList,
-.clientList>li {
+.clientList > li {
   white-space: nowrap;
 }
 
@@ -292,7 +291,7 @@ ul {
 }
 
 .avatar,
-.avatar+small {
+.avatar + small {
   vertical-align: middle;
 }
 
@@ -308,7 +307,7 @@ ul {
     width: 45%;
   }
 
-  .functionCarList>li {
+  .functionCarList > li {
     width: 49%;
     margin: 10px auto;
   }
@@ -351,7 +350,7 @@ ul {
   color: #2e313c;
 }
 
-.supportTitle+p {
+.supportTitle + p {
   padding: 0 20px;
   color: #495b70;
 }
@@ -460,7 +459,7 @@ ul {
     margin: 10px auto;
   }
 
-  .functionCarList>li {
+  .functionCarList > li {
     width: 60%;
     margin: 10px auto;
   }
@@ -479,7 +478,7 @@ ul {
 }
 
 @media screen and (max-width: 960px) {
-  .functionCarList>li {
+  .functionCarList > li {
     width: 68%;
     margin: 10px auto;
   }
@@ -503,7 +502,7 @@ ul {
     padding: 14px 0 16px;
   }
 
-  .functionCarList>li {
+  .functionCarList > li {
     width: 73%;
     margin: 10px auto;
   }
@@ -530,7 +529,7 @@ ul {
     display: none;
   }
 
-  .functionCarList>li {
+  .functionCarList > li {
     width: 78%;
     margin: 10px auto;
   }
@@ -571,7 +570,7 @@ ul {
     width: 78%;
   }
 
-  .functionCarList>li {
+  .functionCarList > li {
     width: 79%;
     margin: 10px auto;
   }
@@ -612,7 +611,13 @@ ul {
   }
 }
 
-p {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
 }
