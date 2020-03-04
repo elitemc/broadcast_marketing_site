@@ -88,7 +88,7 @@ class Purchase extends React.Component {
                       2、【立即购买】：跳转到“购买标准套餐页面”
                       3、【提交需求】：跳转到“定制套餐页面” */}
                   {index === 1 ? (
-                    <Link to="">
+                    <Link to="/standardPackage">
                       <Button
                         size="large"
                         type="primary"
@@ -105,7 +105,7 @@ class Purchase extends React.Component {
                       to={
                         index === 0
                           ? 'http://beta.yingliboke.cn/user/register'
-                          : ''
+                          : '/customPackage'
                       }>
                       <Button
                         size="large"
