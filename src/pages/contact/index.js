@@ -8,6 +8,7 @@ import styles from './styles.module.css';
 import 'antd/dist/antd.css';
 import {} from 'antd';
 
+import SideBar from '../sidebar';
 class About extends React.Component {
   constructor(props) {
     super(props);
@@ -38,10 +39,16 @@ class About extends React.Component {
               <div class="col col--5">
                 <div className={styles.linkItem}>
                   <b>商务合作</b>
-                  <p>
-                    <span>黄小姐：156 261 02305</span>{' '}
-                    <span>廖小姐：139 289 68545</span>{' '}
-                    <span>孙小姐：153 188 61202</span>
+                  <p className={styles.cooperate}>
+                    <span class={styles.cooperateItem}>
+                      黄小姐：156 261 02305
+                    </span>
+                    <span class={styles.cooperateItem}>
+                      廖小姐：139 289 68545
+                    </span>
+                    <span class={styles.cooperateItem}>
+                      孙小姐：153 188 61202
+                    </span>
                   </p>
                 </div>
               </div>
@@ -60,6 +67,7 @@ class About extends React.Component {
             </div>
           </div>
         </div>
+        <SideBar />
       </Layout>
     );
   }
