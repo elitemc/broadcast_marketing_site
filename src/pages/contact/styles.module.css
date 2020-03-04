@@ -35,7 +35,18 @@
 
 .linkItem b {
   display: block;
-  padding: 7px;
+  padding: 7px 0;
   font-size: 20px;
   color: 2e313c;
+}
+.linkItem p {
+  margin-bottom: 7px;
+}
+.cooperate {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cooperate span {
+  padding-right: 10px;
 }
