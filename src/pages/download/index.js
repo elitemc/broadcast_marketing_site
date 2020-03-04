@@ -8,6 +8,8 @@ import styles from './styles.module.css';
 import 'antd/dist/antd.css';
 import {} from 'antd';
 
+import SideBar from '../sidebar';
+
 class Download extends React.Component {
   constructor(props) {
     super(props);
@@ -79,6 +81,7 @@ class Download extends React.Component {
             </div>
           </div>
         </div>
+        <SideBar />
       </Layout>
     );
   }

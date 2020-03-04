@@ -7,26 +7,49 @@
  * @format
  */
 
-import React, {useEffect} from 'react';
+import React, {useEffect, useRef} from 'react';
 import classnames from 'classnames';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
+import SideBar from './sidebar';
 import axios from 'axios';
 import 'antd/dist/antd.css';
 import {Button} from 'antd';
 
+function scrollNotice(container, props, time) {
+  let initTime = Date.now();
+  function scroll() {
+    let bili = (Date.now() - initTime) / time;
+    if (bili >= 1) {
+      bili = 1;
+      initTime = Date.now();
+    }
+    for (let key in props) {
+      container.style[key] = props[key] * bili + 'px';
+    }
+    requestAnimationFrame(scroll);
+  }
+  scroll();
+}
+
 function Home() {
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;
+  const clientList = useRef();
+  const clientLi = useRef();
   useEffect(() => {
     var _hmt = _hmt || [];
     var hm = document.createElement('script');
     hm.src = 'https://hm.baidu.com/hm.js?e9ace3c27da1d62a7b4905e016047fe5';
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(hm, s);
+    let listWidth = clientList.current.clientWidth;
+    let liWidth = clientLi.current.clientWidth;
+    console.log(listWidth, liWidth);
+    scrollNotice(clientList.current, {marginLeft: -liWidth}, 15000);
   }, []);
 
   console.log(useBaseUrl('img/index/首页-banner.png'));
@@ -307,6 +330,70 @@ function Home() {
 
           <div className={styles.client}>
             <h2 className={styles.title}>英荔的客户</h2>
+            <div className={styles.clientContainer}>
+              <ul className={styles.clientList} ref={clientList}>
+                <li ref={clientLi}>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}></div>
+                    <small>合生元</small>
+                  </div>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}></div>
+                    <small>国大药房</small>
+                  </div>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}></div>
+                    <small>大参林</small>
+                  </div>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}></div>
+                    <small>东莞国药</small>
+                  </div>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}></div>
+                    <small>Swisse</small>
+                  </div>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}></div>
+                    <small>神州优车集团</small>
+                  </div>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}></div>
+                    <small>广东工业大学华立学院</small>
+                  </div>
+                </li>
+                <li>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}></div>
+                    <small>合生元</small>
+                  </div>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}></div>
+                    <small>国大药房</small>
+                  </div>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}></div>
+                    <small>大参林</small>
+                  </div>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}></div>
+                    <small>东莞国药</small>
+                  </div>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}></div>
+                    <small>Swisse</small>
+                  </div>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}></div>
+                    <small>神州优车集团</small>
+                  </div>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}></div>
+                    <small>广东工业大学华立学院</small>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
           <div className={styles.clientComment}>
             <h2 className={styles.title}>客户评价</h2>
@@ -355,6 +442,7 @@ function Home() {
             </div>
           </div>
         </div>
+        <SideBar />
       </div>
     </Layout>
   );
