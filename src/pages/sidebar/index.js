@@ -43,10 +43,16 @@ function Sidebar(props) {
         <li>
           <div
             className={
-              styles.icon + ' ' + styles.iconfont + ' ' + styles.iconCustomer
+              styles.icon + ' ' + styles.iconfont + ' ' + styles.iconQrcode
             }></div>
           <div className={styles.detail}>
-            <div style={{width: 126, height: 126, background: 'red'}}></div>
+            <div
+              style={{
+                width: 120,
+                height: 120,
+                background: 'red',
+                margin: '6px 0',
+              }}></div>
           </div>
         </li>
         <BackTop style={{position: 'static'}}>

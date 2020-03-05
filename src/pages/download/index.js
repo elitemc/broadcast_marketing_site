@@ -59,7 +59,7 @@ class Download extends React.Component {
                 <div className={styles.downItem}>
                   <div className={styles.downCode}>
                     <div className={styles.downIcon}></div>
-                    <small>点击或扫描二维码下载</small>
+                    <small>点击下载桌面客户端</small>
                   </div>
                   <div className={styles.iconContain}>
                     <div className={styles.icon}></div>
@@ -70,7 +70,7 @@ class Download extends React.Component {
                 <div className={styles.downItem}>
                   <div className={styles.downCode}>
                     <div className={styles.downIcon}></div>
-                    <small>点击或扫描二维码下载</small>
+                    <small>点击下载桌面客户端</small>
                   </div>
                   <div className={styles.iconContain}>
                     <div className={styles.icon}></div>

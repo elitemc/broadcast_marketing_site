@@ -48,11 +48,10 @@ function Home() {
     s.parentNode.insertBefore(hm, s);
     let listWidth = clientList.current.clientWidth;
     let liWidth = clientLi.current.clientWidth;
-    console.log(listWidth, liWidth);
+    // console.log(listWidth, liWidth);
     scrollNotice(clientList.current, {marginLeft: -liWidth}, 15000);
   }, []);
 
-  console.log(useBaseUrl('img/index/首页-banner.png'));
   return (
     <Layout
       title={`首页`}
@@ -76,8 +75,9 @@ function Home() {
               <Button className={styles.freeUse}>免费使用</Button>
             </div>
             <div className={styles.banner}>
-              <img src="../../static/img/banner.png" alt="yyy" />
-              <img src={useBaseUrl('img/banner.png')} alt="333" />
+              <img src="../../static/img/banner.png" alt="1" />
+              <img src="../../static/img/loginTitle.png" alt="2" />
+              <img src={useBaseUrl('img/banner.png')} alt="3" />
             </div>
           </div>
         </div>
