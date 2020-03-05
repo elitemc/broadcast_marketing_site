@@ -27,7 +27,7 @@ function NavLink({ to, href, label, position, ...props }) {
   const toUrl = useBaseUrl(to);
   return (
     <Link
-      className="navbar__item navbar__link"
+      className='navbar__item navbar__link'
       {...(href
         ? {
           target: '_blank',
@@ -35,18 +35,16 @@ function NavLink({ to, href, label, position, ...props }) {
           href,
         }
         : {
-          activeClassName: to === "#solution" || to === "#case" ? '' : 'navbar__link--active',
+          activeClassName: to === "#solution" || to === "#case" ? '' : styles.activeLink,
           to: toUrl,
         })}
       {...props}>
       {
-        position === 'right' ? <Button
-          className={label === '免费使用' ? styles.navbarBtn : null}
-          type={label === '免费使用' ? 'primary' : null}
-          style={{ width: '8vw' }}
+        position === 'right' ? <div
+          className={label === '免费使用' ? styles.navbarBtn : styles.navbarLogin}
         >
           {label}
-        </Button> : label
+        </div> : label
       }
 
     </Link>
@@ -54,6 +52,7 @@ function NavLink({ to, href, label, position, ...props }) {
 }
 
 function Navbar() {
+
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
   const { baseUrl, themeConfig = {} } = siteConfig;
@@ -90,7 +89,6 @@ function Navbar() {
     : null;
   const logoSrc = logo.srcDark && isDarkTheme ? logo.srcDark : logo.src;
   const logoImageUrl = useBaseUrl(logoSrc);
-
   return (
     <nav
       ref={navbarRef}
@@ -98,7 +96,9 @@ function Navbar() {
         'navbar-sidebar--show': sidebarShown,
         [styles.navbarHideable]: hideOnScroll,
         [styles.navbarHidden]: !isNavbarVisible,
-      })}>
+      })}
+      style={{ padding: '0 5vw' }}
+    >
       <div className="navbar__inner">
         <div className="navbar__items">
           <div
@@ -136,19 +136,23 @@ function Navbar() {
               </strong>
             )}
           </Link>
-          <div style={{ position: 'relative', left: '50%' }}>
+          <div style={{ position: 'relative', left: '10%', width: 500 }}>
             {links
               .filter(linkItem => linkItem.position !== 'right')
               .map((linkItem, i) => (
-                <NavLink {...linkItem} key={i} />
+                <NavLink {...linkItem} key={i} style={{ padding: '20px 0', margin: '0 20px' }} />
               ))}
           </div>
         </div>
-        <div className="navbar__items navbar__items--right">
+        <div
+          className="navbar__items navbar__items--right"
+        >
           {links
             .filter(linkItem => linkItem.position === 'right')
             .map((linkItem, i) => (
-              <NavLink {...linkItem} key={i} />
+              <NavLink {...linkItem} key={i}
+                style={{ marginLeft: '50px' }}
+              />
             ))}
           {!disableDarkMode && (
             <Toggle
@@ -206,7 +210,7 @@ function Navbar() {
         </div>
       </div>
     </nav>
-  );
+  )
 }
 
 export default Navbar;

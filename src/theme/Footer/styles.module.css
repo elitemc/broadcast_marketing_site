@@ -13,3 +13,9 @@
 .footerLogoLink:hover {
   opacity: 1;
 }
+.footerLi{
+color: #8494a6;
+}
+.footerLi:hover{
+  color: #0d6fde;
+}

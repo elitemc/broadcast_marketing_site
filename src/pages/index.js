@@ -7,7 +7,7 @@
  * @format
  */
 
-import React, {useEffect, useRef} from 'react';
+import React, { useEffect, useRef } from 'react';
 import classnames from 'classnames';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
@@ -17,7 +17,7 @@ import styles from './styles.module.css';
 import SideBar from './sidebar';
 import axios from 'axios';
 import 'antd/dist/antd.css';
-import {Button} from 'antd';
+import { Button } from 'antd';
 
 function scrollNotice(container, props, time) {
   let initTime = Date.now();
@@ -37,7 +37,7 @@ function scrollNotice(container, props, time) {
 
 function Home() {
   const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
+  const { siteConfig = {} } = context;
   const clientList = useRef();
   const clientLi = useRef();
   useEffect(() => {
@@ -49,7 +49,7 @@ function Home() {
     let listWidth = clientList.current.clientWidth;
     let liWidth = clientLi.current.clientWidth;
     console.log(listWidth, liWidth);
-    scrollNotice(clientList.current, {marginLeft: -liWidth}, 15000);
+    scrollNotice(clientList.current, { marginLeft: -liWidth }, 15000);
   }, []);
 
   console.log(useBaseUrl('img/index/首页-banner.png'));
@@ -76,8 +76,7 @@ function Home() {
               <Button className={styles.freeUse}>免费使用</Button>
             </div>
             <div className={styles.banner}>
-              <img src="../../static/img/banner.png" alt="yyy" />
-              <img src={useBaseUrl('img/banner.png')} alt="333" />
+              <img src="../../static/img/banner.png" alt="" />
             </div>
           </div>
         </div>
@@ -436,7 +435,7 @@ function Home() {
             <p>一对一专属客户服务</p>
             <div className={styles.linkBtn}>
               <Button>免费使用</Button>
-              <Button style={{backgroundColor: '#0d6fde', color: '#fff'}}>
+              <Button style={{ backgroundColor: '#0d6fde', color: '#fff' }}>
                 报价查询
               </Button>
             </div>
