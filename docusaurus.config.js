@@ -8,11 +8,11 @@
  */
 
 module.exports = {
-  title: '英荔教育',
-  tagline: '英荔教育',
+  title: '英荔播课',
+  tagline: '英荔播课',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
-  favicon: 'img/yingliLogo.jpg',
+  favicon: 'img/favicon.ico',
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
@@ -20,13 +20,13 @@ module.exports = {
       title: '',
       logo: {
         alt: 'My Facebook Project Logo',
-        src: 'img/loginTitle.png',
+        src: 'img/home page_ logo.png',
       },
       links: [
         { to: '#solution', label: '解决方案' },
         { to: '#case', label: '客户案例' },
         { to: '/usehelp', label: '使用帮助' },
-        { to: '/purchase', label: '购买' },
+        { to: '/purchase', label: '购  买' },
         // Please keep GitHub link to the right for consistency.
         {
           href: 'https://www.yingliboke.cn/user/login',
@@ -93,6 +93,10 @@ module.exports = {
           ],
         },
       ],
+      logo: {
+        to: '/',
+        src: 'img/home page_ logo.png'
+      },
       // Please do not remove the credits, help to publicize Docusaurus :)
       copyright: `Copyright © ${new Date().getFullYear()} 广东英荔国际教育科技有限公司 粤ICP备13044168号-3`,
     },

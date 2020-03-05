@@ -1,0 +1,26 @@
+.helpContainer{
+  width: 75%;
+  margin: 0 auto;
+  padding-bottom:5.5vw;
+}
+.helpTitle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:8vh 0;
+}
+.identity{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.identityLi{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4.5vh;
+}
+/* .identity>div{
+  padding:0 11.5vw;
+} */
