@@ -36,14 +36,12 @@ module.exports = {
         {
           href: 'https://www.yingliboke.cn/user/register',
           label: '免费使用',
-          position: 'right'
+          position: 'right',
         },
-
       ],
-
     },
     footer: {
-      style: 'dark',
+      style: 'highlight',
       links: [
         {
           title: '产品',
@@ -89,7 +87,7 @@ module.exports = {
             {
               label: '联系我们',
               to: '/contact',
-            }
+            },
           ],
         },
       ],
@@ -100,7 +98,7 @@ module.exports = {
       // Please do not remove the credits, help to publicize Docusaurus :)
       copyright: `Copyright © ${new Date().getFullYear()} 广东英荔国际教育科技有限公司 粤ICP备13044168号-3`,
     },
-    disableDarkMode: true
+    disableDarkMode: true,
   },
   presets: [
     [

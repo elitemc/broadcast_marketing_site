@@ -1,0 +1,42 @@
+.usBanner {
+  box-sizing: border-box;
+  text-align: left;
+  padding: 8.3333% 18.055% 8.222%;
+  background-color: rosybrown;
+}
+
+.usBanner h1 {
+  font-size: 36px;
+  color: #2e313c;
+}
+
+.usBanner small {
+  font-size: 20px;
+  color: #495b70;
+}
+
+.aboutContain {
+  width: 55.555%;
+  margin: 10.5% auto;
+  padding: 3.22% 9.55%;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.13);
+}
+
+.aboutContain h2 {
+  text-align: center;
+  font-size: 30px;
+  color: #2e313c;
+}
+
+@media screen and (max-width: 1200px) {
+  .usBanner {
+    padding-left: 9%;
+  }
+
+  .aboutContain {
+
+    width: 75.555%;
+    margin: 5.5% auto;
+    padding: 3.22% 6.55%;
+  }
+}

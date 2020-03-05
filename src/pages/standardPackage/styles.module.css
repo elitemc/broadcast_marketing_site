@@ -1,0 +1,51 @@
+.context_Package {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2% 0;
+}
+
+.main {
+  max-width: 640px;
+  width: 60%;
+  padding: 48px 46px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+}
+
+.subTitle {
+  font-size: 20px;
+  padding-left: 10px;
+  border-left: 3px solid #0d6fde;
+  line-height: 1;
+  margin-bottom: 28px;
+}
+
+.main > p,
+h1 {
+  text-align: center;
+}
+
+.main ul li {
+  width: 80px;
+  height: 32px;
+  border-radius: 4px;
+  border: solid 1px #e1e7ef;
+  color: #8494a6;
+  float: left;
+  text-align: center;
+  line-height: 32px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.main ul li:last-child {
+  margin-right: 0;
+}
+
+.settlement {
+  margin: 40px 0;
+}
