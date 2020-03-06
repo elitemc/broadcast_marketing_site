@@ -9,7 +9,14 @@ import 'antd/dist/antd.css';
 import {} from 'antd';
 
 import SideBar from '../sidebar';
-
+const download = (url, filename) => {
+  const a = document.createElement('a');
+  a.href = url;
+  a.setAttribute('download', '');
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+};
 class Download extends React.Component {
   constructor(props) {
     super(props);
@@ -32,22 +39,47 @@ class Download extends React.Component {
               <div className={styles.downList}>
                 <div className={styles.downItem}>
                   <div className={styles.downCode}>
-                    <div className={styles.downIcon}></div>
-                    <small>点击或扫描二维码下载</small>
+                    <div className={styles.downIcon}>
+                      <img
+                        src="../../../static/img/qrcode_for英荔播课.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <small
+                      onClick={() =>
+                        download(
+                          'https://www.baidu.com/img/bd_logo1.png',
+                          'a.jpg',
+                        )
+                      }>
+                      点击或扫描二维码下载
+                    </small>
                   </div>
                   <div className={styles.iconContain}>
-                    <div className={styles.icon}></div>
+                    <div className={styles.icon}>
+                      <img
+                        src="../../../static/img/Android.png"
+                        alt="Android"
+                      />
+                    </div>
                     <small>Android</small>
                   </div>
                 </div>
 
                 <div className={styles.downItem}>
                   <div className={styles.downCode}>
-                    <div className={styles.downIcon}></div>
+                    <div className={styles.downIcon}>
+                      <img
+                        src="../../../static/img/qrcode_for英荔播课.jpg"
+                        alt=""
+                      />
+                    </div>
                     <small>点击或扫描二维码下载</small>
                   </div>
                   <div className={styles.iconContain}>
-                    <div className={styles.icon}></div>
+                    <div className={styles.icon}>
+                      <img src="../../../static/img/IOS.png" alt="IOS" />
+                    </div>
                     <small>IOS</small>
                   </div>
                 </div>
@@ -58,22 +90,33 @@ class Download extends React.Component {
               <div className={styles.downList}>
                 <div className={styles.downItem}>
                   <div className={styles.downCode}>
-                    <div className={styles.downIcon}></div>
-                    <small>点击或扫描二维码下载</small>
+                    <div className={styles.downIcon}>
+                      <img src="../../../static/img/客户端.png" alt="客户端" />
+                    </div>
+                    <small>点击下载桌面客户端</small>
                   </div>
                   <div className={styles.iconContain}>
-                    <div className={styles.icon}></div>
+                    <div className={styles.icon}>
+                      <img src="../../../static/img/macOS.png" alt="macOS" />
+                    </div>
                     <small>macOS</small>
                   </div>
                 </div>
 
                 <div className={styles.downItem}>
                   <div className={styles.downCode}>
-                    <div className={styles.downIcon}></div>
-                    <small>点击或扫描二维码下载</small>
+                    <div className={styles.downIcon}>
+                      <img src="../../../static/img/客户端.png" alt="客户端" />
+                    </div>
+                    <small>点击下载桌面客户端</small>
                   </div>
                   <div className={styles.iconContain}>
-                    <div className={styles.icon}></div>
+                    <div className={styles.icon}>
+                      <img
+                        src="../../../static/img/Windows.png"
+                        alt="Windows"
+                      />
+                    </div>
                     <small>Windows</small>
                   </div>
                 </div>

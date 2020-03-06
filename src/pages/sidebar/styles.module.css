@@ -38,7 +38,7 @@
 
 .sideBar {
   position: fixed;
-  bottom: 12%;
+  bottom: 15%;
   right: 2%;
   /* background-color: darkorange; */
 }
@@ -73,7 +73,7 @@
 
 .detail {
   position: absolute;
-  padding: 6px;
+  padding: 0 6px;
   top: 0;
   right: 120%;
   min-width: 130px;

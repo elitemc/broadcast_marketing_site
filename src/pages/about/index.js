@@ -22,6 +22,7 @@ class Contact extends React.Component {
         description="Description will go into a meta tag in <head />">
         <div className={styles.aboutUs}>
           <div className={styles.usBanner}>
+            <img src="../../../static/img/关于我们banner.png" alt="" />
             <h1>英荔播课</h1>
             <small>高效连接员工与知识，助力企业持续发展</small>
           </div>
