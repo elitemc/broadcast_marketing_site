@@ -16,12 +16,26 @@
     display: none;
   }
 }
+.activeLink{
+  color:#0d6fde!important;
+  border-bottom: 2px solid #0d6fde;
+}
+
 .navbarBtn{
-  background-color: #F59A23;
-  border: #F59A23;
+  background-color: #0d6fde;
+  color: #ffffff;
+  border: #0d6fde;
+  padding: 8px 28px;
+  border-radius: 4px;
+}
+.navbarLogin{
+  color:#0d6fde;
+}
+.navbarLogin:hover{
+  color: #6D9FFF;
 }
 .navbarBtn:hover{
-  background-color: red;
+  background-color: #348FEB;
 }
 .navbarHideable {
   transition: top 0.2s ease-in-out;
