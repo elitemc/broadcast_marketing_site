@@ -35,9 +35,23 @@ function Sidebar(props) {
           <div
             className={
               styles.icon + ' ' + styles.iconfont + ' ' + styles.iconphone
-            }></div>
+            }>
+            <a
+              href="tel:400-931-8118"
+              style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+              }}></a>
+          </div>
           <div className={styles.detail}>
-            <span>400-931-8118</span>
+            <span>
+              <a href="tel:400-931-8118" style={{color: 'inherit'}}>
+                400-931-8118
+              </a>{' '}
+            </span>
           </div>
         </li>
         <li>
@@ -52,7 +66,9 @@ function Sidebar(props) {
                 height: 120,
                 background: 'red',
                 margin: '6px 0',
-              }}></div>
+              }}>
+              <img src="../../../static/img/qrcode_for英荔播课.jpg" alt="" />
+            </div>
           </div>
         </li>
         <BackTop style={{position: 'static'}}>

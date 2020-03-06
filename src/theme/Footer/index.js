@@ -13,37 +13,37 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
-function FooterLink({to, href, label, ...props}) {
+function FooterLink({ to, href, label, ...props }) {
   const toUrl = useBaseUrl(to);
   return (
     <Link
-      className="footer__link-item"
+      className={styles.footerLi}
       {...(href
         ? {
-            target: '_blank',
-            rel: 'noopener noreferrer',
-            href,
-          }
+          target: '_blank',
+          rel: 'noopener noreferrer',
+          href,
+        }
         : {
-            to: toUrl,
-          })}
+          to: toUrl,
+        })}
       {...props}>
       {label}
     </Link>
   );
 }
 
-const FooterLogo = ({url, alt}) => (
-  <img className="footer__logo" alt={alt} src={url} />
+const FooterLogo = ({ url, alt }) => (
+  <img style={{ width: 115 }} alt={alt} src={url} />
 );
 
 function Footer() {
   const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
-  const {themeConfig = {}} = siteConfig;
-  const {footer} = themeConfig;
+  const { siteConfig = {} } = context;
+  const { themeConfig = {} } = siteConfig;
+  const { footer } = themeConfig;
 
-  const {copyright, links = [], logo = {}} = footer || {};
+  const { copyright, links = [], logo = {} } = footer || {};
   const logoUrl = useBaseUrl(logo.src);
 
   if (!footer) {
@@ -55,42 +55,11 @@ function Footer() {
       className={classnames('footer', {
         'footer--dark': footer.style === 'dark',
       })}
-      style={{background: '#fff', borderTop: '1px solid #f3f3f3'}}>
-      <div className="container" style={{width: '50%'}}>
-        {links && links.length > 0 && (
-          <div className="row footer__links" style={{paddingLeft: '120px'}}>
-            {links.map((linkItem, i) => (
-              <div key={i} className="col footer__col">
-                {linkItem.title != null ? (
-                  <h4 className="footer__title">{linkItem.title}</h4>
-                ) : null}
-                {linkItem.items != null &&
-                Array.isArray(linkItem.items) &&
-                linkItem.items.length > 0 ? (
-                  <ul className="footer__items">
-                    {linkItem.items.map((item, key) =>
-                      item.html ? (
-                        <li
-                          key={key}
-                          className="footer__item"
-                          dangerouslySetInnerHTML={{
-                            __html: item.html,
-                          }}
-                        />
-                      ) : (
-                        <li key={item.href || item.to} className="footer__item">
-                          <FooterLink {...item} />
-                        </li>
-                      ),
-                    )}
-                  </ul>
-                ) : null}
-              </div>
-            ))}
-          </div>
-        )}
-        {(logo || copyright) && (
-          <div className="text--center">
+      style={{ backgroundColor: '#ffffff', border: 'solid 1px #f3f3f3', padding: '2vw 5vw' }}
+    >
+      <div style={{ display: 'flex', borderBottom: 'solid 1px #eaf0f7', padding: '2vw 0' }}>
+        {logo && (
+          <div>
             {logo && logo.src && (
               <div className="margin-bottom--sm">
                 {logo.href ? (
@@ -102,14 +71,54 @@ function Footer() {
                     <FooterLogo alt={logo.alt} url={logoUrl} />
                   </a>
                 ) : (
-                  <FooterLogo alt={logo.alt} url={logoUrl} />
-                )}
+                    <Link to={logo.to}>
+                      <FooterLogo alt={logo.alt} url={logoUrl} />
+                    </Link>
+
+                  )}
               </div>
             )}
-            {copyright}
           </div>
         )}
+        <div className="container" >
+          {links && links.length > 0 && (
+            <div className="row footer__links" style={{ paddingLeft: '10vw' }}>
+              {links.map((linkItem, i) => (
+                <div key={i} className="col footer__col">
+                  {linkItem.title != null ? (
+                    <h4 className="footer__title" style={{ color: '#2e313c', fontWeight: 'bold' }}>{linkItem.title}</h4>
+                  ) : null}
+                  {linkItem.items != null &&
+                    Array.isArray(linkItem.items) &&
+                    linkItem.items.length > 0 ? (
+                      <ul className="footer__items">
+                        {linkItem.items.map((item, key) =>
+                          item.html ? (
+                            <li
+                              key={key}
+                              className={styles.footerLi}
+                              dangerouslySetInnerHTML={{
+                                __html: item.html,
+                              }}
+                              style={{ margin: '0.8vw 0' }}
+                            />
+                          ) : (
+                              <li key={item.href || item.to} style={{ margin: '0.8vw 0' }}>
+                                <FooterLink {...item} />
+                              </li>
+                            ),
+                        )}
+                      </ul>
+                    ) : null}
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
+      {copyright && <div style={{ color: '#8494a6', padding: '1vw 0', textAlign: 'center' }}>
+        {copyright}
+      </div>}
     </footer>
   );
 }

@@ -1,7 +1,17 @@
 .callWe {
+  position: relative;
   text-align: center;
   padding: 8.3333% 0 8.222%;
-  background-color: rosybrown;
+  background-color: #f5faff;
+}
+
+.callWe img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 100%;
 }
 
 .callWe h1 {
@@ -39,14 +49,17 @@
   font-size: 20px;
   color: 2e313c;
 }
+
 .linkItem p {
   margin-bottom: 7px;
 }
+
 .cooperate {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .cooperate span {
   padding-right: 10px;
 }
