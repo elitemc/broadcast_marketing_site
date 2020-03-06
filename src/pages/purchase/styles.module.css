@@ -3,15 +3,24 @@
   padding: 10px 10%;
 }
 
+.context_Package {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2% 0;
+}
+
 .version_box {
   display: flex;
   flex-direction: row;
 }
 
 .little_box {
-  /* width: 358px; */
-  width: 50%;
-  height: 415px;
+  width: 90%;
+  min-width: 358px;
+  height: 468px;
   background-color: #ffffff;
   box-shadow: 0px 4px 16px 0px rgba(52, 52, 52, 0.12);
   border-radius: 8px;
@@ -29,13 +38,13 @@
 }
 
 .price {
-  height: 140px;
+  height: 150px;
   background-color: #f5f7fa;
 }
 
 .li_box {
-  padding: 12px 30px;
-  height: 120px;
+  padding: 30px;
+  height: 146px;
   text-align: left;
 }
 .li_box li {
