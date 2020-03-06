@@ -28,14 +28,14 @@ ul {
 
 .homeSplashFade .banner {
   position: absolute;
-  top: 20%;
-  background-color: blueviolet;
+  top: 10%;
+  /* background-color: blueviolet; */
   right: 9.51%;
   width: 40.1389%;
 }
 
 .homeSplashFade .banner img {
-  width: 100px;
+  width: 100%;
 }
 
 .homeSplashFade h2 {
@@ -120,9 +120,14 @@ ul {
 }
 
 .detailCar .carImg {
+  /* overflow: hidden; */
   width: 500px;
-  height: 300px;
-  background: blueviolet;
+  /* height: 300px; */
+  /* background: blueviolet; */
+}
+
+.detailCar li .carImg img {
+  width: 100%;
 }
 
 .carDetail {
@@ -147,7 +152,7 @@ ul {
   justify-content: space-between;
 }
 
-.functionCarList > li {
+.functionCarList>li {
   display: flex;
   width: 43%;
   padding: 25px;
@@ -156,24 +161,24 @@ ul {
   transition: all 0.3s;
 }
 
-.functionCarList > li:hover {
+.functionCarList>li:hover {
   box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.13);
 }
 
-.functionCarList > li {
+.functionCarList>li {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.functionCarList > li .functionCarIcon {
+.functionCarList>li .functionCarIcon {
   float: left;
   width: 50px;
   height: 50px;
-  background: red;
+  /* background: red; */
 }
 
-.functionCarList > li .functionItem {
+.functionCarList>li .functionItem {
   margin-left: 40px;
   width: 70%;
   box-sizing: border-box;
@@ -197,10 +202,12 @@ ul {
 
 .supportList li {
   height: min-content;
-  background: red;
+  /* background: red; */
 }
 
+
 .supportList h4 {
+  margin-bottom: 10px;
   text-align: center;
   color: #2e313c;
 }
@@ -239,7 +246,11 @@ ul {
   text-align: center;
   border-radius: 50%;
   border: 1px #efefef solid;
-  background: royalblue;
+  /* background: royalblue; */
+}
+
+.clientMsg i img {
+  vertical-align: top;
 }
 
 .clientMsg span {
@@ -266,12 +277,12 @@ ul {
   vertical-align: middle;
 }
 
-.clientList > li {
+.clientList>li {
   display: inline-block;
 }
 
 .clientList,
-.clientList > li {
+.clientList>li {
   white-space: nowrap;
 }
 
@@ -291,7 +302,7 @@ ul {
 }
 
 .avatar,
-.avatar + small {
+.avatar+small {
   vertical-align: middle;
 }
 
@@ -307,7 +318,7 @@ ul {
     width: 45%;
   }
 
-  .functionCarList > li {
+  .functionCarList>li {
     width: 49%;
     margin: 10px auto;
   }
@@ -315,6 +326,10 @@ ul {
   .supportList li {
     width: 38%;
     margin: 30px;
+  }
+
+  .homeSplashFade .banner {
+    width: 35%;
   }
 
   .commentList li {
@@ -335,7 +350,7 @@ ul {
   overflow: hidden;
   width: 28.138%;
   margin: 0 24px;
-  border: 1px solid #e4e4e4;
+  border: 1px solid #bdbbbb33;
   border-radius: 15px;
   transition: all 0.3s;
 }
@@ -350,7 +365,7 @@ ul {
   color: #2e313c;
 }
 
-.supportTitle + p {
+.supportTitle+p {
   padding: 0 20px;
   color: #495b70;
 }
@@ -381,6 +396,7 @@ ul {
   margin: 0 20px;
 }
 
+
 @media screen and (max-width: 1127px) {
   .homeSplashFade {
     font-size: 50px;
@@ -410,6 +426,8 @@ ul {
   .detailCar li .carImg {
     width: 45%;
   }
+
+
 
   .supportList li {
     width: 36%;
@@ -446,7 +464,8 @@ ul {
   }
 
   .detailCar li .carImg {
-    width: 100%;
+    width: 80%;
+    margin: auto;
   }
 
   .detailCar li {
@@ -459,7 +478,7 @@ ul {
     margin: 10px auto;
   }
 
-  .functionCarList > li {
+  .functionCarList>li {
     width: 60%;
     margin: 10px auto;
   }
@@ -478,7 +497,11 @@ ul {
 }
 
 @media screen and (max-width: 960px) {
-  .functionCarList > li {
+  .homeSplashFade .banner {
+    width: 30%;
+  }
+
+  .functionCarList>li {
     width: 68%;
     margin: 10px auto;
   }
@@ -487,6 +510,11 @@ ul {
 @media screen and (max-width: 860px) {
   .container {
     margin: 20px 57px 0;
+  }
+
+  .homeSplashFade .banner {
+    top: 5%;
+    width: 30%;
   }
 
   .homeSplashFade {
@@ -502,7 +530,7 @@ ul {
     padding: 14px 0 16px;
   }
 
-  .functionCarList > li {
+  .functionCarList>li {
     width: 73%;
     margin: 10px auto;
   }
@@ -513,6 +541,12 @@ ul {
 
   .supportList li {
     width: 60%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .homeSplashFade .banner {
+    display: none;
   }
 }
 
@@ -529,7 +563,7 @@ ul {
     display: none;
   }
 
-  .functionCarList > li {
+  .functionCarList>li {
     width: 78%;
     margin: 10px auto;
   }
@@ -570,7 +604,7 @@ ul {
     width: 78%;
   }
 
-  .functionCarList > li {
+  .functionCarList>li {
     width: 79%;
     margin: 10px auto;
   }
@@ -594,7 +628,7 @@ ul {
   }
 
   .homeSplashFade .homeTitle {
-    top: 8%;
+    top: 20%;
     left: 20%;
   }
 

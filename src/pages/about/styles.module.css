@@ -1,8 +1,18 @@
 .usBanner {
+  position: relative;
   box-sizing: border-box;
   text-align: left;
   padding: 8.3333% 18.055% 8.222%;
-  background-color: rosybrown;
+  background-color: #f5faff;
+}
+
+.usBanner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 100%;
 }
 
 .usBanner h1 {
