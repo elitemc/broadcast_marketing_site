@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   padding: 2% 0;
+  background: #f7f9fc;
 }
 
 .main {
@@ -48,4 +49,9 @@ h1 {
 
 .settlement {
   margin: 40px 0;
+}
+
+.active_style {
+  color: #0d6fde !important;
+  border-color: #0d6fde !important;
 }
