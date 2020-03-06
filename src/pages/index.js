@@ -48,11 +48,10 @@ function Home() {
     s.parentNode.insertBefore(hm, s);
     let listWidth = clientList.current.clientWidth;
     let liWidth = clientLi.current.clientWidth;
-    console.log(listWidth, liWidth);
+    // console.log(listWidth, liWidth);
     scrollNotice(clientList.current, {marginLeft: -liWidth}, 15000);
   }, []);
 
-  console.log(useBaseUrl('img/index/首页-banner.png'));
   return (
     <Layout
       title={`首页`}
@@ -73,11 +72,12 @@ function Home() {
                 <p className={styles.funList}>专业团队提供技术支持，安全可靠</p>
               </div>
 
-              <Button className={styles.freeUse}>免费使用</Button>
+              <Button className={styles.freeUse}>
+                <Link to="http://yingliboke.cn/user/register">免费使用</Link>
+              </Button>
             </div>
             <div className={styles.banner}>
-              <img src="../../static/img/banner.png" alt="yyy" />
-              <img src={useBaseUrl('img/banner.png')} alt="333" />
+              <img src="../../static/img/banner.png" alt="" />
             </div>
           </div>
         </div>
@@ -85,7 +85,9 @@ function Home() {
           <div className={styles.detailCar}>
             <ul>
               <li>
-                <div className={styles.carImg}></div>
+                <div className={styles.carImg}>
+                  <img src="../../static/img/主题1.png" alt="" />
+                </div>
                 <div className={styles.carDetail}>
                   <div className={styles.detail}>
                     <b>高质量低付费，大幅节省培训成本</b>
@@ -97,7 +99,9 @@ function Home() {
                 </div>
               </li>
               <li>
-                <div className={styles.carImg}></div>
+                <div className={styles.carImg}>
+                  <img src="../../static/img/主题2.png" alt="" />
+                </div>
                 <div className={styles.carDetail}>
                   <div className={styles.detail}>
                     <b>多样直播互动方式，培训更专注、更积极</b>
@@ -108,7 +112,9 @@ function Home() {
                 </div>
               </li>
               <li>
-                <div className={styles.carImg}></div>
+                <div className={styles.carImg}>
+                  <img src="../../static/img/主题3.png" alt="" />
+                </div>
                 <div className={styles.carDetail}>
                   <div className={styles.detail}>
                     <b>直播工具齐全，知识理解更到位</b>
@@ -119,7 +125,9 @@ function Home() {
                 </div>
               </li>
               <li>
-                <div className={styles.carImg}></div>
+                <div className={styles.carImg}>
+                  <img src="../../static/img/主题4.png" alt="" />
+                </div>
                 <div className={styles.carDetail}>
                   <div className={styles.detail}>
                     <b>可视化数据统计，科学提高培训质量</b>
@@ -136,7 +144,9 @@ function Home() {
             <h2 className={styles.title}>全功能 多场景</h2>
             <ul className={styles.functionCarList}>
               <li>
-                <div className={styles.functionCarIcon}>图标</div>
+                <div className={styles.functionCarIcon}>
+                  <img src="../../static/img/首-全-icon1.png" alt="" />
+                </div>
                 <div className={styles.functionItem}>
                   <b>多方式呈现，满足多样化场景</b>
                   <ul>
@@ -155,7 +165,9 @@ function Home() {
                 </div>
               </li>
               <li>
-                <div className={styles.functionCarIcon}>图标</div>
+                <div className={styles.functionCarIcon}>
+                  <img src="../../static/img/首-全-icon2.png" alt="" />
+                </div>
                 <div className={styles.functionItem}>
                   <b>个性化设置，权限管理自定义</b>
                   <ul>
@@ -177,7 +189,9 @@ function Home() {
                 </div>
               </li>
               <li>
-                <div className={styles.functionCarIcon}>图标</div>
+                <div className={styles.functionCarIcon}>
+                  <img src="../../static/img/首-全-icon3.png" alt="" />
+                </div>
                 <div className={styles.functionItem}>
                   <b>演示工具辅助，表达更清晰明了</b>
                   <ul>
@@ -199,7 +213,9 @@ function Home() {
                 </div>
               </li>
               <li>
-                <div className={styles.functionCarIcon}>图标</div>
+                <div className={styles.functionCarIcon}>
+                  <img src="../../static/img/首-全-icon4.png" alt="" />
+                </div>
                 <div className={styles.functionItem}>
                   <b>多维互动，调动培训积极性</b>
                   <ul>
@@ -221,7 +237,9 @@ function Home() {
                 </div>
               </li>
               <li>
-                <div className={styles.functionCarIcon}>图标</div>
+                <div className={styles.functionCarIcon}>
+                  <img src="../../static/img/首-全-icon5.png" alt="" />
+                </div>
                 <div className={styles.functionItem}>
                   <b>数据直观呈现，免于繁琐统计</b>
                   <ul>
@@ -243,7 +261,9 @@ function Home() {
                 </div>
               </li>
               <li>
-                <div className={styles.functionCarIcon}>图标</div>
+                <div className={styles.functionCarIcon}>
+                  <img src="../../static/img/首-全-icon6.png" alt="" />
+                </div>
                 <div className={styles.functionItem}>
                   <b>支持直播回看，高安全性云端存储</b>
                   <ul>
@@ -271,11 +291,7 @@ function Home() {
                 <div class="card-demo">
                   <div class="card">
                     <div class="card__image">
-                      <img
-                        src="https://images.unsplash.com/photo-1506624183912-c602f4a21ca7?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
-                        alt="Image alt text"
-                        title="Logo Title Text 1"
-                      />
+                      <img src="../../static/img/首-强-picture1.png" alt="" />
                     </div>
                     <div class="card__body">
                       <h4>全球服务，高速传输</h4>
@@ -290,11 +306,7 @@ function Home() {
                 <div class="card-demo">
                   <div class="card">
                     <div class="card__image">
-                      <img
-                        src="https://images.unsplash.com/photo-1506624183912-c602f4a21ca7?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
-                        alt="Image alt text"
-                        title="Logo Title Text 1"
-                      />
+                      <img src="../../static/img/首-强-picture2.png" alt="" />
                     </div>
                     <div class="card__body">
                       <h4>数据安全稳定</h4>
@@ -310,11 +322,7 @@ function Home() {
                 <div class="card-demo">
                   <div class="card">
                     <div class="card__image">
-                      <img
-                        src="https://images.unsplash.com/photo-1506624183912-c602f4a21ca7?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
-                        alt="Image alt text"
-                        title="Logo Title Text 1"
-                      />
+                      <img src="../../static/img/首-强-picture3.png" alt="" />
                     </div>
                     <div class="card__body">
                       <h4>省流量，高质量</h4>
@@ -334,61 +342,95 @@ function Home() {
               <ul className={styles.clientList} ref={clientList}>
                 <li ref={clientLi}>
                   <div className={styles.clientItem}>
-                    <div className={styles.avatar}></div>
+                    <div className={styles.avatar}>
+                      <img src="../../static/img/合生元.png" alt="合生元" />
+                    </div>
                     <small>合生元</small>
                   </div>
                   <div className={styles.clientItem}>
-                    <div className={styles.avatar}></div>
+                    <div className={styles.avatar}>
+                      <img src="../../static/img/国大药房.png" alt="国大药房" />
+                    </div>
                     <small>国大药房</small>
                   </div>
                   <div className={styles.clientItem}>
-                    <div className={styles.avatar}></div>
+                    <div className={styles.avatar}>
+                      <img src="../../static/img/大参林.png" alt="大参林" />
+                    </div>
                     <small>大参林</small>
                   </div>
                   <div className={styles.clientItem}>
-                    <div className={styles.avatar}></div>
+                    <div className={styles.avatar}>
+                      <img src="../../static/img/东莞国药.png" alt="东莞国药" />
+                    </div>
                     <small>东莞国药</small>
                   </div>
                   <div className={styles.clientItem}>
-                    <div className={styles.avatar}></div>
+                    <div className={styles.avatar}>
+                      <img src="../../static/img/swiss.png" alt="Swisse" />
+                    </div>
                     <small>Swisse</small>
                   </div>
                   <div className={styles.clientItem}>
-                    <div className={styles.avatar}></div>
+                    <div className={styles.avatar}>
+                      <img src="../../static/img/UCAR.png" alt="神州优车集团" />
+                    </div>
                     <small>神州优车集团</small>
                   </div>
                   <div className={styles.clientItem}>
-                    <div className={styles.avatar}></div>
+                    <div className={styles.avatar}>
+                      <img
+                        src="../../static/img/广东工业大学华立学院.png"
+                        alt="广东工业大学华立学院"
+                      />
+                    </div>
                     <small>广东工业大学华立学院</small>
                   </div>
                 </li>
                 <li>
                   <div className={styles.clientItem}>
-                    <div className={styles.avatar}></div>
+                    <div className={styles.avatar}>
+                      <img src="../../static/img/合生元.png" alt="合生元" />
+                    </div>
                     <small>合生元</small>
                   </div>
                   <div className={styles.clientItem}>
-                    <div className={styles.avatar}></div>
+                    <div className={styles.avatar}>
+                      <img src="../../static/img/国大药房.png" alt="国大药房" />
+                    </div>
                     <small>国大药房</small>
                   </div>
                   <div className={styles.clientItem}>
-                    <div className={styles.avatar}></div>
+                    <div className={styles.avatar}>
+                      <img src="../../static/img/大参林.png" alt="大参林" />
+                    </div>
                     <small>大参林</small>
                   </div>
                   <div className={styles.clientItem}>
-                    <div className={styles.avatar}></div>
+                    <div className={styles.avatar}>
+                      <img src="../../static/img/东莞国药.png" alt="东莞国药" />
+                    </div>
                     <small>东莞国药</small>
                   </div>
                   <div className={styles.clientItem}>
-                    <div className={styles.avatar}></div>
+                    <div className={styles.avatar}>
+                      <img src="../../static/img/swiss.png" alt="Swisse" />
+                    </div>
                     <small>Swisse</small>
                   </div>
                   <div className={styles.clientItem}>
-                    <div className={styles.avatar}></div>
+                    <div className={styles.avatar}>
+                      <img src="../../static/img/UCAR.png" alt="神州优车集团" />
+                    </div>
                     <small>神州优车集团</small>
                   </div>
                   <div className={styles.clientItem}>
-                    <div className={styles.avatar}></div>
+                    <div className={styles.avatar}>
+                      <img
+                        src="../../static/img/广东工业大学华立学院.png"
+                        alt="广东工业大学华立学院"
+                      />
+                    </div>
                     <small>广东工业大学华立学院</small>
                   </div>
                 </li>
@@ -400,7 +442,9 @@ function Home() {
             <ul className={styles.commentList}>
               <li className={styles.commentItem}>
                 <div className={styles.clientMsg}>
-                  <i>图片</i>
+                  <i>
+                    <img src="../../static/img/东莞国药.png" alt="东莞国药" />
+                  </i>
                   <span>东莞国药</span>
                 </div>
                 <p>
@@ -409,7 +453,9 @@ function Home() {
               </li>
               <li className={styles.commentItem}>
                 <div className={styles.clientMsg}>
-                  <i>图片</i>
+                  <i>
+                    <img src="../../static/img/合生元.png" alt="合生元" />
+                  </i>
                   <span>合生元</span>
                 </div>
                 <p>
@@ -420,7 +466,9 @@ function Home() {
               </li>
               <li className={styles.commentItem}>
                 <div className={styles.clientMsg}>
-                  <i>图片</i>
+                  <i>
+                    <img src="../../static/img/国大药房.png" alt="国大药房" />
+                  </i>
                   <span>国大药房</span>
                 </div>
                 <p>
@@ -432,12 +480,20 @@ function Home() {
 
           <div className={styles.useLive}>
             <h3>零门槛搭建企业专属直播间</h3>
-            <p>立即拨打服务热线：400-931-8118</p>
+            <p>
+              立即拨打服务热线：
+              <a href="tel:400-931-8118" style={{color: 'inherit'}}>
+                {' '}
+                400-931-8118
+              </a>
+            </p>
             <p>一对一专属客户服务</p>
             <div className={styles.linkBtn}>
-              <Button>免费使用</Button>
+              <Button>
+                <Link to="http://yingliboke.cn/user/register">免费使用</Link>
+              </Button>
               <Button style={{backgroundColor: '#0d6fde', color: '#fff'}}>
-                报价查询
+                <Link to="/purchase">报价查询</Link>
               </Button>
             </div>
           </div>

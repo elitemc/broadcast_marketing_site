@@ -35,18 +35,40 @@ function Sidebar(props) {
           <div
             className={
               styles.icon + ' ' + styles.iconfont + ' ' + styles.iconphone
-            }></div>
+            }>
+            <a
+              href="tel:400-931-8118"
+              style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+              }}></a>
+          </div>
           <div className={styles.detail}>
-            <span>400-931-8118</span>
+            <span>
+              <a href="tel:400-931-8118" style={{color: 'inherit'}}>
+                400-931-8118
+              </a>{' '}
+            </span>
           </div>
         </li>
         <li>
           <div
             className={
-              styles.icon + ' ' + styles.iconfont + ' ' + styles.iconCustomer
+              styles.icon + ' ' + styles.iconfont + ' ' + styles.iconQrcode
             }></div>
           <div className={styles.detail}>
-            <div style={{width: 126, height: 126, background: 'red'}}></div>
+            <div
+              style={{
+                width: 120,
+                height: 120,
+                background: 'red',
+                margin: '6px 0',
+              }}>
+              <img src="../../../static/img/qrcode_for英荔播课.jpg" alt="" />
+            </div>
           </div>
         </li>
         <BackTop style={{position: 'static'}}>
