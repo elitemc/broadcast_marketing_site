@@ -4,6 +4,7 @@ import 'antd/dist/antd.css';
 import {Form, Input, Button, Modal} from 'antd';
 import styles from './styles.module.css';
 import request from '../../utils/request';
+import Countdown from './modal';
 
 const {TextArea} = Input;
 
@@ -37,39 +38,41 @@ class CustomPackage extends React.Component {
           .then(response => {
             console.log(response);
             if (response.data.code === 20000) {
-              this.setState({key: 1});
-              this.setModal2Visible(true);
-              this.timer = setInterval(() => {
-                const time = this.state.time - 1;
-                this.setState({
-                  time,
-                });
-
-                if (time < 0) {
-                  this.setModal2Visible(false);
-                  clearInterval(this.timer);
+              this.setState({key: '提交成功，我们将尽快与您联系'}, () => {
+                this.setModal2Visible(true);
+                this.timer = setInterval(() => {
+                  const time = this.state.time - 1;
                   this.setState({
-                    time: 3,
+                    time,
                   });
-                }
-              }, 1000);
+
+                  if (time < 0) {
+                    this.setModal2Visible(false);
+                    clearInterval(this.timer);
+                    this.setState({
+                      time: 3,
+                    });
+                  }
+                }, 1000);
+              });
             } else {
-              this.setState({key: 0});
-              this.setModal2Visible(true);
-              this.timer = setInterval(() => {
-                const time = this.state.time - 1;
-                this.setState({
-                  time,
-                });
-
-                if (time < 0) {
-                  this.setModal2Visible(false);
-                  clearInterval(this.timer);
+              this.setState({key: '提交失败，请重试'}, () => {
+                this.setModal2Visible(true);
+                this.timer = setInterval(() => {
+                  const time = this.state.time - 1;
                   this.setState({
-                    time: 3,
+                    time,
                   });
-                }
-              }, 1000);
+
+                  if (time < 0) {
+                    this.setModal2Visible(false);
+                    clearInterval(this.timer);
+                    this.setState({
+                      time: 3,
+                    });
+                  }
+                }, 1000);
+              });
             }
           })
           .catch(error => {
@@ -205,34 +208,13 @@ class CustomPackage extends React.Component {
           </div>
         </div>
 
-        <Modal
-          centered
-          width={300}
-          maskClosable={false}
-          closable={false}
-          footer={null}
+        <Countdown
           visible={this.state.modal2Visible}
           onOk={() => this.setModal2Visible(false)}
-          onCancel={() => this.setModal2Visible(false)}>
-          <div style={{textAlign: 'center'}}>
-            <p></p>
-            <p style={{margin: '20px 0 45px'}}>
-              {this.state.key
-                ? '提交成功，我们将尽快与您联系'
-                : '提交失败，请重试'}
-            </p>
-            <p>
-              <Button
-                type="primary"
-                style={{
-                  backgroundColor: '#0d6fde',
-                  fontSize: 14,
-                }}>
-                确定 ({this.state.time})
-              </Button>
-            </p>
-          </div>
-        </Modal>
+          onCancel={() => this.setModal2Visible(false)}
+          value={this.state.key}
+          time={this.state.time}
+        />
       </Layout>
     );
   }
