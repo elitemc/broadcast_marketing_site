@@ -139,7 +139,7 @@ function Home() {
               </li>
             </ul>
           </div>
-
+          <div id="solution"></div>
           <div className={styles.functionCar}>
             <h2 className={styles.title}>全功能 多场景</h2>
             <ul className={styles.functionCarList}>
@@ -437,6 +437,7 @@ function Home() {
               </ul>
             </div>
           </div>
+          <div id="case"></div>
           <div className={styles.clientComment}>
             <h2 className={styles.title}>客户评价</h2>
             <ul className={styles.commentList}>
