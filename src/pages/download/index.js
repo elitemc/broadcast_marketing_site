@@ -9,125 +9,131 @@ import 'antd/dist/antd.css';
 import {} from 'antd';
 
 import SideBar from '../sidebar';
-const download = (url, filename) => {
+const download = url => {
+  window.open(url);
+};
+const downloadDesk = (key, e) => {
+  let downloadUrl = '';
+  let baseUrl = 'https://yingliboke.oss-cn-shenzhen.aliyuncs.com/app/';
+  if (key === 'win') {
+    downloadUrl = baseUrl + '英荔播课%20Setup%201.2.0.exe';
+  } else if (key === 'mac') {
+    downloadUrl = baseUrl + 'www英荔播课-1.2.0.dmg';
+  }
+  // 创建a标签，触发点击
   const a = document.createElement('a');
-  a.href = url;
+  a.href = downloadUrl;
   a.setAttribute('download', '');
-  document.body.appendChild(a);
+  document.body.appendChild(a); // 兼容firefox，firefox不能下载跨域资源
   a.click();
   document.body.removeChild(a);
 };
-class Download extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
 
-  render() {
-    return (
-      <Layout
-        title={`下载`}
-        description="Description will go into a meta tag in <head />">
-        <div className={styles.download}>
-          <div className={styles.downloadHeader}>
-            <h4>立即下载</h4>
-            <small>享受流畅、灵活、高效的直播培训体验</small>
-          </div>
-          <div className={styles.downloadContainer}>
-            <div className={styles.audience}>
-              <h5>观众端</h5>
-              <div className={styles.downList}>
-                <div className={styles.downItem}>
-                  <div className={styles.downCode}>
-                    <div className={styles.downIcon}>
-                      <img
-                        src="../../../static/img/qrcode_for英荔播课.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <small
-                      onClick={() =>
-                        download(
-                          'https://www.baidu.com/img/bd_logo1.png',
-                          'a.jpg',
-                        )
-                      }>
-                      点击或扫描二维码下载
-                    </small>
+function Download() {
+  return (
+    <Layout
+      title={`下载`}
+      description="Description will go into a meta tag in <head />">
+      <div className={styles.download}>
+        <div className={styles.downloadHeader}>
+          <h4>立即下载</h4>
+          <small>享受流畅、灵活、高效的直播培训体验</small>
+        </div>
+        <div className={styles.downloadContainer}>
+          <div className={styles.audience}>
+            <h5>观众端</h5>
+            <div className={styles.downList}>
+              <div className={styles.downItem}>
+                <div className={styles.downCode}>
+                  <div className={styles.downIcon}>
+                    <img
+                      src={useBaseUrl('img/android_download.png')}
+                      alt="下载"
+                    />
                   </div>
-                  <div className={styles.iconContain}>
-                    <div className={styles.icon}>
-                      <img
-                        src="../../../static/img/Android.png"
-                        alt="Android"
-                      />
-                    </div>
-                    <small>Android</small>
-                  </div>
+                  <small
+                    onClick={() =>
+                      download(
+                        'https://a.app.qq.com/o/simple.jsp?pkgname=com.eliteu.yingliboke',
+                      )
+                    }>
+                    点击或扫描二维码下载
+                  </small>
                 </div>
+                <div className={styles.iconContain}>
+                  <div className={styles.icon}>
+                    <img src={useBaseUrl('img/Android.png')} alt="Android" />
+                  </div>
+                  <small>Android</small>
+                </div>
+              </div>
 
-                <div className={styles.downItem}>
-                  <div className={styles.downCode}>
-                    <div className={styles.downIcon}>
-                      <img
-                        src="../../../static/img/qrcode_for英荔播课.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <small>点击或扫描二维码下载</small>
+              <div className={styles.downItem}>
+                <div className={styles.downCode}>
+                  <div className={styles.downIcon}>
+                    <img
+                      src={useBaseUrl('img/android_download.png')}
+                      alt="下载"
+                    />
                   </div>
-                  <div className={styles.iconContain}>
-                    <div className={styles.icon}>
-                      <img src="../../../static/img/IOS.png" alt="IOS" />
-                    </div>
-                    <small>IOS</small>
+                  <small>点击或扫描二维码下载</small>
+                </div>
+                <div className={styles.iconContain}>
+                  <div className={styles.icon}>
+                    <img src={useBaseUrl('img/IOS.png')} alt="IOS" />
                   </div>
+                  <small>IOS</small>
                 </div>
               </div>
             </div>
-            <div className={styles.teacher}>
-              <h5>讲师端</h5>
-              <div className={styles.downList}>
-                <div className={styles.downItem}>
-                  <div className={styles.downCode}>
-                    <div className={styles.downIcon}>
-                      <img src="../../../static/img/客户端.png" alt="客户端" />
-                    </div>
-                    <small>点击下载桌面客户端</small>
+          </div>
+          <div className={styles.teacher}>
+            <h5>讲师端</h5>
+            <div className={styles.downList}>
+              <div className={styles.downItem}>
+                <div
+                  className={styles.downCode}
+                  onClick={() => downloadDesk('mac')}>
+                  <div className={styles.downIcon}>
+                    <img src={useBaseUrl('img/客户端.png')} alt="客户端" />
                   </div>
-                  <div className={styles.iconContain}>
-                    <div className={styles.icon}>
-                      <img src="../../../static/img/macOS.png" alt="macOS" />
-                    </div>
-                    <small>macOS</small>
-                  </div>
+                  <small onClick={() => downloadDesk('mac')}>
+                    点击下载桌面客户端
+                  </small>
                 </div>
+                <div className={styles.iconContain}>
+                  <div className={styles.icon}>
+                    <img src={useBaseUrl('img/macOS.png')} alt="macOS" />
+                  </div>
+                  <small>macOS</small>
+                </div>
+              </div>
 
-                <div className={styles.downItem}>
-                  <div className={styles.downCode}>
-                    <div className={styles.downIcon}>
-                      <img src="../../../static/img/客户端.png" alt="客户端" />
-                    </div>
-                    <small>点击下载桌面客户端</small>
+              <div className={styles.downItem}>
+                <div className={styles.downCode}>
+                  <div
+                    className={styles.downIcon}
+                    onClick={() => downloadDesk('win')}>
+                    <img src={useBaseUrl('img/客户端.png')} alt="客户端" />
                   </div>
-                  <div className={styles.iconContain}>
-                    <div className={styles.icon}>
-                      <img
-                        src="../../../static/img/Windows.png"
-                        alt="Windows"
-                      />
-                    </div>
-                    <small>Windows</small>
+                  <small onClick={() => downloadDesk('win')}>
+                    点击下载桌面客户端
+                  </small>
+                </div>
+                <div className={styles.iconContain}>
+                  <div className={styles.icon}>
+                    <img src={useBaseUrl('img/Windows.png')} alt="Windows" />
                   </div>
+                  <small>Windows</small>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <SideBar />
-      </Layout>
-    );
-  }
+      </div>
+      <SideBar />
+    </Layout>
+  );
 }
 
 export default Download;
