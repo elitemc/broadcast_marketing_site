@@ -77,7 +77,7 @@ function Home() {
               </Button>
             </div>
             <div className={styles.banner}>
-              <img src="../../static/img/banner.png" alt="" />
+              <img src={useBaseUrl('img/banner.png')} alt="" />
             </div>
           </div>
         </div>
@@ -86,7 +86,7 @@ function Home() {
             <ul>
               <li>
                 <div className={styles.carImg}>
-                  <img src="../../static/img/主题1.png" alt="" />
+                  <img src={useBaseUrl('img/主题1.png')} alt="" />
                 </div>
                 <div className={styles.carDetail}>
                   <div className={styles.detail}>
@@ -100,7 +100,7 @@ function Home() {
               </li>
               <li>
                 <div className={styles.carImg}>
-                  <img src="../../static/img/主题2.png" alt="" />
+                  <img src={useBaseUrl('img/主题2.png')} alt="" />
                 </div>
                 <div className={styles.carDetail}>
                   <div className={styles.detail}>
@@ -113,7 +113,7 @@ function Home() {
               </li>
               <li>
                 <div className={styles.carImg}>
-                  <img src="../../static/img/主题3.png" alt="" />
+                  <img src={useBaseUrl('img/主题3.png')} alt="" />
                 </div>
                 <div className={styles.carDetail}>
                   <div className={styles.detail}>
@@ -126,7 +126,7 @@ function Home() {
               </li>
               <li>
                 <div className={styles.carImg}>
-                  <img src="../../static/img/主题4.png" alt="" />
+                  <img src={useBaseUrl('img/主题4.png')} alt="" />
                 </div>
                 <div className={styles.carDetail}>
                   <div className={styles.detail}>
@@ -145,7 +145,7 @@ function Home() {
             <ul className={styles.functionCarList}>
               <li>
                 <div className={styles.functionCarIcon}>
-                  <img src="../../static/img/首-全-icon1.png" alt="" />
+                  <img src={useBaseUrl('img/首-全-icon1.png')} alt="" />
                 </div>
                 <div className={styles.functionItem}>
                   <b>多方式呈现，满足多样化场景</b>
@@ -166,7 +166,7 @@ function Home() {
               </li>
               <li>
                 <div className={styles.functionCarIcon}>
-                  <img src="../../static/img/首-全-icon2.png" alt="" />
+                  <img src={useBaseUrl('img/首-全-icon2.png')} alt="" />
                 </div>
                 <div className={styles.functionItem}>
                   <b>个性化设置，权限管理自定义</b>
@@ -190,7 +190,7 @@ function Home() {
               </li>
               <li>
                 <div className={styles.functionCarIcon}>
-                  <img src="../../static/img/首-全-icon3.png" alt="" />
+                  <img src={useBaseUrl('img/首-全-icon3.png')} alt="" />
                 </div>
                 <div className={styles.functionItem}>
                   <b>演示工具辅助，表达更清晰明了</b>
@@ -214,7 +214,7 @@ function Home() {
               </li>
               <li>
                 <div className={styles.functionCarIcon}>
-                  <img src="../../static/img/首-全-icon4.png" alt="" />
+                  <img src={useBaseUrl('img/首-全-icon4.png')} alt="" />
                 </div>
                 <div className={styles.functionItem}>
                   <b>多维互动，调动培训积极性</b>
@@ -238,7 +238,7 @@ function Home() {
               </li>
               <li>
                 <div className={styles.functionCarIcon}>
-                  <img src="../../static/img/首-全-icon5.png" alt="" />
+                  <img src={useBaseUrl('img/首-全-icon5.png')} alt="" />
                 </div>
                 <div className={styles.functionItem}>
                   <b>数据直观呈现，免于繁琐统计</b>
@@ -262,7 +262,7 @@ function Home() {
               </li>
               <li>
                 <div className={styles.functionCarIcon}>
-                  <img src="../../static/img/首-全-icon6.png" alt="" />
+                  <img src={useBaseUrl('img/首-全-icon6.png')} alt="" />
                 </div>
                 <div className={styles.functionItem}>
                   <b>支持直播回看，高安全性云端存储</b>
@@ -291,7 +291,7 @@ function Home() {
                 <div class="card-demo">
                   <div class="card">
                     <div class="card__image">
-                      <img src="../../static/img/首-强-picture1.png" alt="" />
+                      <img src={useBaseUrl('img/首-强-picture1.png')} alt="" />
                     </div>
                     <div class="card__body">
                       <h4>全球服务，高速传输</h4>
@@ -306,7 +306,7 @@ function Home() {
                 <div class="card-demo">
                   <div class="card">
                     <div class="card__image">
-                      <img src="../../static/img/首-强-picture2.png" alt="" />
+                      <img src={useBaseUrl('img/首-强-picture2.png')} alt="" />
                     </div>
                     <div class="card__body">
                       <h4>数据安全稳定</h4>
@@ -322,7 +322,7 @@ function Home() {
                 <div class="card-demo">
                   <div class="card">
                     <div class="card__image">
-                      <img src="../../static/img/首-强-picture3.png" alt="" />
+                      <img src={useBaseUrl('img/首-强-picture3.png')} alt="" />
                     </div>
                     <div class="card__body">
                       <h4>省流量，高质量</h4>
@@ -343,44 +343,53 @@ function Home() {
                 <li ref={clientLi}>
                   <div className={styles.clientItem}>
                     <div className={styles.avatar}>
-                      <img src="../../static/img/合生元.png" alt="合生元" />
+                      <img src={useBaseUrl('img/合生元.png')} alt="合生元" />
                     </div>
                     <small>合生元</small>
                   </div>
                   <div className={styles.clientItem}>
                     <div className={styles.avatar}>
-                      <img src="../../static/img/国大药房.png" alt="国大药房" />
+                      <img
+                        src={useBaseUrl('img/国大药房.png')}
+                        alt="国大药房"
+                      />
                     </div>
                     <small>国大药房</small>
                   </div>
                   <div className={styles.clientItem}>
                     <div className={styles.avatar}>
-                      <img src="../../static/img/大参林.png" alt="大参林" />
+                      <img src={useBaseUrl('img/大参林.png')} alt="大参林" />
                     </div>
                     <small>大参林</small>
                   </div>
                   <div className={styles.clientItem}>
                     <div className={styles.avatar}>
-                      <img src="../../static/img/东莞国药.png" alt="东莞国药" />
+                      <img
+                        src={useBaseUrl('img/东莞国药.png')}
+                        alt="东莞国药"
+                      />
                     </div>
                     <small>东莞国药</small>
                   </div>
                   <div className={styles.clientItem}>
                     <div className={styles.avatar}>
-                      <img src="../../static/img/swiss.png" alt="Swisse" />
+                      <img src={useBaseUrl('img/swiss.png')} alt="Swisse" />
                     </div>
                     <small>Swisse</small>
                   </div>
                   <div className={styles.clientItem}>
                     <div className={styles.avatar}>
-                      <img src="../../static/img/UCAR.png" alt="神州优车集团" />
+                      <img
+                        src={useBaseUrl('img/UCAR.png')}
+                        alt="神州优车集团"
+                      />
                     </div>
                     <small>神州优车集团</small>
                   </div>
                   <div className={styles.clientItem}>
                     <div className={styles.avatar}>
                       <img
-                        src="../../static/img/广东工业大学华立学院.png"
+                        src={useBaseUrl('img/广东工业大学华立学院.png')}
                         alt="广东工业大学华立学院"
                       />
                     </div>
@@ -390,44 +399,53 @@ function Home() {
                 <li>
                   <div className={styles.clientItem}>
                     <div className={styles.avatar}>
-                      <img src="../../static/img/合生元.png" alt="合生元" />
+                      <img src={useBaseUrl('img/合生元.png')} alt="合生元" />
                     </div>
                     <small>合生元</small>
                   </div>
                   <div className={styles.clientItem}>
                     <div className={styles.avatar}>
-                      <img src="../../static/img/国大药房.png" alt="国大药房" />
+                      <img
+                        src={useBaseUrl('img/国大药房.png')}
+                        alt="国大药房"
+                      />
                     </div>
                     <small>国大药房</small>
                   </div>
                   <div className={styles.clientItem}>
                     <div className={styles.avatar}>
-                      <img src="../../static/img/大参林.png" alt="大参林" />
+                      <img src={useBaseUrl('img/大参林.png')} alt="大参林" />
                     </div>
                     <small>大参林</small>
                   </div>
                   <div className={styles.clientItem}>
                     <div className={styles.avatar}>
-                      <img src="../../static/img/东莞国药.png" alt="东莞国药" />
+                      <img
+                        src={useBaseUrl('img/东莞国药.png')}
+                        alt="东莞国药"
+                      />
                     </div>
                     <small>东莞国药</small>
                   </div>
                   <div className={styles.clientItem}>
                     <div className={styles.avatar}>
-                      <img src="../../static/img/swiss.png" alt="Swisse" />
+                      <img src={useBaseUrl('img/swiss.png')} alt="Swisse" />
                     </div>
                     <small>Swisse</small>
                   </div>
                   <div className={styles.clientItem}>
                     <div className={styles.avatar}>
-                      <img src="../../static/img/UCAR.png" alt="神州优车集团" />
+                      <img
+                        src={useBaseUrl('img/UCAR.png')}
+                        alt="神州优车集团"
+                      />
                     </div>
                     <small>神州优车集团</small>
                   </div>
                   <div className={styles.clientItem}>
                     <div className={styles.avatar}>
                       <img
-                        src="../../static/img/广东工业大学华立学院.png"
+                        src={useBaseUrl('img/广东工业大学华立学院.png')}
                         alt="广东工业大学华立学院"
                       />
                     </div>
@@ -444,7 +462,7 @@ function Home() {
               <li className={styles.commentItem}>
                 <div className={styles.clientMsg}>
                   <i>
-                    <img src="../../static/img/东莞国药.png" alt="东莞国药" />
+                    <img src={useBaseUrl('img/东莞国药.png')} alt="东莞国药" />
                   </i>
                   <span>东莞国药</span>
                 </div>
@@ -455,7 +473,7 @@ function Home() {
               <li className={styles.commentItem}>
                 <div className={styles.clientMsg}>
                   <i>
-                    <img src="../../static/img/合生元.png" alt="合生元" />
+                    <img src={useBaseUrl('img/合生元.png')} alt="合生元" />
                   </i>
                   <span>合生元</span>
                 </div>
@@ -468,7 +486,7 @@ function Home() {
               <li className={styles.commentItem}>
                 <div className={styles.clientMsg}>
                   <i>
-                    <img src="../../static/img/国大药房.png" alt="国大药房" />
+                    <img src={useBaseUrl('img/国大药房.png')} alt="国大药房" />
                   </i>
                   <span>国大药房</span>
                 </div>
