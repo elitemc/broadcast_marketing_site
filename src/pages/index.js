@@ -288,12 +288,12 @@ function Home() {
 
             <ul className={styles.supportList}>
               <li>
-                <div class="card-demo">
-                  <div class="card">
-                    <div class="card__image">
+                <div className="card-demo">
+                  <div className="card">
+                    <div className="card__image">
                       <img src={useBaseUrl('img/首-强-picture1.png')} alt="" />
                     </div>
-                    <div class="card__body">
+                    <div className="card__body">
                       <h4>全球服务，高速传输</h4>
                       <small>
                         网络节点覆盖200多个国家，全球范围内高质量传输，端到端低至300ms延迟
@@ -303,12 +303,12 @@ function Home() {
                 </div>
               </li>
               <li>
-                <div class="card-demo">
-                  <div class="card">
-                    <div class="card__image">
+                <div className="card-demo">
+                  <div className="card">
+                    <div className="card__image">
                       <img src={useBaseUrl('img/首-强-picture2.png')} alt="" />
                     </div>
-                    <div class="card__body">
+                    <div className="card__body">
                       <h4>数据安全稳定</h4>
                       <small>
                         多元区存储，异地容灾，文件就近上传，有效提升拉取速度。
@@ -319,12 +319,12 @@ function Home() {
                 </div>
               </li>
               <li>
-                <div class="card-demo">
-                  <div class="card">
-                    <div class="card__image">
+                <div className="card-demo">
+                  <div className="card">
+                    <div className="card__image">
                       <img src={useBaseUrl('img/首-强-picture3.png')} alt="" />
                     </div>
-                    <div class="card__body">
+                    <div className="card__body">
                       <h4>省流量，高质量</h4>
                       <small>
                         课件转码后演示，视频格式云转换，码率自定义，保障在各种网络环境下均可流畅直播。
