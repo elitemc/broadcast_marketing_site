@@ -35,17 +35,17 @@ class UseHelp extends React.Component {
           <div style={{ width: '100%', border: 'solid 1px #eff2f6', padding: '2vw 1vw' }}>
             <div className={styles.identity}>
               <div className={styles.identityLi}>
-                <img width={80} src="../../static/img/usinghelp_Adm.png" alt="" />
+                <img width={80} src="img/usinghelp_Adm.png" />
                 <Link to='/docs/Admin'>
                   <Button style={{ marginTop: '35px' }} type='primary'>我是管理员</Button>
                 </Link>              </div>
               <div className={styles.identityLi}>
-                <img width={80} src="../../static/img/teacher_Adm.png" alt="" />
+                <img width={80} src="img/teacher_Adm.png" />
                 <Link to='/docs/Teacher'>
                   <Button style={{ marginTop: '35px' }} type='primary'>我是老师</Button>
                 </Link>              </div>
               <div className={styles.identityLi}>
-                <img width={80} src="../../static/img/students_Adm.png" alt="" />
+                <img width={80} src="img/students_Adm.png" />
                 <Link to='/docs/Student'>
                   <Button style={{ marginTop: '35px' }} type='primary'>我是学员</Button>
                 </Link>
