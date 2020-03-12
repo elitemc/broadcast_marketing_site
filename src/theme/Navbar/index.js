@@ -66,6 +66,11 @@ function Navbar() {
   const { navbarRef, isNavbarVisible } = useHideableNavbar(hideOnScroll);
 
   useLockBodyScroll(sidebarShown);
+  const headItem = document.head;
+  let oMeta = document.createElement('meta');
+  oMeta.name = 'referrer';
+  oMeta.content = 'no-referrer';
+  headItem.appendChild(oMeta)
 
   const showSidebar = useCallback(() => {
     setSidebarShown(true);
