@@ -6,35 +6,21 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 import 'antd/dist/antd.css';
-import {Button} from 'antd';
+import { Button } from 'antd';
 
-// class UseHelp extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-
-//     };
-//   }
-
-//   render() {
-
-//   }
-// }
-
-// 因为useBaseUrl需要在Hook的基础上才可以使用, 所以改用函数式声明, 见到改动请谅解
 function UseHelp() {
   return (
     <Layout
       title={`使用帮助`}
-      // description="Description will go into a meta tag in <head />"
+    // description="Description will go into a meta tag in <head />"
     >
       <div className={styles.helpContainer}>
         <div className={styles.helpTitle}>
           <div
-            style={{fontSize: '30px', color: '#2e313c', marginBottom: '3vh'}}>
+            style={{ fontSize: '30px', color: '#2e313c', marginBottom: '3vh' }}>
             使用帮助
           </div>
-          <div style={{textAlign: 'center'}}>
+          <div style={{ textAlign: 'center' }}>
             按照不同身份阅读指南，帮助您快速对功能操作了如指掌
           </div>
         </div>
@@ -52,7 +38,7 @@ function UseHelp() {
                 alt=""
               />
               <Link to="/docs/Admin">
-                <Button style={{marginTop: '35px'}} type="primary">
+                <Button style={{ marginTop: '35px' }} type="primary">
                   我是管理员
                 </Button>
               </Link>{' '}
@@ -60,7 +46,7 @@ function UseHelp() {
             <div className={styles.identityLi}>
               <img width={80} src={useBaseUrl('/img/teacher_Adm.png')} alt="" />
               <Link to="/docs/Teacher">
-                <Button style={{marginTop: '35px'}} type="primary">
+                <Button style={{ marginTop: '35px' }} type="primary">
                   我是老师
                 </Button>
               </Link>{' '}
@@ -72,7 +58,7 @@ function UseHelp() {
                 alt=""
               />
               <Link to="/docs/Student">
-                <Button style={{marginTop: '35px'}} type="primary">
+                <Button style={{ marginTop: '35px' }} type="primary">
                   我是学员
                 </Button>
               </Link>

@@ -9,7 +9,7 @@ import React, {useCallback, useState, useEffect} from 'react';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-
+import Head from '@docusaurus/Head';
 import SearchBar from '@theme/SearchBar';
 import Toggle from '@theme/Toggle';
 
@@ -25,22 +25,6 @@ import styles from './styles.module.css';
 
 function NavLink({to, href, label, position, ...props}) {
   const toUrl = useBaseUrl(to);
-
-  useEffect(() => {
-    var _hmt = _hmt || [];
-    var hm = document.createElement('script');
-    hm.src = 'https://hm.baidu.com/hm.js?e9ace3c27da1d62a7b4905e016047fe5';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(hm, s);
-
-    let timer = setInterval(() => {
-      let nb_icon_wrap = document.getElementById('nb_icon_wrap');
-      if (nb_icon_wrap) {
-        nb_icon_wrap.style.display = 'none';
-        clearInterval(timer);
-      }
-    }, 800);
-  }, []);
 
   return (
     <Link
@@ -86,6 +70,30 @@ function Navbar() {
 
   useLockBodyScroll(sidebarShown);
 
+  useEffect(() => {
+    var _hmt = _hmt || [];
+    var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?e9ace3c27da1d62a7b4905e016047fe5';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(hm, s);
+    console.log('百度商桥嵌入完毕');
+    let timer = setInterval(() => {
+      let nb_icon_wrap = document.getElementById('nb_icon_wrap');
+      if (nb_icon_wrap) {
+        nb_icon_wrap.style.display = 'none';
+        clearInterval(timer);
+      }
+    }, 800);
+  }, []);
+
+  const MySEO = () => (
+    <>
+      <Head>
+        <meta name="referrer" content="no-referrer" />
+        <meta charSet="utf-8" />
+      </Head>
+    </>
+  );
   const showSidebar = useCallback(() => {
     setSidebarShown(true);
   }, [setSidebarShown]);
@@ -117,6 +125,7 @@ function Navbar() {
         [styles.navbarHidden]: !isNavbarVisible,
       })}
       style={{padding: '0 5vw'}}>
+      <MySEO />
       <div className="navbar__inner">
         <div className="navbar__items">
           <div
