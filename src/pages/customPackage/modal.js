@@ -1,6 +1,7 @@
 import React from 'react';
 import 'antd/dist/antd.css';
 import {Modal, Button} from 'antd';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 class Countdown extends React.Component {
   constructor(props) {
