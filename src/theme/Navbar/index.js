@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React, { useCallback, useState } from 'react';
+import React, {useCallback, useState, useEffect} from 'react';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -19,58 +19,77 @@ import useThemeContext from '@theme/hooks/useThemeContext';
 import useHideableNavbar from '@theme/hooks/useHideableNavbar';
 import useLockBodyScroll from '@theme/hooks/useLockBodyScroll';
 import 'antd/dist/antd.css';
-import { Button } from 'antd';
+import {Button} from 'antd';
 
 import styles from './styles.module.css';
 
-function NavLink({ to, href, label, position, ...props }) {
+function NavLink({to, href, label, position, ...props}) {
   const toUrl = useBaseUrl(to);
+
   return (
     <Link
-      className='navbar__item navbar__link'
+      className="navbar__item navbar__link"
       {...(href
         ? {
-          target: '_blank',
-          rel: 'noopener noreferrer',
-          href,
-        }
+            target: '_blank',
+            rel: 'noopener noreferrer',
+            href,
+          }
         : {
-          activeClassName: to === "#solution" || to === "#case" ? '' : styles.activeLink,
-          to: toUrl,
-        })}
+            activeClassName:
+              to === '#solution' || to === '#case' ? '' : styles.activeLink,
+            to: toUrl,
+          })}
       {...props}>
-      {
-        position === 'right' ? <div
-          className={label === '免费使用' ? styles.navbarBtn : styles.navbarLogin}
-        >
+      {position === 'right' ? (
+        <div
+          className={
+            label === '免费使用' ? styles.navbarBtn : styles.navbarLogin
+          }>
           {label}
-        </div> : label
-      }
-
+        </div>
+      ) : (
+        label
+      )}
     </Link>
   );
 }
 
 function Navbar() {
-
   const context = useDocusaurusContext();
-  const { siteConfig = {} } = context;
-  const { baseUrl, themeConfig = {} } = siteConfig;
-  const { navbar = {}, disableDarkMode = false } = themeConfig;
-  const { title, logo = {}, links = [], hideOnScroll = false } = navbar;
+  const {siteConfig = {}} = context;
+  const {baseUrl, themeConfig = {}} = siteConfig;
+  const {navbar = {}, disableDarkMode = false} = themeConfig;
+  const {title, logo = {}, links = [], hideOnScroll = false} = navbar;
 
   const [sidebarShown, setSidebarShown] = useState(false);
   const [isSearchBarExpanded, setIsSearchBarExpanded] = useState(false);
 
-  const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext();
-  const { navbarRef, isNavbarVisible } = useHideableNavbar(hideOnScroll);
+  const {isDarkTheme, setLightTheme, setDarkTheme} = useThemeContext();
+  const {navbarRef, isNavbarVisible} = useHideableNavbar(hideOnScroll);
 
   useLockBodyScroll(sidebarShown);
+
+  useEffect(() => {
+    var _hmt = _hmt || [];
+    var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?e9ace3c27da1d62a7b4905e016047fe5';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(hm, s);
+    console.log('百度商桥嵌入完毕');
+    let timer = setInterval(() => {
+      let nb_icon_wrap = document.getElementById('nb_icon_wrap');
+      if (nb_icon_wrap) {
+        nb_icon_wrap.style.display = 'none';
+        clearInterval(timer);
+      }
+    }, 800);
+  }, []);
 
   const MySEO = () => (
     <>
       <Head>
-        <meta name='referrer' content="no-referrer" />
+        <meta name="referrer" content="no-referrer" />
         <meta charSet="utf-8" />
       </Head>
     </>
@@ -91,9 +110,9 @@ function Navbar() {
   const isExternalLogoLink = /http/.test(logoLink);
   const logoLinkProps = isExternalLogoLink
     ? {
-      rel: 'noopener noreferrer',
-      target: '_blank',
-    }
+        rel: 'noopener noreferrer',
+        target: '_blank',
+      }
     : null;
   const logoSrc = logo.srcDark && isDarkTheme ? logo.srcDark : logo.src;
   const logoImageUrl = useBaseUrl(logoSrc);
@@ -105,8 +124,7 @@ function Navbar() {
         [styles.navbarHideable]: hideOnScroll,
         [styles.navbarHidden]: !isNavbarVisible,
       })}
-      style={{ padding: '0 5vw' }}
-    >
+      style={{padding: '0 5vw'}}>
       <MySEO />
       <div className="navbar__inner">
         <div className="navbar__items">
@@ -145,23 +163,23 @@ function Navbar() {
               </strong>
             )}
           </Link>
-          <div style={{ position: 'relative', left: '10%', width: 500 }}>
+          <div style={{position: 'relative', left: '10%', width: 500}}>
             {links
               .filter(linkItem => linkItem.position !== 'right')
               .map((linkItem, i) => (
-                <NavLink {...linkItem} key={i} style={{ padding: '20px 0', margin: '0 20px' }} />
+                <NavLink
+                  {...linkItem}
+                  key={i}
+                  style={{padding: '20px 0', margin: '0 20px'}}
+                />
               ))}
           </div>
         </div>
-        <div
-          className="navbar__items navbar__items--right"
-        >
+        <div className="navbar__items navbar__items--right">
           {links
             .filter(linkItem => linkItem.position === 'right')
             .map((linkItem, i) => (
-              <NavLink {...linkItem} key={i}
-                style={{ marginLeft: '50px' }}
-              />
+              <NavLink {...linkItem} key={i} style={{marginLeft: '50px'}} />
             ))}
           {!disableDarkMode && (
             <Toggle
@@ -219,7 +237,7 @@ function Navbar() {
         </div>
       </div>
     </nav>
-  )
+  );
 }
 
 export default Navbar;
