@@ -4,15 +4,15 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
 function Sidebar(props) {
-  useEffect(() => {
-    let timer = setInterval(() => {
-      let nb_icon_wrap = document.getElementById('nb_icon_wrap');
-      if (nb_icon_wrap) {
-        nb_icon_wrap.style.display = 'none';
-        clearInterval(timer);
-      }
-    }, 800);
-  }, []);
+  // useEffect(() => {
+  //   let timer = setInterval(() => {
+  //     let nb_icon_wrap = document.getElementById('nb_icon_wrap');
+  //     if (nb_icon_wrap) {
+  //       nb_icon_wrap.style.display = 'none';
+  //       clearInterval(timer);
+  //     }
+  //   }, 800);
+  // }, []);
 
   return (
     <div className={styles.sideBar}>

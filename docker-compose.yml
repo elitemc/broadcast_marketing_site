@@ -1,0 +1,11 @@
+version: "3"
+services:
+  broadcast_mkt_site:
+    build: .
+    image: broadcast_mkt_site
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/mkt.conf
+    ports:
+      - "8080:80"
+    container_name: broadcast_mkt_site
+    command: /bin/bash -c "envsubst < /etc/nginx/conf.d/mkt.conf > /etc/nginx/conf.d/default.conf && exec nginx -g 'daemon off;'"
