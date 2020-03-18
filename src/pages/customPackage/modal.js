@@ -21,8 +21,16 @@ class Countdown extends React.Component {
         onOk={onOk}
         onCancel={onCancel}>
         <div style={{textAlign: 'center'}}>
-          <p></p>
-          <p style={{margin: '20px 0 45px'}}>{value}</p>
+          <p>
+            <img
+              src={useBaseUrl(value ? 'img/success.png' : 'img/fail.png')}
+              alt=""
+              style={{width: '60px', height: '60px'}}
+            />
+          </p>
+          <p style={{margin: '20px 0 45px'}}>
+            {value ? '提交成功，我们将尽快与您联系' : '提交失败，请重试'}
+          </p>
           <p>
             <Button
               type="primary"

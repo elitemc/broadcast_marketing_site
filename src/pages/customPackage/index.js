@@ -38,7 +38,7 @@ class CustomPackage extends React.Component {
           .then(response => {
             console.log(response);
             if (response.data.code === 20000) {
-              this.setState({key: '提交成功，我们将尽快与您联系'}, () => {
+              this.setState({key: 1}, () => {
                 this.setModal2Visible(true);
                 this.timer = setInterval(() => {
                   const time = this.state.time - 1;
@@ -56,7 +56,7 @@ class CustomPackage extends React.Component {
                 }, 1000);
               });
             } else {
-              this.setState({key: '提交失败，请重试'}, () => {
+              this.setState({key: 0}, () => {
                 this.setModal2Visible(true);
                 this.timer = setInterval(() => {
                   const time = this.state.time - 1;
