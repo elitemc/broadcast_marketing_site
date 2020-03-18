@@ -41,11 +41,6 @@ function Home() {
   const clientList = useRef();
   const clientLi = useRef();
   useEffect(() => {
-    var _hmt = _hmt || [];
-    var hm = document.createElement('script');
-    hm.src = 'https://hm.baidu.com/hm.js?e9ace3c27da1d62a7b4905e016047fe5';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(hm, s);
     let listWidth = clientList.current.clientWidth;
     let liWidth = clientLi.current.clientWidth;
     // console.log(listWidth, liWidth);
