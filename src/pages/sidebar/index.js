@@ -1,5 +1,6 @@
 import React, {useEffect, useRef} from 'react';
 import {BackTop} from 'antd';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
 function Sidebar(props) {
@@ -64,10 +65,9 @@ function Sidebar(props) {
               style={{
                 width: 120,
                 height: 120,
-                background: 'red',
                 margin: '6px 0',
               }}>
-              <img src="../../../static/img/qrcode_for英荔播课.jpg" alt="" />
+              <img src={useBaseUrl('img/qrcode_for英荔播课.jpg')} alt="" />
             </div>
           </div>
         </li>

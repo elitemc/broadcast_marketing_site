@@ -9,7 +9,7 @@ import React, { useCallback, useState } from 'react';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-
+import Head from '@docusaurus/Head';
 import SearchBar from '@theme/SearchBar';
 import Toggle from '@theme/Toggle';
 
@@ -67,6 +67,14 @@ function Navbar() {
 
   useLockBodyScroll(sidebarShown);
 
+  const MySEO = () => (
+    <>
+      <Head>
+        <meta name='referrer' content="no-referrer" />
+        <meta charSet="utf-8" />
+      </Head>
+    </>
+  );
   const showSidebar = useCallback(() => {
     setSidebarShown(true);
   }, [setSidebarShown]);
@@ -99,6 +107,7 @@ function Navbar() {
       })}
       style={{ padding: '0 5vw' }}
     >
+      <MySEO />
       <div className="navbar__inner">
         <div className="navbar__items">
           <div
