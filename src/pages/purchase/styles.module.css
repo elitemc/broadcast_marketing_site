@@ -63,3 +63,42 @@
 .btn_box {
   padding-top: 8px;
 }
+
+/*适配ipad*/
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  .version_box {
+    flex-direction: column;
+  }
+  .little_box {
+    min-width: 435px;
+  }
+  .little_box:nth-child(2) {
+    margin: 20px 0;
+  }
+}
+
+/*适配ipad pro*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .little_box {
+    min-width: 310px;
+  }
+  .purchase_main {
+    padding: 10px 0;
+  }
+}
+
+/* 适配各手机 */
+@media screen and (min-width: 300px) and (max-width: 414px) {
+  .version_box {
+    flex-direction: column;
+  }
+  .little_box {
+    min-width: 310px;
+  }
+  .little_box:nth-child(2) {
+    margin: 20px 0;
+  }
+  .purchase_main {
+    padding: 10px;
+  }
+}
