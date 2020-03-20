@@ -163,7 +163,7 @@ function Navbar() {
               </strong>
             )}
           </Link>
-          <div style={{ position: 'relative', left: '10%' }}>
+          <div style={{ position: 'relative', left: '10%', width: '50vw' }}>
             {links
               .filter(linkItem => linkItem.position !== 'right')
               .map((linkItem, i) => (
