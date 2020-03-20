@@ -116,9 +116,9 @@ class StandardPackage extends React.Component {
             <p style={{color: '#8494a6', margin: '20px 0 40px'}}>
               请选择适合您的套餐规格
             </p>
-            <div style={{height: 80}}>
+            <div>
               <h3 className={styles.subTitle}>单场人数</h3>
-              <ul style={{paddingLeft: 8}}>
+              <ul>
                 {people_arr &&
                   people_arr.map((item, index) => (
                     <li
@@ -137,9 +137,9 @@ class StandardPackage extends React.Component {
                   ))}
               </ul>
             </div>
-            <div style={{marginTop: 40, height: 80}}>
+            <div style={{marginTop: 40}}>
               <h3 className={styles.subTitle}>总场次数</h3>
-              <ul style={{paddingLeft: 8}}>
+              <ul>
                 {number_arr &&
                   number_arr.map((item, index) => (
                     <li
