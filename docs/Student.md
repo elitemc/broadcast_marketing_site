@@ -1,6 +1,6 @@
 ---
 id: Student
-title: 我是学员
+title: '我是学员'
 ---
 
 ## **App 端下载**
