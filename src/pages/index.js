@@ -7,7 +7,7 @@
  * @format
  */
 
-import React, { useEffect, useRef } from 'react';
+import React, {useEffect, useRef} from 'react';
 import classnames from 'classnames';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
@@ -17,7 +17,7 @@ import styles from './styles.module.css';
 import SideBar from './sidebar';
 import axios from 'axios';
 import 'antd/dist/antd.css';
-import { Button } from 'antd';
+import {Button} from 'antd';
 
 function scrollNotice(container, props, time) {
   let initTime = Date.now();
@@ -37,14 +37,14 @@ function scrollNotice(container, props, time) {
 
 function Home() {
   const context = useDocusaurusContext();
-  const { siteConfig = {} } = context;
+  const {siteConfig = {}} = context;
   const clientList = useRef();
   const clientLi = useRef();
   useEffect(() => {
     let listWidth = clientList.current.clientWidth;
     let liWidth = clientLi.current.clientWidth;
     // console.log(listWidth, liWidth);
-    scrollNotice(clientList.current, { marginLeft: -liWidth }, 15000);
+    scrollNotice(clientList.current, {marginLeft: -liWidth}, 15000);
   }, []);
 
   return (
@@ -90,6 +90,7 @@ function Home() {
                       轻松组织异地多人远程培训，单场节省超过 *80%
                       培训费用。价格优势明显，收费模式灵活，50人内「免费永久使用」，全面体验高性价比直播服务，快速实现培训数字化转型。
                     </p>
+                    <span>*数据源自英荔播课的医药行业客户使用调研</span>
                   </div>
                 </div>
               </li>
@@ -284,7 +285,7 @@ function Home() {
             <ul className={styles.supportList}>
               <li>
                 <div className="card-demo">
-                  <div className="card">
+                  <div className="card" style={{borderRadius: '0 0 10px 10px'}}>
                     <div className="card__image">
                       <img src={useBaseUrl('img/首-强-picture1.png')} alt="" />
                     </div>
@@ -299,7 +300,7 @@ function Home() {
               </li>
               <li>
                 <div className="card-demo">
-                  <div className="card">
+                  <div className="card" style={{borderRadius: '0 0 10px 10px'}}>
                     <div className="card__image">
                       <img src={useBaseUrl('img/首-强-picture2.png')} alt="" />
                     </div>
@@ -315,7 +316,7 @@ function Home() {
               </li>
               <li>
                 <div className="card-demo">
-                  <div className="card">
+                  <div className="card" style={{borderRadius: '0 0 10px 10px'}}>
                     <div className="card__image">
                       <img src={useBaseUrl('img/首-强-picture3.png')} alt="" />
                     </div>
@@ -390,6 +391,30 @@ function Home() {
                     </div>
                     <small>广东工业大学华立学院</small>
                   </div>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}>
+                      <img
+                        src={useBaseUrl('img/桂中大药房.png')}
+                        alt="桂中大药房"
+                      />
+                    </div>
+                    <small>桂中大药房</small>
+                  </div>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}>
+                      <img
+                        src={useBaseUrl('img/百康药房.png')}
+                        alt="百康药房"
+                      />
+                    </div>
+                    <small>百康药房</small>
+                  </div>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}>
+                      <img src={useBaseUrl('img/康佰家.png')} alt="康佰家" />
+                    </div>
+                    <small>康佰家</small>
+                  </div>
                 </li>
                 <li>
                   <div className={styles.clientItem}>
@@ -446,6 +471,31 @@ function Home() {
                     </div>
                     <small>广东工业大学华立学院</small>
                   </div>
+
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}>
+                      <img
+                        src={useBaseUrl('img/桂中大药房.png')}
+                        alt="桂中大药房"
+                      />
+                    </div>
+                    <small>桂中大药房</small>
+                  </div>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}>
+                      <img
+                        src={useBaseUrl('img/百康药房.png')}
+                        alt="百康药房"
+                      />
+                    </div>
+                    <small>百康药房</small>
+                  </div>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}>
+                      <img src={useBaseUrl('img/康佰家.png')} alt="康佰家" />
+                    </div>
+                    <small>康佰家</small>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -496,7 +546,7 @@ function Home() {
             <h3>零门槛搭建企业专属直播间</h3>
             <p>
               立即拨打服务热线：
-              <a href="tel:400-931-8118" style={{ color: 'inherit' }}>
+              <a href="tel:400-931-8118" style={{color: 'inherit'}}>
                 {' '}
                 400-931-8118
               </a>
@@ -506,7 +556,7 @@ function Home() {
               <Button>
                 <Link to="http://yingliboke.cn/user/register">免费使用</Link>
               </Button>
-              <Button style={{ backgroundColor: '#0d6fde', color: '#fff' }}>
+              <Button style={{backgroundColor: '#0d6fde', color: '#fff'}}>
                 <Link to="/purchase">报价查询</Link>
               </Button>
             </div>

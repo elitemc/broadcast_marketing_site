@@ -4,13 +4,26 @@
 }
 
 .downloadHeader h4 {
+  margin-bottom: 20px;
+  font-family: PingFangSC-Medium;
   font-size: 30px;
-  color: #2e313c;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 0px;
+  color: rgba(46, 49, 60, 1);
+
 }
 
 .downloadHeader small {
+  font-family: PingFangSC-Regular;
   font-size: 14px;
-  color: #8494a6;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 21px;
+  letter-spacing: 0px;
+  color: rgba(132, 148, 166, 1);
+
 }
 
 .downloadContainer {
@@ -36,9 +49,12 @@
 
 .downloadContainer h5 {
   margin-bottom: 65px;
-  font-weight: bold;
+  font-family: PingFangSC-Medium;
   font-size: 18px;
-  color: #2e313c;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: rgba(46, 49, 60, 1);
 }
 
 .downList {
@@ -68,7 +84,13 @@
 }
 
 .iconContain .iconContain small {
-  color: #495b70;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: rgba(73, 91, 112, 1);
+
 }
 
 .downItem:hover .downCode {
@@ -108,7 +130,12 @@
 }
 
 .downCode small {
-  color: #0d6fde;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: rgba(13, 111, 222, 1);
   cursor: pointer;
 }
 
