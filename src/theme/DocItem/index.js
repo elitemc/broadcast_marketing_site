@@ -25,7 +25,7 @@ function DocTOC({ headings }) {
   return (
     <div className="col col--3">
       <div className={styles.tableOfContents}>
-
+        <div style={{ padding: '10px 0 0 10px', fontWeight: 'bold', fontSize: '14px', borderLeft: '1px solid #DADDE1' }}>目录</div>
         <Headings headings={headings} />
       </div>
     </div>

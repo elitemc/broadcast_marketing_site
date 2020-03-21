@@ -124,7 +124,7 @@ function Navbar() {
         [styles.navbarHideable]: hideOnScroll,
         [styles.navbarHidden]: !isNavbarVisible,
       })}
-      style={{ padding: '0 5vw' }}>
+      style={{ padding: '0 8vw' }}>
       <MySEO />
       <div className="navbar__inner">
         <div className="navbar__items">
@@ -163,14 +163,14 @@ function Navbar() {
               </strong>
             )}
           </Link>
-          <div style={{ position: 'relative', left: '10%', width: '50vw' }}>
+          <div style={{ position: 'relative', left: '8%', width: '50vw' }}>
             {links
               .filter(linkItem => linkItem.position !== 'right')
               .map((linkItem, i) => (
                 <NavLink
                   {...linkItem}
                   key={i}
-                  style={{ padding: '20px 0', margin: '0 20px' }}
+                  style={{ padding: '18px 0', margin: '0 20px' }}
                 />
               ))}
           </div>
@@ -179,7 +179,7 @@ function Navbar() {
           {links
             .filter(linkItem => linkItem.position === 'right')
             .map((linkItem, i) => (
-              <NavLink {...linkItem} key={i} style={{ marginLeft: '50px' }} />
+              <NavLink {...linkItem} key={i} style={{ marginLeft: '25px' }} />
             ))}
           {!disableDarkMode && (
             <Toggle
