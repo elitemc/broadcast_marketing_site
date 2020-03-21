@@ -26,16 +26,31 @@
 }
 
 .aboutContain {
-  width: 55.555%;
+  width: 63.555%;
   margin: 10.5% auto;
-  padding: 3.22% 9.55%;
+  padding: 3.22% 5.55%;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.13);
 }
 
 .aboutContain h2 {
+  margin-bottom: 10px;
   text-align: center;
+  font-family: PingFangSC-Medium;
   font-size: 30px;
-  color: #2e313c;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: rgba(46, 49, 60, 1);
+}
+
+.aboutContain p {
+  margin-bottom: 8px;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  color: rgba(73, 91, 112, 1);
+
 }
 
 @media screen and (max-width: 1200px) {

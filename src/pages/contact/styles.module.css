@@ -29,9 +29,14 @@
 }
 
 .callTit h4 {
+  margin-bottom: 58px;
   text-align: center;
+  font-family: PingFangSC-Medium;
   font-size: 30px;
-  color: #2e313c;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: rgba(46, 49, 60, 1);
 }
 
 .callTit .row {
@@ -46,12 +51,23 @@
 .linkItem b {
   display: block;
   padding: 7px 0;
+  font-family: PingFangSC-Semibold;
   font-size: 20px;
-  color: 2e313c;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: rgba(46, 49, 60, 1);
 }
 
 .linkItem p {
   margin-bottom: 7px;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: rgba(73, 91, 112, 1);
+
 }
 
 .cooperate {

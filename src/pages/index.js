@@ -90,6 +90,7 @@ function Home() {
                       轻松组织异地多人远程培训，单场节省超过 *80%
                       培训费用。价格优势明显，收费模式灵活，50人内「免费永久使用」，全面体验高性价比直播服务，快速实现培训数字化转型。
                     </p>
+                    <span>*数据源自英荔播课的医药行业客户使用调研</span>
                   </div>
                 </div>
               </li>
@@ -284,7 +285,7 @@ function Home() {
             <ul className={styles.supportList}>
               <li>
                 <div className="card-demo">
-                  <div className="card">
+                  <div className="card" style={{borderRadius: '0 0 10px 10px'}}>
                     <div className="card__image">
                       <img src={useBaseUrl('img/首-强-picture1.png')} alt="" />
                     </div>
@@ -299,7 +300,7 @@ function Home() {
               </li>
               <li>
                 <div className="card-demo">
-                  <div className="card">
+                  <div className="card" style={{borderRadius: '0 0 10px 10px'}}>
                     <div className="card__image">
                       <img src={useBaseUrl('img/首-强-picture2.png')} alt="" />
                     </div>
@@ -315,7 +316,7 @@ function Home() {
               </li>
               <li>
                 <div className="card-demo">
-                  <div className="card">
+                  <div className="card" style={{borderRadius: '0 0 10px 10px'}}>
                     <div className="card__image">
                       <img src={useBaseUrl('img/首-强-picture3.png')} alt="" />
                     </div>
