@@ -65,31 +65,41 @@ function Navbar() {
   const [sidebarShown, setSidebarShown] = useState(false);
   const [isSearchBarExpanded, setIsSearchBarExpanded] = useState(false);
   const [isHomePage, setIsHomePage] = useState(false);
-  const [showBanner, setShowBanner] = useState(false);
+  const [showBanner, setShowBanner] = useState(true);
 
   const {isDarkTheme, setLightTheme, setDarkTheme} = useThemeContext();
   const {navbarRef, isNavbarVisible} = useHideableNavbar(hideOnScroll);
 
   useLockBodyScroll(sidebarShown);
 
-  window.onscroll = useCallback(function() {
-    const banner = document.getElementById('homeBanner');
-    if (isHomePage) {
-      const {left, right, top, bottom} = banner.getBoundingClientRect();
-      const {innerHeight, innerWidth} = this;
-      setShowBanner(
-        state =>
-          (top >= 0 && top <= innerHeight && left >= 0 && left <= innerWidth) ||
-          (bottom >= 0 &&
-            bottom <= innerHeight &&
-            right >= 0 &&
-            right <= innerWidth) ||
-          (top <= 0 &&
-            left <= 0 &&
-            right >= innerWidth &&
-            bottom >= innerHeight),
-      );
-    }
+  useEffect(() => {
+    const handler = () => {
+      const banner = document.getElementById('homeBanner');
+      if (isHomePage) {
+        const {left, right, top, bottom} = banner.getBoundingClientRect();
+        // const {innerHeight, innerWidth} = this;
+        const innerHeight = window.innerHeight,
+          innerWidth = window.innerWidth;
+        // console.log(window);
+        setShowBanner(
+          state =>
+            (top >= 0 &&
+              top <= innerHeight &&
+              left >= 0 &&
+              left <= innerWidth) ||
+            (bottom >= 0 &&
+              bottom <= innerHeight &&
+              right >= 0 &&
+              right <= innerWidth) ||
+            (top <= 0 &&
+              left <= 0 &&
+              right >= innerWidth &&
+              bottom >= innerHeight),
+        );
+      }
+    };
+    window.addEventListener('scroll', handler);
+    return () => window.removeEventListener('scroll', handler);
   });
 
   useEffect(() => {
