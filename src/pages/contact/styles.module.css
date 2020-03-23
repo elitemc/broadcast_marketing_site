@@ -51,7 +51,7 @@
 .linkItem b {
   display: block;
   padding: 7px 0;
-  font-family: PingFangSC-Semibold;
+  font-family: PingFangSC-Semibold !important;
   font-size: 20px;
   font-weight: normal;
   font-stretch: normal;

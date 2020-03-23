@@ -41,7 +41,7 @@ ul {
 .homeSplashFade h2 {
   margin: 0;
   font-size: 0.44em;
-  font-family: PingFangSC-Semibold;
+  font-family: PingFangSC-Semibold !important;
   color: #fff;
 }
 
@@ -716,13 +716,32 @@ ul {
     font-size: 50px;
   }
 
+  .homeSplashFade h2 {
+    margin-bottom: 8px;
+  }
+
   .homeSplashFade .homeTitle {
-    top: 20%;
-    left: 20%;
+    top: 6%;
+    left: 8%;
   }
 
   .homeSplashFade .function {
     padding: 4px 0 6px;
+  }
+
+  .functionCarList>li {
+    width: 92%;
+    padding: 15px 10px;
+  }
+
+  .functionCarList>li .functionItem {
+    margin-left: 0px;
+    width: 70%;
+    box-sizing: border-box;
+  }
+
+  .homeSplashFade .funList+.funList {
+    margin-top: 4px;
   }
 
   .carDetail .detail b {
@@ -731,6 +750,10 @@ ul {
 
   .supportList li {
     width: 75.138%;
+  }
+
+  .useLive h3 {
+    font-size: 24px;
   }
 }
 
