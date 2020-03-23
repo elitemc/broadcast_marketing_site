@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React, {useCallback, useState, useEffect} from 'react';
+import React, { useCallback, useState, useEffect } from 'react';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -19,11 +19,11 @@ import useThemeContext from '@theme/hooks/useThemeContext';
 import useHideableNavbar from '@theme/hooks/useHideableNavbar';
 import useLockBodyScroll from '@theme/hooks/useLockBodyScroll';
 import 'antd/dist/antd.css';
-import {Button} from 'antd';
+import { Button } from 'antd';
 
 import styles from './styles.module.css';
 
-function NavLink({to, href, label, position, ...props}) {
+function NavLink({ to, href, label, position, ...props }) {
   const toUrl = useBaseUrl(to);
 
   return (
@@ -31,15 +31,15 @@ function NavLink({to, href, label, position, ...props}) {
       className="navbar__item navbar__link"
       {...(href
         ? {
-            target: '_blank',
-            rel: 'noopener noreferrer',
-            href,
-          }
+          target: '_blank',
+          rel: 'noopener noreferrer',
+          href,
+        }
         : {
-            activeClassName:
-              to === '#solution' || to === '#case' ? '' : styles.activeLink,
-            to: toUrl,
-          })}
+          activeClassName:
+            to === '#solution' || to === '#case' ? '' : styles.activeLink,
+          to: toUrl,
+        })}
       {...props}>
       {position === 'right' ? (
         <div
@@ -49,59 +49,53 @@ function NavLink({to, href, label, position, ...props}) {
           {label}
         </div>
       ) : (
-        label
-      )}
+          label
+        )}
     </Link>
   );
 }
 
 function Navbar() {
   const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
-  const {baseUrl, themeConfig = {}} = siteConfig;
-  const {navbar = {}, disableDarkMode = false} = themeConfig;
-  const {title, logo = {}, links = [], hideOnScroll = false} = navbar;
+  const { siteConfig = {} } = context;
+  const { baseUrl, themeConfig = {} } = siteConfig;
+  const { navbar = {}, disableDarkMode = false } = themeConfig;
+  const { title, logo = {}, links = [], hideOnScroll = false } = navbar;
 
   const [sidebarShown, setSidebarShown] = useState(false);
   const [isSearchBarExpanded, setIsSearchBarExpanded] = useState(false);
   const [isHomePage, setIsHomePage] = useState(false);
-  const [showBanner, setShowBanner] = useState(true);
+  const [showBanner, setShowBanner] = useState(false);
 
-  const {isDarkTheme, setLightTheme, setDarkTheme} = useThemeContext();
-  const {navbarRef, isNavbarVisible} = useHideableNavbar(hideOnScroll);
+  const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext();
+  const { navbarRef, isNavbarVisible } = useHideableNavbar(hideOnScroll);
 
   useLockBodyScroll(sidebarShown);
-
-  window.onscroll = function() {
-    // console.log(isHomePage ? '我滚动了' : 'emmm想');
-    const banner = document.getElementById('homeBanner');
-    if (isHomePage) {
-      console.log(banner.getBoundingClientRect());
-      const {left, right, top, bottom} = banner.getBoundingClientRect();
-      const {innerHeight, innerWidth} = window;
-      setShowBanner(
-        (top >= 0 && top <= innerHeight && left >= 0 && left <= innerWidth) ||
-          (bottom >= 0 &&
-            bottom <= innerHeight &&
-            right >= 0 &&
-            right <= innerWidth) ||
-          (top <= 0 &&
-            left <= 0 &&
-            right >= innerWidth &&
-            bottom >= innerHeight),
-      );
-
-      console.log(showBanner);
-    }
-  };
-
+  // window.onscroll = useCallback(function() {
+  //   const banner = document.getElementById('homeBanner');
+  //   if (isHomePage) {
+  //     const {left, right, top, bottom} = banner.getBoundingClientRect();
+  //     const {innerHeight, innerWidth} = this;
+  //     setShowBanner(
+  //       (top >= 0 && top <= innerHeight && left >= 0 && left <= innerWidth) ||
+  //         (bottom >= 0 &&
+  //           bottom <= innerHeight &&
+  //           right >= 0 &&
+  //           right <= innerWidth) ||
+  //         (top <= 0 &&
+  //           left <= 0 &&
+  //           right >= innerWidth &&
+  //           bottom >= innerHeight),
+  //     );
+  //   }
+  // });
   useEffect(() => {
     var _hmt = _hmt || [];
     var hm = document.createElement('script');
     hm.src = 'https://hm.baidu.com/hm.js?e9ace3c27da1d62a7b4905e016047fe5';
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(hm, s);
-    console.log('百度商桥嵌入完毕', document.getElementById('homeBanner'));
+    console.log('百度商桥嵌入完毕');
     setIsHomePage(!!document.getElementById('homeBanner'));
     let timer = setInterval(() => {
       let nb_icon_wrap = document.getElementById('nb_icon_wrap');
@@ -136,9 +130,9 @@ function Navbar() {
   const isExternalLogoLink = /http/.test(logoLink);
   const logoLinkProps = isExternalLogoLink
     ? {
-        rel: 'noopener noreferrer',
-        target: '_blank',
-      }
+      rel: 'noopener noreferrer',
+      target: '_blank',
+    }
     : null;
   const logoSrc = logo.srcDark && isDarkTheme ? logo.srcDark : logo.src;
   const logoImageUrl = useBaseUrl(logoSrc);
@@ -151,7 +145,7 @@ function Navbar() {
         [styles.navbarHidden]: !isNavbarVisible,
         [styles.blue]: isHomePage && showBanner,
       })}
-      style={{padding: '0 8vw'}}>
+      style={{ padding: '0 8vw' }}>
       <MySEO />
       <div className="navbar__inner">
         <div className="navbar__items">
@@ -188,12 +182,12 @@ function Navbar() {
                   alt={logo.alt}
                 />
               ) : (
-                <img
-                  className="navbar__logo"
-                  src={logoImageUrl}
-                  alt={logo.alt}
-                />
-              ))}
+                  <img
+                    className="navbar__logo"
+                    src={logoImageUrl}
+                    alt={logo.alt}
+                  />
+                ))}
             {title != null && (
               <strong
                 className={isSearchBarExpanded ? styles.hideLogoText : ''}>
@@ -202,7 +196,7 @@ function Navbar() {
             )}
           </Link>
           <div
-            style={{position: 'relative', left: '8%', width: '50vw'}}
+            style={{ position: 'relative', left: '8%', width: '50vw' }}
             className={styles.blue_item}>
             {links
               .filter(linkItem => linkItem.position !== 'right')
@@ -210,7 +204,7 @@ function Navbar() {
                 <NavLink
                   {...linkItem}
                   key={i}
-                  style={{padding: '18px 0', margin: '0 20px'}}
+                  style={{ padding: '18px 0', margin: '0 20px' }}
                 />
               ))}
           </div>
@@ -222,7 +216,7 @@ function Navbar() {
           {links
             .filter(linkItem => linkItem.position === 'right')
             .map((linkItem, i) => (
-              <NavLink {...linkItem} key={i} style={{marginLeft: '25px'}} />
+              <NavLink {...linkItem} key={i} style={{ marginLeft: '25px' }} />
             ))}
           {!disableDarkMode && (
             <Toggle

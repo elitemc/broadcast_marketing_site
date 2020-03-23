@@ -29,14 +29,12 @@ module.exports = {
         { to: '/purchase', label: '购  买' },
         // Please keep GitHub link to the right for consistency.
         {
-          // href: 'https://www.yingliboke.cn/user/login',
-          href: 'http://dockermkt.yingliboke.cn/user/login',
+          href: 'https://www.yingliboke.cn/user/login',
           label: '登录',
           position: 'right',
         },
         {
-          // href: 'https://www.yingliboke.cn/user/register',
-          href: 'http://dockermkt.yingliboke.cn/user/register',
+          href: 'https://www.yingliboke.cn/user/register',
           label: '免费使用',
           position: 'right',
         },
