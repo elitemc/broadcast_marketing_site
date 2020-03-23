@@ -4,6 +4,10 @@ ul {
   list-style: none;
 }
 
+body {
+  font-family: PingFangSC-Regular;
+}
+
 .homeSplashFade {
   position: relative;
   width: 100%;
@@ -71,7 +75,7 @@ ul {
   padding-left: 12px;
 }
 
-.homeSplashFade .funList+.funList {
+.homeSplashFade .funList + .funList {
   margin-top: 16px;
 }
 
@@ -129,7 +133,7 @@ ul {
   color: rgb(73, 91, 112);
 }
 
-.detail p+span {
+.detail p + span {
   color: rgb(132, 148, 166);
 }
 
@@ -172,7 +176,7 @@ ul {
   justify-content: center;
 }
 
-.functionCarList>li {
+.functionCarList > li {
   display: flex;
   width: 43%;
   padding: 25px;
@@ -181,24 +185,24 @@ ul {
   transition: all 0.3s;
 }
 
-.functionCarList>li:hover {
+.functionCarList > li:hover {
   box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.13);
 }
 
-.functionCarList>li {
+.functionCarList > li {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.functionCarList>li .functionCarIcon {
+.functionCarList > li .functionCarIcon {
   float: left;
   width: 50px;
   height: 50px;
   /* background: red; */
 }
 
-.functionCarList>li .functionItem {
+.functionCarList > li .functionItem {
   margin-left: 40px;
   width: 70%;
   box-sizing: border-box;
@@ -227,7 +231,6 @@ ul {
   /* background: red; */
 }
 
-
 .supportList h4 {
   margin-bottom: 10px;
   text-align: center;
@@ -248,7 +251,6 @@ ul {
   line-height: 26px;
   letter-spacing: 0px;
   color: rgba(73, 91, 112, 1);
-
 }
 
 /* 客户评价 */
@@ -322,12 +324,12 @@ ul {
   vertical-align: middle;
 }
 
-.clientList>li {
+.clientList > li {
   display: inline-block;
 }
 
 .clientList,
-.clientList>li {
+.clientList > li {
   white-space: nowrap;
 }
 
@@ -347,7 +349,7 @@ ul {
 }
 
 .avatar,
-.avatar+small {
+.avatar + small {
   font-family: PingFangSC-Medium;
   font-size: 16px;
   font-weight: normal;
@@ -368,7 +370,7 @@ ul {
     width: 45%;
   }
 
-  .functionCarList>li {
+  .functionCarList > li {
     width: 49%;
     margin: 10px auto;
   }
@@ -415,7 +417,7 @@ ul {
   color: #2e313c;
 }
 
-.supportTitle+p {
+.supportTitle + p {
   padding: 0 20px;
   color: #495b70;
 }
@@ -477,7 +479,6 @@ ul {
   line-height: 24px;
   letter-spacing: 0px;
   color: rgba(255, 255, 255, 1);
-
 }
 
 @media screen and (max-width: 1127px) {
@@ -509,8 +510,6 @@ ul {
   .detailCar li .carImg {
     width: 45%;
   }
-
-
 
   .supportList li {
     width: 36%;
@@ -561,7 +560,7 @@ ul {
     margin: 10px auto;
   }
 
-  .functionCarList>li {
+  .functionCarList > li {
     width: 60%;
     margin: 10px auto;
   }
@@ -584,7 +583,7 @@ ul {
     width: 30%;
   }
 
-  .functionCarList>li {
+  .functionCarList > li {
     width: 68%;
     margin: 10px auto;
   }
@@ -613,7 +612,7 @@ ul {
     padding: 14px 0 16px;
   }
 
-  .functionCarList>li {
+  .functionCarList > li {
     width: 73%;
     margin: 10px auto;
   }
@@ -646,7 +645,7 @@ ul {
     display: none;
   }
 
-  .functionCarList>li {
+  .functionCarList > li {
     width: 78%;
     margin: 10px auto;
   }
@@ -687,7 +686,7 @@ ul {
     width: 78%;
   }
 
-  .functionCarList>li {
+  .functionCarList > li {
     width: 79%;
     margin: 10px auto;
   }
