@@ -65,43 +65,37 @@ function Navbar() {
   const [sidebarShown, setSidebarShown] = useState(false);
   const [isSearchBarExpanded, setIsSearchBarExpanded] = useState(false);
   const [isHomePage, setIsHomePage] = useState(false);
-  const [showBanner, setShowBanner] = useState(true);
+  const [showBanner, setShowBanner] = useState(false);
 
   const {isDarkTheme, setLightTheme, setDarkTheme} = useThemeContext();
   const {navbarRef, isNavbarVisible} = useHideableNavbar(hideOnScroll);
 
   useLockBodyScroll(sidebarShown);
-
-  window.onscroll = function() {
-    // console.log(isHomePage ? '我滚动了' : 'emmm想');
-    const banner = document.getElementById('homeBanner');
-    if (isHomePage) {
-      console.log(banner.getBoundingClientRect());
-      const {left, right, top, bottom} = banner.getBoundingClientRect();
-      const {innerHeight, innerWidth} = window;
-      setShowBanner(
-        (top >= 0 && top <= innerHeight && left >= 0 && left <= innerWidth) ||
-          (bottom >= 0 &&
-            bottom <= innerHeight &&
-            right >= 0 &&
-            right <= innerWidth) ||
-          (top <= 0 &&
-            left <= 0 &&
-            right >= innerWidth &&
-            bottom >= innerHeight),
-      );
-
-      console.log(showBanner);
-    }
-  };
-
+  // window.onscroll = useCallback(function() {
+  //   const banner = document.getElementById('homeBanner');
+  //   if (isHomePage) {
+  //     const {left, right, top, bottom} = banner.getBoundingClientRect();
+  //     const {innerHeight, innerWidth} = this;
+  //     setShowBanner(
+  //       (top >= 0 && top <= innerHeight && left >= 0 && left <= innerWidth) ||
+  //         (bottom >= 0 &&
+  //           bottom <= innerHeight &&
+  //           right >= 0 &&
+  //           right <= innerWidth) ||
+  //         (top <= 0 &&
+  //           left <= 0 &&
+  //           right >= innerWidth &&
+  //           bottom >= innerHeight),
+  //     );
+  //   }
+  // });
   useEffect(() => {
     var _hmt = _hmt || [];
     var hm = document.createElement('script');
     hm.src = 'https://hm.baidu.com/hm.js?e9ace3c27da1d62a7b4905e016047fe5';
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(hm, s);
-    console.log('百度商桥嵌入完毕', document.getElementById('homeBanner'));
+    console.log('百度商桥嵌入完毕');
     setIsHomePage(!!document.getElementById('homeBanner'));
     let timer = setInterval(() => {
       let nb_icon_wrap = document.getElementById('nb_icon_wrap');
@@ -151,7 +145,7 @@ function Navbar() {
         [styles.navbarHidden]: !isNavbarVisible,
         [styles.blue]: isHomePage && showBanner,
       })}
-      style={{padding: '0 8vw'}}>
+      style={{padding: '0 5vw'}}>
       <MySEO />
       <div className="navbar__inner">
         <div className="navbar__items">
@@ -202,7 +196,7 @@ function Navbar() {
             )}
           </Link>
           <div
-            style={{position: 'relative', left: '8%', width: '50vw'}}
+            style={{position: 'relative', left: '10%', width: '50vw'}}
             className={styles.blue_item}>
             {links
               .filter(linkItem => linkItem.position !== 'right')
@@ -210,7 +204,7 @@ function Navbar() {
                 <NavLink
                   {...linkItem}
                   key={i}
-                  style={{padding: '18px 0', margin: '0 20px'}}
+                  style={{padding: '20px 0', margin: '0 20px'}}
                 />
               ))}
           </div>
@@ -222,7 +216,7 @@ function Navbar() {
           {links
             .filter(linkItem => linkItem.position === 'right')
             .map((linkItem, i) => (
-              <NavLink {...linkItem} key={i} style={{marginLeft: '25px'}} />
+              <NavLink {...linkItem} key={i} style={{marginLeft: '50px'}} />
             ))}
           {!disableDarkMode && (
             <Toggle

@@ -105,7 +105,7 @@ class Purchase extends React.Component {
                       <Link
                         to={
                           index === 0
-                            ? 'http://dockermkt.yingliboke.cn/user/register'
+                            ? 'https://www.yingliboke.cn/user/register'
                             : '/customPackage'
                         }>
                         <Button
