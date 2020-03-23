@@ -17,6 +17,14 @@
   border-radius: 10px;
 }
 
+.textInput {
+  border-color: #e1e7ef;
+}
+
+.textInput::-webkit-input-placeholder {
+  color: #bfc6d0;
+}
+
 .subTitle {
   font-size: 20px;
   padding-left: 10px;
