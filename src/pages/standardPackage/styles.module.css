@@ -33,7 +33,7 @@ h1 {
 .main ul {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 8px;
+  padding-left: 9px;
 }
 
 .main ul li {
@@ -53,7 +53,7 @@ h1 {
 }
 
 .settlement {
-  margin: 40px 0;
+  padding: 40px 0 40px 14px;
 }
 
 .active_style {
