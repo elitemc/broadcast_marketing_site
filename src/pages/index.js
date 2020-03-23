@@ -52,7 +52,7 @@ function Home() {
       title={`首页`}
       description="Description will go into a meta tag in <head />">
       <div>
-        <div className={styles.homeContainer}>
+        <div className={styles.homeContainer} id="homeBanner">
           <div className={styles.homeSplashFade}>
             <div className={styles.homeTitle}>
               <h2>让每一场直播培训真正有效</h2>
