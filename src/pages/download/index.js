@@ -80,9 +80,9 @@ function Download() {
                 </div>
                 <div className={styles.iconContain}>
                   <div className={styles.icon}>
-                    <img src={useBaseUrl('img/ios.png')} alt="IOS" />
+                    <img src={useBaseUrl('img/iphone.png')} alt="iOS" />
                   </div>
-                  <small>IOS</small>
+                  <small>iOS</small>
                 </div>
               </div>
             </div>
