@@ -5,8 +5,12 @@ import styles from './styles.module.css';
 import 'antd/dist/antd.css';
 import {Button} from 'antd';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 const Purchase = () => {
+  const context = useDocusaurusContext();
+  const {siteConfig} = context;
+
   let version_arr = [
     {
       name: '免费版',
@@ -104,7 +108,7 @@ const Purchase = () => {
                     <Link
                       to={
                         index === 0
-                          ? 'http://dockermkt.yingliboke.cn/user/register'
+                          ? `${siteConfig.url}/user/register`
                           : '/customPackage'
                       }>
                       <Button
