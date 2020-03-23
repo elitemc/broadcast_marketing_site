@@ -20,45 +20,50 @@ function UseHelp() {
             style={{ fontSize: '30px', color: '#2e313c', marginBottom: '3vh' }}>
             使用帮助
           </div>
-          <div style={{ textAlign: 'center' }}>
+          <div style={{ textAlign: 'center', color: '#8494a6' }}>
             按照不同身份阅读指南，帮助您快速对功能操作了如指掌
           </div>
         </div>
         <div
           style={{
-            width: '100%',
+            width: '80%',
             border: 'solid 1px #eff2f6',
-            padding: '2vw 1vw',
+            padding: '3vw 1vw',
+            margin: '0 auto',
           }}>
           <div className={styles.identity}>
             <div className={styles.identityLi}>
-              <img
-                width={80}
-                src={useBaseUrl('/img/usinghelp_Adm.png')}
-                alt=""
-              />
               <Link to="/docs/Admin">
-                <Button style={{ marginTop: '35px' }} type="primary">
+                <img
+                  width={80}
+                  src={useBaseUrl('/img/usinghelp_Adm.png')}
+                />
+              </Link>
+              <Link to="/docs/Admin" style={{ marginTop: '35px' }}>
+                <Button style={{ width: 120 }} type="primary">
                   我是管理员
                 </Button>
               </Link>{' '}
             </div>
             <div className={styles.identityLi}>
-              <img width={80} src={useBaseUrl('/img/teacher_Adm.png')} alt="" />
               <Link to="/docs/Teacher">
-                <Button style={{ marginTop: '35px' }} type="primary">
+                <img width={80} src={useBaseUrl('/img/teacher_Adm.png')} />
+              </Link>
+              <Link to="/docs/Teacher" style={{ marginTop: '35px' }}>
+                <Button style={{ width: 120 }} type="primary">
                   我是老师
                 </Button>
               </Link>{' '}
             </div>
             <div className={styles.identityLi}>
-              <img
-                width={80}
-                src={useBaseUrl('/img/students_Adm.png')}
-                alt=""
-              />
               <Link to="/docs/Student">
-                <Button style={{ marginTop: '35px' }} type="primary">
+                <img
+                  width={80}
+                  src={useBaseUrl('/img/students_Adm.png')}
+                />
+              </Link>
+              <Link to="/docs/Student" style={{ marginTop: '35px' }}>
+                <Button style={{ width: 120 }} type="primary">
                   我是学员
                 </Button>
               </Link>

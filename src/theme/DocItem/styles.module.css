@@ -6,14 +6,15 @@
  */
 
 .docTitle {
-  font-size: 3rem;
-  margin-bottom: 3rem;
-  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 996px) {
   .docTitle {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 2rem;
   }
 }

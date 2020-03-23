@@ -55,7 +55,7 @@ function Footer() {
       className={classnames('footer', {
         'footer--dark': footer.style === 'dark',
       })}
-      style={{ backgroundColor: '#ffffff', border: 'solid 1px #f3f3f3', padding: '2vw 5vw' }}
+      style={{ backgroundColor: '#ffffff', border: 'solid 1px #f3f3f3', padding: '1vw 10vw' }}
     >
       <div style={{ display: 'flex', borderBottom: 'solid 1px #eaf0f7', padding: '2vw 0' }}>
         {logo && (
@@ -116,7 +116,7 @@ function Footer() {
           )}
         </div>
       </div>
-      {copyright && <div style={{ color: '#8494a6', padding: '1vw 0', textAlign: 'center' }}>
+      {copyright && <div style={{ color: '#8494a6', paddingTop: '1vw' }}>
         {copyright}
       </div>}
     </footer>
