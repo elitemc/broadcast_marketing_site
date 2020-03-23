@@ -112,7 +112,9 @@ class StandardPackage extends React.Component {
         description="Description will go into a meta tag in <head />">
         <div className={styles.context_Package}>
           <div className={styles.main}>
-            <h1 style={{fontSize: 30}}>购买套餐</h1>
+            <h1 style={{fontSize: 30, fontFamily: 'PingFangSC-Medium'}}>
+              购买套餐
+            </h1>
             <p style={{color: '#8494a6', margin: '20px 0 40px'}}>
               请选择适合您的套餐规格
             </p>

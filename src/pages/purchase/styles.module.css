@@ -62,6 +62,7 @@
 .callme {
   height: 108px;
   color: #0d6fde;
+  font-family: PingFangSC-Medium !important;
 }
 
 .money {

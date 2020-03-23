@@ -20,22 +20,19 @@ function UseHelp() {
             style={{ fontSize: '30px', color: '#2e313c', marginBottom: '3vh' }}>
             使用帮助
           </div>
-          <div style={{ textAlign: 'center', color: '#8494a6', }}>
+          <div style={{ textAlign: 'center', color: '#8494a6' }}>
             按照不同身份阅读指南，帮助您快速对功能操作了如指掌
           </div>
         </div>
         <div
           style={{
             width: '80%',
-            margin: '0 auto',
             border: 'solid 1px #eff2f6',
             padding: '3vw 1vw',
-          }}
-        >
+            margin: '0 auto',
+          }}>
           <div className={styles.identity}>
-            <div
-              className={`${styles.identityLi} col col--4`}
-            >
+            <div className={styles.identityLi}>
               <Link to="/docs/Admin">
                 <img
                   width={80}
@@ -43,20 +40,20 @@ function UseHelp() {
                 />
               </Link>
               <Link to="/docs/Admin" style={{ marginTop: '35px' }}>
-                <Button type="primary" style={{ width: 120 }}>
+                <Button style={{ width: 120 }} type="primary">
                   我是管理员
                 </Button>
-              </Link>
+              </Link>{' '}
             </div>
             <div className={styles.identityLi}>
               <Link to="/docs/Teacher">
                 <img width={80} src={useBaseUrl('/img/teacher_Adm.png')} />
               </Link>
               <Link to="/docs/Teacher" style={{ marginTop: '35px' }}>
-                <Button type="primary" style={{ width: 120 }}>
+                <Button style={{ width: 120 }} type="primary">
                   我是老师
                 </Button>
-              </Link>
+              </Link>{' '}
             </div>
             <div className={styles.identityLi}>
               <Link to="/docs/Student">
@@ -66,7 +63,7 @@ function UseHelp() {
                 />
               </Link>
               <Link to="/docs/Student" style={{ marginTop: '35px' }}>
-                <Button type="primary" style={{ width: 120 }}>
+                <Button style={{ width: 120 }} type="primary">
                   我是学员
                 </Button>
               </Link>

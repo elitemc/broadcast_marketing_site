@@ -5,6 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+
 @media screen and (max-width: 997px) {
   .displayOnlyInLargeViewport {
     display: none !important;
@@ -16,27 +17,50 @@
     display: none;
   }
 }
-.activeLink{
-  color:#0d6fde!important;
+
+.blue {
+  transition: all .3s;
+  background: #0d6fde;
+}
+
+.blue .blue_item a {
+  color: white !important;
+}
+
+.blue .nav_right .navbarLogin {
+  color: #ffffff;
+}
+
+.blue .nav_right .navbarBtn {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgb(34, 57, 84);
+}
+
+.activeLink {
+  color: #0d6fde !important;
   border-bottom: 2px solid #0d6fde;
 }
 
-.navbarBtn{
+.navbarBtn {
   background-color: #0d6fde;
   color: #ffffff;
   border: #0d6fde;
   padding: 8px 28px;
   border-radius: 4px;
 }
-.navbarLogin{
-  color:#0d6fde;
+
+.navbarLogin {
+  color: #0d6fde;
 }
-.navbarLogin:hover{
+
+.navbarLogin:hover {
   color: #6D9FFF;
 }
-.navbarBtn:hover{
+
+.navbarBtn:hover {
   background-color: #348FEB;
 }
+
 .navbarHideable {
   transition: top 0.2s ease-in-out;
 }

@@ -64,11 +64,42 @@ function Navbar() {
 
   const [sidebarShown, setSidebarShown] = useState(false);
   const [isSearchBarExpanded, setIsSearchBarExpanded] = useState(false);
+  const [isHomePage, setIsHomePage] = useState(false);
+  const [showBanner, setShowBanner] = useState(true);
 
   const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext();
   const { navbarRef, isNavbarVisible } = useHideableNavbar(hideOnScroll);
 
   useLockBodyScroll(sidebarShown);
+  useEffect(() => {
+    const handler = () => {
+      const banner = document.getElementById('homeBanner');
+      if (isHomePage) {
+        const {left, right, top, bottom} = banner.getBoundingClientRect();
+        // const {innerHeight, innerWidth} = this;
+        const innerHeight = window.innerHeight,
+          innerWidth = window.innerWidth;
+        // console.log(window);
+        setShowBanner(
+          state =>
+            (top >= 0 &&
+              top <= innerHeight &&
+              left >= 0 &&
+              left <= innerWidth) ||
+            (bottom >= 0 &&
+              bottom <= innerHeight &&
+              right >= 0 &&
+              right <= innerWidth) ||
+            (top <= 0 &&
+              left <= 0 &&
+              right >= innerWidth &&
+              bottom >= innerHeight),
+        );
+      }
+    };
+    window.addEventListener('scroll', handler);
+    return () => window.removeEventListener('scroll', handler);
+  });
 
   useEffect(() => {
     var _hmt = _hmt || [];
@@ -77,6 +108,7 @@ function Navbar() {
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(hm, s);
     console.log('百度商桥嵌入完毕');
+    setIsHomePage(!!document.getElementById('homeBanner'));
     let timer = setInterval(() => {
       let nb_icon_wrap = document.getElementById('nb_icon_wrap');
       if (nb_icon_wrap) {
@@ -123,6 +155,7 @@ function Navbar() {
         'navbar-sidebar--show': sidebarShown,
         [styles.navbarHideable]: hideOnScroll,
         [styles.navbarHidden]: !isNavbarVisible,
+        [styles.blue]: isHomePage && showBanner,
       })}
       style={{ padding: '0 8vw' }}>
       <MySEO />
@@ -153,9 +186,20 @@ function Navbar() {
             </svg>
           </div>
           <Link className="navbar__brand" to={logoLink} {...logoLinkProps}>
-            {logo != null && (
-              <img className="navbar__logo" src={logoImageUrl} alt={logo.alt} />
-            )}
+            {logo != null &&
+              (isHomePage && showBanner ? (
+                <img
+                  className="navbar__logo"
+                  src={useBaseUrl('img/albedo_ logo.png')}
+                  alt={logo.alt}
+                />
+              ) : (
+                  <img
+                    className="navbar__logo"
+                    src={logoImageUrl}
+                    alt={logo.alt}
+                  />
+                ))}
             {title != null && (
               <strong
                 className={isSearchBarExpanded ? styles.hideLogoText : ''}>
@@ -163,7 +207,9 @@ function Navbar() {
               </strong>
             )}
           </Link>
-          <div style={{ position: 'relative', left: '8%', width: '50vw' }}>
+          <div
+            style={{ position: 'relative', left: '8%', width: '50vw' }}
+            className={styles.blue_item}>
             {links
               .filter(linkItem => linkItem.position !== 'right')
               .map((linkItem, i) => (
@@ -175,7 +221,10 @@ function Navbar() {
               ))}
           </div>
         </div>
-        <div className="navbar__items navbar__items--right">
+        <div
+          className={classnames('navbar__items', 'navbar__items--right', {
+            [styles.nav_right]: showBanner && isHomePage,
+          })}>
           {links
             .filter(linkItem => linkItem.position === 'right')
             .map((linkItem, i) => (

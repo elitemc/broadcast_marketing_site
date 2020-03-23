@@ -51,7 +51,7 @@ const Purchase = () => {
               fontSize: 30,
               color: '#2e313c',
               paddingBottom: 80,
-              fontWeight: 500,
+              fontFamily: 'PingFangSC-Medium',
             }}>
             选择适合您的套餐
           </p>

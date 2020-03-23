@@ -7,15 +7,14 @@
 
 .docTitle {
   font-size: 2rem;
-  margin-bottom: 3rem;
-  text-align: left;
-  color: #2E313C;
+  margin-bottom: 2rem;
+  text-align: center;
   font-weight: bold;
 }
 
 @media only screen and (max-width: 996px) {
   .docTitle {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 2rem;
   }
 }
@@ -37,7 +36,6 @@
   overflow-y: auto;
   position: sticky;
   top: calc(var(--ifm-navbar-height) + 2rem);
-  background-color: #f7f8fa;
 }
 
 .tableOfContents::-webkit-scrollbar {
