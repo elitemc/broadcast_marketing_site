@@ -43,6 +43,10 @@
   justify-content: space-between;
 }
 
+.callTit .row>div .linkItem {
+  margin-top: 16px;
+}
+
 .linkItem {
   color: #495b70;
   border-bottom: 1px solid #eff2f6;
@@ -51,7 +55,7 @@
 .linkItem b {
   display: block;
   padding: 7px 0;
-  font-family: PingFangSC-Semibold;
+  font-family: PingFangSC-Semibold !important;
   font-size: 20px;
   font-weight: normal;
   font-stretch: normal;

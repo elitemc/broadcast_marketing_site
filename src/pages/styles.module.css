@@ -45,17 +45,27 @@ body {
 .homeSplashFade h2 {
   margin: 0;
   font-size: 0.44em;
-  font-family: PingFangSC-Semibold;
+  font-family: PingFangSC-Semibold !important;
   color: #fff;
+}
+
+.homeSplashFade h2+p {
+  margin-top: 5px;
 }
 
 .homeSplashFade p,
 .homeSplashFade span,
-.homeSplashFade button {
-  font-weight: lighter;
+.homeSplashFade button a {
+  font-family: PingFangSC-Regular;
+  font-size: 18px;
+  font-weight: normal;
   font-stretch: normal;
   letter-spacing: 0px;
-  font-size: 14px;
+}
+
+.homeSplashFade button {
+  padding: 4px 16px;
+  box-sizing: content-box;
 }
 
 /* .homeSplashFade p {
@@ -75,7 +85,7 @@ body {
   padding-left: 12px;
 }
 
-.homeSplashFade .funList + .funList {
+.homeSplashFade .funList+.funList {
   margin-top: 16px;
 }
 
@@ -133,7 +143,7 @@ body {
   color: rgb(73, 91, 112);
 }
 
-.detail p + span {
+.detail p+span {
   color: rgb(132, 148, 166);
 }
 
@@ -176,7 +186,7 @@ body {
   justify-content: center;
 }
 
-.functionCarList > li {
+.functionCarList>li {
   display: flex;
   width: 43%;
   padding: 25px;
@@ -185,24 +195,24 @@ body {
   transition: all 0.3s;
 }
 
-.functionCarList > li:hover {
+.functionCarList>li:hover {
   box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.13);
 }
 
-.functionCarList > li {
+.functionCarList>li {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.functionCarList > li .functionCarIcon {
+.functionCarList>li .functionCarIcon {
   float: left;
   width: 50px;
   height: 50px;
   /* background: red; */
 }
 
-.functionCarList > li .functionItem {
+.functionCarList>li .functionItem {
   margin-left: 40px;
   width: 70%;
   box-sizing: border-box;
@@ -231,8 +241,13 @@ body {
   /* background: red; */
 }
 
+.supportList li small {
+  display: block;
+  margin: auto;
+}
+
 .supportList h4 {
-  margin-bottom: 10px;
+  margin: 30px 0 20px;
   text-align: center;
   font-family: PingFangSC-Medium !important;
   font-size: 18px;
@@ -245,7 +260,7 @@ body {
 
 .supportList small {
   /* font-family: PingFangSC-Regular; */
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
   line-height: 26px;
@@ -324,12 +339,12 @@ body {
   vertical-align: middle;
 }
 
-.clientList > li {
+.clientList>li {
   display: inline-block;
 }
 
 .clientList,
-.clientList > li {
+.clientList>li {
   white-space: nowrap;
 }
 
@@ -349,7 +364,7 @@ body {
 }
 
 .avatar,
-.avatar + small {
+.avatar+small {
   font-family: PingFangSC-Medium !important;
   font-size: 16px;
   font-weight: normal;
@@ -370,7 +385,7 @@ body {
     width: 45%;
   }
 
-  .functionCarList > li {
+  .functionCarList>li {
     width: 49%;
     margin: 10px auto;
   }
@@ -417,7 +432,7 @@ body {
   color: #2e313c;
 }
 
-.supportTitle + p {
+.supportTitle+p {
   padding: 0 20px;
   color: #495b70;
 }
@@ -440,6 +455,10 @@ body {
   color: rgba(255, 255, 255, 1);
 }
 
+.useLive h3+p {
+  margin-top: 10px;
+}
+
 .useLive p {
   /* font-family: PingFangSC-Regular; */
   font-size: 16px;
@@ -456,6 +475,8 @@ body {
 
 .useLive button {
   margin: 0 20px;
+  padding: 4px 18px;
+  box-sizing: content-box;
 }
 
 .useLive button:nth-child(1) {
@@ -482,9 +503,18 @@ body {
 }
 
 @media screen and (max-width: 1127px) {
-  .homeSplashFade {
+
+  /* .homeSplashFade {
     font-size: 50px;
-    /* background-color: aquamarine; */
+  } */
+  .homeSplashFade h2 {
+    font-size: 30px;
+  }
+
+  .homeSplashFade p,
+  .homeSplashFade span,
+  .homeSplashFade button {
+    font-size: 14px;
   }
 
   .homeSplashFade .homeTitle {
@@ -567,7 +597,7 @@ body {
     margin: 10px auto;
   }
 
-  .functionCarList > li {
+  .functionCarList>li {
     width: 60%;
     margin: 10px auto;
   }
@@ -590,7 +620,7 @@ body {
     width: 30%;
   }
 
-  .functionCarList > li {
+  .functionCarList>li {
     width: 68%;
     margin: 10px auto;
   }
@@ -612,14 +642,14 @@ body {
 
   .homeSplashFade .homeTitle {
     top: 40px;
-    left: 20%;
+    left: 14%;
   }
 
   .homeSplashFade .function {
     padding: 14px 0 16px;
   }
 
-  .functionCarList > li {
+  .functionCarList>li {
     width: 73%;
     margin: 10px auto;
   }
@@ -652,7 +682,7 @@ body {
     display: none;
   }
 
-  .functionCarList > li {
+  .functionCarList>li {
     width: 78%;
     margin: 10px auto;
   }
@@ -693,7 +723,7 @@ body {
     width: 78%;
   }
 
-  .functionCarList > li {
+  .functionCarList>li {
     width: 79%;
     margin: 10px auto;
   }
@@ -712,17 +742,45 @@ body {
     padding: 0 2px;
   }
 
+  .homeSplashFade p,
+  .homeSplashFade span,
+  .homeSplashFade button {
+    font-weight: lighter;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    font-size: 14px;
+  }
+
   .homeSplashFade {
     font-size: 50px;
   }
 
+  .homeSplashFade h2 {
+    margin-bottom: 8px;
+  }
+
   .homeSplashFade .homeTitle {
-    top: 20%;
-    left: 20%;
+    top: 6%;
+    left: 8%;
   }
 
   .homeSplashFade .function {
     padding: 4px 0 6px;
+  }
+
+  .functionCarList>li {
+    width: 92%;
+    padding: 15px 10px;
+  }
+
+  .functionCarList>li .functionItem {
+    margin-left: 0px;
+    width: 70%;
+    box-sizing: border-box;
+  }
+
+  .homeSplashFade .funList+.funList {
+    margin-top: 4px;
   }
 
   .carDetail .detail b {
@@ -731,6 +789,10 @@ body {
 
   .supportList li {
     width: 75.138%;
+  }
+
+  .useLive h3 {
+    font-size: 24px;
   }
 }
 
