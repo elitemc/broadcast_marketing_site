@@ -42,6 +42,33 @@
   background-color: #f5f7fa;
 }
 
+.callme {
+  font-size: 26px;
+  line-height: 108px;
+}
+
+.callme img {
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
+  vertical-align: sub;
+}
+
+.callme span {
+  vertical-align: middle;
+}
+
+.money,
+.callme {
+  height: 108px;
+  color: #0d6fde;
+  font-family: PingFangSC-Medium !important;
+}
+
+.money {
+  font-size: 20px;
+}
+
 .li_box {
   padding: 30px;
   height: 146px;
