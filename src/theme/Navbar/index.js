@@ -151,7 +151,7 @@ function Navbar() {
         [styles.navbarHidden]: !isNavbarVisible,
         [styles.blue]: isHomePage && showBanner,
       })}
-      style={{padding: '0 5vw'}}>
+      style={{padding: '0 8vw'}}>
       <MySEO />
       <div className="navbar__inner">
         <div className="navbar__items">
@@ -202,7 +202,7 @@ function Navbar() {
             )}
           </Link>
           <div
-            style={{position: 'relative', left: '10%', width: '50vw'}}
+            style={{position: 'relative', left: '8%', width: '50vw'}}
             className={styles.blue_item}>
             {links
               .filter(linkItem => linkItem.position !== 'right')
@@ -210,7 +210,7 @@ function Navbar() {
                 <NavLink
                   {...linkItem}
                   key={i}
-                  style={{padding: '20px 0', margin: '0 20px'}}
+                  style={{padding: '18px 0', margin: '0 20px'}}
                 />
               ))}
           </div>
@@ -222,7 +222,7 @@ function Navbar() {
           {links
             .filter(linkItem => linkItem.position === 'right')
             .map((linkItem, i) => (
-              <NavLink {...linkItem} key={i} style={{marginLeft: '50px'}} />
+              <NavLink {...linkItem} key={i} style={{marginLeft: '25px'}} />
             ))}
           {!disableDarkMode && (
             <Toggle
