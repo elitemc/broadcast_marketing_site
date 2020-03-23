@@ -68,7 +68,7 @@ function Home() {
               </div>
 
               <Button className={styles.freeUse}>
-                <Link to="http://yingliboke.cn/user/register">免费使用</Link>
+                <Link to={siteConfig.url}>免费使用</Link>
               </Button>
             </div>
             <div className={styles.banner}>
@@ -554,7 +554,7 @@ function Home() {
             <p>一对一专属客户服务</p>
             <div className={styles.linkBtn}>
               <Button>
-                <Link to="http://yingliboke.cn/user/register">免费使用</Link>
+                <Link to={siteConfig.url}>免费使用</Link>
               </Button>
               <Button style={{backgroundColor: '#0d6fde', color: '#fff'}}>
                 <Link to="/purchase">报价查询</Link>

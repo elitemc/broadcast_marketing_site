@@ -71,7 +71,6 @@ function Navbar() {
   const {navbarRef, isNavbarVisible} = useHideableNavbar(hideOnScroll);
 
   useLockBodyScroll(sidebarShown);
-
   useEffect(() => {
     const handler = () => {
       const banner = document.getElementById('homeBanner');
