@@ -510,6 +510,11 @@ ul {
     width: 45%;
   }
 
+  .detailCar li .carImg img {
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
 
 
   .supportList li {
@@ -540,6 +545,7 @@ ul {
 
   .carDetail .detail p {
     margin: auto;
+    width: 340px;
   }
 
   .carDetail b {
