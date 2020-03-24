@@ -48,13 +48,14 @@
 }
 
 .linkItem {
+  padding-bottom: 21px;
   color: #495b70;
   border-bottom: 1px solid #eff2f6;
 }
 
 .linkItem b {
   display: block;
-  padding: 7px 0;
+  padding: 7px 0 18px;
   font-family: PingFangSC-Semibold !important;
   font-size: 20px;
   font-weight: normal;
@@ -64,7 +65,7 @@
 }
 
 .linkItem p {
-  margin-bottom: 7px;
+  /* margin-bottom: 7px; */
   font-family: PingFangSC-Regular;
   font-size: 14px;
   font-weight: normal;
@@ -74,6 +75,10 @@
 
 }
 
+.linkItem p+p {
+  margin-top: 10px;
+}
+
 .cooperate {
   display: flex;
   flex-wrap: wrap;
@@ -81,5 +86,11 @@
 }
 
 .cooperate span {
+  margin-bottom: 10px;
+  /* line-height: 21px; */
   padding-right: 10px;
+}
+
+.cooperate span:last-child {
+  margin-bottom: 0;
 }
