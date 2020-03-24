@@ -151,13 +151,19 @@ function Navbar() {
   return (
     <nav
       ref={navbarRef}
-      className={classnames('navbar', 'navbar--light', 'navbar--fixed-top', {
-        'navbar-sidebar--show': sidebarShown,
-        [styles.navbarHideable]: hideOnScroll,
-        [styles.navbarHidden]: !isNavbarVisible,
-        [styles.blue]: isHomePage && showBanner,
-      })}
-      style={{padding: '0 8vw', fontFamily: 'PingFangSC-Regular'}}>
+      className={classnames(
+        'navbar',
+        'navbar--light',
+        'navbar--fixed-top',
+        styles.nav,
+        {
+          'navbar-sidebar--show': sidebarShown,
+          [styles.navbarHideable]: hideOnScroll,
+          [styles.navbarHidden]: !isNavbarVisible,
+          [styles.blue]: isHomePage && showBanner,
+        },
+      )}
+      style={{padding: '0 9.2vw', fontFamily: 'PingFangSC-Regular'}}>
       <MySEO />
       <div className="navbar__inner">
         <div className="navbar__items">
@@ -169,6 +175,7 @@ function Navbar() {
             onClick={showSidebar}
             onKeyDown={showSidebar}>
             <svg
+              style={isHomePage && showBanner ? {color: '#FFFFFF'} : {}}
               xmlns="http://www.w3.org/2000/svg"
               width="30"
               height="30"

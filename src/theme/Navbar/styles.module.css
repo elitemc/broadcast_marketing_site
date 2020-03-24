@@ -18,8 +18,11 @@
   }
 }
 
-.blue {
+.nav {
   transition: all .3s;
+}
+
+.blue {
   background: #0d6fde;
 }
 
