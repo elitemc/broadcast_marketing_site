@@ -50,21 +50,28 @@ body {
 }
 
 .homeSplashFade h2+p {
+  font-size: 18px;
   margin-top: 5px;
 }
 
-.homeSplashFade p,
-.homeSplashFade span,
+/* 
+.homeSplashFade>p,
+.homeSplashFade span, */
 .homeSplashFade button a {
   font-family: PingFangSC-Regular;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   letter-spacing: 0px;
 }
 
+.homeSplashFade .function p {
+  padding-left: 20px;
+  font-size: 16px;
+}
+
 .homeSplashFade button {
-  padding: 4px 16px;
+  padding: 4px 24px;
   box-sizing: content-box;
 }
 
@@ -132,14 +139,22 @@ body {
 }
 
 .detail b {
+  font-family: PingFangSC-Medium;
   font-size: 28px;
-  color: #2e313c;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
 }
 
 .detail p {
   margin: 15px 0 20px 0;
   width: 400px;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
   line-height: 22px;
+  letter-spacing: 0px;
   color: rgb(73, 91, 112);
 }
 
@@ -177,6 +192,11 @@ body {
 .title {
   margin: 9.8% auto 4.93%;
   font-family: PingFangSC-Medium !important;
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 0px;
   text-align: center;
 }
 
@@ -207,8 +227,8 @@ body {
 
 .functionCarList>li .functionCarIcon {
   float: left;
-  width: 50px;
-  height: 50px;
+  width: 86px;
+  height: 77px;
   /* background: red; */
 }
 
@@ -221,19 +241,37 @@ body {
 .functionItem b {
   display: block;
   margin-bottom: 10px;
+  font-size: 16px;
   font-family: PingFangSC-Medium !important;
   color: #2e313c;
 }
 
 .functionItem ul {
-  display: flex;
-  flex-wrap: wrap;
+  overflow: hidden;
+  width: 100%;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
   color: #495b70;
   /* font-family: PingFangSC-Regular; */
 }
 
-.functionItem ul li span {
-  padding: 0 15px;
+.functionItem ul li {
+  display: inline;
+}
+
+.functionItem ul li:after {
+  content: '|';
+  padding: 10px;
+  text-align: center;
+}
+
+.functionItem ul li:nth-child(3):after,
+.functionItem ul li:last-child:after {
+  display: none;
+}
+
+.supportList {
+  /* margin: 0 50px; */
 }
 
 .supportList li {
@@ -410,13 +448,13 @@ body {
   /* margin: 0 10%; */
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .supportList li {
   overflow: hidden;
   width: 28.138%;
-  margin: 0 24px;
+  margin: 0 12px;
   border: 1px solid #bdbbbb33;
   border-radius: 0 0 10px 10px;
   transition: all 0.3s;
