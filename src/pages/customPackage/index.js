@@ -37,7 +37,7 @@ class CustomPackage extends React.Component {
         })
           .then(response => {
             console.log(response);
-            if (response.data.code === 20000) {
+            if (response.code === 20000) {
               this.setState({key: 1}, () => {
                 this.setModal2Visible(true);
                 this.timer = setInterval(() => {
@@ -156,7 +156,7 @@ class CustomPackage extends React.Component {
                     rules: [
                       {
                         required: true,
-                        message: '公司名不能为空',
+                        message: '公司名称不能为空',
                       },
                     ],
                   })(
