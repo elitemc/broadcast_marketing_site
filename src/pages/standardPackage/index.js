@@ -171,7 +171,9 @@ class StandardPackage extends React.Component {
                 金额：
                 <span style={{color: '#ff4d66'}}>
                   <b style={{fontSize: 20, fontWeight: 500}}>
-                    {this.state.selling_price ? this.state.selling_price : null}
+                    {this.state.selling_price
+                      ? this.getQianNumber(this.state.selling_price)
+                      : null}
                   </b>{' '}
                   元
                 </span>
@@ -179,7 +181,7 @@ class StandardPackage extends React.Component {
                 <span
                   style={{color: '#8494a6', textDecoration: 'line-through'}}>
                   {this.state.suggested_price
-                    ? this.state.suggested_price
+                    ? this.getQianNumber(this.state.suggested_price)
                     : null}{' '}
                   元
                 </span>
