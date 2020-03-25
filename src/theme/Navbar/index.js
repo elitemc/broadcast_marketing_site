@@ -86,14 +86,14 @@ function Navbar() {
               top <= innerHeight &&
               left >= 0 &&
               left <= innerWidth) ||
-            (bottom >= 0 &&
+            (bottom > 80 &&
               bottom <= innerHeight &&
               right >= 0 &&
               right <= innerWidth) ||
             (top <= 0 &&
               left <= 0 &&
               right >= innerWidth &&
-              bottom >= innerHeight),
+              bottom > innerHeight),
         );
       }
     };
@@ -202,6 +202,7 @@ function Navbar() {
                 />
               ) : (
                 <img
+                  style={{maxWidth: '98%'}}
                   className="navbar__logo"
                   src={logoImageUrl}
                   alt={logo.alt}
