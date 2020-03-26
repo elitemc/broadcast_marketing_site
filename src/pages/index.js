@@ -249,7 +249,7 @@ function Home() {
             <ul className={styles.supportList}>
               <li>
                 <div className="card-demo">
-                  <div className="card" style={{borderRadius: '0 0 10px 10px'}}>
+                  <div className="card" style={{borderRadius: '10px'}}>
                     <div className="card__image">
                       <img src={useBaseUrl('img/首-强-picture1.png')} alt="" />
                     </div>
