@@ -16,10 +16,9 @@ function UseHelp() {
     >
       <div className={styles.helpContainer}>
         <div className={styles.helpTitle}>
-          <div
-            style={{ fontSize: '30px', color: '#2e313c', fontFamily: 'PingFangSC-Medium', marginBottom: '3vh' }}>
+          <h2 className={styles.useHelpTitle}>
             使用帮助
-          </div>
+          </h2>
           <div style={{ textAlign: 'center', color: '#8494a6' }}>
             按照不同身份阅读指南，帮助您快速对功能操作了如指掌
           </div>
