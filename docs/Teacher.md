@@ -62,7 +62,7 @@ title: 我是老师
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88-%E6%BC%94%E7%A4%BA%E7%99%BD%E6%9D%BF.png" style={{border:'1px solid #eff0f2'}} />
 
 ### **播放视频**
-讲师可选择播放上传好的视频文件，可暂停或拖动视频进度条播放。播放后拍摄画面将切换成视频画面，结束播放视频自动切换回拍摄画面。（可上传多个视频进行播放，文件大小不超过1G）
+讲师可选择播放上传好的视频文件，可暂停或拖动视频进度条播放。播放后拍摄画面将切换成视频画面，结束播放视频自动切换回拍摄画面。（可上传多个视频进行播放，文件大小不超过 1G）
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88-%E6%92%AD%E6%94%BE%E8%A7%86%E9%A2%91.png" style={{border:'1px solid #eff0f2'}} />
 <br/>
@@ -88,7 +88,7 @@ title: 我是老师
 
 
 ### **发起抽奖**
-可自主设置中奖人数。目前单次最大中奖人数是10，可以不限次数发起抽奖。
+可自主设置中奖人数。目前单次最大中奖人数是 30，可以不限次数发起抽奖。
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88-%E5%8F%91%E8%B5%B7%E6%8A%BD%E5%A5%96.png" style={{border:'1px solid #eff0f2'}} />
 <br/>

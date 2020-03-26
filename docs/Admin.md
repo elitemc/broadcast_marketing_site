@@ -40,7 +40,7 @@ title: 我是管理员
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E8%B4%AD%E4%B9%B0%E6%A0%87%E5%87%86%E5%A5%97%E9%A4%903.png" style={{border:'1px solid #eff0f2'}} />
 
 ### **升级套餐**
-进入充值消费-套餐详情页面，选择【升级套餐】，支付差价即可对套餐升级。
+进入充值消费 - 套餐详情页面，选择【升级套餐】，支付差价即可对套餐升级。
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E5%8D%87%E7%BA%A7%E5%A5%97%E9%A4%90.png" style={{border:'1px solid #eff0f2'}} />
 
@@ -108,7 +108,7 @@ title: 我是管理员
 
 
 ### **上传视频**
-管理员可在直播编辑视频处点击上传视频(宣传片、课程视频等)，可在开播时选择播放此视频，学员可同步观看。管理员亦可点击在视频库中选择视频文件，前提是已经在视频库中上传好视频文件。（注意：单个视频最大1G，视频总大小限制在1G内）
+管理员可在直播编辑视频处点击上传视频(宣传片、课程视频等)，可在开播时选择播放此视频，学员可同步观看。管理员亦可点击在视频库中选择视频文件，前提是已经在视频库中上传好视频文件。（注意：单个视频最大 1G，视频总大小限制在 1G 内）
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E4%B8%8A%E4%BC%A0%E8%A7%86%E9%A2%91.png" style={{border:'1px solid #eff0f2'}} />
 
@@ -120,7 +120,7 @@ title: 我是管理员
 
 
 ### **取消预约**
-在未开播前可以取消预约，如果距离开播时间72小时之前取消将返还已扣除的场次，否则不返还场次。
+在未开播前可以取消预约，如果距离开播时间 72 小时之前取消将返还已扣除的场次，否则不返还场次。
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E5%8F%96%E6%B6%88%E9%A2%84%E7%BA%A6.png" style={{border:'1px solid #eff0f2'}} />
 
@@ -150,6 +150,6 @@ title: 我是管理员
 
 
 ## **资料管理**
-管理员可在资料管理—视频管理上传视频文件，可保存至后台反复使用。（注意：单个视频最大1G，视频库总内存为 2G)
+管理员可在资料管理的视频库中上传视频文件，可保存至后台反复使用。（注意：单个视频最大  1G，视频库总内存为 2G)
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E8%B5%84%E6%96%99%E7%AE%A1%E7%90%86.png" style={{border:'1px solid #eff0f2'}} />
