@@ -4,6 +4,10 @@ ul {
   list-style: none;
 }
 
+body {
+  font-family: PingFangSC-Regular;
+}
+
 .homeSplashFade {
   position: relative;
   width: 100%;
@@ -41,26 +45,43 @@ ul {
 .homeSplashFade h2 {
   margin: 0;
   font-size: 0.44em;
-  font-family: PingFangSC-Semibold;
+  font-family: PingFangSC-Semibold !important;
   color: #fff;
 }
 
-.homeSplashFade p,
-.homeSplashFade span,
-.homeSplashFade button {
-  font-weight: lighter;
+.homeSplashFade h2+p {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+/* 
+.homeSplashFade>p,
+.homeSplashFade span, */
+.homeSplashFade button a {
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  font-weight: normal;
   font-stretch: normal;
   letter-spacing: 0px;
-  font-size: 14px;
 }
 
-.homeSplashFade p {
-  font-family: PingFangSC-Regular;
+.homeSplashFade .function p {
+  padding-left: 20px;
+  font-size: 16px;
 }
 
 .homeSplashFade button {
-  font-family: PingFangSC-Regular;
+  padding: 4px 24px;
+  box-sizing: content-box;
 }
+
+/* .homeSplashFade p {
+  font-family: PingFangSC-Regular;
+} */
+
+/* .homeSplashFade button {
+  font-family: PingFangSC-Regular;
+} */
 
 .homeSplashFade .function {
   padding: 34px 0 36px;
@@ -118,14 +139,22 @@ ul {
 }
 
 .detail b {
+  font-family: PingFangSC-Medium;
   font-size: 28px;
-  color: #2e313c;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
 }
 
 .detail p {
   margin: 15px 0 20px 0;
   width: 400px;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
   line-height: 22px;
+  letter-spacing: 0px;
   color: rgb(73, 91, 112);
 }
 
@@ -162,7 +191,12 @@ ul {
 
 .title {
   margin: 9.8% auto 4.93%;
-  font-family: PingFangSC-Medium;
+  font-family: PingFangSC-Medium !important;
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 0px;
   text-align: center;
 }
 
@@ -193,8 +227,8 @@ ul {
 
 .functionCarList>li .functionCarIcon {
   float: left;
-  width: 50px;
-  height: 50px;
+  width: 86px;
+  height: 77px;
   /* background: red; */
 }
 
@@ -207,31 +241,51 @@ ul {
 .functionItem b {
   display: block;
   margin-bottom: 10px;
-  font-family: PingFangSC-Medium;
+  font-size: 16px;
+  font-family: PingFangSC-Medium !important;
   color: #2e313c;
 }
 
 .functionItem ul {
-  display: flex;
-  flex-wrap: wrap;
+  overflow: hidden;
+  width: 100%;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
   color: #495b70;
-  font-family: PingFangSC-Regular;
+  /* font-family: PingFangSC-Regular; */
 }
 
-.functionItem ul li span {
-  padding: 0 15px;
+.functionItem ul li {
+  display: inline;
 }
+
+.functionItem ul li:after {
+  content: '|';
+  padding: 10px;
+  text-align: center;
+}
+
+.functionItem ul li:nth-child(3):after,
+.functionItem ul li:last-child:after {
+  display: none;
+}
+
+
 
 .supportList li {
   height: min-content;
   /* background: red; */
 }
 
+.supportList li small {
+  display: block;
+  margin: auto;
+}
 
 .supportList h4 {
-  margin-bottom: 10px;
+  margin: 30px 0 20px;
   text-align: center;
-  font-family: PingFangSC-Medium;
+  font-family: PingFangSC-Medium !important;
   font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
@@ -241,14 +295,13 @@ ul {
 }
 
 .supportList small {
-  font-family: PingFangSC-Regular;
-  font-size: 16px;
+  /* font-family: PingFangSC-Regular; */
+  font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
   line-height: 26px;
   letter-spacing: 0px;
   color: rgba(73, 91, 112, 1);
-
 }
 
 /* 客户评价 */
@@ -289,7 +342,7 @@ ul {
 }
 
 .clientMsg span {
-  font-family: PingFangSC-Medium;
+  font-family: PingFangSC-Medium !important;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -299,7 +352,7 @@ ul {
 
 .commentList li p {
   margin-top: 22px;
-  font-family: PingFangSC-Regular;
+  /* font-family: PingFangSC-Regular; */
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -348,7 +401,7 @@ ul {
 
 .avatar,
 .avatar+small {
-  font-family: PingFangSC-Medium;
+  font-family: PingFangSC-Medium !important;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -393,13 +446,13 @@ ul {
   /* margin: 0 10%; */
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .supportList li {
   overflow: hidden;
   width: 28.138%;
-  margin: 0 24px;
+  margin: 0 12px;
   border: 1px solid #bdbbbb33;
   border-radius: 0 0 10px 10px;
   transition: all 0.3s;
@@ -430,7 +483,7 @@ ul {
 }
 
 .useLive h3 {
-  font-family: PingFangSC-Medium;
+  font-family: PingFangSC-Medium !important;
   font-size: 36px;
   font-weight: normal;
   font-stretch: normal;
@@ -438,8 +491,12 @@ ul {
   color: rgba(255, 255, 255, 1);
 }
 
+.useLive h3+p {
+  margin-top: 10px;
+}
+
 .useLive p {
-  font-family: PingFangSC-Regular;
+  /* font-family: PingFangSC-Regular; */
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -454,10 +511,12 @@ ul {
 
 .useLive button {
   margin: 0 20px;
+  padding: 4px 18px;
+  box-sizing: content-box;
 }
 
 .useLive button:nth-child(1) {
-  font-family: PingFangSC-Regular;
+  /* font-family: PingFangSC-Regular; */
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -470,20 +529,33 @@ ul {
   background-color: rgba(13, 111, 222, 1);
   border-radius: 4px;
   border: solid 1px rgba(255, 255, 255, 1);
-  font-family: PingFangSC-Regular;
+  /* font-family: PingFangSC-Regular; */
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   line-height: 24px;
   letter-spacing: 0px;
   color: rgba(255, 255, 255, 1);
-
 }
 
 @media screen and (max-width: 1127px) {
-  .homeSplashFade {
+
+  .solution,
+  .case {
+    padding: 40px 0;
+  }
+
+  /* .homeSplashFade {
     font-size: 50px;
-    /* background-color: aquamarine; */
+  } */
+  .homeSplashFade h2 {
+    font-size: 30px;
+  }
+
+  .homeSplashFade p,
+  .homeSplashFade span,
+  .homeSplashFade button {
+    font-size: 14px;
   }
 
   .homeSplashFade .homeTitle {
@@ -510,7 +582,11 @@ ul {
     width: 45%;
   }
 
-
+  .detailCar li .carImg img {
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
 
   .supportList li {
     width: 36%;
@@ -540,6 +616,7 @@ ul {
 
   .carDetail .detail p {
     margin: auto;
+    width: 340px;
   }
 
   .carDetail b {
@@ -590,14 +667,17 @@ ul {
   }
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 880px) {
+
+
   .container {
     margin: 20px 57px 0;
   }
 
   .homeSplashFade .banner {
     top: 5%;
-    width: 30%;
+    width: 40%;
+    right: 5%;
   }
 
   .homeSplashFade {
@@ -605,9 +685,16 @@ ul {
   }
 
   .homeSplashFade .homeTitle {
+    /* display: none; */
     top: 40px;
-    left: 20%;
+    left: 4%;
+    transform-origin: left;
+    transform: scale(.8);
   }
+
+  /* .homeSplashFade .banner {
+    width: 40%;
+  } */
 
   .homeSplashFade .function {
     padding: 14px 0 16px;
@@ -627,15 +714,27 @@ ul {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 770px) {
+  .homeSplashFade .homeTitle {
+    transform: scale(0);
+  }
+
   .homeSplashFade .banner {
-    display: none;
+    top: 10%;
+    right: 30%;
   }
 }
 
 @media screen and (max-width: 714px) {
   .container {
     margin: 20px 27px 0;
+  }
+
+
+
+  .homeSplashFade .banner {
+
+    transform: scale(1.2);
   }
 
   .functionItem ul li span {
@@ -706,17 +805,45 @@ ul {
     padding: 0 2px;
   }
 
+  .homeSplashFade p,
+  .homeSplashFade span,
+  .homeSplashFade button {
+    font-weight: lighter;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    font-size: 14px;
+  }
+
   .homeSplashFade {
     font-size: 50px;
   }
 
+  .homeSplashFade h2 {
+    margin-bottom: 8px;
+  }
+
   .homeSplashFade .homeTitle {
-    top: 20%;
-    left: 20%;
+    top: 6%;
+    left: 8%;
   }
 
   .homeSplashFade .function {
     padding: 4px 0 6px;
+  }
+
+  .functionCarList>li {
+    width: 92%;
+    padding: 15px 10px;
+  }
+
+  .functionCarList>li .functionItem {
+    margin-left: 0px;
+    width: 70%;
+    box-sizing: border-box;
+  }
+
+  .homeSplashFade .funList+.funList {
+    margin-top: 4px;
   }
 
   .carDetail .detail b {
@@ -725,6 +852,10 @@ ul {
 
   .supportList li {
     width: 75.138%;
+  }
+
+  .useLive h3 {
+    font-size: 24px;
   }
 }
 

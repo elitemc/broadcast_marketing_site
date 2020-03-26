@@ -37,7 +37,7 @@ class CustomPackage extends React.Component {
         })
           .then(response => {
             console.log(response);
-            if (response.data.code === 20000) {
+            if (response.code === 20000) {
               this.setState({key: 1}, () => {
                 this.setModal2Visible(true);
                 this.timer = setInterval(() => {
@@ -105,17 +105,16 @@ class CustomPackage extends React.Component {
         description="Description will go into a meta tag in <head />">
         <div className={styles.context_Package}>
           <div className={styles.main}>
-            <h1 style={{fontSize: 30}}>提交需求</h1>
+            <h1 style={{fontSize: 30, fontFamily: 'PingFangSC-Medium'}}>
+              提交需求
+            </h1>
             <p style={{color: '#8494a6', margin: '20px 0 40px'}}>
               请填写您的资料并描述具体需求，我们将第一时间安排专人为您服务。
               或直接致电 400-931-8118 与我们联系。
             </p>
             <div className={styles.form_box}>
               <Form name="basic">
-                <Form.Item
-                  label="姓名"
-                  {...formItemLayout}
-                  className={styles.textInput}>
+                <Form.Item label="姓名" {...formItemLayout}>
                   {getFieldDecorator('name', {
                     rules: [
                       {
@@ -128,14 +127,12 @@ class CustomPackage extends React.Component {
                       placeholder="请输入您的姓名"
                       maxLength={10}
                       style={{paddingRight: '60px'}}
+                      className={styles.textInput}
                     />,
                   )}
                   <span className={styles.titleLen}>{name.length}/10</span>
                 </Form.Item>
-                <Form.Item
-                  label="电话"
-                  {...formItemLayout}
-                  className={styles.textInput}>
+                <Form.Item label="电话" {...formItemLayout}>
                   {getFieldDecorator('phone', {
                     rules: [
                       {
@@ -149,19 +146,17 @@ class CustomPackage extends React.Component {
                       placeholder="请输入您的电话"
                       maxLength={30}
                       style={{paddingRight: '60px'}}
+                      className={styles.textInput}
                     />,
                   )}
                   <span className={styles.titleLen}>{phone.length}/30</span>
                 </Form.Item>
-                <Form.Item
-                  label="公司"
-                  {...formItemLayout}
-                  className={styles.textInput}>
+                <Form.Item label="公司" {...formItemLayout}>
                   {getFieldDecorator('company', {
                     rules: [
                       {
                         required: true,
-                        message: '公司名不能为空',
+                        message: '公司名称不能为空',
                       },
                     ],
                   })(
@@ -169,20 +164,19 @@ class CustomPackage extends React.Component {
                       placeholder="请输入您的公司名称"
                       maxLength={30}
                       style={{paddingRight: '60px'}}
+                      className={styles.textInput}
                     />,
                   )}
                   <span className={styles.titleLen}>{company.length}/30</span>
                 </Form.Item>
-                <Form.Item
-                  label="需求"
-                  {...formItemLayout}
-                  className={styles.textInput}>
+                <Form.Item label="需求" {...formItemLayout}>
                   {getFieldDecorator('demand', {
                     rules: [],
                   })(
                     <TextArea
                       rows={6}
                       maxLength={150}
+                      className={styles.textInput}
                       placeholder="请详细地描述您的需求，方便我们为您制定个性化服务"
                     />,
                   )}

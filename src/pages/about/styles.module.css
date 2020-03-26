@@ -8,11 +8,12 @@
 
 .usBanner img {
   position: absolute;
-  top: 0;
+  /* top: 0; */
   left: 0;
   right: 0;
+  bottom: 0;
   margin: auto;
-  height: 100%;
+  height: auto;
 }
 
 .usBanner h1 {
@@ -26,14 +27,14 @@
 }
 
 .aboutContain {
-  width: 63.555%;
+  width: 54.555%;
   margin: 10.5% auto;
   padding: 3.22% 5.55%;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.13);
 }
 
 .aboutContain h2 {
-  margin-bottom: 10px;
+  margin: 20px 0 24px;
   text-align: center;
   font-family: PingFangSC-Medium;
   font-size: 30px;

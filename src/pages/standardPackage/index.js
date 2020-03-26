@@ -112,7 +112,9 @@ class StandardPackage extends React.Component {
         description="Description will go into a meta tag in <head />">
         <div className={styles.context_Package}>
           <div className={styles.main}>
-            <h1 style={{fontSize: 30}}>购买套餐</h1>
+            <h1 style={{fontSize: 30, fontFamily: 'PingFangSC-Medium'}}>
+              购买套餐
+            </h1>
             <p style={{color: '#8494a6', margin: '20px 0 40px'}}>
               请选择适合您的套餐规格
             </p>
@@ -169,7 +171,9 @@ class StandardPackage extends React.Component {
                 金额：
                 <span style={{color: '#ff4d66'}}>
                   <b style={{fontSize: 20, fontWeight: 500}}>
-                    {this.state.selling_price ? this.state.selling_price : null}
+                    {this.state.selling_price
+                      ? this.getQianNumber(this.state.selling_price)
+                      : null}
                   </b>{' '}
                   元
                 </span>
@@ -177,14 +181,14 @@ class StandardPackage extends React.Component {
                 <span
                   style={{color: '#8494a6', textDecoration: 'line-through'}}>
                   {this.state.suggested_price
-                    ? this.state.suggested_price
+                    ? this.getQianNumber(this.state.suggested_price)
                     : null}{' '}
                   元
                 </span>
               </p>
             </div>
             <p>
-              <Link to="https://www.yingliboke.cn/user/login">
+              <Link to="http://dockermkt.yingliboke.cn/user/login">
                 <Button
                   size="large"
                   type="primary"

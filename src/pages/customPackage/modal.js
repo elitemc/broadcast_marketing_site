@@ -16,7 +16,7 @@ const Countdown = (props, ref) => {
       visible={visible}
       onOk={onOk}
       onCancel={onCancel}>
-      <div style={{textAlign: 'center'}}>
+      <div style={{textAlign: 'center', padding: '30px 0'}}>
         <p>
           <img
             src={useBaseUrl(value ? 'img/success.png' : 'img/fail.png')}

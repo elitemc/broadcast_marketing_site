@@ -18,13 +18,21 @@
   }
 }
 
-.blue {
+.nav {
   transition: all .3s;
+}
+
+.blue {
   background: #0d6fde;
 }
 
 .blue .blue_item a {
   color: white !important;
+}
+
+.blue .blue_item a:hover,
+.blue .nav_right .navbarLogin:hover {
+  color: rgba(250, 250, 250, .5) !important;
 }
 
 .blue .nav_right .navbarLogin {

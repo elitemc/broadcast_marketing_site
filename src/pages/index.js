@@ -68,7 +68,7 @@ function Home() {
               </div>
 
               <Button className={styles.freeUse}>
-                <Link to="http://yingliboke.cn/user/register">免费使用</Link>
+                <Link to={siteConfig.url + '/user/register'}>免费使用</Link>
               </Button>
             </div>
             <div className={styles.banner}>
@@ -76,6 +76,8 @@ function Home() {
             </div>
           </div>
         </div>
+
+        <div id="solution" className={styles.solution}></div>
         <div className={styles.container}>
           <div className={styles.detailCar}>
             <ul>
@@ -88,7 +90,8 @@ function Home() {
                     <b>高质量低付费，大幅节省培训成本</b>
                     <p>
                       轻松组织异地多人远程培训，单场节省超过 *80%
-                      培训费用。价格优势明显，收费模式灵活，50人内「免费永久使用」，全面体验高性价比直播服务，快速实现培训数字化转型。
+                      培训费用。价格优势明显，收费模式灵活，50
+                      人内「免费永久使用」，全面体验高性价比直播服务，快速实现培训数字化转型。
                     </p>
                     <span>*数据源自英荔播课的医药行业客户使用调研</span>
                   </div>
@@ -135,7 +138,6 @@ function Home() {
               </li>
             </ul>
           </div>
-          <div id="solution"></div>
           <div className={styles.functionCar}>
             <h2 className={styles.title}>全功能 多场景</h2>
             <ul className={styles.functionCarList}>
@@ -146,16 +148,11 @@ function Home() {
                 <div className={styles.functionItem}>
                   <b>多方式呈现，满足多样化场景</b>
                   <ul>
-                    <li>
-                      网页版开播 <span>|</span>
-                    </li>
-                    <li>
-                      客户端直播 <span>|</span>
-                    </li>
+                    <li>网页版开播</li>
+                    <li>客户端直播</li>
                     <li>App 观看</li>
-                    <li>
-                      开播提醒 <span>|</span>
-                    </li>
+                    <br />
+                    <li>开播提醒</li>
                     <li>私密直播间</li>
                   </ul>
                 </div>
@@ -167,19 +164,12 @@ function Home() {
                 <div className={styles.functionItem}>
                   <b>个性化设置，权限管理自定义</b>
                   <ul>
-                    <li>
-                      直播预告 <span>|</span>
-                    </li>
-                    <li>
-                      视频资料库 <span>|</span>
-                    </li>
+                    <li>直播预告</li>
+                    <li>视频资料库</li>
                     <li>白名单管理</li>
-                    <li>
-                      观看权限 <span>|</span>
-                    </li>
-                    <li>
-                      直播封面图 <span>|</span>
-                    </li>
+                    <br />
+                    <li>观看权限</li>
+                    <li>直播封面图</li>
                     <li>自定义 Logo</li>
                   </ul>
                 </div>
@@ -191,19 +181,12 @@ function Home() {
                 <div className={styles.functionItem}>
                   <b>演示工具辅助，表达更清晰明了</b>
                   <ul>
-                    <li>
-                      PPT 演示 <span>|</span>
-                    </li>
-                    <li>
-                      白板演示 <span>|</span>
-                    </li>
+                    <li>PPT 演示</li>
+                    <li>白板演示</li>
                     <li>视频播放</li>
-                    <li>
-                      本地录制 <span>|</span>
-                    </li>
-                    <li>
-                      支持标注 <span>|</span>
-                    </li>
+                    <br />
+                    <li>本地录制</li>
+                    <li>支持标注</li>
                     <li>课件下载</li>
                   </ul>
                 </div>
@@ -215,19 +198,12 @@ function Home() {
                 <div className={styles.functionItem}>
                   <b>多维互动，调动培训积极性</b>
                   <ul>
-                    <li>
-                      即时签到 <span>|</span>
-                    </li>
-                    <li>
-                      习题考核 <span>|</span>
-                    </li>
+                    <li>即时签到</li>
+                    <li>习题考核</li>
                     <li>问答评论</li>
-                    <li>
-                      实时抽奖 <span>|</span>
-                    </li>
-                    <li>
-                      在线投票 <span>|</span>
-                    </li>
+                    <br />
+                    <li>实时抽奖</li>
+                    <li>在线投票</li>
                     <li>连麦发言</li>
                   </ul>
                 </div>
@@ -239,19 +215,12 @@ function Home() {
                 <div className={styles.functionItem}>
                   <b>数据直观呈现，免于繁琐统计</b>
                   <ul>
-                    <li>
-                      观看行为分析 <span>|</span>
-                    </li>
-                    <li>
-                      直播报告 <span>|</span>
-                    </li>
+                    <li>观看行为分析</li>
+                    <li>直播报告</li>
                     <li>数据报表</li>
-                    <li>
-                      考试结果统计 <span>|</span>
-                    </li>
-                    <li>
-                      问答记录 <span>|</span>
-                    </li>
+                    <br />
+                    <li>考试结果统计</li>
+                    <li>问答记录</li>
                     <li>聊天记录</li>
                   </ul>
                 </div>
@@ -263,16 +232,11 @@ function Home() {
                 <div className={styles.functionItem}>
                   <b>支持直播回看，高安全性云端存储</b>
                   <ul>
-                    <li>
-                      云端录制 <span>|</span>
-                    </li>
-                    <li>
-                      App 端回放 <span>|</span>
-                    </li>
+                    <li>云端录制</li>
+                    <li>App 端回放</li>
                     <li>文档视频化</li>
-                    <li>
-                      资料存储 <span>|</span>
-                    </li>
+                    <br />
+                    <li>资料存储</li>
                     <li>直播复用</li>
                   </ul>
                 </div>
@@ -289,10 +253,11 @@ function Home() {
                     <div className="card__image">
                       <img src={useBaseUrl('img/首-强-picture1.png')} alt="" />
                     </div>
-                    <div className="card__body">
+                    <div className="card__body" style={{height: 174}}>
                       <h4>全球服务，高速传输</h4>
                       <small>
-                        网络节点覆盖200多个国家，全球范围内高质量传输，端到端低至300ms延迟
+                        网络节点覆盖 200
+                        多个国家，全球范围内高质量传输，端到端低至 300ms 延迟
                       </small>
                     </div>
                   </div>
@@ -304,7 +269,7 @@ function Home() {
                     <div className="card__image">
                       <img src={useBaseUrl('img/首-强-picture2.png')} alt="" />
                     </div>
-                    <div className="card__body">
+                    <div className="card__body" style={{height: 174}}>
                       <h4>数据安全稳定</h4>
                       <small>
                         多元区存储，异地容灾，文件就近上传，有效提升拉取速度。
@@ -320,7 +285,7 @@ function Home() {
                     <div className="card__image">
                       <img src={useBaseUrl('img/首-强-picture3.png')} alt="" />
                     </div>
-                    <div className="card__body">
+                    <div className="card__body" style={{height: 174}}>
                       <h4>省流量，高质量</h4>
                       <small>
                         课件转码后演示，视频格式云转换，码率自定义，保障在各种网络环境下均可流畅直播。
@@ -500,7 +465,7 @@ function Home() {
               </ul>
             </div>
           </div>
-          <div id="case"></div>
+          <div id="case" className={styles.case}></div>
           <div className={styles.clientComment}>
             <h2 className={styles.title}>客户评价</h2>
             <ul className={styles.commentList}>
@@ -554,7 +519,7 @@ function Home() {
             <p>一对一专属客户服务</p>
             <div className={styles.linkBtn}>
               <Button>
-                <Link to="http://yingliboke.cn/user/register">免费使用</Link>
+                <Link to={siteConfig.url + '/user/register'}>免费使用</Link>
               </Button>
               <Button style={{backgroundColor: '#0d6fde', color: '#fff'}}>
                 <Link to="/purchase">报价查询</Link>
