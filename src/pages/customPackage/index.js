@@ -71,7 +71,6 @@ class CustomPackage extends React.Component {
                   if (time <= 0) {
                     this.setModal2Visible(false);
                     clearInterval(this.timer);
-                    this.props.history.push('/purchase');
                   }
                 }, 1000);
               });
