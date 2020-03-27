@@ -77,7 +77,7 @@ function Home() {
           </div>
         </div>
 
-        <div id="solution"></div>
+        <div id="solution" className={styles.solution}></div>
         <div className={styles.container}>
           <div className={styles.detailCar}>
             <ul>
@@ -257,7 +257,7 @@ function Home() {
                       <h4>全球服务，高速传输</h4>
                       <small>
                         网络节点覆盖 200
-                        多个国家，全球范围内高质量传输，端到端低至300ms延迟
+                        多个国家，全球范围内高质量传输，端到端低至 300ms 延迟
                       </small>
                     </div>
                   </div>
@@ -465,7 +465,7 @@ function Home() {
               </ul>
             </div>
           </div>
-          <div id="case"></div>
+          <div id="case" className={styles.case}></div>
           <div className={styles.clientComment}>
             <h2 className={styles.title}>客户评价</h2>
             <ul className={styles.commentList}>

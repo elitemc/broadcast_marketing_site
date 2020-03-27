@@ -25,7 +25,6 @@ function DocTOC({ headings }) {
   return (
     <div className="col col--3">
       <div className={styles.tableOfContents}>
-
         <Headings headings={headings} />
       </div>
     </div>
