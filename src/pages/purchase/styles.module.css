@@ -29,6 +29,12 @@
 .little_box:nth-child(2) {
   margin: 0 30px;
 }
+.btn {
+  width: 120px;
+  border-color: rgb(13, 111, 222);
+  color: rgb(13, 111, 222);
+  font-size: 14px;
+}
 
 .title {
   height: 96px;
