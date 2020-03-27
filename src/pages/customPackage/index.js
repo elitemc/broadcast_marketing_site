@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import 'antd/dist/antd.css';
-import {Form, Input, Button, Modal} from 'antd';
+import {Form, Input, Button} from 'antd';
 import styles from './styles.module.css';
 import request from '../../utils/request';
 import Countdown from './modal';
@@ -16,16 +16,22 @@ class CustomPackage extends React.Component {
       time: 3,
       key: null,
     };
+
+    this.timer = null;
     this.handleSubmit = this.handleSubmit.bind(this);
     this.setModal2Visible = this.setModal2Visible.bind(this);
   }
 
   setModal2Visible(modal2Visible) {
     this.setState({modal2Visible});
+    if (!modal2Visible) {
+      this.timer && clearInterval(this.timer);
+    }
   }
 
   handleSubmit(e) {
     e.preventDefault();
+
     //邮箱注册
     this.props.form.validateFields((err, values) => {
       // console.log('values=====', values);
@@ -38,7 +44,7 @@ class CustomPackage extends React.Component {
           .then(response => {
             console.log(response);
             if (response.code === 20000) {
-              this.setState({key: 1}, () => {
+              this.setState({key: 1, time: 3}, () => {
                 this.setModal2Visible(true);
                 this.timer = setInterval(() => {
                   const time = this.state.time - 1;
@@ -46,17 +52,15 @@ class CustomPackage extends React.Component {
                     time,
                   });
 
-                  if (time < 0) {
+                  if (time <= 0) {
                     this.setModal2Visible(false);
                     clearInterval(this.timer);
-                    this.setState({
-                      time: 3,
-                    });
+                    this.props.history.push('/purchase');
                   }
                 }, 1000);
               });
             } else {
-              this.setState({key: 0}, () => {
+              this.setState({key: 0, time: 2}, () => {
                 this.setModal2Visible(true);
                 this.timer = setInterval(() => {
                   const time = this.state.time - 1;
@@ -64,12 +68,9 @@ class CustomPackage extends React.Component {
                     time,
                   });
 
-                  if (time < 0) {
+                  if (time <= 0) {
                     this.setModal2Visible(false);
                     clearInterval(this.timer);
-                    this.setState({
-                      time: 3,
-                    });
                   }
                 }, 1000);
               });
@@ -205,7 +206,9 @@ class CustomPackage extends React.Component {
         <Countdown
           visible={this.state.modal2Visible}
           onOk={() => this.setModal2Visible(false)}
-          onCancel={() => this.setModal2Visible(false)}
+          onCancel={() => {
+            this.setModal2Visible(false);
+          }}
           value={this.state.key}
           time={this.state.time}
         />

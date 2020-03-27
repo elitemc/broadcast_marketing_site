@@ -91,38 +91,36 @@ const Purchase = () => {
                   {/* 1、【免费使用】：跳转到“BMS 注册页”
                     2、【立即购买】：跳转到“购买标准套餐页面”
                     3、【提交需求】：跳转到“定制套餐页面” */}
-                  {index === 1 ? (
-                    <Link to="/standardPackage">
-                      <Button
-                        size="large"
-                        type="primary"
-                        style={{
-                          width: 120,
-                          backgroundColor: '#0d6fde',
-                          fontSize: 14,
-                        }}>
-                        {list.btn}
-                      </Button>
-                    </Link>
-                  ) : (
-                    <Link
-                      to={
-                        index === 0
-                          ? `${siteConfig.url}/user/register`
-                          : '/customPackage'
-                      }>
-                      <Button
-                        size="large"
-                        style={{
-                          width: 120,
-                          borderColor: '#0d6fde',
-                          color: '#0d6fde',
-                          fontSize: 14,
-                        }}>
-                        {list.btn}
-                      </Button>
-                    </Link>
-                  )}
+                  {(() => {
+                    if (index === 0) {
+                      return (
+                        <a
+                          href={`${siteConfig.url}/user/register`}
+                          target="_blank">
+                          <Button size="large" className={styles.btn}>
+                            {list.btn}
+                          </Button>
+                        </a>
+                      );
+                    } else {
+                      return (
+                        <Link
+                          to={
+                            index === 1 ? '/standardPackage' : '/customPackage'
+                          }>
+                          <Button
+                            size="large"
+                            className={styles.btn}
+                            style={{
+                              backgroundColor: index === 1 ? '#0d6fde' : '#fff',
+                              color: index === 1 ? '#fff' : '#0d6fde',
+                            }}>
+                            {list.btn}
+                          </Button>
+                        </Link>
+                      );
+                    }
+                  })()}
                 </div>
               </div>
             ))}

@@ -71,40 +71,40 @@ function Navbar() {
   const { navbarRef, isNavbarVisible } = useHideableNavbar(hideOnScroll);
 
   useLockBodyScroll(sidebarShown);
+  const handler = () => {
+    const banner = document.getElementById('homeBanner');
+    if (isHomePage) {
+      const { left, right, top, bottom } = banner.getBoundingClientRect();
+
+      const innerHeight = window.innerHeight,
+        innerWidth = window.innerWidth;
+      setShowBanner(
+        state =>
+          (top >= 0 && top <= innerHeight && left >= 0 && left <= innerWidth) ||
+          (bottom >= 80 &&
+            bottom <= innerHeight &&
+            right >= 0 &&
+            right <= innerWidth) ||
+          (top <= 0 &&
+            left <= 0 &&
+            right >= innerWidth &&
+            bottom >= innerHeight),
+      );
+    }
+  };
+
   useEffect(() => {
-    const handler = () => {
-      const banner = document.getElementById('homeBanner');
-      if (isHomePage) {
-        const { left, right, top, bottom } = banner.getBoundingClientRect();
-        // const {innerHeight, innerWidth} = this;
-        const innerHeight = window.innerHeight,
-          innerWidth = window.innerWidth;
-        // console.log(window);
-        setShowBanner(
-          state =>
-            (top >= 0 &&
-              top <= innerHeight &&
-              left >= 0 &&
-              left <= innerWidth) ||
-            (bottom > 80 &&
-              bottom <= innerHeight &&
-              right >= 0 &&
-              right <= innerWidth) ||
-            (top <= 0 &&
-              left <= 0 &&
-              right >= innerWidth &&
-              bottom > innerHeight),
-        );
-      }
-    };
     window.addEventListener('scroll', handler);
-    return () => window.removeEventListener('scroll', handler);
+    window.addEventListener('resize', handler);
+    return () => {
+      window.removeEventListener('scroll', handler);
+      window.removeEventListener('resize', handler);
+    };
   });
 
   useEffect(() => {
-    var _hmt = _hmt || [];
     var hm = document.createElement('script');
-    hm.src = 'https://hm.baidu.com/hm.js?e9ace3c27da1d62a7b4905e016047fe5';
+    hm.src = 'https://hm.baidu.com/hm.js?6a112f5b8b7791f0b8df91a0072aceed';
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(hm, s);
     console.log('百度商桥嵌入完毕');
@@ -116,6 +116,7 @@ function Navbar() {
         clearInterval(timer);
       }
     }, 800);
+    handler();
   }, []);
 
   const MySEO = () => (
@@ -198,6 +199,7 @@ function Navbar() {
                 <img
                   className="navbar__logo"
                   src={useBaseUrl('img/albedo_ logo.png')}
+                  style={{ maxWidth: '100%' }}
                   alt={logo.alt}
                 />
               ) : (

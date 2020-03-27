@@ -1,39 +1,45 @@
-.helpContainer{
+.helpContainer {
   width: 75%;
   margin: 0 auto;
-  padding-bottom:5.5vw;
+  padding-bottom: 5.5vw;
 }
-.helpTitle{
+
+.helpTitle {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding:8vh 0;
+  padding: 8vh 0;
 }
-.identity{
+
+.identity {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
 }
-.identityLi{
+
+.identityLi {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 4.5vh;
 }
-.identityBtn{
+
+.identityBtn {
   width: 120px;
   background-color: #0d6fde;
   height: 40px;
   border-color:#0d6fde;
 }
-.identityBtn:hover{
+
+.identityBtn:hover {
   background-color: #348FEB;
 }
-.useHelpTitle{
-  color: rgba(0,0,0,.85);
+
+.useHelpTitle {
+  color: rgba(0, 0, 0, .85);
   margin-bottom: 3vh;
-  font-family: 'PingFangSC-Medium'!important;
+  font-family: 'PingFangSC-Medium' !important;
   font-size: 30px;
   font-weight: 400;
   font-stretch: normal;
