@@ -51,8 +51,12 @@
 .navbarBtn {
   background-color: #0d6fde;
   color: #ffffff;
+  width: 120px;
+  height: 40px;
   border: #0d6fde;
-  padding: 8px 28px;
+  text-align: center;
+  line-height: 40px;
+  /* padding: 8px 28px; */
   border-radius: 4px;
 }
 
