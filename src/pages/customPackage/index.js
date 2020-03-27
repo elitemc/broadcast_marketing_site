@@ -16,12 +16,17 @@ class CustomPackage extends React.Component {
       time: 3,
       key: null,
     };
+
+    this.timer = null;
     this.handleSubmit = this.handleSubmit.bind(this);
     this.setModal2Visible = this.setModal2Visible.bind(this);
   }
 
   setModal2Visible(modal2Visible) {
     this.setState({modal2Visible});
+    if (!modal2Visible) {
+      this.timer && clearInterval(this.timer);
+    }
   }
 
   handleSubmit(e) {

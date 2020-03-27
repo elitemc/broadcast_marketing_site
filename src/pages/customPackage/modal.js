@@ -33,7 +33,8 @@ const Countdown = (props, ref) => {
             style={{
               backgroundColor: '#0d6fde',
               fontSize: 14,
-            }}>
+            }}
+            onClick={onCancel}>
             确定 ({time})
           </Button>
         </p>
