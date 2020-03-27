@@ -25,6 +25,26 @@
   padding: 4.5vh;
 }
 
-/* .identity>div{
-  padding:0 11.5vw;
-} */
+.identityBtn {
+  width: 120px;
+  background-color: #0d6fde;
+}
+
+.identityBtn:hover {
+  background-color: #348FEB;
+}
+
+.useHelpTitle {
+  /* font-size: '30px';
+  color: '#2e313c';
+  font-family: 'PingFangSC-Medium';*/
+  color: rgba(0, 0, 0, .85);
+  margin-bottom: 3vh;
+  font-family: 'PingFangSC-Medium' !important;
+  font-size: 30px;
+  font-weight: 400;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 0;
+  text-align: center;
+}

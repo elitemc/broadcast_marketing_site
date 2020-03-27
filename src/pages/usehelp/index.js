@@ -16,10 +16,7 @@ function UseHelp() {
     >
       <div className={styles.helpContainer}>
         <div className={styles.helpTitle}>
-          <div
-            style={{fontSize: '30px', color: '#2e313c', marginBottom: '3vh'}}>
-            使用帮助
-          </div>
+          <h2 className={styles.useHelpTitle}>使用帮助</h2>
           <div style={{textAlign: 'center', color: '#8494a6'}}>
             按照不同身份阅读指南，帮助您快速对功能操作了如指掌
           </div>
@@ -33,34 +30,47 @@ function UseHelp() {
           }}>
           <div className={styles.identity}>
             <div className={styles.identityLi}>
-              <Link to="/docs/Admin">
+              <a href="http://mktbeta.yingliboke.cn/docs/Admin" target="_blank">
                 <img width={80} src={useBaseUrl('/img/usinghelp_Adm.png')} />
-              </Link>
-              <Link to="/docs/Admin" style={{marginTop: '35px'}}>
-                <Button style={{width: 120}} type="primary">
+              </a>
+              <a
+                href="http://mktbeta.yingliboke.cn/docs/Admin"
+                target="_blank"
+                style={{marginTop: '35px'}}>
+                <Button className={styles.identityBtn} type="primary">
                   我是管理员
                 </Button>
-              </Link>{' '}
+              </a>
             </div>
             <div className={styles.identityLi}>
-              <Link to="/docs/Teacher">
+              <a
+                href="http://mktbeta.yingliboke.cn/docs/Teacher"
+                target="_blank">
                 <img width={80} src={useBaseUrl('/img/teacher_Adm.png')} />
-              </Link>
-              <Link to="/docs/Teacher" style={{marginTop: '35px'}}>
-                <Button style={{width: 120}} type="primary">
+              </a>
+              <a
+                href="http://mktbeta.yingliboke.cn/docs/Teacher"
+                style={{marginTop: '35px'}}
+                target="_blank">
+                <Button className={styles.identityBtn} type="primary">
                   我是老师
                 </Button>
-              </Link>{' '}
+              </a>
             </div>
             <div className={styles.identityLi}>
-              <Link to="/docs/Student">
+              <a
+                href="http://mktbeta.yingliboke.cn/docs/Student"
+                target="_blank">
                 <img width={80} src={useBaseUrl('/img/students_Adm.png')} />
-              </Link>
-              <Link to="/docs/Student" style={{marginTop: '35px'}}>
-                <Button style={{width: 120}} type="primary">
+              </a>
+              <a
+                href="http://mktbeta.yingliboke.cn/docs/Student"
+                style={{marginTop: '35px'}}
+                target="_blank">
+                <Button className={styles.identityBtn} type="primary">
                   我是学员
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
           <div
