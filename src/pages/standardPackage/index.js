@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
 import 'antd/dist/antd.css';
 import {Button} from 'antd';
 import styles from './styles.module.css';
@@ -188,7 +187,9 @@ class StandardPackage extends React.Component {
               </p>
             </div>
             <p>
-              <Link to="http://dockermkt.yingliboke.cn/user/login">
+              <a
+                href="http://dockermkt.yingliboke.cn/user/login"
+                target="_blank">
                 <Button
                   size="large"
                   type="primary"
@@ -199,7 +200,7 @@ class StandardPackage extends React.Component {
                   }}>
                   立即购买
                 </Button>
-              </Link>
+              </a>
             </p>
           </div>
         </div>

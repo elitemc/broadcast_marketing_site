@@ -2,6 +2,7 @@ import React, {useContext} from 'react';
 import 'antd/dist/antd.css';
 import {Modal, Button} from 'antd';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import Link from '@docusaurus/Link';
 
 const Countdown = (props, ref) => {
   // console.log('props====', props);
@@ -28,15 +29,17 @@ const Countdown = (props, ref) => {
           {value ? '提交成功，我们将尽快与您联系' : '提交失败，请重试'}
         </p>
         <p>
-          <Button
-            type="primary"
-            style={{
-              backgroundColor: '#0d6fde',
-              fontSize: 14,
-            }}
-            onClick={onCancel}>
-            确定 ({time})
-          </Button>
+          <Link to="/purchase">
+            <Button
+              type="primary"
+              style={{
+                backgroundColor: '#0d6fde',
+                fontSize: 14,
+              }}
+              onClick={onCancel}>
+              确定 ({time})
+            </Button>
+          </Link>
         </p>
       </div>
     </Modal>
