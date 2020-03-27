@@ -200,11 +200,12 @@ function Navbar() {
                 <img
                   className="navbar__logo"
                   src={useBaseUrl('img/albedo_ logo.png')}
+                  style={{maxWidth: '100%'}}
                   alt={logo.alt}
                 />
               ) : (
                 <img
-                  style={{maxWidth: '98%'}}
+                  style={{maxWidth: '100%'}}
                   className="navbar__logo"
                   src={logoImageUrl}
                   alt={logo.alt}

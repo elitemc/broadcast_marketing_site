@@ -68,7 +68,9 @@ function Home() {
               </div>
 
               <Button className={styles.freeUse}>
-                <Link to={siteConfig.url + '/user/register'}>免费使用</Link>
+                <a href={siteConfig.url + '/user/register'} target="_blank">
+                  免费使用
+                </a>
               </Button>
             </div>
             <div className={styles.banner}>
@@ -519,7 +521,9 @@ function Home() {
             <p>一对一专属客户服务</p>
             <div className={styles.linkBtn}>
               <Button>
-                <Link to={siteConfig.url + '/user/register'}>免费使用</Link>
+                <a href={siteConfig.url + '/user/register'} target="_blank">
+                  免费使用
+                </a>
               </Button>
               <Button style={{backgroundColor: '#0d6fde', color: '#fff'}}>
                 <Link to="/purchase">报价查询</Link>

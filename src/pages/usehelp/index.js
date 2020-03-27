@@ -6,21 +6,21 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 import 'antd/dist/antd.css';
-import { Button } from 'antd';
+import {Button} from 'antd';
 
 function UseHelp() {
   return (
     <Layout
       title={`使用帮助`}
-    // description="Description will go into a meta tag in <head />"
+      // description="Description will go into a meta tag in <head />"
     >
       <div className={styles.helpContainer}>
         <div className={styles.helpTitle}>
           <div
-            style={{ fontSize: '30px', color: '#2e313c', marginBottom: '3vh' }}>
+            style={{fontSize: '30px', color: '#2e313c', marginBottom: '3vh'}}>
             使用帮助
           </div>
-          <div style={{ textAlign: 'center', color: '#8494a6' }}>
+          <div style={{textAlign: 'center', color: '#8494a6'}}>
             按照不同身份阅读指南，帮助您快速对功能操作了如指掌
           </div>
         </div>
@@ -34,13 +34,10 @@ function UseHelp() {
           <div className={styles.identity}>
             <div className={styles.identityLi}>
               <Link to="/docs/Admin">
-                <img
-                  width={80}
-                  src={useBaseUrl('/img/usinghelp_Adm.png')}
-                />
+                <img width={80} src={useBaseUrl('/img/usinghelp_Adm.png')} />
               </Link>
-              <Link to="/docs/Admin" style={{ marginTop: '35px' }}>
-                <Button style={{ width: 120 }} type="primary">
+              <Link to="/docs/Admin" style={{marginTop: '35px'}}>
+                <Button style={{width: 120}} type="primary">
                   我是管理员
                 </Button>
               </Link>{' '}
@@ -49,21 +46,18 @@ function UseHelp() {
               <Link to="/docs/Teacher">
                 <img width={80} src={useBaseUrl('/img/teacher_Adm.png')} />
               </Link>
-              <Link to="/docs/Teacher" style={{ marginTop: '35px' }}>
-                <Button style={{ width: 120 }} type="primary">
+              <Link to="/docs/Teacher" style={{marginTop: '35px'}}>
+                <Button style={{width: 120}} type="primary">
                   我是老师
                 </Button>
               </Link>{' '}
             </div>
             <div className={styles.identityLi}>
               <Link to="/docs/Student">
-                <img
-                  width={80}
-                  src={useBaseUrl('/img/students_Adm.png')}
-                />
+                <img width={80} src={useBaseUrl('/img/students_Adm.png')} />
               </Link>
-              <Link to="/docs/Student" style={{ marginTop: '35px' }}>
-                <Button style={{ width: 120 }} type="primary">
+              <Link to="/docs/Student" style={{marginTop: '35px'}}>
+                <Button style={{width: 120}} type="primary">
                   我是学员
                 </Button>
               </Link>
