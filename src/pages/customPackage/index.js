@@ -13,8 +13,7 @@ class CustomPackage extends React.Component {
     super(props);
     this.state = {
       modal2Visible: false,
-      time1: 3,
-      time2: 2,
+      time: 3,
       key: null,
     };
 
