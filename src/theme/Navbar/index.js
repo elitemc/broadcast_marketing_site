@@ -103,9 +103,8 @@ function Navbar() {
   });
 
   useEffect(() => {
-    var _hmt = _hmt || [];
     var hm = document.createElement('script');
-    hm.src = 'https://hm.baidu.com/hm.js?e9ace3c27da1d62a7b4905e016047fe5';
+    hm.src = 'https://hm.baidu.com/hm.js?6a112f5b8b7791f0b8df91a0072aceed';
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(hm, s);
     console.log('百度商桥嵌入完毕');
