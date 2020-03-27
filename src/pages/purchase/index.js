@@ -104,13 +104,21 @@ const Purchase = () => {
                         {list.btn}
                       </Button>
                     </Link>
+                  ) : index === 0 ? (
+                    <a href={`${siteConfig.url}/user/register`} target="_blank">
+                      <Button
+                        size="large"
+                        style={{
+                          width: 120,
+                          borderColor: '#0d6fde',
+                          color: '#0d6fde',
+                          fontSize: 14,
+                        }}>
+                        {list.btn}
+                      </Button>
+                    </a>
                   ) : (
-                    <Link
-                      to={
-                        index === 0
-                          ? `${siteConfig.url}/user/register`
-                          : '/customPackage'
-                      }>
+                    <Link to={'/customPackage'}>
                       <Button
                         size="large"
                         style={{
@@ -122,7 +130,25 @@ const Purchase = () => {
                         {list.btn}
                       </Button>
                     </Link>
-                  )}
+                  )
+                  // <Link
+                  //   to={
+                  //     index === 0
+                  //       ? `${siteConfig.url}/user/register`
+                  //       : '/customPackage'
+                  //   }>
+                  //   <Button
+                  //     size="large"
+                  //     style={{
+                  //       width: 120,
+                  //       borderColor: '#0d6fde',
+                  //       color: '#0d6fde',
+                  //       fontSize: 14,
+                  //     }}>
+                  //     {list.btn}
+                  //   </Button>
+                  // </Link>
+                  }
                 </div>
               </div>
             ))}

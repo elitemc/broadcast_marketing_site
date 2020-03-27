@@ -68,7 +68,9 @@ function Home() {
               </div>
 
               <Button className={styles.freeUse}>
-                <Link to={siteConfig.url + '/user/register'}>免费使用</Link>
+                <a href={siteConfig.url + '/user/register'} target="_blank">
+                  免费使用
+                </a>
               </Button>
             </div>
             <div className={styles.banner}>
@@ -249,7 +251,7 @@ function Home() {
             <ul className={styles.supportList}>
               <li>
                 <div className="card-demo">
-                  <div className="card" style={{borderRadius: '0 0 10px 10px'}}>
+                  <div className="card" style={{borderRadius: '10px'}}>
                     <div className="card__image">
                       <img src={useBaseUrl('img/首-强-picture1.png')} alt="" />
                     </div>
@@ -519,7 +521,9 @@ function Home() {
             <p>一对一专属客户服务</p>
             <div className={styles.linkBtn}>
               <Button>
-                <Link to={siteConfig.url + '/user/register'}>免费使用</Link>
+                <a href={siteConfig.url + '/user/register'} target="_blank">
+                  免费使用
+                </a>
               </Button>
               <Button style={{backgroundColor: '#0d6fde', color: '#fff'}}>
                 <Link to="/purchase">报价查询</Link>
