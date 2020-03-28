@@ -29,7 +29,7 @@ const Countdown = (props, ref) => {
           {value ? '提交成功，我们将尽快与您联系' : '提交失败，请重试'}
         </p>
         <p>
-          <Link to="/purchase">
+          <Link to={value ? '/purchase' : ''}>
             <Button
               type="primary"
               style={{

@@ -28,6 +28,8 @@
 .identityBtn {
   width: 120px;
   background-color: #0d6fde;
+  height: 40px;
+  border-color:#0d6fde;
 }
 
 .identityBtn:hover {
@@ -35,9 +37,6 @@
 }
 
 .useHelpTitle {
-  /* font-size: '30px';
-  color: '#2e313c';
-  font-family: 'PingFangSC-Medium';*/
   color: rgba(0, 0, 0, .85);
   margin-bottom: 3vh;
   font-family: 'PingFangSC-Medium' !important;
