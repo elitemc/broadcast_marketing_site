@@ -17,8 +17,8 @@ function Contact() {
       <div className={styles.aboutUs}>
         <div className={styles.usBanner}>
           <img src={useBaseUrl('img/关于我们banner.png')} alt="" />
-          <h1>英荔播课</h1>
-          <small>高效连接员工与知识，助力企业持续发展</small>
+          {/* <h1>英荔播课</h1>
+          <small>高效连接员工与知识，助力企业持续发展</small> */}
         </div>
         <div className={styles.aboutContain}>
           <h2>关于我们</h2>

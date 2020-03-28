@@ -19,22 +19,32 @@ body {
   /* color: red; */
 }
 
+.bannerContain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  width: 80%;
+  max-width: 1300px;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 10%;
+}
+
 .navbar {
   background: blueviolet;
 }
 
 .homeSplashFade .homeTitle {
-  position: absolute;
-  top: 141px;
-  left: 121px;
+  transform: scale(.9);
+  margin: 9% 0 0;
   color: #fff;
 }
 
 .homeSplashFade .banner {
-  position: absolute;
-  top: 10%;
-  /* background-color: blueviolet; */
-  right: 9.51%;
   width: 40.1389%;
 }
 
@@ -54,10 +64,7 @@ body {
   margin-top: 5px;
 }
 
-/* 
-.homeSplashFade>p,
-.homeSplashFade span, */
-.homeSplashFade button a {
+.homeSplashFade .freeUse a {
   font-family: PingFangSC-Regular;
   font-size: 16px;
   font-weight: normal;
@@ -559,11 +566,11 @@ body {
   }
 
   .homeSplashFade .homeTitle {
-    top: 80px;
-    left: 80px;
-    right: 0;
-    margin: auto;
-    /* color: red; */
+    margin: 14% 0 0;
+  }
+
+  .homeSplashFade .funList+.funList {
+    margin-top: 4px;
   }
 
   .homeSplashFade .function {
@@ -687,10 +694,10 @@ body {
 
   .homeSplashFade .homeTitle {
     /* display: none; */
-    top: 40px;
-    left: 4%;
-    transform-origin: left;
-    transform: scale(.8);
+    /* top: 40px;
+    left: 4%; */
+    /* transform-origin: left; */
+    /* transform: scale(.8); */
   }
 
   /* .homeSplashFade .banner {
@@ -718,8 +725,8 @@ body {
 @media screen and (max-width: 770px) {
   .homeSplashFade .homeTitle {
     /* transform: scale(0); */
-    top: 8%;
-    left: 30%;
+    /* top: 8%;
+    left: 30%; */
   }
 
   .homeSplashFade .banner {
@@ -809,26 +816,28 @@ body {
     padding: 0 2px;
   }
 
-  .homeSplashFade p,
-  .homeSplashFade span,
-  .homeSplashFade button {
-    font-weight: lighter;
-    font-stretch: normal;
-    letter-spacing: 0px;
-    font-size: 14px;
-  }
 
-  .homeSplashFade {
-    font-size: 50px;
+  .homeSplashFade .homeTitle {
+    margin-top: 10%;
   }
 
   .homeSplashFade h2 {
-    margin-bottom: 8px;
+    font-size: 24px;
   }
 
-  .homeSplashFade .homeTitle {
-    top: 2%;
-    left: 13%;
+  .homeSplashFade p {
+    margin: 4px 0;
+  }
+
+  .homeSplashFade p,
+  .homeSplashFade span,
+  .homeSplashFade button {
+    font-size: 12px;
+  }
+
+
+  .homeSplashFade .funList+.funList {
+    margin-top: 4px;
   }
 
   .homeSplashFade .function {
@@ -872,4 +881,34 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+}
+
+@media screen and (max-width: 460px) {
+
+  .homeSplashFade .homeTitle {
+    margin-top: 14%;
+  }
+
+  .homeSplashFade h2 {
+    font-size: 20px;
+  }
+
+  .homeSplashFade h2+p {
+    margin: 2px 0;
+    font-size: 14px;
+  }
+
+  .homeSplashFade .function p {
+    font-size: 14px;
+  }
+
+  .homeSplashFade p,
+  .homeSplashFade span,
+  .homeSplashFade button {
+    font-size: 14px;
+  }
+
+  .functionItem ul li:after {
+    padding: 2px;
+  }
 }

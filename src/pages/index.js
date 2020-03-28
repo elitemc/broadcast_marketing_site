@@ -44,7 +44,7 @@ function Home() {
     let listWidth = clientList.current.clientWidth;
     let liWidth = clientLi.current.clientWidth;
     // console.log(listWidth, liWidth);
-    scrollNotice(clientList.current, {marginLeft: -liWidth}, 15000);
+    scrollNotice(clientList.current, {marginLeft: -liWidth}, 40000);
   }, []);
 
   return (
@@ -54,7 +54,33 @@ function Home() {
       <div>
         <div className={styles.homeContainer} id="homeBanner">
           <div className={styles.homeSplashFade}>
-            <div className={styles.homeTitle}>
+            <div className={styles.bannerContain}>
+              <div className={styles.homeTitle}>
+                <h2>让每一场直播培训真正有效</h2>
+                <p>高效、安全、简单，打造企业直播培训高质量体验</p>
+                <div className={styles.function}>
+                  <p className={styles.funList}>
+                    1 分钟内快速发起培训，省时省成本
+                  </p>
+                  <p className={styles.funList}>
+                    多种互动方式，多维度数据统计，培训卓有成效
+                  </p>
+                  <p className={styles.funList}>
+                    专业团队提供技术支持，安全可靠
+                  </p>
+                </div>
+
+                <Button className={styles.freeUse}>
+                  <a href={siteConfig.url + '/user/register'} target="_blank">
+                    免费使用
+                  </a>
+                </Button>
+              </div>
+              <div className={styles.banner}>
+                <img src={useBaseUrl('img/banner.png')} alt="" />
+              </div>
+            </div>
+            {/* <div className={styles.homeTitle}>
               <h2>让每一场直播培训真正有效</h2>
               <p>高效、安全、简单，打造企业直播培训高质量体验</p>
               <div className={styles.function}>
@@ -75,7 +101,7 @@ function Home() {
             </div>
             <div className={styles.banner}>
               <img src={useBaseUrl('img/banner.png')} alt="" />
-            </div>
+            </div> */}
           </div>
         </div>
 
