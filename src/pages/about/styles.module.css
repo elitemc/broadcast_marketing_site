@@ -66,3 +66,9 @@
     padding: 3.22% 6.55%;
   }
 }
+
+@media screen and (min-width: 300px) and (max-width: 914px) {
+  .usBanner {
+    padding: 8.3333% 18.055% 18.222%;
+  }
+}

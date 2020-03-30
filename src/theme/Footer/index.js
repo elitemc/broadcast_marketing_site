@@ -56,6 +56,7 @@ function Footer() {
         'footer--dark': footer.style === 'dark',
       })}
       style={{
+        marginTop: 30,
         backgroundColor: '#ffffff',
         border: 'solid 1px #f3f3f3',
         padding: '1vw 10vw',

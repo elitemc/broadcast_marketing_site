@@ -39,7 +39,7 @@ body {
 }
 
 .homeSplashFade .homeTitle {
-  transform: scale(.9);
+  /* transform: scale(.9); */
   margin: 9% 0 0;
   color: #fff;
 }
@@ -54,7 +54,7 @@ body {
 
 .homeSplashFade h2 {
   margin: 0;
-  font-size: 0.44em;
+  font-size: 44px;
   font-family: PingFangSC-Semibold !important;
   color: #fff;
 }
@@ -162,7 +162,7 @@ body {
   font-stretch: normal;
   line-height: 22px;
   letter-spacing: 0px;
-  color: rgb(73, 91, 112);
+  color: #495b70;
 }
 
 .detail p+span {
@@ -370,15 +370,17 @@ body {
 
 /* 客户列表 */
 .clientContainer {
+  position: relative;
   overflow: hidden;
   width: 100%;
-  height: 68px;
+  height: 80px;
   margin: 0 auto;
   /* background: red; */
   /* border: 1px solid #0d6fde; */
 }
 
 .clientList {
+  padding-top: 4px;
   vertical-align: middle;
 }
 
@@ -615,12 +617,10 @@ body {
 
 @media screen and (max-width: 1060px) {
   .detailCar li .carDetail {
-    width: 100%;
+    width: 59%;
+    text-align: left;
   }
 
-  .carDetail .detail b {
-    font-size: 24px;
-  }
 
   .carDetail .detail p {
     margin: auto;
@@ -642,7 +642,15 @@ body {
 
   .carDetail .detail b {
     display: block;
-    text-align: center;
+    /* text-align: center; */
+
+    text-align: left;
+    font-family: PingFangSC-Medium;
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #2e313c;
     margin: 10px auto;
   }
 
@@ -692,18 +700,6 @@ body {
     font-size: 50px;
   }
 
-  .homeSplashFade .homeTitle {
-    /* display: none; */
-    /* top: 40px;
-    left: 4%; */
-    /* transform-origin: left; */
-    /* transform: scale(.8); */
-  }
-
-  /* .homeSplashFade .banner {
-    width: 40%;
-  } */
-
   .homeSplashFade .function {
     padding: 14px 0 16px;
   }
@@ -723,16 +719,35 @@ body {
 }
 
 @media screen and (max-width: 770px) {
-  .homeSplashFade .homeTitle {
-    /* transform: scale(0); */
-    /* top: 8%;
-    left: 30%; */
+  /* 
+  .homeSplashFade .banner {
+    top: 10%;
+    right: 30%;
+  } */
+
+  .homeSplashFade {
+    padding-bottom: 104%;
+  }
+
+  .homeSplashFade .bannerContain {
+    flex-wrap: wrap;
+  }
+
+  .detailCar li .carDetail {
+    margin: 26px 40px;
   }
 
   .homeSplashFade .banner {
-    display: none;
-    top: 10%;
-    right: 30%;
+    width: 70%;
+  }
+
+  .homeSplashFade .homeTitle {
+    width: 70%;
+    margin-top: 10%;
+  }
+
+  .clientContainer {
+    width: 86%;
   }
 }
 
@@ -742,6 +757,9 @@ body {
   }
 
 
+  .homeSplashFade .homeTitle {
+    width: 88%;
+  }
 
   .homeSplashFade .banner {
 
@@ -752,9 +770,9 @@ body {
     padding: 0 13px;
   }
 
-  .homeSplashFade .freeUse {
+  /* .homeSplashFade .freeUse {
     display: none;
-  }
+  } */
 
   .functionCarList>li {
     width: 78%;
@@ -808,6 +826,11 @@ body {
 }
 
 @media screen and (max-width: 560px) {
+  .homeSplashFade {
+    padding-bottom: 114%;
+  }
+
+
   .container {
     margin: 20px 8px 0;
   }
@@ -818,12 +841,13 @@ body {
 
 
   .homeSplashFade .homeTitle {
+    width: 90%;
     margin-top: 10%;
   }
 
-  .homeSplashFade h2 {
+  /* .homeSplashFade h2 {
     font-size: 24px;
-  }
+  } */
 
   .homeSplashFade p {
     margin: 4px 0;
@@ -845,7 +869,7 @@ body {
   }
 
   .functionCarList>li {
-    width: 92%;
+    width: 80%;
     padding: 15px 10px;
   }
 
@@ -859,17 +883,18 @@ body {
     margin-top: 4px;
   }
 
-  .carDetail .detail b {
-    font-size: 18px;
-  }
-
   .supportList li {
     width: 75.138%;
+  }
+
+  .commentList li {
+    width: 80%;
   }
 
   .useLive h3 {
     font-size: 24px;
   }
+
 }
 
 p,
@@ -885,21 +910,35 @@ h6 {
 
 @media screen and (max-width: 460px) {
 
-  .homeSplashFade .homeTitle {
-    margin-top: 14%;
+  .homeSplashFade {
+    padding-bottom: 164%;
   }
 
-  .homeSplashFade h2 {
-    font-size: 20px;
+  .homeSplashFade .homeTitle {
+    width: 100%;
+    margin-top: 10%;
   }
+
+  /* .homeSplashFade h2 {
+    font-size: 20px;
+  } */
 
   .homeSplashFade h2+p {
-    margin: 2px 0;
-    font-size: 14px;
+    margin: 10px 0 25px;
+    font-size: 16px;
   }
 
   .homeSplashFade .function p {
     font-size: 14px;
+  }
+
+  .homeSplashFade button {
+    margin: 25px 0 0;
+  }
+
+  .functionCarList>li {
+    width: 100%;
+    padding: 15px 10px;
   }
 
   .homeSplashFade p,
@@ -910,5 +949,19 @@ h6 {
 
   .functionItem ul li:after {
     padding: 2px;
+  }
+
+  .commentList li {
+    width: 100%;
+  }
+
+  .supportList li {
+    width: 85%;
+  }
+
+  .functionCarList>li .functionCarIcon {
+    float: left;
+    width: 53px;
+    height: 42px;
   }
 }
