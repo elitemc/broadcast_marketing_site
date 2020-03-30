@@ -96,3 +96,13 @@
 .cooperate span:last-child {
   margin-bottom: 0;
 }
+
+@media screen and (min-width: 300px) and (max-width: 414px) {
+  .callWe {
+    padding: 8.3333% 18.055% 18.222%;
+  }
+
+  .callTit h4 {
+    margin: 20px auto 10px;
+  }
+}
