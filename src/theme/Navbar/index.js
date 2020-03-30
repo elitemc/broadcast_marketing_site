@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React, { useCallback, useState, useEffect } from 'react';
+import React, {useCallback, useState, useEffect} from 'react';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -19,11 +19,11 @@ import useThemeContext from '@theme/hooks/useThemeContext';
 import useHideableNavbar from '@theme/hooks/useHideableNavbar';
 import useLockBodyScroll from '@theme/hooks/useLockBodyScroll';
 import 'antd/dist/antd.css';
-import { Button } from 'antd';
+import {Button} from 'antd';
 
 import styles from './styles.module.css';
 
-function NavLink({ to, href, label, position, ...props }) {
+function NavLink({to, href, label, position, ...props}) {
   const toUrl = useBaseUrl(to);
 
   return (
@@ -31,15 +31,15 @@ function NavLink({ to, href, label, position, ...props }) {
       className="navbar__item navbar__link"
       {...(href
         ? {
-          target: '_blank',
-          rel: 'noopener noreferrer',
-          href,
-        }
+            target: '_blank',
+            rel: 'noopener noreferrer',
+            href,
+          }
         : {
-          activeClassName:
-            to === '#solution' || to === '#case' ? '' : styles.activeLink,
-          to: toUrl,
-        })}
+            activeClassName:
+              to === '#solution' || to === '#case' ? '' : styles.activeLink,
+            to: toUrl,
+          })}
       {...props}>
       {position === 'right' ? (
         <div
@@ -49,39 +49,39 @@ function NavLink({ to, href, label, position, ...props }) {
           {label}
         </div>
       ) : (
-          label
-        )}
+        label
+      )}
     </Link>
   );
 }
 
 function Navbar() {
   const context = useDocusaurusContext();
-  const { siteConfig = {} } = context;
-  const { baseUrl, themeConfig = {} } = siteConfig;
-  const { navbar = {}, disableDarkMode = false } = themeConfig;
-  const { title, logo = {}, links = [], hideOnScroll = false } = navbar;
+  const {siteConfig = {}} = context;
+  const {baseUrl, themeConfig = {}} = siteConfig;
+  const {navbar = {}, disableDarkMode = false} = themeConfig;
+  const {title, logo = {}, links = [], hideOnScroll = false} = navbar;
 
   const [sidebarShown, setSidebarShown] = useState(false);
   const [isSearchBarExpanded, setIsSearchBarExpanded] = useState(false);
   const [isHomePage, setIsHomePage] = useState(false);
   const [showBanner, setShowBanner] = useState(true);
 
-  const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext();
-  const { navbarRef, isNavbarVisible } = useHideableNavbar(hideOnScroll);
+  const {isDarkTheme, setLightTheme, setDarkTheme} = useThemeContext();
+  const {navbarRef, isNavbarVisible} = useHideableNavbar(hideOnScroll);
 
   useLockBodyScroll(sidebarShown);
   const handler = () => {
     const banner = document.getElementById('homeBanner');
     if (isHomePage) {
-      const { left, right, top, bottom } = banner.getBoundingClientRect();
+      const {left, right, top, bottom} = banner.getBoundingClientRect();
 
       const innerHeight = window.innerHeight,
         innerWidth = window.innerWidth;
       setShowBanner(
         state =>
           (top >= 0 && top <= innerHeight && left >= 0 && left <= innerWidth) ||
-          (bottom >= 80 &&
+          (bottom >= 0 &&
             bottom <= innerHeight &&
             right >= 0 &&
             right <= innerWidth) ||
@@ -107,7 +107,7 @@ function Navbar() {
     hm.src = 'https://hm.baidu.com/hm.js?6a112f5b8b7791f0b8df91a0072aceed';
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(hm, s);
-    console.log('百度商桥嵌入完毕');
+    console.log('百度商桥嵌入完毕', hm);
     setIsHomePage(!!document.getElementById('homeBanner'));
     let timer = setInterval(() => {
       let nb_icon_wrap = document.getElementById('nb_icon_wrap');
@@ -143,9 +143,9 @@ function Navbar() {
   const isExternalLogoLink = /http/.test(logoLink);
   const logoLinkProps = isExternalLogoLink
     ? {
-      rel: 'noopener noreferrer',
-      target: '_blank',
-    }
+        rel: 'noopener noreferrer',
+        target: '_blank',
+      }
     : null;
   const logoSrc = logo.srcDark && isDarkTheme ? logo.srcDark : logo.src;
   const logoImageUrl = useBaseUrl(logoSrc);
@@ -164,7 +164,7 @@ function Navbar() {
           [styles.blue]: isHomePage && showBanner,
         },
       )}
-      style={{ padding: '0 9.2vw', fontFamily: 'PingFangSC-Regular' }}>
+      style={{padding: '0 9.2vw', fontFamily: 'PingFangSC-Regular'}}>
       <MySEO />
       <div className="navbar__inner">
         <div className="navbar__items">
@@ -176,7 +176,7 @@ function Navbar() {
             onClick={showSidebar}
             onKeyDown={showSidebar}>
             <svg
-              style={isHomePage && showBanner ? { color: '#FFFFFF' } : {}}
+              style={isHomePage && showBanner ? {color: '#FFFFFF'} : {}}
               xmlns="http://www.w3.org/2000/svg"
               width="30"
               height="30"
@@ -199,17 +199,17 @@ function Navbar() {
                 <img
                   className="navbar__logo"
                   src={useBaseUrl('img/albedo_ logo.png')}
-                  style={{ maxWidth: '100%' }}
+                  style={{width: '99px !important'}}
                   alt={logo.alt}
                 />
               ) : (
-                  <img
-                    style={{ maxWidth: '98%' }}
-                    className="navbar__logo"
-                    src={logoImageUrl}
-                    alt={logo.alt}
-                  />
-                ))}
+                <img
+                  style={{width: '99px !important'}}
+                  className="navbar__logo"
+                  src={logoImageUrl}
+                  alt={logo.alt}
+                />
+              ))}
             {title != null && (
               <strong
                 className={isSearchBarExpanded ? styles.hideLogoText : ''}>
@@ -218,7 +218,7 @@ function Navbar() {
             )}
           </Link>
           <div
-            style={{ position: 'relative', left: '8%', width: '50vw' }}
+            style={{position: 'relative', left: '8%', width: '50vw'}}
             className={styles.blue_item}>
             {links
               .filter(linkItem => linkItem.position !== 'right')
@@ -226,7 +226,7 @@ function Navbar() {
                 <NavLink
                   {...linkItem}
                   key={i}
-                  style={{ padding: '18px 0', margin: '0 20px' }}
+                  style={{padding: '18px 0', margin: '0 20px'}}
                 />
               ))}
           </div>
@@ -238,7 +238,11 @@ function Navbar() {
           {links
             .filter(linkItem => linkItem.position === 'right')
             .map((linkItem, i) => (
-              <NavLink {...linkItem} key={i} style={{ marginLeft: '50px', padding: '0' }} />
+              <NavLink
+                {...linkItem}
+                key={i}
+                style={{marginLeft: '50px', padding: '0'}}
+              />
             ))}
           {!disableDarkMode && (
             <Toggle

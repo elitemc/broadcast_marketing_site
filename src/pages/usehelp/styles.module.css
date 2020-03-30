@@ -4,6 +4,13 @@
   padding-bottom: 5.5vw;
 }
 
+.help_container {
+  width: 80%;
+  border: solid 1px #eff2f6;
+  padding: 3vw 1vw;
+  margin: 0 auto;
+}
+
 .helpTitle {
   display: flex;
   flex-direction: column;
@@ -29,7 +36,7 @@
   width: 120px;
   background-color: #0d6fde;
   height: 40px;
-  border-color:#0d6fde;
+  border-color: #0d6fde;
 }
 
 .identityBtn:hover {
@@ -46,4 +53,18 @@
   line-height: 30px;
   letter-spacing: 0;
   text-align: center;
+}
+
+@media screen and (min-width: 300px) and (max-width: 414px) {
+  .helpContainer {
+    width: 85%;
+  }
+
+  .help_container {
+    width: 100%;
+  }
+
+  .identityLi a+a {
+    margin-top: 25px !important;
+  }
 }

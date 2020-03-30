@@ -3,6 +3,13 @@
   padding: 10px 10%;
 }
 
+.page_title {
+  font-size: 30px;
+  padding-bottom: 80px;
+  font-family: 'PingFangSC';
+  color: #2e313c;
+}
+
 .context_Package {
   height: 100%;
   width: 100%;
@@ -29,6 +36,7 @@
 .little_box:nth-child(2) {
   margin: 0 30px;
 }
+
 .btn {
   width: 120px;
   border-color: rgb(13, 111, 222);
@@ -80,6 +88,7 @@
   height: 146px;
   text-align: left;
 }
+
 .li_box li {
   margin-bottom: 5px;
   color: #495b70;
@@ -94,6 +103,7 @@
   margin-right: 10px;
   vertical-align: middle;
 }
+
 .btn_box {
   padding-top: 8px;
 }
@@ -103,9 +113,11 @@
   .version_box {
     flex-direction: column;
   }
+
   .little_box {
     min-width: 435px;
   }
+
   .little_box:nth-child(2) {
     margin: 20px 0;
   }
@@ -116,6 +128,7 @@
   .little_box {
     min-width: 310px;
   }
+
   .purchase_main {
     padding: 10px 0;
   }
@@ -123,15 +136,22 @@
 
 /* 适配各手机 */
 @media screen and (min-width: 300px) and (max-width: 414px) {
+  .page_title {
+    padding: 15px 0 25px;
+  }
+
   .version_box {
     flex-direction: column;
   }
+
   .little_box {
     min-width: 310px;
   }
+
   .little_box:nth-child(2) {
     margin: 20px 0;
   }
+
   .purchase_main {
     padding: 10px;
   }
