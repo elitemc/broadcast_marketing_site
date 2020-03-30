@@ -47,7 +47,8 @@
     border-bottom: 2px solid #0d6fde;
   }
 }
-.activeLink{
+
+.activeLink {
   color: #0d6fde !important;
 }
 
@@ -87,5 +88,10 @@
 @media screen and (max-width: 560px) {
   .nav {
     padding: 0 17px !important;
+  }
+
+  .logoImg {
+    width: 140px;
+    height: auto !important;
   }
 }

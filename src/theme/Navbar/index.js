@@ -209,16 +209,14 @@ function Navbar() {
             {logo != null &&
               (isHomePage && showBanner ? (
                 <img
-                  className="navbar__logo"
+                  className={classnames('navbar__logo', styles.logoImg)}
                   src={useBaseUrl('img/albedo_ logo.png')}
-                  style={{width: '99px !important'}}
                   alt={logo.alt}
                   onClick={asyncHandler}
                 />
               ) : (
                 <img
-                  style={{width: '99px !important'}}
-                  className="navbar__logo"
+                  className={classnames('navbar__logo', styles.logoImg)}
                   src={logoImageUrl}
                   alt={logo.alt}
                   onClick={asyncHandler}
