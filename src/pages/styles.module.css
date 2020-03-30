@@ -549,9 +549,8 @@ body {
 
 @media screen and (max-width: 1127px) {
 
-  .solution,
-  .case {
-    padding: 40px 0;
+  .solution {
+    margin-bottom: 80px;
   }
 
   /* .homeSplashFade {
@@ -810,6 +809,30 @@ body {
     padding: 0 6px;
   }
 
+  .detailCar li:last-child .carDetail .detailCar li .carDetail {
+    margin: 10px 0 40px;
+  }
+
+  .detailCar li:last-child .carDetail {
+    margin: 10px 0 0px;
+  }
+
+  .useLive {
+    padding: 43px 0 43px;
+  }
+
+  .detailCar li {
+    margin-top: 0;
+  }
+
+  .solution {
+    margin: 0 0 80px;
+  }
+
+  .title {
+    margin: 9.8% auto 8.93%;
+  }
+
   .commentList li {
     height: fit-content;
     width: 78%;
@@ -830,6 +853,13 @@ body {
     padding-bottom: 114%;
   }
 
+  .homeSplashFade .bannerContain {
+    width: 90%;
+  }
+
+  .homeSplashFade .banner {
+    width: 80%;
+  }
 
   .container {
     margin: 20px 8px 0;

@@ -75,13 +75,13 @@ function Navbar() {
     const banner = document.getElementById('homeBanner');
     if (isHomePage) {
       const {left, right, top, bottom} = banner.getBoundingClientRect();
-
+      // console.log({left, right, top, bottom});
       const innerHeight = window.innerHeight,
         innerWidth = window.innerWidth;
       setShowBanner(
         state =>
           (top >= 0 && top <= innerHeight && left >= 0 && left <= innerWidth) ||
-          (bottom >= 0 &&
+          (bottom >= 100 &&
             bottom <= innerHeight &&
             right >= 0 &&
             right <= innerWidth) ||
@@ -92,13 +92,25 @@ function Navbar() {
       );
     }
   };
+  const asyncHandler = () => {
+    const timer = setTimeout(() => {
+      handler();
+      clearTimeout(timer);
+    }, 1000 / 60);
+  };
 
   useEffect(() => {
     window.addEventListener('scroll', handler);
     window.addEventListener('resize', handler);
+    window.onhashchange = handler;
+    // window.addEventListener('hashchange', () => {
+    //   console.log(68687);
+    // });
     return () => {
       window.removeEventListener('scroll', handler);
       window.removeEventListener('resize', handler);
+
+      // window.removeEventListener('hashchange', handler);
     };
   });
 
@@ -197,17 +209,17 @@ function Navbar() {
             {logo != null &&
               (isHomePage && showBanner ? (
                 <img
-                  className="navbar__logo"
+                  className={classnames('navbar__logo', styles.logoImg)}
                   src={useBaseUrl('img/albedo_ logo.png')}
-                  style={{width: '99px !important'}}
                   alt={logo.alt}
+                  onClick={asyncHandler}
                 />
               ) : (
                 <img
-                  style={{width: '99px !important'}}
-                  className="navbar__logo"
+                  className={classnames('navbar__logo', styles.logoImg)}
                   src={logoImageUrl}
                   alt={logo.alt}
+                  onClick={asyncHandler}
                 />
               ))}
             {title != null && (
@@ -224,6 +236,7 @@ function Navbar() {
               .filter(linkItem => linkItem.position !== 'right')
               .map((linkItem, i) => (
                 <NavLink
+                  onClick={asyncHandler}
                   {...linkItem}
                   key={i}
                   style={{padding: '18px 0', margin: '0 20px'}}
@@ -271,7 +284,12 @@ function Navbar() {
             to={logoLink}
             {...logoLinkProps}>
             {logo != null && (
-              <img className="navbar__logo" src={logoImageUrl} alt={logo.alt} />
+              <img
+                className="navbar__logo"
+                src={logoImageUrl}
+                alt={logo.alt}
+                onClick={asyncHandler}
+              />
             )}
             {title != null && <strong>{title}</strong>}
           </Link>
@@ -287,7 +305,7 @@ function Navbar() {
           <div className="menu">
             <ul className="menu__list">
               {links.map((linkItem, i) => (
-                <li className="menu__list-item" key={i}>
+                <li className="menu__list-item" key={i} onClick={asyncHandler}>
                   <NavLink
                     className="menu__link"
                     {...linkItem}

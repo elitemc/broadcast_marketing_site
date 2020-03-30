@@ -97,12 +97,27 @@
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 300px) and (max-width: 914px) {
+
+@media screen and (max-width: 1200px) {
   .callWe {
     padding: 8.3333% 18.055% 18.222%;
   }
+}
+
+@media screen and (min-width: 200px) and (max-width: 614px) {
+  .pcBanner {
+    display: none !important;
+  }
+
+  .h5Banner {
+    display: block !important;
+  }
+
+  .callWe {
+    padding: 34.3333% 18.055% 18.222%;
+  }
 
   .callTit h4 {
-    margin: 20px auto 10px;
+    margin: 50px auto 18px;
   }
 }
