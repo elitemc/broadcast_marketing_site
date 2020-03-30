@@ -98,7 +98,11 @@ function DocItem(props) {
           <meta name="twitter:image:alt" content={`Image for ${title}`} />
         )}
         {permalink && <meta property="og:url" content={siteUrl + permalink} />}
+        <meta name="referrer" content="no-referrer" />
       </Head>
+      <div className={styles.headNavbar}>
+        <img src={useBaseUrl('img/home page_ logo.png')} style={{ width: '105px', height: '53.4%' }} alt="" />
+      </div>
       <div className="padding-vert--lg">
         <div className="container">
           <div className="row">
@@ -200,6 +204,9 @@ function DocItem(props) {
 
           </div>
         </div>
+      </div>
+      <div style={{ color: '#8494a6', margin: '0 10vw', padding: '1vw 0', borderTop: '1px solid #eaf0f7' }}>
+        Copyright © 2020 广东英荔国际教育科技有限公司 粤ICP备13044168号-7
       </div>
     </>
   );
