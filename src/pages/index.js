@@ -94,7 +94,7 @@ function Home() {
                 <div className={styles.carDetail}>
                   <div className={styles.detail}>
                     <b>高质量低付费，大幅节省培训成本</b>
-                    <p>
+                    <p style={{marginBottom: 10}}>
                       轻松组织异地多人远程培训，单场节省超过 *80%
                       培训费用。价格优势明显，收费模式灵活，50
                       人内「免费永久使用」，全面体验高性价比直播服务，快速实现培训数字化转型。
@@ -305,6 +305,8 @@ function Home() {
 
           <div className={styles.client}>
             <h2 className={styles.title}>英荔的客户</h2>
+
+            <div id="case" className={styles.case}></div>
             <div className={styles.clientContainer}>
               <ul className={styles.clientList} ref={clientList}>
                 <li ref={clientLi}>
@@ -471,7 +473,6 @@ function Home() {
               </ul>
             </div>
           </div>
-          <div id="case" className={styles.case}></div>
           <div className={styles.clientComment}>
             <h2 className={styles.title}>客户评价</h2>
             <ul className={styles.commentList}>

@@ -16,7 +16,17 @@ function Contact() {
       description="Description will go into a meta tag in <head />">
       <div className={styles.aboutUs}>
         <div className={styles.usBanner}>
-          <img src={useBaseUrl('img/关于我们banner.png')} alt="" />
+          <img
+            src={useBaseUrl('img/关于我们banner.png')}
+            alt=""
+            className={styles.pcBanner}
+          />
+          <img
+            src={useBaseUrl('img/about_we.png')}
+            alt=""
+            style={{display: 'none'}}
+            className={styles.h5Banner}
+          />
           {/* <h1>英荔播课</h1>
           <small>高效连接员工与知识，助力企业持续发展</small> */}
         </div>

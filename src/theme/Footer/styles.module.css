@@ -13,9 +13,17 @@
 .footerLogoLink:hover {
   opacity: 1;
 }
-.footerLi{
-color: #8494a6;
+
+.footerLi {
+  color: #8494a6;
 }
-.footerLi:hover{
+
+.footerLi:hover {
   color: #0d6fde;
+}
+
+@media screen and (min-width: 200px) and (max-width: 614px) {
+  .footLogo {
+    display: none;
+  }
 }

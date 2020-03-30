@@ -40,6 +40,7 @@
   background-color: rgba(255, 255, 255, 1);
   color: rgb(34, 57, 84);
 }
+
 @media screen and (min-width: 997px) {
   .activeLink {
     color: #0d6fde !important;
@@ -78,4 +79,11 @@
 
 .navbarHidden {
   top: calc(var(--ifm-navbar-height) * -1) !important;
+}
+
+
+@media screen and (max-width: 560px) {
+  .nav {
+    padding: 0 17px !important;
+  }
 }

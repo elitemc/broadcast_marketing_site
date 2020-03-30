@@ -34,7 +34,7 @@ function FooterLink({to, href, label, ...props}) {
 }
 
 const FooterLogo = ({url, alt}) => (
-  <img style={{width: 115}} alt={alt} src={url} />
+  <img style={{width: 115}} alt={alt} src={url} className={styles.footLogo} />
 );
 
 function Footer() {
