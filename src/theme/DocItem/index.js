@@ -101,7 +101,7 @@ function DocItem(props) {
         <meta name="referrer" content="no-referrer" />
       </Head>
       <div className={styles.headNavbar}>
-        <img src={useBaseUrl('img/home page_ logo.png')} style={{ width: '105px', height: '53.4%' }} alt="" />
+        <img src={useBaseUrl('img/homepage_logo.png')} style={{ width: '105px', height: '53.4%' }} alt="" />
       </div>
       <div className="padding-vert--lg">
         <div className="container">
