@@ -27,7 +27,7 @@ body {
   bottom: 0;
   margin: auto;
   display: flex;
-  width: 80%;
+  width: 86%;
   max-width: 1300px;
   justify-content: space-around;
   align-items: center;
@@ -41,7 +41,7 @@ body {
 
 .homeSplashFade .homeTitle {
   /* transform: scale(.9); */
-  margin: 9% 0 0;
+  margin: 6% 0 0;
   color: #fff;
 }
 
@@ -427,6 +427,10 @@ body {
     margin: 20px 87px 0;
   }
 
+  .homeSplashFade .homeTitle {
+    transform: scale(.8);
+  }
+
   .detailCar li .carDetail,
   .detailCar li .carImg {
     width: 45%;
@@ -442,8 +446,12 @@ body {
     margin: 30px;
   }
 
+  .bannerContain {
+    width: 82%;
+  }
+
   .homeSplashFade .banner {
-    width: 35%;
+    width: 46%;
   }
 
   .commentList li {
@@ -570,6 +578,7 @@ body {
 
   .homeSplashFade .homeTitle {
     margin: 14% 0 0;
+    transform: scale(1);
   }
 
   .homeSplashFade .funList+.funList {
@@ -685,7 +694,6 @@ body {
 }
 
 @media screen and (max-width: 880px) {
-
 
   .container {
     margin: 20px 57px 0;
