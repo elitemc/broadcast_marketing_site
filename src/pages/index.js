@@ -306,7 +306,6 @@ function Home() {
           <div className={styles.client}>
             <h2 className={styles.title}>英荔的客户</h2>
 
-            <div id="case" className={styles.case}></div>
             <div className={styles.clientContainer}>
               <ul className={styles.clientList} ref={clientList}>
                 <li ref={clientLi}>
@@ -538,8 +537,13 @@ function Home() {
               </ul>
             </div>
           </div>
+
+          <div
+            id="case"
+            className={styles.case}
+            style={{marginBottom: '14%'}}></div>
           <div className={styles.clientComment}>
-            <h2 className={styles.title} style={{marginTop: '14.8%'}}>
+            <h2 className={styles.title} style={{marginTop: '0'}}>
               客户评价
             </h2>
             <ul className={styles.commentList}>

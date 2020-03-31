@@ -176,7 +176,11 @@ function Navbar() {
           [styles.blue]: isHomePage && showBanner,
         },
       )}
-      style={{padding: '0 9.2vw', fontFamily: 'PingFangSC-Regular'}}>
+      style={{
+        padding: '0 9.2vw',
+        fontFamily: 'PingFangSC-Regular',
+        boxShadow: 'none',
+      }}>
       <MySEO />
       <div className="navbar__inner">
         <div className="navbar__items">
