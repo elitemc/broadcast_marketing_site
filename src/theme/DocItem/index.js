@@ -103,7 +103,7 @@ function DocItem(props) {
       <div className={styles.headNavbar}>
         <img src={useBaseUrl('img/homepage_logo.png')} style={{ width: '105px', height: '53.4%' }} alt="" />
       </div>
-      <div className="padding-vert--lg">
+      <div className="padding-vert--lg" style={{ marginTop: '60px' }}>
         <div className="container">
           <div className="row">
             {!hideTableOfContents && DocContent.rightToc && (
