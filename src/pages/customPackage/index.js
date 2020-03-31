@@ -1,12 +1,12 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import 'antd/dist/antd.css';
-import {Form, Input, Button} from 'antd';
+import { Form, Input, Button } from 'antd';
 import styles from './styles.module.css';
 import request from '../../utils/request';
 import Countdown from './modal';
 
-const {TextArea} = Input;
+const { TextArea } = Input;
 
 class CustomPackage extends React.Component {
   constructor(props) {
@@ -23,7 +23,7 @@ class CustomPackage extends React.Component {
   }
 
   setModal2Visible(modal2Visible) {
-    this.setState({modal2Visible});
+    this.setState({ modal2Visible });
     if (!modal2Visible) {
       this.timer && clearInterval(this.timer);
     }
@@ -44,7 +44,7 @@ class CustomPackage extends React.Component {
           .then(response => {
             console.log(response);
             if (response.code === 20000) {
-              this.setState({key: 1, time: 3}, () => {
+              this.setState({ key: 1, time: 3 }, () => {
                 this.setModal2Visible(true);
                 this.timer = setInterval(() => {
                   const time = this.state.time - 1;
@@ -60,7 +60,7 @@ class CustomPackage extends React.Component {
                 }, 1000);
               });
             } else {
-              this.setState({key: 0, time: 2}, () => {
+              this.setState({ key: 0, time: 2 }, () => {
                 this.setModal2Visible(true);
                 this.timer = setInterval(() => {
                   const time = this.state.time - 1;
@@ -84,14 +84,14 @@ class CustomPackage extends React.Component {
   }
 
   render() {
-    const {getFieldDecorator, getFieldValue} = this.props.form;
+    const { getFieldDecorator, getFieldValue } = this.props.form;
 
     const formItemLayout = {
       labelCol: {
-        sm: {span: 3},
+        sm: { span: 3 },
       },
       wrapperCol: {
-        sm: {span: 21},
+        sm: { span: 21 },
       },
     };
 
@@ -106,10 +106,10 @@ class CustomPackage extends React.Component {
         description="Description will go into a meta tag in <head />">
         <div className={styles.context_Package}>
           <div className={styles.main}>
-            <h1 style={{fontSize: 30, fontFamily: 'PingFangSC-Medium'}}>
+            <h1 style={{ fontSize: 30, fontFamily: 'PingFangSC-Medium' }}>
               提交需求
             </h1>
-            <p style={{color: '#8494a6', margin: '20px 0 40px'}}>
+            <p style={{ color: '#8494a6', margin: '20px 0 40px' }}>
               请填写您的资料并描述具体需求，我们将第一时间安排专人为您服务。
               或直接致电 400-931-8118 与我们联系。
             </p>
@@ -127,7 +127,7 @@ class CustomPackage extends React.Component {
                     <Input
                       placeholder="请输入您的姓名"
                       maxLength={10}
-                      style={{paddingRight: '60px'}}
+                      style={{ paddingRight: '60px' }}
                       className={styles.textInput}
                     />,
                   )}
@@ -140,13 +140,13 @@ class CustomPackage extends React.Component {
                         required: true,
                         message: '电话不能为空',
                       },
-                      {pattern: /([0-9-]+)$/, message: '请输入正确的电话号码'},
+                      { pattern: /([0-9-]+)$/, message: '请输入正确的电话号码' },
                     ],
                   })(
                     <Input
                       placeholder="请输入您的电话"
                       maxLength={30}
-                      style={{paddingRight: '60px'}}
+                      style={{ paddingRight: '60px' }}
                       className={styles.textInput}
                     />,
                   )}
@@ -164,7 +164,7 @@ class CustomPackage extends React.Component {
                     <Input
                       placeholder="请输入您的公司名称"
                       maxLength={30}
-                      style={{paddingRight: '60px'}}
+                      style={{ paddingRight: '60px' }}
                       className={styles.textInput}
                     />,
                   )}
@@ -178,10 +178,11 @@ class CustomPackage extends React.Component {
                       rows={6}
                       maxLength={150}
                       className={styles.textInput}
+                      style={{ paddingBottom: '16px' }}
                       placeholder="请详细地描述您的需求，方便我们为您制定个性化服务"
                     />,
                   )}
-                  <span className={styles.titleLen} style={{bottom: -16}}>
+                  <span className={styles.titleLen} style={{ bottom: -16 }}>
                     {demand.length}/150
                   </span>
                 </Form.Item>
@@ -217,4 +218,4 @@ class CustomPackage extends React.Component {
   }
 }
 
-export default Form.create({name: 'basic'})(CustomPackage);
+export default Form.create({ name: 'basic' })(CustomPackage);
