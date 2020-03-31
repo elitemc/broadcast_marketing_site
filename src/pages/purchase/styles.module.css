@@ -5,7 +5,9 @@
 
 .page_title {
   font-size: 30px;
-  padding-bottom: 80px;
+  /* padding-top: 10px;
+  padding-bottom: 80px; */
+  padding: 80px 0;
   font-family: 'PingFangSC';
   color: #2e313c;
 }
@@ -16,7 +18,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2% 0;
+  /* padding: 2% 0; */
 }
 
 .version_box {
@@ -135,9 +137,10 @@
 }
 
 /* 适配各手机 */
-@media screen and (min-width: 300px) and (max-width: 414px) {
+@media screen and (min-width: 300px) and (max-width: 614px) {
+
   .page_title {
-    padding: 15px 0 25px;
+    padding: 50px 0;
   }
 
   .version_box {

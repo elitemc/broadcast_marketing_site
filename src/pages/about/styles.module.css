@@ -2,7 +2,7 @@
   position: relative;
   box-sizing: border-box;
   text-align: left;
-  padding: 8.3333% 18.055% 8.222%;
+  padding: 14.3333% 18.055% 8.222%;
   background-color: #f5faff;
 }
 
@@ -28,7 +28,7 @@
 
 .aboutContain {
   width: 54.555%;
-  margin: 10.5% auto;
+  margin: 84px auto 64px;
   padding: 3.22% 5.55%;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.13);
 }

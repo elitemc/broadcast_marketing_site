@@ -31,6 +31,7 @@ body {
   max-width: 1300px;
   justify-content: space-around;
   align-items: center;
+  margin-top: 30px;
   padding-bottom: 10%;
 }
 
@@ -45,7 +46,7 @@ body {
 }
 
 .homeSplashFade .banner {
-  width: 40.1389%;
+  width: 46.1389%;
 }
 
 .homeSplashFade .banner img {
@@ -53,7 +54,7 @@ body {
 }
 
 .homeSplashFade h2 {
-  margin: 0;
+  margin-bottom: 14px;
   font-size: 44px;
   font-family: PingFangSC-Semibold !important;
   color: #fff;
@@ -61,7 +62,6 @@ body {
 
 .homeSplashFade h2+p {
   font-size: 18px;
-  margin-top: 5px;
 }
 
 .homeSplashFade .freeUse a {
@@ -151,6 +151,7 @@ body {
   font-weight: normal;
   font-stretch: normal;
   letter-spacing: 0px;
+  color: #2e313c;
 }
 
 .detail p {
@@ -390,6 +391,7 @@ body {
 
 .clientList,
 .clientList>li {
+  padding: 4px;
   white-space: nowrap;
 }
 
@@ -405,7 +407,7 @@ body {
   width: 66px;
   height: 66px;
   margin-right: 20px;
-  background: #223954;
+  /* background: #223954; */
 }
 
 .avatar,
@@ -804,6 +806,10 @@ body {
   }
 }
 
+.detail p+span {
+  font-size: 12px;
+}
+
 @media screen and (max-width: 620px) {
   .functionItem ul li span {
     padding: 0 6px;
@@ -850,7 +856,7 @@ body {
 
 @media screen and (max-width: 560px) {
   .homeSplashFade {
-    padding-bottom: 114%;
+    padding-bottom: 124%;
   }
 
   .homeSplashFade .bannerContain {
@@ -993,5 +999,11 @@ h6 {
     float: left;
     width: 53px;
     height: 42px;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .homeSplashFade {
+    padding-bottom: 224%;
   }
 }
