@@ -280,6 +280,9 @@ body {
 }
 
 
+.supportList {
+  margin-bottom: 30px;
+}
 
 .supportList li {
   height: min-content;
@@ -627,12 +630,32 @@ body {
   }
 }
 
+.detailCar li .carDetail {
+  justify-content: flex-end;
+}
+
+.detailCar li:nth-child(2n) .carDetail {
+  justify-content: start;
+}
+
+/* @media screen and (min-width: 1070) {
+
+  .detailCar li .carImg,
+  .detailCar li .carDetail {
+    background-color: rgba(0, 0, 0, 0.897);
+  }
+} */
+
 @media screen and (max-width: 1060px) {
   .detailCar li .carDetail {
     width: 59%;
     text-align: left;
   }
 
+  .detailCar li .carDetail,
+  .detailCar li:nth-child(2n) .carDetail {
+    justify-content: center;
+  }
 
   .carDetail .detail p {
     margin: auto;
@@ -757,9 +780,6 @@ body {
     margin-top: 10%;
   }
 
-  .clientContainer {
-    width: 86%;
-  }
 }
 
 @media screen and (max-width: 714px) {
