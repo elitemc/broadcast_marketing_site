@@ -206,7 +206,7 @@ function DocItem(props) {
         </div>
       </div>
       <div style={{ color: '#8494a6', margin: '0 10vw', padding: '1vw 0', borderTop: '1px solid #eaf0f7' }}>
-        Copyright © 2020 广东英荔国际教育科技有限公司 粤ICP备13044168号-7
+        Copyright © 2018-{new Date().getFullYear()} 广东英荔国际教育科技有限公司 粤 ICP 备 13044168 号 - 7
       </div>
     </>
   );
