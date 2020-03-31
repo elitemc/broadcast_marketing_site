@@ -23,10 +23,10 @@ module.exports = {
         src: 'img/home page_ logo.png',
       },
       links: [
-        {to: '#solution', label: '解决方案'},
-        {to: '#case', label: '客户案例'},
-        {to: '/usehelp', label: '使用帮助'},
-        {to: '/purchase', label: '购  买'},
+        { to: '#solution', label: '解决方案' },
+        { to: '#case', label: '客户案例' },
+        { to: '/usehelp', label: '使用帮助' },
+        { to: '/purchase', label: '购  买' },
         // Please keep GitHub link to the right for consistency.
         {
           href: 'http://dockermkt.yingliboke.cn/user/login',
@@ -96,7 +96,7 @@ module.exports = {
         src: 'img/home page_ logo.png',
       },
       // Please do not remove the credits, help to publicize Docusaurus :)
-      copyright: `Copyright © ${new Date().getFullYear()} 广东英荔国际教育科技有限公司 粤ICP备13044168号-3`,
+      copyright: `Copyright © 2018-${new Date().getFullYear()} 广东英荔国际教育科技有限公司 粤 ICP 备 13044168 号 - 7`,
     },
     disableDarkMode: true,
   },
