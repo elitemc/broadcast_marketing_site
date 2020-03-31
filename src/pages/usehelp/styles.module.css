@@ -55,9 +55,13 @@
   text-align: center;
 }
 
-@media screen and (min-width: 300px) and (max-width: 414px) {
+@media screen and (min-width: 300px) and (max-width: 614px) {
   .helpContainer {
     width: 85%;
+  }
+
+  .help_container {
+    width: 100%;
   }
 
   .help_container {

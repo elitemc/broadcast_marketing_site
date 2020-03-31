@@ -17,7 +17,17 @@ function About() {
       description="Description will go into a meta tag in <head />">
       <div className={styles.connectMe}>
         <div className={styles.callWe}>
-          <img src={useBaseUrl('img/联系我-banner.png')} alt="22" />
+          <img
+            src={useBaseUrl('img/联系我-banner.png')}
+            alt=""
+            className={styles.pcBanner}
+          />
+          <img
+            src={useBaseUrl('img/call_we.png')}
+            alt=""
+            style={{display: 'none'}}
+            className={styles.h5Banner}
+          />
           {/* <h1>英荔播课</h1>
           <small>为互联网时代企业培训变革赋能</small> */}
         </div>
