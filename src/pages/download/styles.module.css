@@ -181,6 +181,10 @@
     margin: 12.55% auto 5.55%;
   }
 
+  .downList .downItem {
+    margin: 20px;
+  }
+
   .downloadContainer {
     margin: 0 3.5% 5%;
   }

@@ -27,10 +27,11 @@
 }
 
 .aboutContain {
-  width: 54.555%;
+  width: 58%;
   margin: 84px auto 64px;
   padding: 3.22% 5.55%;
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.13);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .08);
 }
 
 .aboutContain h2 {

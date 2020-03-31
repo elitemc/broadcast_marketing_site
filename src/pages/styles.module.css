@@ -145,6 +145,7 @@ body {
   flex-direction: row-reverse;
 }
 
+
 .detail b {
   font-family: PingFangSC-Medium;
   font-size: 28px;
@@ -161,7 +162,7 @@ body {
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
-  line-height: 22px;
+  line-height: 26px;
   letter-spacing: 0px;
   color: #495b70;
 }
@@ -361,7 +362,7 @@ body {
 .commentList li p {
   margin-top: 22px;
   /* font-family: PingFangSC-Regular; */
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
   line-height: 28px;
@@ -407,6 +408,7 @@ body {
   width: 66px;
   height: 66px;
   margin-right: 20px;
+  border: 1px solid #efefef;
   /* background: #223954; */
 }
 
@@ -868,6 +870,10 @@ body {
   }
 
   .homeSplashFade .bannerContain {
+    margin-top: -33px;
+  }
+
+  .homeSplashFade .bannerContain {
     width: 90%;
   }
 
@@ -958,6 +964,10 @@ h6 {
     padding-bottom: 164%;
   }
 
+  .bannerContain {
+    margin-top: -15px;
+  }
+
   .homeSplashFade .homeTitle {
     width: 100%;
     margin-top: 10%;
@@ -1010,7 +1020,7 @@ h6 {
   }
 }
 
-@media screen and (max-width: 310px) {
+@media screen and (max-width: 330px) {
   .homeSplashFade {
     padding-bottom: 224%;
   }

@@ -70,7 +70,7 @@ function Home() {
                   </p>
                 </div>
 
-                <Button className={styles.freeUse}>
+                <Button className={styles.freeUse} style={{border: 'none'}}>
                   <a href={siteConfig.url + '/user/register'} target="_blank">
                     免费使用
                   </a>
@@ -366,6 +366,39 @@ function Home() {
                   </div>
                   <div className={styles.clientItem}>
                     <div className={styles.avatar}>
+                      <img src={useBaseUrl('img/Zambon.png')} alt="Zambon" />
+                    </div>
+                    <small>Zambon</small>
+                  </div>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}>
+                      <img
+                        src={useBaseUrl('img/健合集团.png')}
+                        alt="健合集团"
+                      />
+                    </div>
+                    <small>健合集团</small>
+                  </div>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}>
+                      <img
+                        src={useBaseUrl('img/吉首大学张家界学院.png')}
+                        alt="吉首大学张家界学院"
+                      />
+                    </div>
+                    <small>吉首大学张家界学院</small>
+                  </div>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}>
+                      <img
+                        src={useBaseUrl('img/益丰大药房.png')}
+                        alt="益丰大药房"
+                      />
+                    </div>
+                    <small>益丰大药房</small>
+                  </div>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}>
                       <img
                         src={useBaseUrl('img/桂中大药房.png')}
                         alt="桂中大药房"
@@ -444,7 +477,39 @@ function Home() {
                     </div>
                     <small>广东工业大学华立学院</small>
                   </div>
-
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}>
+                      <img src={useBaseUrl('img/Zambon.png')} alt="Zambon" />
+                    </div>
+                    <small>Zambon</small>
+                  </div>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}>
+                      <img
+                        src={useBaseUrl('img/健合集团.png')}
+                        alt="健合集团"
+                      />
+                    </div>
+                    <small>健合集团</small>
+                  </div>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}>
+                      <img
+                        src={useBaseUrl('img/吉首大学张家界学院.png')}
+                        alt="吉首大学张家界学院"
+                      />
+                    </div>
+                    <small>吉首大学张家界学院</small>
+                  </div>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}>
+                      <img
+                        src={useBaseUrl('img/益丰大药房.png')}
+                        alt="益丰大药房"
+                      />
+                    </div>
+                    <small>益丰大药房</small>
+                  </div>
                   <div className={styles.clientItem}>
                     <div className={styles.avatar}>
                       <img
@@ -474,7 +539,9 @@ function Home() {
             </div>
           </div>
           <div className={styles.clientComment}>
-            <h2 className={styles.title}>客户评价</h2>
+            <h2 className={styles.title} style={{marginTop: '14.8%'}}>
+              客户评价
+            </h2>
             <ul className={styles.commentList}>
               <li className={styles.commentItem}>
                 <div className={styles.clientMsg}>
@@ -525,7 +592,7 @@ function Home() {
             </p>
             <p>一对一专属客户服务</p>
             <div className={styles.linkBtn}>
-              <Button>
+              <Button style={{border: 'none'}}>
                 <a href={siteConfig.url + '/user/register'} target="_blank">
                   免费使用
                 </a>
