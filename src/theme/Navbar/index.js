@@ -242,7 +242,7 @@ function Navbar() {
                   onClick={asyncHandler}
                   {...linkItem}
                   key={i}
-                  style={{padding: '18px 0', margin: '0 20px'}}
+                  style={{padding: '18px 0', margin: '0 20px', height: '60px'}}
                 />
               ))}
           </div>
