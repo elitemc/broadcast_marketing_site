@@ -44,7 +44,7 @@ function Home() {
     let listWidth = clientList.current.clientWidth;
     let liWidth = clientLi.current.clientWidth;
     // console.log(listWidth, liWidth);
-    scrollNotice(clientList.current, {marginLeft: -liWidth}, 40000);
+    scrollNotice(clientList.current, {marginLeft: -liWidth}, 60000);
   }, []);
 
   return (
