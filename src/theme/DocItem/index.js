@@ -218,7 +218,13 @@ function DocItem(props) {
           borderTop: '1px solid #eaf0f7',
         }}>
         Copyright © 2018-{new Date().getFullYear()} 广东英荔国际教育科技有限公司
-        粤 ICP 备 13044168 号 - 7
+        <a
+          href="http://beian.miit.gov.cn/"
+          target="_blank"
+          className={styles.footLink}>
+          {' '}
+          粤 ICP 备 13044168 号-7
+        </a>
       </div>
     </>
   );
