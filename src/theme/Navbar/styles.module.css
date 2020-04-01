@@ -7,6 +7,10 @@
 
 
 @media screen and (max-width: 997px) {
+  .navbarLogin {
+    color: #606770 !important;
+  }
+
   .displayOnlyInLargeViewport {
     display: none !important;
   }
@@ -21,6 +25,7 @@
 
 .blue {
   background: #0d6fde;
+  box-shadow: none;
 }
 
 .blue .blue_item a {
@@ -40,6 +45,7 @@
   background-color: rgba(255, 255, 255, 1);
   color: rgb(34, 57, 84);
 }
+
 @media screen and (min-width: 997px) {
   .activeLink {
     color: #0d6fde !important;
@@ -47,12 +53,19 @@
   }
 }
 
+.activeLink {
+  color: #0d6fde !important;
+}
 
 .navbarBtn {
   background-color: #0d6fde;
   color: #ffffff;
+  width: 120px;
+  height: 40px;
   border: #0d6fde;
-  padding: 8px 28px;
+  text-align: center;
+  line-height: 40px;
+  /* padding: 8px 28px; */
   border-radius: 4px;
 }
 
@@ -74,4 +87,16 @@
 
 .navbarHidden {
   top: calc(var(--ifm-navbar-height) * -1) !important;
+}
+
+
+@media screen and (max-width: 560px) {
+  .nav {
+    padding: 0 17px !important;
+  }
+
+  .logoImg {
+    width: 140px;
+    height: auto !important;
+  }
 }

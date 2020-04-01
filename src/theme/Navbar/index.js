@@ -75,13 +75,13 @@ function Navbar() {
     const banner = document.getElementById('homeBanner');
     if (isHomePage) {
       const {left, right, top, bottom} = banner.getBoundingClientRect();
-
+      // console.log({left, right, top, bottom});
       const innerHeight = window.innerHeight,
         innerWidth = window.innerWidth;
       setShowBanner(
         state =>
           (top >= 0 && top <= innerHeight && left >= 0 && left <= innerWidth) ||
-          (bottom >= 80 &&
+          (bottom >= 100 &&
             bottom <= innerHeight &&
             right >= 0 &&
             right <= innerWidth) ||
@@ -92,23 +92,34 @@ function Navbar() {
       );
     }
   };
+  const asyncHandler = () => {
+    const timer = setTimeout(() => {
+      handler();
+      clearTimeout(timer);
+    }, 1000 / 60);
+  };
 
   useEffect(() => {
     window.addEventListener('scroll', handler);
     window.addEventListener('resize', handler);
+    window.onhashchange = handler;
+    // window.addEventListener('hashchange', () => {
+    //   console.log(68687);
+    // });
     return () => {
       window.removeEventListener('scroll', handler);
       window.removeEventListener('resize', handler);
+
+      // window.removeEventListener('hashchange', handler);
     };
   });
 
   useEffect(() => {
-    var _hmt = _hmt || [];
     var hm = document.createElement('script');
-    hm.src = 'https://hm.baidu.com/hm.js?e9ace3c27da1d62a7b4905e016047fe5';
+    hm.src = 'https://hm.baidu.com/hm.js?580947b073cee1cc9b9e7532c32440e2';
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(hm, s);
-    console.log('百度商桥嵌入完毕');
+
     setIsHomePage(!!document.getElementById('homeBanner'));
     let timer = setInterval(() => {
       let nb_icon_wrap = document.getElementById('nb_icon_wrap');
@@ -165,7 +176,10 @@ function Navbar() {
           [styles.blue]: isHomePage && showBanner,
         },
       )}
-      style={{padding: '0 9.2vw', fontFamily: 'PingFangSC-Regular'}}>
+      style={{
+        padding: '0 9.2vw',
+        fontFamily: 'PingFangSC-Regular',
+      }}>
       <MySEO />
       <div className="navbar__inner">
         <div className="navbar__items">
@@ -198,17 +212,17 @@ function Navbar() {
             {logo != null &&
               (isHomePage && showBanner ? (
                 <img
-                  className="navbar__logo"
+                  className={classnames('navbar__logo', styles.logoImg)}
                   src={useBaseUrl('img/albedo_ logo.png')}
-                  style={{maxWidth: '100%'}}
                   alt={logo.alt}
+                  onClick={asyncHandler}
                 />
               ) : (
                 <img
-                  style={{maxWidth: '100%'}}
-                  className="navbar__logo"
+                  className={classnames('navbar__logo', styles.logoImg)}
                   src={logoImageUrl}
                   alt={logo.alt}
+                  onClick={asyncHandler}
                 />
               ))}
             {title != null && (
@@ -225,9 +239,10 @@ function Navbar() {
               .filter(linkItem => linkItem.position !== 'right')
               .map((linkItem, i) => (
                 <NavLink
+                  onClick={asyncHandler}
                   {...linkItem}
                   key={i}
-                  style={{padding: '18px 0', margin: '0 20px'}}
+                  style={{padding: '18px 0', margin: '0 20px', height: '60px'}}
                 />
               ))}
           </div>
@@ -239,7 +254,11 @@ function Navbar() {
           {links
             .filter(linkItem => linkItem.position === 'right')
             .map((linkItem, i) => (
-              <NavLink {...linkItem} key={i} style={{marginLeft: '25px'}} />
+              <NavLink
+                {...linkItem}
+                key={i}
+                style={{marginLeft: '50px', padding: '0'}}
+              />
             ))}
           {!disableDarkMode && (
             <Toggle
@@ -268,7 +287,12 @@ function Navbar() {
             to={logoLink}
             {...logoLinkProps}>
             {logo != null && (
-              <img className="navbar__logo" src={logoImageUrl} alt={logo.alt} />
+              <img
+                className="navbar__logo"
+                src={logoImageUrl}
+                alt={logo.alt}
+                onClick={asyncHandler}
+              />
             )}
             {title != null && <strong>{title}</strong>}
           </Link>
@@ -284,7 +308,7 @@ function Navbar() {
           <div className="menu">
             <ul className="menu__list">
               {links.map((linkItem, i) => (
-                <li className="menu__list-item" key={i}>
+                <li className="menu__list-item" key={i} onClick={asyncHandler}>
                   <NavLink
                     className="menu__link"
                     {...linkItem}

@@ -16,13 +16,23 @@ function Contact() {
       description="Description will go into a meta tag in <head />">
       <div className={styles.aboutUs}>
         <div className={styles.usBanner}>
-          <img src={useBaseUrl('img/关于我们banner.png')} alt="" />
-          <h1>英荔播课</h1>
-          <small>高效连接员工与知识，助力企业持续发展</small>
+          <img
+            src={useBaseUrl('img/关于我们banner.png')}
+            alt=""
+            className={styles.pcBanner}
+          />
+          <img
+            src={useBaseUrl('img/about_we.png')}
+            alt=""
+            style={{display: 'none'}}
+            className={styles.h5Banner}
+          />
+          {/* <h1>英荔播课</h1>
+          <small>高效连接员工与知识，助力企业持续发展</small> */}
         </div>
         <div className={styles.aboutContain}>
           <h2>关于我们</h2>
-          <p>英荔播课（BroadClass） 专注企业培训需求的直播工具。</p>
+          <p>英荔播课（BroadClass），专注解决企业培训需求的直播工具。</p>
           <p>
             英荔播课是广东英荔国际教育科技有限公司旗下的企业培训工具，致力为用户提供稳定、安全、快速的企业级直播培训服务，一台联网电脑即可开展全球培训，让跨区域培训降本增效。
           </p>

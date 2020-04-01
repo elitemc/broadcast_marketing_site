@@ -178,6 +178,7 @@ class CustomPackage extends React.Component {
                       rows={6}
                       maxLength={150}
                       className={styles.textInput}
+                      style={{paddingBottom: '16px'}}
                       placeholder="请详细地描述您的需求，方便我们为您制定个性化服务"
                     />,
                   )}
@@ -194,6 +195,7 @@ class CustomPackage extends React.Component {
                 onClick={this.handleSubmit}
                 style={{
                   width: 120,
+                  marginTop: 20,
                   backgroundColor: '#0d6fde',
                   fontSize: 14,
                 }}>

@@ -4,11 +4,18 @@
   padding-bottom: 5.5vw;
 }
 
+.help_container {
+  width: 80%;
+  border: solid 1px #eff2f6;
+  padding: 3vw 1vw;
+  margin: 0 auto;
+}
+
 .helpTitle {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 8vh 0;
+  padding: 5.55% 0;
 }
 
 .identity {
@@ -28,6 +35,8 @@
 .identityBtn {
   width: 120px;
   background-color: #0d6fde;
+  height: 40px;
+  border-color: #0d6fde;
 }
 
 .identityBtn:hover {
@@ -35,9 +44,6 @@
 }
 
 .useHelpTitle {
-  /* font-size: '30px';
-  color: '#2e313c';
-  font-family: 'PingFangSC-Medium';*/
   color: rgba(0, 0, 0, .85);
   margin-bottom: 3vh;
   font-family: 'PingFangSC-Medium' !important;
@@ -47,4 +53,26 @@
   line-height: 30px;
   letter-spacing: 0;
   text-align: center;
+}
+
+@media screen and (min-width: 300px) and (max-width: 614px) {
+  .helpContainer {
+    width: 85%;
+  }
+
+  .helpTitle {
+    padding: 50px 0;
+  }
+
+  .help_container {
+    width: 100%;
+  }
+
+  .help_container {
+    width: 100%;
+  }
+
+  .identityLi a+a {
+    margin-top: 25px !important;
+  }
 }

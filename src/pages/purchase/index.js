@@ -50,15 +50,7 @@ const Purchase = () => {
       description="Description will go into a meta tag in <head />">
       <div className={styles.context_Package}>
         <div className={styles.purchase_main}>
-          <p
-            style={{
-              fontSize: 30,
-              color: '#2e313c',
-              paddingBottom: 80,
-              fontFamily: 'PingFangSC-Medium',
-            }}>
-            选择适合您的套餐
-          </p>
+          <p className={styles.page_title}>选择适合您的套餐</p>
           <div className={styles.version_box}>
             {version_arr.map((list, index) => (
               <div className={styles.little_box} key={index}>
@@ -110,7 +102,11 @@ const Purchase = () => {
                           }>
                           <Button
                             size="large"
-                            className={styles.btn}
+                            className={
+                              styles.btn +
+                              ' ' +
+                              (index === 1 ? '' : styles.customPackage)
+                            }
                             style={{
                               backgroundColor: index === 1 ? '#0d6fde' : '#fff',
                               color: index === 1 ? '#fff' : '#0d6fde',

@@ -20,7 +20,7 @@ module.exports = {
       title: '',
       logo: {
         alt: 'My Facebook Project Logo',
-        src: 'img/home page_ logo.png',
+        src: 'img/homepage_logo.png',
       },
       links: [
         {to: '#solution', label: '解决方案'},
@@ -93,10 +93,10 @@ module.exports = {
       ],
       logo: {
         to: '/',
-        src: 'img/home page_ logo.png',
+        src: 'img/homepage_logo.png',
       },
       // Please do not remove the credits, help to publicize Docusaurus :)
-      copyright: `Copyright © ${new Date().getFullYear()} 广东英荔国际教育科技有限公司 粤ICP备13044168号-3`,
+      copyright: `Copyright © 2018-${new Date().getFullYear()} 广东英荔国际教育科技有限公司`,
     },
     disableDarkMode: true,
   },

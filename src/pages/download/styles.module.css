@@ -12,7 +12,6 @@
   line-height: 30px;
   letter-spacing: 0px;
   color: rgba(46, 49, 60, 1);
-
 }
 
 .downloadHeader small {
@@ -44,7 +43,7 @@
 }
 
 .downloadContainer>div:hover {
-  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
+  /* box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08); */
 }
 
 .downloadContainer h5 {
@@ -172,5 +171,20 @@
 
   .downList .downItem {
     margin: 30px;
+  }
+}
+
+
+@media screen and (max-width: 620px) {
+  .downloadHeader {
+    margin: 12.55% auto 5.55%;
+  }
+
+  .downList .downItem {
+    margin: 20px;
+  }
+
+  .downloadContainer {
+    margin: 0 3.5% 5%;
   }
 }

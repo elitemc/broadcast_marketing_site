@@ -2,7 +2,7 @@
   position: relative;
   box-sizing: border-box;
   text-align: left;
-  padding: 8.3333% 18.055% 8.222%;
+  padding: 14.3333% 18.055% 8.222%;
   background-color: #f5faff;
 }
 
@@ -27,10 +27,11 @@
 }
 
 .aboutContain {
-  width: 54.555%;
-  margin: 10.5% auto;
+  width: 58%;
+  margin: 84px auto 64px;
   padding: 3.22% 5.55%;
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.13);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .08);
 }
 
 .aboutContain h2 {
@@ -56,13 +57,30 @@
 
 @media screen and (max-width: 1200px) {
   .usBanner {
-    padding-left: 9%;
+    padding: 8.3333% 18.055% 18.222%;
   }
 
   .aboutContain {
-
     width: 75.555%;
     margin: 5.5% auto;
     padding: 3.22% 6.55%;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 614px) {
+  .pcBanner {
+    display: none !important;
+  }
+
+  .h5Banner {
+    display: block !important;
+  }
+
+  .usBanner {
+    padding: 34.3333% 18.055% 18.222%;
+  }
+
+  .aboutContain {
+    box-shadow: none;
   }
 }

@@ -1,6 +1,18 @@
 .purchase_main {
   text-align: center;
-  padding: 10px 10%;
+  padding: 0px 10%;
+  margin-bottom: 5.6%;
+}
+
+.page_title {
+  padding: 5.55% 0;
+  font-family: PingFangSC-Medium;
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 0px;
+  color: rgba(46, 49, 60, 1);
 }
 
 .context_Package {
@@ -9,7 +21,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2% 0;
+  /* padding: 2% 0; */
 }
 
 .version_box {
@@ -29,6 +41,7 @@
 .little_box:nth-child(2) {
   margin: 0 30px;
 }
+
 .btn {
   width: 120px;
   border-color: rgb(13, 111, 222);
@@ -72,6 +85,7 @@
 }
 
 .money {
+  padding-top: 10px;
   font-size: 20px;
 }
 
@@ -80,6 +94,7 @@
   height: 146px;
   text-align: left;
 }
+
 .li_box li {
   margin-bottom: 5px;
   color: #495b70;
@@ -94,8 +109,13 @@
   margin-right: 10px;
   vertical-align: middle;
 }
+
 .btn_box {
   padding-top: 8px;
+}
+
+.customPackage:hover {
+  color: rgb(92, 168, 248) !important;
 }
 
 /*适配ipad*/
@@ -103,9 +123,11 @@
   .version_box {
     flex-direction: column;
   }
+
   .little_box {
     min-width: 435px;
   }
+
   .little_box:nth-child(2) {
     margin: 20px 0;
   }
@@ -116,23 +138,32 @@
   .little_box {
     min-width: 310px;
   }
+
   .purchase_main {
-    padding: 10px 0;
+    padding: 0px 0;
   }
 }
 
 /* 适配各手机 */
-@media screen and (min-width: 300px) and (max-width: 414px) {
+@media screen and (min-width: 300px) and (max-width: 614px) {
+
+  .page_title {
+    padding: 50px 0;
+  }
+
   .version_box {
     flex-direction: column;
   }
+
   .little_box {
     min-width: 310px;
   }
+
   .little_box:nth-child(2) {
     margin: 20px 0;
   }
+
   .purchase_main {
-    padding: 10px;
+    padding: 0px;
   }
 }

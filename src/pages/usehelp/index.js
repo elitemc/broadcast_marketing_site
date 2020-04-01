@@ -21,13 +21,7 @@ function UseHelp() {
             按照不同身份阅读指南，帮助您快速对功能操作了如指掌
           </div>
         </div>
-        <div
-          style={{
-            width: '80%',
-            border: 'solid 1px #eff2f6',
-            padding: '3vw 1vw',
-            margin: '0 auto',
-          }}>
+        <div className={styles.help_container}>
           <div className={styles.identity}>
             <div className={styles.identityLi}>
               <a href="http://mktbeta.yingliboke.cn/docs/Admin" target="_blank">

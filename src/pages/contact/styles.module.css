@@ -1,7 +1,7 @@
 .callWe {
   position: relative;
   text-align: center;
-  padding: 8.3333% 0 8.222%;
+  padding: 14.3333% 18.055% 8.222%;
   background-color: #f5faff;
 }
 
@@ -95,4 +95,29 @@
 
 .cooperate span:last-child {
   margin-bottom: 0;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .callWe {
+    padding: 8.3333% 18.055% 18.222%;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 614px) {
+  .pcBanner {
+    display: none !important;
+  }
+
+  .h5Banner {
+    display: block !important;
+  }
+
+  .callWe {
+    padding: 34.3333% 18.055% 18.222%;
+  }
+
+  .callTit h4 {
+    margin: 50px auto 18px;
+  }
 }

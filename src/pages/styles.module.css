@@ -19,23 +19,34 @@ body {
   /* color: red; */
 }
 
+.bannerContain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  width: 86%;
+  max-width: 1300px;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  padding-bottom: 10%;
+}
+
 .navbar {
   background: blueviolet;
 }
 
 .homeSplashFade .homeTitle {
-  position: absolute;
-  top: 141px;
-  left: 121px;
+  /* transform: scale(.9); */
+  margin: 6% 0 0;
   color: #fff;
 }
 
 .homeSplashFade .banner {
-  position: absolute;
-  top: 10%;
-  /* background-color: blueviolet; */
-  right: 9.51%;
-  width: 40.1389%;
+  width: 46.1389%;
 }
 
 .homeSplashFade .banner img {
@@ -43,21 +54,17 @@ body {
 }
 
 .homeSplashFade h2 {
-  margin: 0;
-  font-size: 0.44em;
+  margin-bottom: 14px;
+  font-size: 44px;
   font-family: PingFangSC-Semibold !important;
   color: #fff;
 }
 
 .homeSplashFade h2+p {
   font-size: 18px;
-  margin-top: 5px;
 }
 
-/* 
-.homeSplashFade>p,
-.homeSplashFade span, */
-.homeSplashFade button a {
+.homeSplashFade .freeUse a {
   font-family: PingFangSC-Regular;
   font-size: 16px;
   font-weight: normal;
@@ -126,7 +133,7 @@ body {
 .detailCar li {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 8%;
 }
 
@@ -138,12 +145,14 @@ body {
   flex-direction: row-reverse;
 }
 
+
 .detail b {
   font-family: PingFangSC-Medium;
   font-size: 28px;
   font-weight: normal;
   font-stretch: normal;
   letter-spacing: 0px;
+  color: #2e313c;
 }
 
 .detail p {
@@ -153,9 +162,9 @@ body {
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
-  line-height: 22px;
+  line-height: 26px;
   letter-spacing: 0px;
-  color: rgb(73, 91, 112);
+  color: #495b70;
 }
 
 .detail p+span {
@@ -271,6 +280,9 @@ body {
 }
 
 
+.supportList {
+  margin-bottom: 30px;
+}
 
 .supportList li {
   height: min-content;
@@ -353,7 +365,7 @@ body {
 .commentList li p {
   margin-top: 22px;
   /* font-family: PingFangSC-Regular; */
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
   line-height: 28px;
@@ -363,15 +375,17 @@ body {
 
 /* 客户列表 */
 .clientContainer {
+  position: relative;
   overflow: hidden;
   width: 100%;
-  height: 68px;
+  height: 80px;
   margin: 0 auto;
   /* background: red; */
   /* border: 1px solid #0d6fde; */
 }
 
 .clientList {
+  padding-top: 4px;
   vertical-align: middle;
 }
 
@@ -381,6 +395,7 @@ body {
 
 .clientList,
 .clientList>li {
+  padding: 4px;
   white-space: nowrap;
 }
 
@@ -396,7 +411,8 @@ body {
   width: 66px;
   height: 66px;
   margin-right: 20px;
-  background: #223954;
+  border: 1px solid #efefef;
+  /* background: #223954; */
 }
 
 .avatar,
@@ -416,6 +432,10 @@ body {
     margin: 20px 87px 0;
   }
 
+  .homeSplashFade .homeTitle {
+    transform: scale(.8);
+  }
+
   .detailCar li .carDetail,
   .detailCar li .carImg {
     width: 45%;
@@ -431,8 +451,12 @@ body {
     margin: 30px;
   }
 
+  .bannerContain {
+    width: 82%;
+  }
+
   .homeSplashFade .banner {
-    width: 35%;
+    width: 46%;
   }
 
   .commentList li {
@@ -540,9 +564,8 @@ body {
 
 @media screen and (max-width: 1127px) {
 
-  .solution,
-  .case {
-    padding: 40px 0;
+  .solution {
+    margin-bottom: 80px;
   }
 
   /* .homeSplashFade {
@@ -559,11 +582,12 @@ body {
   }
 
   .homeSplashFade .homeTitle {
-    top: 80px;
-    left: 80px;
-    right: 0;
-    margin: auto;
-    /* color: red; */
+    margin: 14% 0 0;
+    transform: scale(1);
+  }
+
+  .homeSplashFade .funList+.funList {
+    margin-top: 4px;
   }
 
   .homeSplashFade .function {
@@ -606,13 +630,31 @@ body {
   }
 }
 
+.detailCar li .carDetail {
+  justify-content: flex-end;
+}
+
+.detailCar li:nth-child(2n) .carDetail {
+  justify-content: start;
+}
+
+/* @media screen and (min-width: 1070) {
+
+  .detailCar li .carImg,
+  .detailCar li .carDetail {
+    background-color: rgba(0, 0, 0, 0.897);
+  }
+} */
+
 @media screen and (max-width: 1060px) {
   .detailCar li .carDetail {
-    width: 100%;
+    width: 59%;
+    text-align: left;
   }
 
-  .carDetail .detail b {
-    font-size: 24px;
+  .detailCar li .carDetail,
+  .detailCar li:nth-child(2n) .carDetail {
+    justify-content: center;
   }
 
   .carDetail .detail p {
@@ -635,7 +677,15 @@ body {
 
   .carDetail .detail b {
     display: block;
-    text-align: center;
+    /* text-align: center; */
+
+    text-align: left;
+    font-family: PingFangSC-Medium;
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #2e313c;
     margin: 10px auto;
   }
 
@@ -670,7 +720,6 @@ body {
 
 @media screen and (max-width: 880px) {
 
-
   .container {
     margin: 20px 57px 0;
   }
@@ -684,18 +733,6 @@ body {
   .homeSplashFade {
     font-size: 50px;
   }
-
-  .homeSplashFade .homeTitle {
-    /* display: none; */
-    top: 40px;
-    left: 4%;
-    transform-origin: left;
-    transform: scale(.8);
-  }
-
-  /* .homeSplashFade .banner {
-    width: 40%;
-  } */
 
   .homeSplashFade .function {
     padding: 14px 0 16px;
@@ -716,17 +753,33 @@ body {
 }
 
 @media screen and (max-width: 770px) {
-  .homeSplashFade .homeTitle {
-    /* transform: scale(0); */
-    top: 8%;
-    left: 30%;
+  /* 
+  .homeSplashFade .banner {
+    top: 10%;
+    right: 30%;
+  } */
+
+  .homeSplashFade {
+    padding-bottom: 104%;
+  }
+
+  .homeSplashFade .bannerContain {
+    flex-wrap: wrap;
+  }
+
+  .detailCar li .carDetail {
+    margin: 26px 40px;
   }
 
   .homeSplashFade .banner {
-    display: none;
-    top: 10%;
-    right: 30%;
+    width: 70%;
   }
+
+  .homeSplashFade .homeTitle {
+    width: 70%;
+    margin-top: 10%;
+  }
+
 }
 
 @media screen and (max-width: 714px) {
@@ -735,6 +788,9 @@ body {
   }
 
 
+  .homeSplashFade .homeTitle {
+    width: 88%;
+  }
 
   .homeSplashFade .banner {
 
@@ -745,9 +801,9 @@ body {
     padding: 0 13px;
   }
 
-  .homeSplashFade .freeUse {
+  /* .homeSplashFade .freeUse {
     display: none;
-  }
+  } */
 
   .functionCarList>li {
     width: 78%;
@@ -780,9 +836,37 @@ body {
   }
 }
 
+.detail p+span {
+  font-size: 12px;
+}
+
 @media screen and (max-width: 620px) {
   .functionItem ul li span {
     padding: 0 6px;
+  }
+
+  .detailCar li:last-child .carDetail .detailCar li .carDetail {
+    margin: 10px 0 40px;
+  }
+
+  .detailCar li:last-child .carDetail {
+    margin: 10px 0 0px;
+  }
+
+  .useLive {
+    padding: 43px 0 43px;
+  }
+
+  .detailCar li {
+    margin-top: 0;
+  }
+
+  .solution {
+    margin: 0 0 80px;
+  }
+
+  .title {
+    margin: 9.8% auto 8.93%;
   }
 
   .commentList li {
@@ -801,6 +885,22 @@ body {
 }
 
 @media screen and (max-width: 560px) {
+  .homeSplashFade {
+    padding-bottom: 124%;
+  }
+
+  .homeSplashFade .bannerContain {
+    margin-top: -33px;
+  }
+
+  .homeSplashFade .bannerContain {
+    width: 90%;
+  }
+
+  .homeSplashFade .banner {
+    width: 80%;
+  }
+
   .container {
     margin: 20px 8px 0;
   }
@@ -809,26 +909,29 @@ body {
     padding: 0 2px;
   }
 
+
+  .homeSplashFade .homeTitle {
+    width: 90%;
+    margin-top: 10%;
+  }
+
+  /* .homeSplashFade h2 {
+    font-size: 24px;
+  } */
+
+  .homeSplashFade p {
+    margin: 4px 0;
+  }
+
   .homeSplashFade p,
   .homeSplashFade span,
   .homeSplashFade button {
-    font-weight: lighter;
-    font-stretch: normal;
-    letter-spacing: 0px;
-    font-size: 14px;
+    font-size: 12px;
   }
 
-  .homeSplashFade {
-    font-size: 50px;
-  }
 
-  .homeSplashFade h2 {
-    margin-bottom: 8px;
-  }
-
-  .homeSplashFade .homeTitle {
-    top: 2%;
-    left: 13%;
+  .homeSplashFade .funList+.funList {
+    margin-top: 4px;
   }
 
   .homeSplashFade .function {
@@ -836,7 +939,7 @@ body {
   }
 
   .functionCarList>li {
-    width: 92%;
+    width: 80%;
     padding: 15px 10px;
   }
 
@@ -850,17 +953,18 @@ body {
     margin-top: 4px;
   }
 
-  .carDetail .detail b {
-    font-size: 18px;
-  }
-
   .supportList li {
     width: 75.138%;
+  }
+
+  .commentList li {
+    width: 80%;
   }
 
   .useLive h3 {
     font-size: 24px;
   }
+
 }
 
 p,
@@ -872,4 +976,72 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+}
+
+@media screen and (max-width: 460px) {
+
+  .homeSplashFade {
+    padding-bottom: 164%;
+  }
+
+  .bannerContain {
+    margin-top: -15px;
+  }
+
+  .homeSplashFade .homeTitle {
+    width: 100%;
+    margin-top: 10%;
+  }
+
+  /* .homeSplashFade h2 {
+    font-size: 20px;
+  } */
+
+  .homeSplashFade h2+p {
+    margin: 10px 0 25px;
+    font-size: 16px;
+  }
+
+  .homeSplashFade .function p {
+    font-size: 14px;
+  }
+
+  .homeSplashFade button {
+    margin: 25px 0 0;
+  }
+
+  .functionCarList>li {
+    width: 100%;
+    padding: 15px 10px;
+  }
+
+  .homeSplashFade p,
+  .homeSplashFade span,
+  .homeSplashFade button {
+    font-size: 14px;
+  }
+
+  .functionItem ul li:after {
+    padding: 2px;
+  }
+
+  .commentList li {
+    width: 100%;
+  }
+
+  .supportList li {
+    width: 85%;
+  }
+
+  .functionCarList>li .functionCarIcon {
+    float: left;
+    width: 53px;
+    height: 42px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .homeSplashFade {
+    padding-bottom: 224%;
+  }
 }
