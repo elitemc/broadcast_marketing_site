@@ -82,7 +82,7 @@
 
 .sideList>li:first-child .icon {
   background: #2B8DFC;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .sideList>li.wrap:hover .icon {

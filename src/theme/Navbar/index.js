@@ -116,7 +116,7 @@ function Navbar() {
 
   useEffect(() => {
     var hm = document.createElement('script');
-    hm.src = 'https://hm.baidu.com/hm.js?6a112f5b8b7791f0b8df91a0072aceed';
+    hm.src = 'https://hm.baidu.com/hm.js?580947b073cee1cc9b9e7532c32440e2';
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(hm, s);
 
