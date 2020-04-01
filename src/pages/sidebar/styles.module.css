@@ -63,11 +63,12 @@
   /* font-weight: bold; */
   border-radius: 4px;
   background: #ffffff;
+  color: #ccd1d9;
   cursor: pointer;
 }
 
 .sideList>li:first-child .icon {
-  background: #0d6fde;
+  background: #2B8DFC;
   color: #ffffff;
 }
 

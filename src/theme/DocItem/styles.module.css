@@ -41,7 +41,14 @@
     max-width: 75% !important;
   }
 }
+.footLink {
+  color: inherit;
+  transition: all .3s;
+}
 
+.footLink:hover {
+  color: #2964aa;
+}
 .tableOfContents {
   display: inherit;
   max-height: calc(100vh - (var(--ifm-navbar-height) + 2rem));

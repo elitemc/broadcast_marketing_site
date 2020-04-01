@@ -119,7 +119,7 @@ function Navbar() {
     hm.src = 'https://hm.baidu.com/hm.js?6a112f5b8b7791f0b8df91a0072aceed';
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(hm, s);
-    console.log('百度商桥嵌入完毕', hm);
+
     setIsHomePage(!!document.getElementById('homeBanner'));
     let timer = setInterval(() => {
       let nb_icon_wrap = document.getElementById('nb_icon_wrap');
@@ -176,7 +176,10 @@ function Navbar() {
           [styles.blue]: isHomePage && showBanner,
         },
       )}
-      style={{padding: '0 9.2vw', fontFamily: 'PingFangSC-Regular'}}>
+      style={{
+        padding: '0 9.2vw',
+        fontFamily: 'PingFangSC-Regular',
+      }}>
       <MySEO />
       <div className="navbar__inner">
         <div className="navbar__items">

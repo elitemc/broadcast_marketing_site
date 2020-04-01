@@ -44,7 +44,7 @@ function Home() {
     let listWidth = clientList.current.clientWidth;
     let liWidth = clientLi.current.clientWidth;
     // console.log(listWidth, liWidth);
-    scrollNotice(clientList.current, {marginLeft: -liWidth}, 40000);
+    scrollNotice(clientList.current, {marginLeft: -liWidth}, 60000);
   }, []);
 
   return (
@@ -70,7 +70,7 @@ function Home() {
                   </p>
                 </div>
 
-                <Button className={styles.freeUse}>
+                <Button className={styles.freeUse} style={{border: 'none'}}>
                   <a href={siteConfig.url + '/user/register'} target="_blank">
                     免费使用
                   </a>
@@ -124,7 +124,7 @@ function Home() {
                   <div className={styles.detail}>
                     <b>直播工具齐全，知识理解更到位</b>
                     <p>
-                      基于低延迟高质量的视频直播服务，英荔播课提供文档分享、文档标注、白板演示、直播录制、视频上传等直播工具，协助教师高效教学。培训视频支持回放，帮助学员巩固所学。
+                      基于低延迟、高质量的视频直播服务，英荔播课提供文档分享、文档标注、白板演示、直播录制、视频上传等直播工具，协助教师高效教学。培训视频支持回放，帮助学员巩固所学。
                     </p>
                   </div>
                 </div>
@@ -306,7 +306,6 @@ function Home() {
           <div className={styles.client}>
             <h2 className={styles.title}>英荔的客户</h2>
 
-            <div id="case" className={styles.case}></div>
             <div className={styles.clientContainer}>
               <ul className={styles.clientList} ref={clientList}>
                 <li ref={clientLi}>
@@ -363,6 +362,39 @@ function Home() {
                       />
                     </div>
                     <small>广东工业大学华立学院</small>
+                  </div>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}>
+                      <img src={useBaseUrl('img/Zambon.png')} alt="Zambon" />
+                    </div>
+                    <small>Zambon</small>
+                  </div>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}>
+                      <img
+                        src={useBaseUrl('img/健合集团.png')}
+                        alt="健合集团"
+                      />
+                    </div>
+                    <small>健合集团</small>
+                  </div>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}>
+                      <img
+                        src={useBaseUrl('img/吉首大学张家界学院.png')}
+                        alt="吉首大学张家界学院"
+                      />
+                    </div>
+                    <small>吉首大学张家界学院</small>
+                  </div>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}>
+                      <img
+                        src={useBaseUrl('img/益丰大药房.png')}
+                        alt="益丰大药房"
+                      />
+                    </div>
+                    <small>益丰大药房</small>
                   </div>
                   <div className={styles.clientItem}>
                     <div className={styles.avatar}>
@@ -444,7 +476,39 @@ function Home() {
                     </div>
                     <small>广东工业大学华立学院</small>
                   </div>
-
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}>
+                      <img src={useBaseUrl('img/Zambon.png')} alt="Zambon" />
+                    </div>
+                    <small>Zambon</small>
+                  </div>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}>
+                      <img
+                        src={useBaseUrl('img/健合集团.png')}
+                        alt="健合集团"
+                      />
+                    </div>
+                    <small>健合集团</small>
+                  </div>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}>
+                      <img
+                        src={useBaseUrl('img/吉首大学张家界学院.png')}
+                        alt="吉首大学张家界学院"
+                      />
+                    </div>
+                    <small>吉首大学张家界学院</small>
+                  </div>
+                  <div className={styles.clientItem}>
+                    <div className={styles.avatar}>
+                      <img
+                        src={useBaseUrl('img/益丰大药房.png')}
+                        alt="益丰大药房"
+                      />
+                    </div>
+                    <small>益丰大药房</small>
+                  </div>
                   <div className={styles.clientItem}>
                     <div className={styles.avatar}>
                       <img
@@ -473,8 +537,15 @@ function Home() {
               </ul>
             </div>
           </div>
+
+          <div
+            id="case"
+            className={styles.case}
+            style={{marginBottom: '14%'}}></div>
           <div className={styles.clientComment}>
-            <h2 className={styles.title}>客户评价</h2>
+            <h2 className={styles.title} style={{marginTop: '0'}}>
+              客户评价
+            </h2>
             <ul className={styles.commentList}>
               <li className={styles.commentItem}>
                 <div className={styles.clientMsg}>
@@ -508,7 +579,7 @@ function Home() {
                   <span>国大药房</span>
                 </div>
                 <p>
-                  英荔播课功能齐全，设计了开课签到、随堂签到、随堂答题等功能，能够有效监督学员在线的时间，课后测试能及时检核学员对知识的掌握情况。同时，直播功能稳定，学员端画质、声音都很清晰，是值得推荐的平台。
+                  英荔播课功能齐全，设计了开课签到、随堂签到、随堂答题等功能，能够有效监督学员在线的时间，课后测试能及时检验学员对知识的掌握情况。同时，直播功能稳定，学员端画质、声音都很清晰，是值得推荐的平台。
                 </p>
               </li>
             </ul>
@@ -525,7 +596,7 @@ function Home() {
             </p>
             <p>一对一专属客户服务</p>
             <div className={styles.linkBtn}>
-              <Button>
+              <Button style={{border: 'none'}}>
                 <a href={siteConfig.url + '/user/register'} target="_blank">
                   免费使用
                 </a>

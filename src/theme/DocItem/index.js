@@ -101,7 +101,13 @@ function DocItem(props) {
         <meta name="referrer" content="no-referrer" />
       </Head>
       <div className={styles.headNavbar}>
-        <img src={useBaseUrl('img/homepage_logo.png')} style={{ width: '105px', height: '53.4%' }} alt="" />
+        <a href="/">
+          <img
+            src={useBaseUrl('img/homepage_logo.png')}
+            style={{ width: '105px', height: '53.4%' }}
+            alt=""
+          />
+        </a>
       </div>
       <div className="padding-vert--lg" style={{ marginTop: '60px' }}>
         <div className="container">
@@ -201,12 +207,24 @@ function DocItem(props) {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
-      <div style={{ color: '#8494a6', margin: '0 10vw', padding: '1vw 0', borderTop: '1px solid #eaf0f7' }}>
-        Copyright © 2018-{new Date().getFullYear()} 广东英荔国际教育科技有限公司 粤 ICP 备 13044168 号 - 7
+      <div
+        style={{
+          color: '#8494a6',
+          margin: '0 10vw',
+          padding: '1vw 0',
+          borderTop: '1px solid #eaf0f7',
+        }}>
+        Copyright © 2018-{new Date().getFullYear()} 广东英荔国际教育科技有限公司
+        <a
+          href="http://beian.miit.gov.cn/"
+          target="_blank"
+          className={styles.footLink}>
+          {' '}
+            粤 ICP 备 13044168 号-7
+          </a>
       </div>
     </>
   );

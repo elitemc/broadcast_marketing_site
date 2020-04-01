@@ -102,7 +102,11 @@ const Purchase = () => {
                           }>
                           <Button
                             size="large"
-                            className={styles.btn}
+                            className={
+                              styles.btn +
+                              ' ' +
+                              (index === 1 ? '' : styles.customPackage)
+                            }
                             style={{
                               backgroundColor: index === 1 ? '#0d6fde' : '#fff',
                               color: index === 1 ? '#fff' : '#0d6fde',

@@ -132,7 +132,16 @@ function Footer() {
         </div>
       </div>
       {copyright && (
-        <div style={{ color: '#8494a6', paddingTop: '1vw' }}> {copyright}</div>
+        <div style={{ color: '#8494a6', paddingTop: '1vw' }}>
+          {copyright}
+          <a
+            href="http://beian.miit.gov.cn/"
+            target="_blank"
+            className={styles.footLink}>
+            {' '}
+            粤 ICP 备 13044168 号-7
+          </a>
+        </div>
       )}
     </footer>
   );

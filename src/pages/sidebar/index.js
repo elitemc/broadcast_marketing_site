@@ -49,7 +49,7 @@ function Sidebar(props) {
           </div>
           <div className={styles.detail}>
             <span>
-              <a href="tel:400-931-8118" style={{color: 'inherit'}}>
+              <a href="tel:400-931-8118" style={{color: '#0d6fde'}}>
                 400-931-8118
               </a>{' '}
             </span>

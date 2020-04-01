@@ -7,6 +7,10 @@
 
 
 @media screen and (max-width: 997px) {
+  .navbarLogin {
+    color: #606770 !important;
+  }
+
   .displayOnlyInLargeViewport {
     display: none !important;
   }
@@ -21,6 +25,7 @@
 
 .blue {
   background: #0d6fde;
+  box-shadow: none;
 }
 
 .blue .blue_item a {
