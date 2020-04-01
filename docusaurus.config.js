@@ -96,7 +96,7 @@ module.exports = {
         src: 'img/homepage_logo.png',
       },
       // Please do not remove the credits, help to publicize Docusaurus :)
-      copyright: `Copyright © 2018-${new Date().getFullYear()} 广东英荔国际教育科技有限公司 粤 ICP 备 13044168 号-7`,
+      copyright: `Copyright © 2018-${new Date().getFullYear()} 广东英荔国际教育科技有限公司`,
     },
     disableDarkMode: true,
   },
