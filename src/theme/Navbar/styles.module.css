@@ -25,6 +25,7 @@
 
 .blue {
   background: #0d6fde;
+  box-shadow: none;
 }
 
 .blue .blue_item a {
