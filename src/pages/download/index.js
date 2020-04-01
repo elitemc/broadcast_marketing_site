@@ -71,12 +71,16 @@ function Download() {
               <div className={styles.downItem}>
                 <div className={styles.downCode}>
                   <div className={styles.downIcon}>
-                    <img
-                      src={useBaseUrl('img/android_download.png')}
-                      alt="下载"
-                    />
+                    <img src={useBaseUrl('img/ios_down.png')} alt="下载" />
                   </div>
-                  <small>点击或扫描二维码下载</small>
+                  <small
+                    onClick={() =>
+                      download(
+                        'https://apps.apple.com/cn/app/%E8%8B%B1%E8%8D%94%E6%92%AD%E8%AF%BE/id1467718115',
+                      )
+                    }>
+                    点击或扫描二维码下载
+                  </small>
                 </div>
                 <div className={styles.iconContain}>
                   <div className={styles.icon}>

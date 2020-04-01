@@ -20,7 +20,7 @@ const LINK_CLASS_NAME = 'contents__link';
 const ACTIVE_LINK_CLASS_NAME = 'contents__link--active';
 const TOP_OFFSET = 100;
 
-function DocTOC({ headings }) {
+function DocTOC({headings}) {
   useTOCHighlight(LINK_CLASS_NAME, ACTIVE_LINK_CLASS_NAME, TOP_OFFSET);
   return (
     <div className="col col--3">
@@ -32,7 +32,7 @@ function DocTOC({ headings }) {
 }
 
 /* eslint-disable jsx-a11y/control-has-associated-label */
-function Headings({ headings, isChild }) {
+function Headings({headings, isChild}) {
   if (!headings.length) {
     return null;
   }
@@ -43,7 +43,7 @@ function Headings({ headings, isChild }) {
           <a
             href={`#${heading.id}`}
             className={LINK_CLASS_NAME}
-            dangerouslySetInnerHTML={{ __html: heading.value }}
+            dangerouslySetInnerHTML={{__html: heading.value}}
           />
           <Headings isChild headings={heading.children} />
         </li>
@@ -53,10 +53,10 @@ function Headings({ headings, isChild }) {
 }
 
 function DocItem(props) {
-  const { siteConfig = {} } = useDocusaurusContext();
-  const { url: siteUrl, title: siteTitle } = siteConfig;
-  const { content: DocContent } = props;
-  const { metadata } = DocContent;
+  const {siteConfig = {}} = useDocusaurusContext();
+  const {url: siteUrl, title: siteTitle} = siteConfig;
+  const {content: DocContent} = props;
+  const {metadata} = DocContent;
   const {
     description,
     title,
@@ -104,12 +104,12 @@ function DocItem(props) {
         <a href="/">
           <img
             src={useBaseUrl('img/homepage_logo.png')}
-            style={{ width: '105px', height: '53.4%' }}
+            style={{width: '105px', height: '53.4%'}}
             alt=""
           />
         </a>
       </div>
-      <div className="padding-vert--lg" style={{ marginTop: '60px' }}>
+      <div className="padding-vert--lg" style={{marginTop: '60px'}}>
         <div className="container">
           <div className="row">
             {!hideTableOfContents && DocContent.rightToc && (
@@ -120,7 +120,7 @@ function DocItem(props) {
                 <article>
                   {version && (
                     <span
-                      style={{ verticalAlign: 'top' }}
+                      style={{verticalAlign: 'top'}}
                       className="badge badge--info">
                       Version: {version}
                     </span>
@@ -223,8 +223,8 @@ function DocItem(props) {
           target="_blank"
           className={styles.footLink}>
           {' '}
-            粤 ICP 备 13044168 号-7
-          </a>
+          粤 ICP 备 13044168 号-7
+        </a>
       </div>
     </>
   );
