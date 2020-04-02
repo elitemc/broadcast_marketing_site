@@ -99,6 +99,42 @@ function Navbar() {
     }, 1000 / 60);
   };
 
+  function insertAfter(newElement, targetElement) {
+    var parent = targetElement.parentNode;
+    if (parent.lastChild == targetElement) {
+      parent.appendChild(newElement);
+    } else {
+      parent.insertBefore(newElement, targetElement.nextSibling);
+    }
+  }
+  useEffect(() => {
+    if (window !== undefined) {
+      var _hmt = _hmt || [];
+
+      var hm = document.createElement('script');
+      hm.src = 'https://hm.baidu.com/hm.js?580947b073cee1cc9b9e7532c32440e2';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(hm, s);
+    }
+
+    var _hmt1 = _hmt1 || [];
+
+    var hm1 = document.createElement('script');
+    hm1.src =
+      'https://goutong.baidu.com/site/839/580947b073cee1cc9b9e7532c32440e2/b.js?siteId=14911792';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(hm1, s);
+    setIsHomePage(state => !!document.getElementById('homeBanner'));
+    let timer = setInterval(() => {
+      let nb_icon_wrap = document.getElementById('nb_icon_wrap');
+      if (nb_icon_wrap) {
+        nb_icon_wrap.style.display = 'none';
+        clearInterval(timer);
+      }
+    }, 800);
+    handler();
+  }, []);
+
   useEffect(() => {
     window.addEventListener('scroll', handler);
     window.addEventListener('resize', handler);
@@ -113,23 +149,6 @@ function Navbar() {
       // window.removeEventListener('hashchange', handler);
     };
   });
-
-  useEffect(() => {
-    var hm = document.createElement('script');
-    hm.src = 'https://hm.baidu.com/hm.js?6a112f5b8b7791f0b8df91a0072aceed';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(hm, s);
-
-    setIsHomePage(!!document.getElementById('homeBanner'));
-    let timer = setInterval(() => {
-      let nb_icon_wrap = document.getElementById('nb_icon_wrap');
-      if (nb_icon_wrap) {
-        nb_icon_wrap.style.display = 'none';
-        clearInterval(timer);
-      }
-    }, 800);
-    handler();
-  }, []);
 
   const MySEO = () => (
     <>
@@ -181,7 +200,13 @@ function Navbar() {
         fontFamily: 'PingFangSC-Regular',
       }}>
       <MySEO />
-      <div className="navbar__inner" style={{ maxWidth: '1440px', margin: '0 auto' }}>
+      <div
+        className="navbar__inner"
+        style={{
+          maxWidth: '1440px',
+          margin: '0 auto'
+        }}
+      >
         <div className="navbar__items">
           <div
             aria-label="Navigation bar toggle"

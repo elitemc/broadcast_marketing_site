@@ -17,11 +17,12 @@ function Sidebar(props) {
   return (
     <div className={styles.sideBar}>
       <ul className={styles.sideList}>
-        <li>
+        <li className={styles.wrap}>
           <div
             className={
               styles.icon + ' ' + styles.iconfont + ' ' + styles.iconCustomer
             }
+            style={{color: '#fff !important'}}
             onClick={() => {
               let nb_icon_wrap = document.getElementById('nb_icon_wrap');
               if (nb_icon_wrap) {
@@ -75,7 +76,13 @@ function Sidebar(props) {
           <li>
             <div
               className={
-                styles.icon + ' ' + styles.iconfont + ' ' + styles.iconupward
+                styles.toTop +
+                ' ' +
+                styles.icon +
+                ' ' +
+                styles.iconfont +
+                ' ' +
+                styles.icontubiaozhizuomoban
               }></div>
           </li>
         </BackTop>

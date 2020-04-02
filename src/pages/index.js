@@ -7,7 +7,7 @@
  * @format
  */
 
-import React, {useEffect, useRef} from 'react';
+import React, { useEffect, useRef } from 'react';
 import classnames from 'classnames';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
@@ -17,7 +17,7 @@ import styles from './styles.module.css';
 import SideBar from './sidebar';
 import axios from 'axios';
 import 'antd/dist/antd.css';
-import {Button} from 'antd';
+import { Button } from 'antd';
 
 function scrollNotice(container, props, time) {
   let initTime = Date.now();
@@ -37,14 +37,14 @@ function scrollNotice(container, props, time) {
 
 function Home() {
   const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
+  const { siteConfig = {} } = context;
   const clientList = useRef();
   const clientLi = useRef();
   useEffect(() => {
     let listWidth = clientList.current.clientWidth;
     let liWidth = clientLi.current.clientWidth;
     // console.log(listWidth, liWidth);
-    scrollNotice(clientList.current, {marginLeft: -liWidth}, 60000);
+    scrollNotice(clientList.current, { marginLeft: -liWidth }, 60000);
   }, []);
 
   return (
@@ -70,7 +70,7 @@ function Home() {
                   </p>
                 </div>
 
-                <Button className={styles.freeUse} style={{border: 'none'}}>
+                <Button className={styles.freeUse} style={{ border: 'none' }}>
                   <a href={siteConfig.url + '/user/register'} target="_blank">
                     免费使用
                   </a>
@@ -94,7 +94,7 @@ function Home() {
                 <div className={styles.carDetail}>
                   <div className={styles.detail}>
                     <b>高质量低付费，大幅节省培训成本</b>
-                    <p style={{marginBottom: 10}}>
+                    <p style={{ marginBottom: 10 }}>
                       轻松组织异地多人远程培训，单场节省超过 *80%
                       培训费用。价格优势明显，收费模式灵活，50
                       人内「免费永久使用」，全面体验高性价比直播服务，快速实现培训数字化转型。
@@ -255,11 +255,11 @@ function Home() {
             <ul className={styles.supportList}>
               <li>
                 <div className="card-demo">
-                  <div className="card" style={{borderRadius: '10px'}}>
+                  <div className="card" style={{ borderRadius: '10px' }}>
                     <div className="card__image">
                       <img src={useBaseUrl('img/首-强-picture1.png')} alt="" />
                     </div>
-                    <div className="card__body" style={{height: 174}}>
+                    <div className="card__body" style={{ height: 174 }}>
                       <h4>全球服务，高速传输</h4>
                       <small>
                         网络节点覆盖 200
@@ -271,11 +271,11 @@ function Home() {
               </li>
               <li>
                 <div className="card-demo">
-                  <div className="card" style={{borderRadius: '0 0 10px 10px'}}>
+                  <div className="card" style={{ borderRadius: '0 0 10px 10px' }}>
                     <div className="card__image">
                       <img src={useBaseUrl('img/首-强-picture2.png')} alt="" />
                     </div>
-                    <div className="card__body" style={{height: 174}}>
+                    <div className="card__body" style={{ height: 174 }}>
                       <h4>数据安全稳定</h4>
                       <small>
                         多元区存储，异地容灾，文件就近上传，有效提升拉取速度。
@@ -287,11 +287,11 @@ function Home() {
               </li>
               <li>
                 <div className="card-demo">
-                  <div className="card" style={{borderRadius: '0 0 10px 10px'}}>
+                  <div className="card" style={{ borderRadius: '0 0 10px 10px' }}>
                     <div className="card__image">
                       <img src={useBaseUrl('img/首-强-picture3.png')} alt="" />
                     </div>
-                    <div className="card__body" style={{height: 174}}>
+                    <div className="card__body" style={{ height: 174 }}>
                       <h4>省流量，高质量</h4>
                       <small>
                         课件转码后演示，视频格式云转换，码率自定义，保障在各种网络环境下均可流畅直播。
@@ -541,9 +541,9 @@ function Home() {
           <div
             id="case"
             className={styles.case}
-            style={{marginBottom: '14%'}}></div>
+            style={{ marginBottom: '14%' }}></div>
           <div className={styles.clientComment}>
-            <h2 className={styles.title} style={{marginTop: '0'}}>
+            <h2 className={styles.title} style={{ marginTop: '0' }}>
               客户评价
             </h2>
             <ul className={styles.commentList}>
@@ -589,19 +589,19 @@ function Home() {
             <h3>零门槛搭建企业专属直播间</h3>
             <p>
               立即拨打服务热线：
-              <a href="tel:400-931-8118" style={{color: 'inherit'}}>
+              <a href="tel:400-931-8118" style={{ color: 'inherit' }}>
                 {' '}
                 400-931-8118
               </a>
             </p>
             <p>一对一专属客户服务</p>
             <div className={styles.linkBtn}>
-              <Button style={{border: 'none'}}>
+              <Button style={{ border: 'none' }}>
                 <a href={siteConfig.url + '/user/register'} target="_blank">
                   免费使用
                 </a>
               </Button>
-              <Button style={{backgroundColor: '#0d6fde', color: '#fff'}}>
+              <Button style={{ backgroundColor: '#0d6fde', color: '#fff' }}>
                 <Link to="/purchase">报价查询</Link>
               </Button>
             </div>
