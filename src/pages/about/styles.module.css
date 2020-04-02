@@ -27,6 +27,7 @@
 }
 
 .aboutContain {
+  max-width: 800px;
   width: 58%;
   margin: 84px auto 64px;
   padding: 3.22% 5.55%;
