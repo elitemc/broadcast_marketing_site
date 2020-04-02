@@ -10,7 +10,6 @@ body {
 
 .homeSplashFade {
   position: relative;
-  width: 100%;
   padding-bottom: 40.1389%;
   background-size: 38.659%;
   background-position: 50%;
@@ -20,6 +19,7 @@ body {
 }
 
 .bannerContain {
+  /* max-width: 1440px; */
   position: absolute;
   top: 0;
   left: 0;
@@ -28,7 +28,7 @@ body {
   margin: auto;
   display: flex;
   width: 86%;
-  max-width: 1300px;
+  max-width: 1440px;
   justify-content: space-around;
   align-items: center;
   margin-top: 30px;
@@ -195,6 +195,8 @@ body {
 
 /* 功能列表 */
 .container {
+  /* max-width: 1200px; */
+  max-width: 1440px;
   margin: 20px 147px 0;
 }
 
@@ -217,6 +219,7 @@ body {
 
 .functionCarList>li {
   display: flex;
+  max-width: 500px;
   width: 43%;
   padding: 25px;
   margin: 0 15px 30px;
