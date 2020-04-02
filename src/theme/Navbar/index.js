@@ -108,20 +108,23 @@ function Navbar() {
     }
   }
   useEffect(() => {
-    var hm = document.createElement('script');
-    hm.src = 'https://hm.baidu.com/hm.js?580947b073cee1cc9b9e7532c32440e2';
-    insertAfter(hm, document.body);
-    // var s = document.getElementsByTagName('script')[0];
-    // s.parentNode.insertBefore(hm, s);
-    // setTimeout(() => {
-    //   var hm = document.createElement('img');
-    //   hm.src =
-    //     'https://gss0.bdstatic.com/7051cy89RcgCncy6lo7D0j9wexYrbOWh7c50/0331/ziyuanwei/540*280.png';
-    //   var s = document.getElementsByTagName('script')[0];
-    //   console.log(s, hm);
-    //   s.parentNode.insertBefore(hm, s);
-    // }, 10000);
-    setIsHomePage(!!document.getElementById('homeBanner'));
+    if (window !== undefined) {
+      var _hmt = _hmt || [];
+
+      var hm = document.createElement('script');
+      hm.src = 'https://hm.baidu.com/hm.js?580947b073cee1cc9b9e7532c32440e2';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(hm, s);
+    }
+
+    var _hmt1 = _hmt1 || [];
+
+    var hm1 = document.createElement('script');
+    hm1.src =
+      'https://goutong.baidu.com/site/80/fdbbf3cf2d6bd2aa03e326c9af5fb774/b.js?siteId=14274866';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(hm1, s);
+    setIsHomePage(state => !!document.getElementById('homeBanner'));
     let timer = setInterval(() => {
       let nb_icon_wrap = document.getElementById('nb_icon_wrap');
       if (nb_icon_wrap) {
