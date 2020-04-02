@@ -121,7 +121,7 @@ function Navbar() {
 
     var hm1 = document.createElement('script');
     hm1.src =
-      'https://goutong.baidu.com/site/80/fdbbf3cf2d6bd2aa03e326c9af5fb774/b.js?siteId=14274866';
+      'https://goutong.baidu.com/site/839/580947b073cee1cc9b9e7532c32440e2/b.js?siteId=14911792';
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(hm1, s);
     setIsHomePage(state => !!document.getElementById('homeBanner'));
