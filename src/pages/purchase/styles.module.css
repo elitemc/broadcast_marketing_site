@@ -1,6 +1,5 @@
 .purchase_main {
   text-align: center;
-  padding: 0px 10%;
   margin-bottom: 5.6%;
 }
 
@@ -146,7 +145,6 @@
 
 /* 适配各手机 */
 @media screen and (min-width: 300px) and (max-width: 614px) {
-
   .page_title {
     padding: 50px 0;
   }

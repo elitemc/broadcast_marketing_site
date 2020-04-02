@@ -10,7 +10,7 @@
 module.exports = {
   title: '英荔播课',
   tagline: '英荔播课',
-  url: 'http://dockermkt.yingliboke.cn',
+  url: 'https://bms.yingliboke.cn',
   baseUrl: '/',
   favicon: 'img/titlelogo.png',
   organizationName: 'facebook', // Usually your GitHub org/user name.
@@ -29,12 +29,12 @@ module.exports = {
         {to: '/purchase', label: '购  买'},
         // Please keep GitHub link to the right for consistency.
         {
-          href: 'http://dockermkt.yingliboke.cn/user/login',
+          href: 'https://bms.yingliboke.cn/user/login',
           label: '登录',
           position: 'right',
         },
         {
-          href: 'http://dockermkt.yingliboke.cn/user/register',
+          href: 'https://bms.yingliboke.cn/user/register',
           label: '免费使用',
           position: 'right',
         },
