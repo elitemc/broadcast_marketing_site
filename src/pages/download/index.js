@@ -16,9 +16,9 @@ const downloadDesk = (key, e) => {
   let downloadUrl = '';
   let baseUrl = 'https://yingliboke.oss-cn-shenzhen.aliyuncs.com/app/';
   if (key === 'win') {
-    downloadUrl = baseUrl + '英荔播课%20Setup%201.2.0.exe';
+    downloadUrl = baseUrl + '英荔播课%20Setup%202.1.1.exe';
   } else if (key === 'mac') {
-    downloadUrl = baseUrl + 'www英荔播课-1.2.0.dmg';
+    downloadUrl = baseUrl + 'www英荔播课-2.1.1.dmg';
   }
   // 创建a标签，触发点击
   const a = document.createElement('a');
@@ -54,7 +54,7 @@ function Download() {
                   <small
                     onClick={() =>
                       download(
-                        'https://a.app.qq.com/o/simple.jsp?pkgname=com.eliteu.yingliboke',
+                        'https://yingliboke.oss-cn-shenzhen.aliyuncs.com/android/www%E8%8B%B1%E8%8D%94%E6%92%AD%E8%AF%BE2.1.1-03-20_1517_211_jiagu_sign.apk',
                       )
                     }>
                     点击或扫描二维码下载
