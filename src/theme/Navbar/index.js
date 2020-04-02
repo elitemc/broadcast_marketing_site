@@ -99,6 +99,39 @@ function Navbar() {
     }, 1000 / 60);
   };
 
+  function insertAfter(newElement, targetElement) {
+    var parent = targetElement.parentNode;
+    if (parent.lastChild == targetElement) {
+      parent.appendChild(newElement);
+    } else {
+      parent.insertBefore(newElement, targetElement.nextSibling);
+    }
+  }
+  useEffect(() => {
+    var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?580947b073cee1cc9b9e7532c32440e2';
+    insertAfter(hm, document.body);
+    // var s = document.getElementsByTagName('script')[0];
+    // s.parentNode.insertBefore(hm, s);
+    // setTimeout(() => {
+    //   var hm = document.createElement('img');
+    //   hm.src =
+    //     'https://gss0.bdstatic.com/7051cy89RcgCncy6lo7D0j9wexYrbOWh7c50/0331/ziyuanwei/540*280.png';
+    //   var s = document.getElementsByTagName('script')[0];
+    //   console.log(s, hm);
+    //   s.parentNode.insertBefore(hm, s);
+    // }, 10000);
+    setIsHomePage(!!document.getElementById('homeBanner'));
+    let timer = setInterval(() => {
+      let nb_icon_wrap = document.getElementById('nb_icon_wrap');
+      if (nb_icon_wrap) {
+        nb_icon_wrap.style.display = 'none';
+        clearInterval(timer);
+      }
+    }, 800);
+    handler();
+  }, []);
+
   useEffect(() => {
     window.addEventListener('scroll', handler);
     window.addEventListener('resize', handler);
@@ -113,23 +146,6 @@ function Navbar() {
       // window.removeEventListener('hashchange', handler);
     };
   });
-
-  useEffect(() => {
-    var hm = document.createElement('script');
-    hm.src = 'https://hm.baidu.com/hm.js?580947b073cee1cc9b9e7532c32440e2';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(hm, s);
-
-    setIsHomePage(!!document.getElementById('homeBanner'));
-    let timer = setInterval(() => {
-      let nb_icon_wrap = document.getElementById('nb_icon_wrap');
-      if (nb_icon_wrap) {
-        nb_icon_wrap.style.display = 'none';
-        clearInterval(timer);
-      }
-    }, 800);
-    handler();
-  }, []);
 
   const MySEO = () => (
     <>
