@@ -187,9 +187,7 @@ class StandardPackage extends React.Component {
               </p>
             </div>
             <p>
-              <a
-                href="http://dockermkt.yingliboke.cn/user/login"
-                target="_blank">
+              <a href="https://bms.yingliboke.cn/user/login" target="_blank">
                 <Button
                   size="large"
                   type="primary"

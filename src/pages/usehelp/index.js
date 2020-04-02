@@ -9,6 +9,9 @@ import 'antd/dist/antd.css';
 import {Button} from 'antd';
 
 function UseHelp() {
+  // let defaultUrl = 'http://mktbeta.yingliboke.cn/docs';
+  let defaultUrl = 'http://yingliboke.cn/docs';
+
   return (
     <Layout
       title={`使用帮助`}
@@ -24,11 +27,11 @@ function UseHelp() {
         <div className={styles.help_container}>
           <div className={styles.identity}>
             <div className={styles.identityLi}>
-              <a href="http://mktbeta.yingliboke.cn/docs/Admin" target="_blank">
+              <a href={defaultUrl + '/Admin'} target="_blank">
                 <img width={80} src={useBaseUrl('/img/usinghelp_Adm.png')} />
               </a>
               <a
-                href="http://mktbeta.yingliboke.cn/docs/Admin"
+                href={defaultUrl + '/Admin'}
                 target="_blank"
                 style={{marginTop: '35px'}}>
                 <Button className={styles.identityBtn} type="primary">
@@ -37,13 +40,11 @@ function UseHelp() {
               </a>
             </div>
             <div className={styles.identityLi}>
-              <a
-                href="http://mktbeta.yingliboke.cn/docs/Teacher"
-                target="_blank">
+              <a href={defaultUrl + '/Teacher'} target="_blank">
                 <img width={80} src={useBaseUrl('/img/teacher_Adm.png')} />
               </a>
               <a
-                href="http://mktbeta.yingliboke.cn/docs/Teacher"
+                href={defaultUrl + '/Teacher'}
                 style={{marginTop: '35px'}}
                 target="_blank">
                 <Button className={styles.identityBtn} type="primary">
@@ -52,13 +53,11 @@ function UseHelp() {
               </a>
             </div>
             <div className={styles.identityLi}>
-              <a
-                href="http://mktbeta.yingliboke.cn/docs/Student"
-                target="_blank">
+              <a href={defaultUrl + '/Student'} target="_blank">
                 <img width={80} src={useBaseUrl('/img/students_Adm.png')} />
               </a>
               <a
-                href="http://mktbeta.yingliboke.cn/docs/Student"
+                href={defaultUrl + '/Student'}
                 style={{marginTop: '35px'}}
                 target="_blank">
                 <Button className={styles.identityBtn} type="primary">
