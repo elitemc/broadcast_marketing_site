@@ -1,0 +1,50 @@
+.privacy_box {
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  max-width: 900px;
+  height: auto;
+  margin: 50px auto;
+  color: #2e313c;
+}
+
+.privacy_box h3 {
+  text-align: center;
+  font-size: 20px;
+  color: #2e313c;
+  line-height: 3;
+  font-weight: bold;
+}
+
+.privacy_box h4 {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.privacy_box p {
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.privacy_box p+p {
+  margin: 0 0 15px 0;
+}
+
+.privacy_box p+ul {
+  margin: 0;
+}
+
+.privacy_box ul {
+  margin: 0;
+  padding-left: 30px;
+  list-style: initial;
+  line-height: 1.8;
+}
+
+@media screen and (max-width: 576px) {
+  .privacy_box {
+    width: 100%;
+    margin: 10px auto;
+  }
+}
