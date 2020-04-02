@@ -23,5 +23,5 @@ body > div {
 
 .main-wrapper {
   flex: 1 0 auto;
-  /* margin-top: var(--ifm-navbar-height); */
+  margin-top: var(--ifm-navbar-height);
 }
