@@ -197,7 +197,7 @@ body {
 .container {
   /* max-width: 1200px; */
   max-width: 1440px;
-  margin: 20px 147px 0;
+  margin: 20px auto 0 auto;
 }
 
 .title {
@@ -432,7 +432,7 @@ body {
 
 @media screen and (max-width: 1290px) {
   .container {
-    margin: 20px 87px 0;
+    margin: 20px auto 0;
   }
 
   .homeSplashFade .homeTitle {

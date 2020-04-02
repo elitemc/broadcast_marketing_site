@@ -62,87 +62,89 @@ function Footer() {
         padding: '1vw 10vw',
         fontFamily: 'PingFangSC-Regular',
       }}>
-      <div
-        style={{
-          display: 'flex',
-          borderBottom: 'solid 1px #eaf0f7',
-          padding: '2vw 0',
-        }}>
-        {logo && (
-          <div>
-            {logo && logo.src && (
-              <div className="margin-bottom--sm">
-                {logo.href ? (
-                  <a
-                    href={logo.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.footerLogoLink}>
-                    <FooterLogo alt={logo.alt} url={logoUrl} />
-                  </a>
-                ) : (
-                    <Link to={logo.to}>
+      <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
+        <div
+          style={{
+            display: 'flex',
+            borderBottom: 'solid 1px #eaf0f7',
+            padding: '2vw 0',
+          }}>
+          {logo && (
+            <div>
+              {logo && logo.src && (
+                <div className="margin-bottom--sm">
+                  {logo.href ? (
+                    <a
+                      href={logo.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.footerLogoLink}>
                       <FooterLogo alt={logo.alt} url={logoUrl} />
-                    </Link>
-                  )}
+                    </a>
+                  ) : (
+                      <Link to={logo.to}>
+                        <FooterLogo alt={logo.alt} url={logoUrl} />
+                      </Link>
+                    )}
+                </div>
+              )}
+            </div>
+          )}
+          <div className="container">
+            {links && links.length > 0 && (
+              <div className="row footer__links" style={{ paddingLeft: '10vw' }}>
+                {links.map((linkItem, i) => (
+                  <div key={i} className="col footer__col">
+                    {linkItem.title != null ? (
+                      <h4
+                        className="footer__title"
+                        style={{ color: '#2e313c', fontSize: '14px' }}>
+                        {linkItem.title}
+                      </h4>
+                    ) : null}
+                    {linkItem.items != null &&
+                      Array.isArray(linkItem.items) &&
+                      linkItem.items.length > 0 ? (
+                        <ul className="footer__items">
+                          {linkItem.items.map((item, key) =>
+                            item.html ? (
+                              <li
+                                key={key}
+                                className={styles.footerLi}
+                                dangerouslySetInnerHTML={{
+                                  __html: item.html,
+                                }}
+                                style={{ margin: '0.8vw 0' }}
+                              />
+                            ) : (
+                                <li
+                                  key={item.href || item.to}
+                                  style={{ margin: '0.8vw 0' }}>
+                                  <FooterLink {...item} />
+                                </li>
+                              ),
+                          )}
+                        </ul>
+                      ) : null}
+                  </div>
+                ))}
               </div>
             )}
           </div>
-        )}
-        <div className="container">
-          {links && links.length > 0 && (
-            <div className="row footer__links" style={{ paddingLeft: '10vw' }}>
-              {links.map((linkItem, i) => (
-                <div key={i} className="col footer__col">
-                  {linkItem.title != null ? (
-                    <h4
-                      className="footer__title"
-                      style={{ color: '#2e313c', fontSize: '14px' }}>
-                      {linkItem.title}
-                    </h4>
-                  ) : null}
-                  {linkItem.items != null &&
-                    Array.isArray(linkItem.items) &&
-                    linkItem.items.length > 0 ? (
-                      <ul className="footer__items">
-                        {linkItem.items.map((item, key) =>
-                          item.html ? (
-                            <li
-                              key={key}
-                              className={styles.footerLi}
-                              dangerouslySetInnerHTML={{
-                                __html: item.html,
-                              }}
-                              style={{ margin: '0.8vw 0' }}
-                            />
-                          ) : (
-                              <li
-                                key={item.href || item.to}
-                                style={{ margin: '0.8vw 0' }}>
-                                <FooterLink {...item} />
-                              </li>
-                            ),
-                        )}
-                      </ul>
-                    ) : null}
-                </div>
-              ))}
-            </div>
-          )}
         </div>
-      </div>
-      {copyright && (
-        <div style={{ color: '#8494a6', paddingTop: '1vw' }}>
-          {copyright}
-          <a
-            href="http://beian.miit.gov.cn/"
-            target="_blank"
-            className={styles.footLink}>
-            {' '}
+        {copyright && (
+          <div style={{ color: '#8494a6', paddingTop: '1vw' }}>
+            {copyright}
+            <a
+              href="http://beian.miit.gov.cn/"
+              target="_blank"
+              className={styles.footLink}>
+              {' '}
             粤 ICP 备 13044168 号-7
           </a>
-        </div>
-      )}
+          </div>
+        )}
+      </div>
     </footer>
   );
 }
