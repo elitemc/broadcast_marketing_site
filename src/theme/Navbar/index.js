@@ -181,7 +181,7 @@ function Navbar() {
         fontFamily: 'PingFangSC-Regular',
       }}>
       <MySEO />
-      <div className="navbar__inner">
+      <div className="navbar__inner" style={{ maxWidth: '1440px', margin: '0 auto' }}>
         <div className="navbar__items">
           <div
             aria-label="Navigation bar toggle"

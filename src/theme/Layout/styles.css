@@ -23,5 +23,7 @@ body > div {
 
 .main-wrapper {
   flex: 1 0 auto;
+  max-width: 1440px;
+  margin: 0 auto;
   /* margin-top: var(--ifm-navbar-height); */
 }
