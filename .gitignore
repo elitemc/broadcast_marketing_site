@@ -3,6 +3,7 @@
 
 # Production
 /build
+/dist_mkt
 
 # Generated files
 .docusaurus
