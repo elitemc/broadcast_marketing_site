@@ -5,6 +5,7 @@
 }
 
 .help_container {
+  max-width: 1200px;
   width: 80%;
   border: solid 1px #eff2f6;
   padding: 3vw 1vw;
