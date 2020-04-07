@@ -196,6 +196,7 @@ body {
 /* 功能列表 */
 .container {
   /* max-width: 1200px; */
+  width: 80%;
   max-width: 1440px;
   margin: 20px auto 0 auto;
 }
@@ -724,7 +725,7 @@ body {
 @media screen and (max-width: 880px) {
 
   .container {
-    margin: 20px 57px 0;
+    margin: 20px auto 0;
   }
 
   .homeSplashFade .banner {
@@ -787,7 +788,7 @@ body {
 
 @media screen and (max-width: 714px) {
   .container {
-    margin: 20px 27px 0;
+    margin: 20px auto 0;
   }
 
 
@@ -905,7 +906,7 @@ body {
   }
 
   .container {
-    margin: 20px 8px 0;
+    margin: 20px auto 0;
   }
 
   .functionItem ul li span {
