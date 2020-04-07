@@ -258,7 +258,6 @@ function Navbar() {
             )}
           </Link>
           <div
-            style={{ position: 'relative', left: '8%', width: '50vw' }}
             className={styles.blue_item}>
             {links
               .filter(linkItem => linkItem.position !== 'right')
