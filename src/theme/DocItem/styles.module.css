@@ -99,3 +99,20 @@
 .docLastUpdatedAt {
   font-weight: bold;
 }
+.fotterRemark{
+  color: #8494a6;
+  margin: 0 10vw;
+  max-width: 1440px;
+  padding: 1vw 0;
+  border-top: 1px solid #eaf0f7;
+}
+/* @media screen and (min-width: 998px) {
+  .fotterRemark{
+    margin: 0 auto;
+  }
+  .headNavbar a {
+    display: block;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+} */
