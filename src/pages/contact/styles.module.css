@@ -1,3 +1,8 @@
+.connectMe {
+  max-width: 1440px;
+  margin: auto;
+}
+
 .callWe {
   position: relative;
   text-align: center;
@@ -27,7 +32,7 @@
 }
 
 .callTit {
-  max-width: 1440px;
+  /* max-width: 1440px; */
   margin: 7.709% 14.027% 7.43%;
 }
 
@@ -43,6 +48,7 @@
 }
 
 .callTit .row {
+  margin: 0 auto;
   justify-content: space-between;
 }
 

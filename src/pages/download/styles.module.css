@@ -1,7 +1,17 @@
+.download {
+  max-width: 1440px;
+  margin: auto;
+}
+
 .downloadHeader {
   text-align: center;
   margin: 5.55% auto;
 }
+
+/* .download_layout {
+  display: flex;
+  justify-content: center;
+} */
 
 .downloadHeader h4 {
   margin-bottom: 20px;

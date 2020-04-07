@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Form, Row, Col, Button} from 'antd';
+import {Row} from 'antd';
 import styles from './styles.module.css';
 
 function AboutUs() {
@@ -25,9 +25,6 @@ function AboutUs() {
           </div>
         </div>
       </div>
-      {/* <div className={styles.con_footer}>
-        {`Copyright © 2018-${new Date().getFullYear()} 广东英荔国际教育科技有限公司 粤 ICP 备 13044168 号 - 7 增值电信业务经营许可证：B2-20191904`}
-      </div> */}
     </div>
   );
 }
