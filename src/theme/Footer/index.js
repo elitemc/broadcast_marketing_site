@@ -56,7 +56,6 @@ function Footer() {
         'footer--dark': footer.style === 'dark',
       })}
       style={{
-        marginTop: 30,
         backgroundColor: '#ffffff',
         border: 'solid 1px #f3f3f3',
         padding: '1vw 10vw',
@@ -133,7 +132,7 @@ function Footer() {
           </div>
         </div>
         {copyright && (
-          <div style={{ color: '#8494a6', paddingTop: '1vw' }}>
+          <div style={{ color: '#8494a6', paddingTop: '1vw', textAlign: 'center' }}>
             {copyright}
             <a
               href="http://beian.miit.gov.cn/"
