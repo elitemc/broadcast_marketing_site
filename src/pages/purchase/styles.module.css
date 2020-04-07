@@ -118,6 +118,12 @@
   color: rgb(92, 168, 248) !important;
 }
 
+@media screen and (min-width: 2000px) {
+  .page_title {
+    padding: 7.5% 0;
+  }
+}
+
 /*适配ipad*/
 @media screen and (min-width: 415px) and (max-width: 768px) {
   .version_box {

@@ -649,6 +649,16 @@ body {
     background-color: rgba(0, 0, 0, 0.897);
   }
 } */
+@media screen and (min-width: 3000px) {
+  .homeSplashFade {
+    padding-bottom: 26.1389%;
+    /* padding-bottom: 2%; */
+  }
+
+  .bannerContain {
+    padding-bottom: 1%;
+  }
+}
 
 @media screen and (max-width: 1060px) {
   .detailCar li .carDetail {
