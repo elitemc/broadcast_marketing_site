@@ -1,7 +1,18 @@
+.download {
+  max-width: 1440px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
 .downloadHeader {
   text-align: center;
   margin: 5.55% auto;
 }
+
+/* .download_layout {
+  display: flex;
+  justify-content: center;
+} */
 
 .downloadHeader h4 {
   margin-bottom: 20px;
@@ -115,6 +126,7 @@
   text-align: center;
   margin: auto;
   height: 100px;
+  cursor: pointer;
 }
 
 .teacher .downItem .downCode .downIcon {

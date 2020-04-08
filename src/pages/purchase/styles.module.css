@@ -1,7 +1,7 @@
 .purchase_main {
   max-width: 1440px;
   text-align: center;
-  margin-bottom: 5.6%;
+  margin-bottom: 7.6%;
 }
 
 .page_title {
@@ -16,7 +16,7 @@
 }
 
 .context_Package {
-  height: 100%;
+  min-height: 80vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -116,6 +116,12 @@
 
 .customPackage:hover {
   color: rgb(92, 168, 248) !important;
+}
+
+@media screen and (min-width: 2000px) {
+  .page_title {
+    padding: 7.5% 0;
+  }
 }
 
 /*适配ipad*/
