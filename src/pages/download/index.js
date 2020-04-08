@@ -45,7 +45,13 @@ function Download() {
             <div className={styles.downList}>
               <div className={styles.downItem}>
                 <div className={styles.downCode}>
-                  <div className={styles.downIcon}>
+                  <div
+                    className={styles.downIcon}
+                    onClick={() =>
+                      download(
+                        'https://yingliboke.oss-cn-shenzhen.aliyuncs.com/android/www%E8%8B%B1%E8%8D%94%E6%92%AD%E8%AF%BE2.1.1-03-20_1517_211_jiagu_sign.apk',
+                      )
+                    }>
                     <img
                       src={useBaseUrl('img/android_download.png')}
                       alt="下载"
@@ -70,7 +76,13 @@ function Download() {
 
               <div className={styles.downItem}>
                 <div className={styles.downCode}>
-                  <div className={styles.downIcon}>
+                  <div
+                    className={styles.downIcon}
+                    onClick={() =>
+                      download(
+                        'https://apps.apple.com/cn/app/%E8%8B%B1%E8%8D%94%E6%92%AD%E8%AF%BE/id1467718115',
+                      )
+                    }>
                     <img src={useBaseUrl('img/ios_down.png')} alt="下载" />
                   </div>
                   <small

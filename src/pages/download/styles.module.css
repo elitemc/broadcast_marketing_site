@@ -126,6 +126,7 @@
   text-align: center;
   margin: auto;
   height: 100px;
+  cursor: pointer;
 }
 
 .teacher .downItem .downCode .downIcon {
