@@ -22,9 +22,6 @@ class StandardPackage extends React.Component {
   }
 
   componentDidMount() {
-    let people_value = null;
-    let number_value = null;
-
     // 人数列表
     request({
       url: '/api/mkt/package/people/',
@@ -33,29 +30,34 @@ class StandardPackage extends React.Component {
       .then(res1 => {
         // console.log('res111===', res1);
         if (res1.code === 20000) {
-          people_value = res1.data[0];
+          let people_value = res1.data[0];
           this.setState({people_arr: res1.data, people_value: res1.data[0]});
+
+          // ---------------------------------
+          // 场次列表
+          request({
+            url: '/api/mkt/package/number/',
+            method: 'GET',
+          })
+            .then(res => {
+              // console.log('res22222===', res);
+              if (res.code === 20000) {
+                let number_value = res.data[0];
+                this.setState({
+                  number_arr: res.data,
+                  number_value: res.data[0],
+                });
+                this.handleCalculate(people_value, number_value);
+              }
+            })
+            .catch(err => {
+              console.log('err22222===', err);
+            });
+          // ---------------------------------
         }
       })
       .catch(err1 => {
         console.log('err11111===', err1);
-      });
-
-    // 场次列表
-    request({
-      url: '/api/mkt/package/number/',
-      method: 'GET',
-    })
-      .then(res => {
-        // console.log('res22222===', res);
-        if (res.code === 20000) {
-          number_value = res.data[0];
-          this.setState({number_arr: res.data, number_value: res.data[0]});
-          this.handleCalculate(people_value, number_value);
-        }
-      })
-      .catch(err => {
-        console.log('err22222===', err);
       });
   }
 
@@ -84,7 +86,7 @@ class StandardPackage extends React.Component {
       method: 'GET',
     })
       .then(res => {
-        console.log('res===', res);
+        // console.log('res===', res);
         if (res.code === 20000) {
           let {suggested_price, selling_price} = res.data;
           this.setState({suggested_price, selling_price});
