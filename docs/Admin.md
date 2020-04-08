@@ -29,7 +29,7 @@ title: 我是管理员
 
 
 ### **购买标准版套餐**
-进入充值消费 - 套餐详情页面，选择【购买标准版】，购买套餐时可使用微信支付、支付宝和银联来付款。购买后您可支付差价升级套餐。
+进入充值消费 - 套餐详情页面，选择【购买标准版】，购买套餐时可使用微信支付、支付宝来付款。购买后您可支付差价升级套餐。
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E8%B4%AD%E4%B9%B0%E6%A0%87%E5%87%86%E7%89%88%E5%A5%97%E9%A4%90.png" style={{border:'1px solid #eff0f2'}} />
 <br/>
@@ -37,7 +37,7 @@ title: 我是管理员
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E8%B4%AD%E4%B9%B0%E6%A0%87%E5%87%86%E5%A5%97%E9%A4%902.png" style={{border:'1px solid #eff0f2'}} />
 <br/>
 <br/>
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E8%B4%AD%E4%B9%B0%E6%A0%87%E5%87%86%E5%A5%97%E9%A4%903.png" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E8%B4%AD%E4%B9%B0%E6%A0%87%E5%87%86%E7%89%88%E5%A5%97%E9%A4%90%203.png" style={{border:'1px solid #eff0f2'}} />
 
 ### **升级套餐**
 进入充值消费 - 套餐详情页面，选择【升级套餐】，支付差价即可对套餐升级。
@@ -131,7 +131,7 @@ title: 我是管理员
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE.png" style={{border:'1px solid #eff0f2'}} />
 <br/>
 <br/>
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE2.png" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE%202%283%29.png" style={{border:'1px solid #eff0f2'}} />
 
 
 ## **回放管理**

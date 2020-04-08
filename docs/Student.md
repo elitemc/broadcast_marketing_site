@@ -107,7 +107,7 @@ title: 我是学员
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%8F%82%E4%B8%8E%E6%8A%BD%E5%A5%963.jpg" style={{border:'1px solid #eff0f2'}} />
 
 
-## **连麦（待补充）**
+## **连麦（更新中）**
 
 
 ## **观看回放**
