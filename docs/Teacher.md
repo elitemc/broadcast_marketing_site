@@ -9,7 +9,7 @@ title: 我是老师
 
 ## **安装或启动【英荔播课】**
 
-打开 [https://www.yingliboke.cn/live/openDesk](https://www.yingliboke.cn/live/openDesk)，按照提示下载安装或启动桌面客户端。下载完成后使用账号和直播房间号进入直播间。（账号密码及直播房间号找管理员获取）
+打开 [https://bms.yingliboke.cn/live/openDesk](https://www.yingliboke.cn/live/openDesk)，按照提示下载安装或启动桌面客户端。下载完成后使用账号和直播房间号进入直播间。（账号密码及直播房间号找管理员获取）
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88-%E5%AE%89%E8%A3%85%E6%88%96%E5%90%AF%E5%8A%A8.png" style={{border:'1px solid #eff0f2'}} />
 
