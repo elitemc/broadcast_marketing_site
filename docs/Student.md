@@ -99,8 +99,6 @@ title: 我是学员
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%9B%9E%E6%94%BE%E7%9B%B4%E6%92%AD%E8%AF%A6%E6%83%85.jpg" style={{border:'1px solid #eff0f2'}} />
 
-## **特殊情况处理**
-
 ## **常见问题及处理**
 
 ### **下载问题**
@@ -125,13 +123,13 @@ title: 我是学员
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E7%89%B9%E6%AE%8A%E6%83%85%E5%86%B5%E5%A4%84%E7%90%86.jpg" style={{border:'1px solid #eff0f2'}} />
 
-## **观看异常**
+### **观看异常**
 
 出现主持人中断直播，多次尝试重连失败，主持人异常退出，加载中，请检查网络或退出直播间重新进入。
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E8%A7%82%E7%9C%8B%E5%BC%82%E5%B8%B8.jpg" style={{border:'1px solid #eff0f2'}} />
 
-## **主持人暂停直播**
+### **主持人暂停直播**
 
 出现不要走开，马上回来的提示则表示主持人暂停了直播，可与主持人或管理员确定继续开始直播时间再次进入观看。
 

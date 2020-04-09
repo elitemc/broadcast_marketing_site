@@ -7,7 +7,7 @@ title: 我是管理员
 
 ### **登录管理后台**
 
-打开英荔播课管理后台页面 [yingliboke.cn](https://www.yingliboke.cn)，输入账号和密码进行登录。
+打开英荔播课管理后台页面 <a href="https://bms.yingliboke.cn/" target="_blank">https://bms.yingliboke.cn/</a>，输入账号和密码进行登录。
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%BB%84%E7%BB%87%E7%AE%A1%E7%90%86.png" style={{border:'1px solid #eff0f2'}} />
 
@@ -64,11 +64,11 @@ title: 我是管理员
 
 ### **创建直播**
 
-1.选择预约时间后创建直播，填写直播间信息。
+1、选择预约时间后创建直播，填写直播间信息。
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E5%88%9B%E5%BB%BA%E7%9B%B4%E6%92%AD.png" style={{border:'1px solid #eff0f2'}} />
-
-2.设置直播间是否对外公开，是否开启录制，设置观看权限，设置完成后创建直播，进入下一步设置。
+<br/>
+2、设置直播间是否对外公开，是否开启录制，设置观看权限，设置完成后创建直播，进入下一步设置。
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E5%88%9B%E5%BB%BA%E7%9B%B4%E6%92%AD2.png" style={{border:'1px solid #eff0f2'}} />
 
@@ -77,7 +77,7 @@ title: 我是管理员
 1、在未开播的直播间里点击【设置】，对直播信息进行编辑。
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%BC%96%E8%BE%91%E7%9B%B4%E6%92%AD%E5%86%85%E5%AE%B9.png" style={{border:'1px solid #eff0f2'}} />
-
+<br/>
 2、注意：预定时间只能在距离开播时间 72 小时之前才可以更改。
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%BC%96%E8%BE%91%E7%9B%B4%E6%92%AD%E5%86%85%E5%AE%B92.png" style={{border:'1px solid #eff0f2'}} />
