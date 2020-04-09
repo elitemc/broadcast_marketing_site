@@ -105,7 +105,7 @@ title: 我是老师
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88-%E6%9F%A5%E7%9C%8B%E6%95%B0%E6%8D%AE.png" style={{border:'1px solid #eff0f2'}} />
 
-### **连麦（更新中）**
+### **连麦「更新中」**
 
 ## **暂停/结束直播**
 
