@@ -126,16 +126,13 @@ title: 我是管理员
 
 ### **直播数据**
 
-<<<<<<< HEAD
+直播结束后，返回到管理后台进入直播数据页面，可以导出整场直播数据汇总以及 PDF 精简版或完整版报告。
+
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE.png" style={{border:'1px solid #eff0f2'}} />
 <br/>
 <br/>
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE%202%283%29.png" style={{border:'1px solid #eff0f2'}} />
-=======
-直播结束后，返回到管理后台进入直播数据页面，可以导出整场直播数据汇总以及 PDF 精简版或完整版报告。
->>>>>>> 3f6ad9ff12730b0a336488121ae1187d251ef17a
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE.png" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE2.png" style={{border:'1px solid #eff0f2'}} />
 
 ## **回放管理**
 
