@@ -61,7 +61,7 @@ title: 我是老师
 
 可自行设置签到时长，签到进行中亦可继续讲解并翻页课件，签到结束才可操作其他项。
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88-%E5%8F%91%E8%B5%B7%E7%AD%BE%E5%88%B0.png" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E5%8F%91%E8%B5%B7%E7%AD%BE%E5%88%B0.png" style={{border:'1px solid #eff0f2'}} />
 
 ### **发起习题**
 
