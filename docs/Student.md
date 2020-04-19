@@ -39,7 +39,15 @@ title: 我是学员
 
 学员在进入直播间后可查看主持人演讲的课件，在聊天区与支持人和其他学员互动聊天，也可查看本场直播简介。
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E8%A7%82%E7%9C%8B%E7%9B%B4%E6%92%AD%E4%B8%8E%E8%AF%BE%E4%BB%B6.png" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E8%A7%82%E7%9C%8B%E7%9B%B4%E6%92%AD%E4%B8%8E%E8%AF%BE%E4%BB%B62.jpg" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200417/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E8%A7%82%E7%9C%8B%E7%9B%B4%E6%92%AD%E4%B8%8E%E8%AF%BE%E4%BB%B6.png" style={{border:'1px solid #eff0f2'}} /> 
+<br/> <br/> 
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200417/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E8%A7%82%E7%9C%8B%E7%9B%B4%E6%92%AD%E4%B8%8E%E8%AF%BE%E4%BB%B62.jpg" style={{border:'1px solid #eff0f2'}} />
+<br/> <br/> 
+点击视频区域或课件区域的全屏按钮，可以全屏观看直播。同时，全屏观看时，可以按需切换大屏与小屏的展示位置。
+<br/> <br/> 
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200417/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E8%A7%82%E7%9C%8B%E7%9B%B4%E6%92%AD%E4%B8%8E%E8%AF%BE%E4%BB%B63.png" style={{border:'1px solid #eff0f2'}} /> 
+<br/> <br/> 
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200417/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E8%A7%82%E7%9C%8B%E7%9B%B4%E6%92%AD%E4%B8%8E%E8%AF%BE%E4%BB%B64.jpg " style={{border:'1px solid #eff0f2'}} />
 
 ## **观看视频文件**
 

@@ -118,9 +118,9 @@ title: 我是管理员
 
 ### **分享直播间**
 
-分享直播间：复制信息，凭借直播房间号（密码）进入观看直播。
+在分享页面找到直播房间号和参与密码（若设置），此处同时提供观众 App 端的下载功能，点击二维码或手机扫描即可完成。
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E5%88%86%E4%BA%AB%E7%9B%B4%E6%92%AD%E9%97%B4.png" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200417/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E5%88%86%E4%BA%AB%E7%9B%B4%E6%92%AD%E9%97%B4.jpg" style={{border:'1px solid #eff0f2'}} />
 
 ### **取消预约**
 
@@ -130,12 +130,21 @@ title: 我是管理员
 
 ### **直播数据**
 
-直播结束后，返回到管理后台进入直播数据页面，可以导出整场直播数据汇总以及 PDF 精简版或完整版报告。
+直播结束后，管理员在直播列表页面点击相应直播的【数据】按钮，可以进入该直播的数据页面。
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE.png" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200417/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE.jpg" style={{border:'1px solid #eff0f2'}} />
 <br/>
 <br/>
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE%202%283%29.png" style={{border:'1px solid #eff0f2'}} />
+直播数据页面包含直播的基本信息、直播间实时人数统计、以及签到、投票、习题、抽奖的详细数据。支持精简版 PDF 报告、完整版 PDF 报告、以及 Excel 数据表格三种类型的数据下载功能；
+<br/>
+<br/>
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200417/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE2.jpg" style={{border:'1px solid #eff0f2'}} />
+<br/>
+<br/>
+在观看详情页面还可以查看详细的观众观看时长数据
+<br/>
+<br/>
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200417/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE3.png " style={{border:'1px solid #eff0f2'}} />
 
 
 ## **回放管理**
