@@ -39,7 +39,15 @@ title: 我是学员
 
 学员在进入直播间后可查看主持人演讲的课件，在聊天区与支持人和其他学员互动聊天，也可查看本场直播简介。
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E8%A7%82%E7%9C%8B%E7%9B%B4%E6%92%AD%E4%B8%8E%E8%AF%BE%E4%BB%B6.png" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E8%A7%82%E7%9C%8B%E7%9B%B4%E6%92%AD%E4%B8%8E%E8%AF%BE%E4%BB%B62.jpg" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200417/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E8%A7%82%E7%9C%8B%E7%9B%B4%E6%92%AD%E4%B8%8E%E8%AF%BE%E4%BB%B6.png" style={{border:'1px solid #eff0f2'}} /> 
+<br/> <br/> 
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200417/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E8%A7%82%E7%9C%8B%E7%9B%B4%E6%92%AD%E4%B8%8E%E8%AF%BE%E4%BB%B62.jpg" style={{border:'1px solid #eff0f2'}} />
+<br/> <br/> 
+点击视频区域或课件区域的全屏按钮，可以全屏观看直播。同时，全屏观看时，可以按需切换大屏与小屏的展示位置。
+<br/> <br/> 
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200417/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E8%A7%82%E7%9C%8B%E7%9B%B4%E6%92%AD%E4%B8%8E%E8%AF%BE%E4%BB%B63.png" style={{border:'1px solid #eff0f2'}} /> 
+<br/> <br/> 
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200417/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E8%A7%82%E7%9C%8B%E7%9B%B4%E6%92%AD%E4%B8%8E%E8%AF%BE%E4%BB%B64.jpg " style={{border:'1px solid #eff0f2'}} />
 
 ## **观看视频文件**
 
@@ -83,7 +91,7 @@ title: 我是学员
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%8F%82%E4%B8%8E%E6%8A%BD%E5%A5%96.jpg" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%8F%82%E4%B8%8E%E6%8A%BD%E5%A5%962.jpg" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%8F%82%E4%B8%8E%E6%8A%BD%E5%A5%963.jpg" style={{border:'1px solid #eff0f2'}} />
 
-## **连麦（更新中）**
+## **连麦「更新中」**
 
 ## **观看回放**
 
@@ -99,7 +107,23 @@ title: 我是学员
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%9B%9E%E6%94%BE%E7%9B%B4%E6%92%AD%E8%AF%A6%E6%83%85.jpg" style={{border:'1px solid #eff0f2'}} />
 
-## **特殊情况处理**
+## **常见问题及处理**
+
+### **下载问题**
+
+1. 下载请认准「 英荔播课 」；
+2. 在应用商店、软件市场、App Store 等均可搜索下载「英荔播课」，不要在浏览器等其他非官方渠道下载，以免下载错误。
+
+### **获取不到验证码**
+
+1. 检查是否下载正确的英荔播课 App；
+2. 检查手机是否设置短信拦截；
+3. 稍等两分钟再进行获取验证码，不可频繁获取。
+
+### **无法查看课件**
+
+1. 确认老师是否开始课件演示；
+2. 课件显示空白：检查手机网络是否通畅，或稍等片刻等待课件加载出来。
 
 ### **退出后再次进入**
 
@@ -107,13 +131,13 @@ title: 我是学员
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E7%89%B9%E6%AE%8A%E6%83%85%E5%86%B5%E5%A4%84%E7%90%86.jpg" style={{border:'1px solid #eff0f2'}} />
 
-## **观看异常**
+### **观看异常**
 
 出现主持人中断直播，多次尝试重连失败，主持人异常退出，加载中，请检查网络或退出直播间重新进入。
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E8%A7%82%E7%9C%8B%E5%BC%82%E5%B8%B8.jpg" style={{border:'1px solid #eff0f2'}} />
 
-## **主持人暂停直播**
+### **主持人暂停直播**
 
 出现不要走开，马上回来的提示则表示主持人暂停了直播，可与主持人或管理员确定继续开始直播时间再次进入观看。
 

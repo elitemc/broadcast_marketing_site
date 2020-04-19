@@ -9,7 +9,7 @@ title: 我是老师
 
 ## **安装或启动【英荔播课】**
 
-打开 [https://www.yingliboke.cn/live/openDesk](https://www.yingliboke.cn/live/openDesk)，按照提示下载安装或启动桌面客户端。下载完成后使用账号和直播房间号进入直播间。（账号密码及直播房间号找管理员获取）
+打开 <a href="https://bms.yingliboke.cn/live/openDesk" target="_blank">https://bms.yingliboke.cn/live/openDesk</a> ，按照提示下载安装或启动桌面客户端。下载完成后使用账号和直播房间号进入直播间。（账号密码及直播房间号找管理员获取）
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88-%E5%AE%89%E8%A3%85%E6%88%96%E5%90%AF%E5%8A%A8.png" style={{border:'1px solid #eff0f2'}} />
 
@@ -61,7 +61,7 @@ title: 我是老师
 
 可自行设置签到时长，签到进行中亦可继续讲解并翻页课件，签到结束才可操作其他项。
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88-%E5%8F%91%E8%B5%B7%E7%AD%BE%E5%88%B0.png" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E5%8F%91%E8%B5%B7%E7%AD%BE%E5%88%B0.png" style={{border:'1px solid #eff0f2'}} />
 
 ### **发起习题**
 
@@ -101,11 +101,14 @@ title: 我是老师
 
 ### **查看数据**
 
-导出查看签到，考试，投票，抽奖的观众参与实时数据，结束直播后亦可凭账号密码以及直播房间号再次进入直播间查看该场直播的详细数据。或可直接与管理员联系获取直播数据。
+直播中可以在线查看或下载习题、投票、签到、抽奖的数据；直播结束后，会另外生成全场公告、聊天与问答记录表格，凭直播房间号及账号密码可再次进入直播间查看以上所有数据。
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88-%E6%9F%A5%E7%9C%8B%E6%95%B0%E6%8D%AE.png" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200417/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88%20-%20%E6%9F%A5%E7%9C%8B%E6%95%B0%E6%8D%AE.jpg" style={{border:'1px solid #eff0f2'}} />
+<br/>
+<br/>
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200417/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88%20-%20%E6%9F%A5%E7%9C%8B%E6%95%B0%E6%8D%AE2.png" style={{border:'1px solid #eff0f2'}} />
 
-### **连麦（更新中）**
+### **连麦「更新中」**
 
 ## **暂停/结束直播**
 

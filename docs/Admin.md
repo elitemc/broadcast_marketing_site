@@ -7,7 +7,7 @@ title: 我是管理员
 
 ### **登录管理后台**
 
-打开英荔播课管理后台页面 [yingliboke.cn](https://www.yingliboke.cn)，输入账号和密码进行登录。
+打开英荔播课管理后台页面 <a href="https://bms.yingliboke.cn/" target="_blank">https://bms.yingliboke.cn/</a>，输入账号和密码进行登录。
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%BB%84%E7%BB%87%E7%AE%A1%E7%90%86.png" style={{border:'1px solid #eff0f2'}} />
 
@@ -64,12 +64,14 @@ title: 我是管理员
 
 ### **创建直播**
 
-1.选择预约时间后创建直播，填写直播间信息。
+1、选择预约时间后创建直播，填写直播间信息。
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E5%88%9B%E5%BB%BA%E7%9B%B4%E6%92%AD.png" style={{border:'1px solid #eff0f2'}} />
-
-2.设置直播间是否对外公开，是否开启录制，设置观看权限，设置完成后创建直播，进入下一步设置。
-
+<br/>
+<br/>
+2、设置直播间是否对外公开，是否开启录制，设置观看权限，设置完成后创建直播，进入下一步设置。
+<br/>
+<br/>
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E5%88%9B%E5%BB%BA%E7%9B%B4%E6%92%AD2.png" style={{border:'1px solid #eff0f2'}} />
 
 ### **编辑直播内容**
@@ -77,9 +79,11 @@ title: 我是管理员
 1、在未开播的直播间里点击【设置】，对直播信息进行编辑。
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%BC%96%E8%BE%91%E7%9B%B4%E6%92%AD%E5%86%85%E5%AE%B9.png" style={{border:'1px solid #eff0f2'}} />
-
+<br/>
+<br/>
 2、注意：预定时间只能在距离开播时间 72 小时之前才可以更改。
-
+<br/>
+<br/>
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%BC%96%E8%BE%91%E7%9B%B4%E6%92%AD%E5%86%85%E5%AE%B92.png" style={{border:'1px solid #eff0f2'}} />
 
 ### **添加白名单**
@@ -114,9 +118,9 @@ title: 我是管理员
 
 ### **分享直播间**
 
-分享直播间：复制信息，凭借直播房间号（密码）进入观看直播。
+在分享页面找到直播房间号和参与密码（若设置），此处同时提供观众 App 端的下载功能，点击二维码或手机扫描即可完成。
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E5%88%86%E4%BA%AB%E7%9B%B4%E6%92%AD%E9%97%B4.png" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200417/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E5%88%86%E4%BA%AB%E7%9B%B4%E6%92%AD%E9%97%B4.jpg" style={{border:'1px solid #eff0f2'}} />
 
 ### **取消预约**
 
@@ -126,16 +130,22 @@ title: 我是管理员
 
 ### **直播数据**
 
-<<<<<<< HEAD
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE.png" style={{border:'1px solid #eff0f2'}} />
-<br/>
-<br/>
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE%202%283%29.png" style={{border:'1px solid #eff0f2'}} />
-=======
-直播结束后，返回到管理后台进入直播数据页面，可以导出整场直播数据汇总以及 PDF 精简版或完整版报告。
->>>>>>> 3f6ad9ff12730b0a336488121ae1187d251ef17a
+直播结束后，管理员在直播列表页面点击相应直播的【数据】按钮，可以进入该直播的数据页面。
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE.png" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE2.png" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200417/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE.jpg" style={{border:'1px solid #eff0f2'}} />
+<br/>
+<br/>
+直播数据页面包含直播的基本信息、直播间实时人数统计、以及签到、投票、习题、抽奖的详细数据。支持精简版 PDF 报告、完整版 PDF 报告、以及 Excel 数据表格三种类型的数据下载功能；
+<br/>
+<br/>
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200417/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE2.jpg" style={{border:'1px solid #eff0f2'}} />
+<br/>
+<br/>
+在观看详情页面还可以查看详细的观众观看时长数据
+<br/>
+<br/>
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200417/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE3.png " style={{border:'1px solid #eff0f2'}} />
+
 
 ## **回放管理**
 
