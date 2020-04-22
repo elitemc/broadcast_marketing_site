@@ -37,7 +37,7 @@ title: 我是学员
 
 ## **观看直播与课件**
 
-学员在进入直播间后可查看主持人演讲的课件，在聊天区与支持人和其他学员互动聊天，也可查看本场直播简介。
+学员在进入直播间后可查看主持人演讲的课件，在聊天区与主持人和其他学员互动聊天，也可查看本场直播简介。
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200417/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E8%A7%82%E7%9C%8B%E7%9B%B4%E6%92%AD%E4%B8%8E%E8%AF%BE%E4%BB%B6.png" style={{border:'1px solid #eff0f2'}} /> 
 <br/> <br/> 
