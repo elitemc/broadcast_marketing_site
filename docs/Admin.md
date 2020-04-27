@@ -135,7 +135,7 @@ title: 我是管理员
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200417/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE.jpg" style={{border:'1px solid #eff0f2'}} />
 <br/>
 <br/>
-直播数据页面包含直播的基本信息、直播间实时人数统计、以及签到、投票、习题、抽奖的详细数据。支持精简版 PDF 报告、完整版 PDF 报告、以及 Excel 数据表格三种类型的数据下载功能；
+直播数据页面包含直播的基本信息、直播间实时人数统计、以及签到、投票、习题、抽奖的详细数据。支持精简版 PDF 报告、完整版 PDF 报告、全场数据 Excel 、以及聊天数据 Excel 四种类型的数据下载功能；
 <br/>
 <br/>
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200427/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE.jpg" style={{border:'1px solid #eff0f2'}} />
