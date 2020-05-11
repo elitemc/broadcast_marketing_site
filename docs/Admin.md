@@ -186,7 +186,7 @@ title: 我是管理员
 
 
 ### **视频无法上传**
-请检查格式是否为：WMV、MOV、MPEG、MP4、3GP、FLV、AVI 或 RMVB 等，请确保视频大小控制在1G内。
+请检查格式是否为：WMV、MOV、MPEG、MP4、3GP、FLV、AVI 或 RMVB 等，请确保视频大小控制在 1G 内。
 
 
 ### **为什么直播结束后没有回放**
