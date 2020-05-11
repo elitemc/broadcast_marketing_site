@@ -135,16 +135,16 @@ title: 我是管理员
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200417/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE.jpg" style={{border:'1px solid #eff0f2'}} />
 <br/>
 <br/>
-直播数据页面包含直播的基本信息、直播间实时人数统计、以及签到、投票、习题、抽奖的详细数据。支持精简版 PDF 报告、完整版 PDF 报告、以及 Excel 数据表格三种类型的数据下载功能；
+直播数据页面包含直播的基本信息、直播间实时人数统计、以及签到、投票、习题、抽奖的详细数据。支持精简版 PDF 报告、完整版 PDF 报告、全场数据 Excel 、以及聊天数据 Excel 四种类型的数据下载功能；
 <br/>
 <br/>
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200417/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE2.jpg" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200427/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE.jpg" style={{border:'1px solid #eff0f2'}} />
 <br/>
 <br/>
 在观看详情页面还可以查看详细的观众观看时长数据
 <br/>
 <br/>
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200417/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE3.png " style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200427/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE2.jpg" style={{border:'1px solid #eff0f2'}} />
 
 
 ## **回放管理**
@@ -159,10 +159,35 @@ title: 我是管理员
 
 管理员可在回放管理处查看回放的观看详情数据并下载表格。
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E5%9B%9E%E6%94%BE%E6%95%B0%E6%8D%AE1.png" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200427/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E5%9B%9E%E6%94%BE%E6%95%B0%E6%8D%AE.jpg" style={{border:'1px solid #eff0f2'}} />
 
 ## **资料管理**
 
 管理员可在资料管理的视频库中上传视频文件，可保存至后台反复使用。（注意：单个视频最大 1G，视频库总内存为 2G)
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E8%B5%84%E6%96%99%E7%AE%A1%E7%90%86.png" style={{border:'1px solid #eff0f2'}} />
+
+## **常见问题及处理**
+
+### **无法预约指定时间的直播间**
+无法选择预约某个时间即表示该时间段已有其他企业预约了学员较多的大规模直播间，为更好维护直播平台的稳定性，保证直播通畅，系统会错开时间预约直播，请选择其他时间段的直播。
+
+
+### **没有进行直播却扣除了场次**
+预约好的直播间，因其他原因取消或延期导致该直播间没有正常开始，请取消预约或修改预约时间，以免系统自动扣除场次。
+
+
+### **无法上传课件**
+请检查课件格式是否为 PPT 或 PDF 文件；检查网络是否通畅，稍等课件上传转码；文件过大也会影响上传速度，可压缩后上传。
+
+
+### **习题/投票无法创建**
+请检查是否有遗漏未填的选项，如：未设置习题/投票标题，未设置作答时间，未勾选正确答案，未设置题目分数等。
+
+
+### **视频无法上传**
+请检查格式是否为：WMV、MOV、MPEG、MP4、3GP、FLV、AVI 或 RMVB 等，请确保视频大小控制在 1G 内。
+
+
+### **为什么直播结束后没有回放**
+在预约直播间的时候，确认自动录制是否开启，开启录制的直播间才会在直播结束后生成回放。
