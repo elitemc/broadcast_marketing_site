@@ -144,3 +144,4 @@ title: 我是学员
 出现不要走开，马上回来的提示则表示主持人暂停了直播，可与主持人或管理员确定继续开始直播时间再次进入观看。
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E4%B8%BB%E6%8C%81%E4%BA%BA%E6%9A%82%E5%81%9C%E7%9B%B4%E6%92%AD.jpg" style={{border:'1px solid #eff0f2'}} />
+
