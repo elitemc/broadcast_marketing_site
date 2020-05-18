@@ -53,7 +53,7 @@ title: 我是学员
 
 ## **观看视频文件**
 
-主持人播放视频后，原视频拍摄画面会继续演示播放的视频，视频结束自动返原。
+主持人播放视频后，原视频拍摄画面会继续演示播放的视频，视频结束自动还原。
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E8%A7%82%E7%9C%8B%E8%A7%86%E9%A2%91%E6%96%87%E4%BB%B6.jpg" style={{border:'1px solid #eff0f2'}} />
 
