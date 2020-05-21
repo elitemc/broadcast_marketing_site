@@ -16,9 +16,9 @@ const downloadDesk = (key, e) => {
   let downloadUrl = '';
   let baseUrl = 'https://yingliboke.oss-cn-shenzhen.aliyuncs.com/app/';
   if (key === 'win') {
-    downloadUrl = baseUrl + '英荔播课%20Setup%202.3.2.exe';
+    downloadUrl = baseUrl + '英荔播课%20Setup%202.3.3.exe';
   } else if (key === 'mac') {
-    downloadUrl = baseUrl + 'www英荔播课-2.3.2.dmg';
+    downloadUrl = baseUrl + 'www英荔播课-2.3.3.dmg';
   }
   // 创建a标签，触发点击
   const a = document.createElement('a');
