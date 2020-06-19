@@ -23,6 +23,48 @@ title: 我是管理员
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%BB%84%E7%BB%87%E8%AE%A4%E8%AF%81.png" style={{border:'1px solid #eff0f2'}} />
 
+### **选择/切换组织**
+
+如果账号已被加入了组织，则无需创建组织。如果账号被加入了多个组织，登录成功后需要选择即将进入的组织。
+
+每个账号最多可以创建 7 个组织，被加入的组织不限数量。
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E9%80%89%E6%8B%A9%E5%88%87%E6%8D%A2%E7%BB%84%E7%BB%87%20-%201.jpg" style={{border:'1px solid #eff0f2'}} />
+<br/>
+<br/>
+进入组织后，在当前页面右上角可以进入切换组织。
+<br/>
+<br/>
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E9%80%89%E6%8B%A9%E5%88%87%E6%8D%A2%E7%BB%84%E7%BB%87%20-%202.jpg" style={{border:'1px solid #eff0f2'}} />
+<br/>
+<br/>
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E9%80%89%E6%8B%A9%E5%88%87%E6%8D%A2%E7%BB%84%E7%BB%87%20-%203.jpg" style={{border:'1px solid #eff0f2'}} />
+
+## **账号管理** 
+
+管理员可设置公司组织架构和为员工添加账号，对组织账号做统一管理。添加的账号可以登录「管理后台」，或登录 App 观看直播。
+
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E8%B4%A6%E5%8F%B7%E7%AE%A1%E7%90%86%20-%201.jpg" style={{border:'1px solid #eff0f2'}} />
+
+### **添加账号**
+
+提供手动添加和批量导入账号两种方式。添加成功后会以短信或邮件方式发送到对方的手机号或邮箱，如果是新注册的账号，密码会随着短信或邮件一并发送。
+
+（注意：新注册的账号首次登录需要修改密码。）
+
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E6%B7%BB%E5%8A%A0%E8%B4%A6%E5%8F%B7%20-1.png" style={{border:'1px solid #eff0f2'}} />
+<br/>
+<br/>
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E6%B7%BB%E5%8A%A0%E8%B4%A6%E5%8F%B7%20-2.png" style={{border:'1px solid #eff0f2'}} />
+
+## **权限管理**
+
+为账号分配「管理后台」的权限。首先把账号添加到用户组成员，再分配功能权限点击【保存】即可生效。如果想对个别账号分配特有的权限，可添加新用户组。
+
+（注意：组织管理员不可编辑权限且必须至少有一名用户组成员。）
+
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%20-1.jpg" style={{border:'1px solid #eff0f2'}} />
+
+
 ## **套餐管理**
 
 ### **领取免费版套餐**
@@ -62,19 +104,19 @@ title: 我是管理员
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%9B%B4%E6%92%AD%E7%AE%A1%E7%90%86.png" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%9B%B4%E6%92%AD%E7%AE%A1%E7%90%862.png" style={{border:'1px solid #eff0f2'}} />
 
-### **创建直播**
+### **创建直播间**
 
 1、选择预约时间后创建直播，填写直播间信息。
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E5%88%9B%E5%BB%BA%E7%9B%B4%E6%92%AD.png" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E5%88%9B%E5%BB%BA%E7%9B%B4%E6%92%AD%E9%97%B4%20-1.png" style={{border:'1px solid #eff0f2'}} />
 <br/>
 <br/>
 2、设置直播间是否对外公开，是否开启录制，设置观看权限，设置完成后创建直播，进入下一步设置。
 <br/>
 <br/>
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E5%88%9B%E5%BB%BA%E7%9B%B4%E6%92%AD2.png" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E5%88%9B%E5%BB%BA%E7%9B%B4%E6%92%AD%E9%97%B4%20-2.jpg" style={{border:'1px solid #eff0f2'}} />
 
-### **编辑直播内容**
+### **编辑直播间内容**
 
 1、在未开播的直播间里点击【设置】，对直播信息进行编辑。
 
@@ -116,6 +158,12 @@ title: 我是管理员
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E4%B8%8A%E4%BC%A0%E8%A7%86%E9%A2%91.png" style={{border:'1px solid #eff0f2'}} />
 
+### **更换主持人**
+更换直播间的主持人，可以自定义主持人的昵称、头像和标签，如有需要可对主持人分配开播工具的权限，点击【保存】即刻生效。更换主持人后，如果上一位主持人正在直播，将会被强行退出登录。
+
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E6%9B%B4%E6%8D%A2%E4%B8%BB%E6%8C%81%E4%BA%BA%20-1.jpg" style={{border:'1px solid #eff0f2'}} />
+
+
 ### **分享直播间**
 
 在分享页面找到直播房间号和参与密码（若设置），此处同时提供观众 App 端的下载功能，点击二维码或手机扫描即可完成。
@@ -153,7 +201,9 @@ title: 我是管理员
 
 已开启录制的直播间，直播结束后可在回放管理处设置该直播间是否发布，回放开放观看时间。
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E5%9B%9E%E6%94%BE%E7%AE%A1%E7%90%86.png" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E5%9B%9E%E6%94%BE%E7%AE%A1%E7%90%862.png" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E7%BC%96%E8%BE%91%E5%9B%9E%E6%94%BE%20-1.png" style={{border:'1px solid #eff0f2'}} /> 
+<br/> <br/> 
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E7%BC%96%E8%BE%91%E5%9B%9E%E6%94%BE%20-2.png" style={{border:'1px solid #eff0f2'}} />
 
 ### **回放数据**
 
