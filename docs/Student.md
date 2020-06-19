@@ -13,13 +13,23 @@ title: 我是学员
 
 下载完成后打开英荔播课，输入账号密码登录。没有账号要先注册账号再登录，前期使用邮箱注册的学员需按照提示绑定手机号码。
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E7%99%BB%E5%BD%95.jpg" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E6%B3%A8%E5%86%8C.jpg" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E7%99%BB%E5%BD%95.jpg" style={{border:'1px solid #eff0f2'}} /> 
+<br/> <br/> 
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E6%B3%A8%E5%86%8C.jpg" style={{border:'1px solid #eff0f2'}} />
+
+## **选择/切换组织**
+如果账号被加入了多个组织，登录成功后需要选择即将进入的组织。进入组织后，在个人信息页和设置页可以切换组织。
+
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98%20-%20%E9%80%89%E6%8B%A9%E5%88%87%E6%8D%A2%E7%BB%84%E7%BB%87%20-1.jpg" style={{border:'1px solid #eff0f2'}} />
+
 
 ## **我的/编辑资料**
 
 修改昵称姓名，按照要求修改个人昵称。（注：公司提前导入信息无需再次修改）
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E6%88%91%E7%9A%84-%E7%BC%96%E8%BE%91%E8%B5%84%E6%96%99.jpg" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E7%BC%96%E8%BE%91%E8%B5%84%E6%96%992.jpg" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98%20-%20%E6%88%91%E7%9A%84%E7%BC%96%E8%BE%91%E8%B5%84%E6%96%99%20-1.png" style={{border:'1px solid #eff0f2'}} />
+ <br/> <br/> 
+ <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98%20-%20%E6%88%91%E7%9A%84%E7%BC%96%E8%BE%91%E8%B5%84%E6%96%99%20-2.png" style={{border:'1px solid #eff0f2'}} />
 
 ## **观看直播**
 
@@ -91,9 +101,26 @@ title: 我是学员
 
 主持人发起抽奖后，会提示学员是否中奖以及公示中奖名单，中奖者按照提示填写信息。
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%8F%82%E4%B8%8E%E6%8A%BD%E5%A5%96.jpg" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%8F%82%E4%B8%8E%E6%8A%BD%E5%A5%962.jpg" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%8F%82%E4%B8%8E%E6%8A%BD%E5%A5%963.jpg" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%8F%82%E4%B8%8E%E6%8A%BD%E5%A5%96.jpg" style={{border:'1px solid #eff0f2'}} /> 
+<br/> <br/> 
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%8F%82%E4%B8%8E%E6%8A%BD%E5%A5%962.jpg" style={{border:'1px solid #eff0f2'}} /> 
+<br/> <br/> 
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%8F%82%E4%B8%8E%E6%8A%BD%E5%A5%963.jpg" style={{border:'1px solid #eff0f2'}} />
 
-## **连麦「更新中」**
+## **连麦**
+
+主持人开启举手功能时，会在下图显示「举手」按钮。观众点击「举手」按钮后，主持人会收到观众的举手消息。
+
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98%20-%20%E8%BF%9E%E9%BA%A6%20-1.jpg" style={{border:'1px solid #eff0f2'}} />
+<br/> 
+<br/> 
+主持人向观众发出邀请后，观众端会显示下图中的弹窗，点击「同意」后即可加入连麦。
+<br/> <br/> 
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98%20-%20%E8%BF%9E%E9%BA%A6%20-2.jpg" style={{border:'1px solid #eff0f2'}} />
+<br/> <br/> 
+连麦结束后，点击「下麦」按钮即可断开与主持人的连麦。
+<br/> <br/> 
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98%20-%20%E8%BF%9E%E9%BA%A6%20-3.jpg" style={{border:'1px solid #eff0f2'}} />
 
 ## **观看回放**
 

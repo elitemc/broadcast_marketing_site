@@ -2,14 +2,25 @@
 id: Teacher
 title: 我是老师
 ---
+## **准备阶段**
 
-## **准备培训资料**
+### **直播设备**
 
-需提前把直播培训需要用到的资料（ PPT 或 PDF 课件，习题、投票以及视频材料）发送给管理员，管理员需在直播开始前设置好直播间。
+老师开播需要提前准备好电脑（具有摄像头和麦克风的功能），如有必要也可以准备外接专业摄像头和麦克风设备。
 
-## **安装或启动【英荔播课】**
+### **准备培训资料**
 
-打开 <a href="https://bms.yingliboke.cn/live/openDesk" target="_blank">https://bms.yingliboke.cn/live/openDesk</a> ，按照提示下载安装或启动桌面客户端。下载完成后使用账号和直播房间号进入直播间。（账号密码及直播房间号找管理员获取）
+需提前把直播培训需要用到的资料（PPT 或 PDF 课件，习题、投票以及视频材料）发送给管理员，管理员需在直播开始前上传至直播间。
+
+### **观看直播人员名单**
+
+如果管理员设置直播间观看权限为白名单可见，需提前把要观看直播的人员名单（姓名和手机号）发给管理员。若管理员不是设置白名单可见的直播间可忽略本步骤。
+
+### **安装或启动【英荔播课】**
+
+打开 <a href="https://bms.yingliboke.cn/live/openDesk" target="_blank">https://bms.yingliboke.cn/live/openDesk</a> ，按照提示下载安装或启动桌面客户端。
+
+下载完成后使用账号和直播房间号进入直播间。（账号密码及直播房间号找管理员获取）
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88-%E5%AE%89%E8%A3%85%E6%88%96%E5%90%AF%E5%8A%A8.png" style={{border:'1px solid #eff0f2'}} />
 
@@ -108,7 +119,24 @@ title: 我是老师
 <br/>
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200417/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88%20-%20%E6%9F%A5%E7%9C%8B%E6%95%B0%E6%8D%AE2.png" style={{border:'1px solid #eff0f2'}} />
 
-### **连麦「更新中」**
+### **连麦**
+
+直播开始前，在“设置 - 连麦设置”页面选择需要的连麦方式。
+
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88%20-%20%E8%BF%9E%E9%BA%A6%20-%201.jpg" style={{border:'1px solid #eff0f2'}} />
+<br/>
+<br/>
+直播中，在用户列表选择观众点击昵称右侧的【连麦】按钮，观众同意邀请后就会加入连麦。
+<br/>
+<br/>
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88%20-%20%E8%BF%9E%E9%BA%A6%20-2.jpg" style={{border:'1px solid #eff0f2'}} />
+<br/>
+<br/>
+连麦结束后，观众可以主动下麦。主持人也可以通过点击【下麦】按钮帮助观众下麦。
+<br/>
+<br/>
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88%20-%20%E8%BF%9E%E9%BA%A6%20-3.jpg" style={{border:'1px solid #eff0f2'}} />
+
 
 ## **暂停/结束直播**
 
