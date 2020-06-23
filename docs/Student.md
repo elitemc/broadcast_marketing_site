@@ -105,7 +105,7 @@ title: 我是学员
 <br/> <br/> 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%8F%82%E4%B8%8E%E6%8A%BD%E5%A5%962.jpg" style={{border:'1px solid #eff0f2'}} /> 
 <br/> <br/> 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%8F%82%E4%B8%8E%E6%8A%BD%E5%A5%963.jpg" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98%20-%20%E5%8F%82%E4%B8%8E%E6%8A%BD%E5%A5%96%20-3.png" style={{border:'1px solid #eff0f2'}} />
 
 ## **连麦**
 
