@@ -25,6 +25,10 @@ function Sidebar(props) {
             style={{color: '#fff !important'}}
             onClick={() => {
               let nb_icon_wrap = document.getElementById('nb_icon_wrap');
+              window.sls.pushLog({
+                level: 'INFO',
+                message: 'Open Baidu Shangqiao',
+              });
               if (nb_icon_wrap) {
                 nb_icon_wrap.click();
               }

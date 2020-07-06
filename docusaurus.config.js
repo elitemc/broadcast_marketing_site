@@ -15,6 +15,7 @@ module.exports = {
   favicon: 'img/titlelogo.png',
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
+  scripts: ['./src/utils/slsLogger.js'],
   themeConfig: {
     navbar: {
       title: '',

@@ -7,7 +7,7 @@
  * @format
  */
 
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useCallback} from 'react';
 import classnames from 'classnames';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
@@ -18,9 +18,9 @@ import SideBar from './sidebar';
 import axios from 'axios';
 import 'antd/dist/antd.css';
 import {Button} from 'antd';
-
 function scrollNotice(container, props, time) {
   let initTime = Date.now();
+
   function scroll() {
     let bili = (Date.now() - initTime) / time;
     if (bili >= 1) {
@@ -47,6 +47,14 @@ function Home() {
     scrollNotice(clientList.current, {marginLeft: -liWidth}, 60000);
   }, []);
 
+  const toBmsSite = useCallback(() => {
+    // 日志埋点
+    window.sls.pushLog({
+      level: 'INFO',
+      message: 'The user clicked free use',
+    });
+  });
+
   return (
     <Layout
       title={`首页`}
@@ -70,7 +78,10 @@ function Home() {
                   </p>
                 </div>
 
-                <Button className={styles.freeUse} style={{border: 'none'}}>
+                <Button
+                  className={styles.freeUse}
+                  style={{border: 'none'}}
+                  onClick={toBmsSite}>
                   <a href={siteConfig.url + '/user/register'} target="_blank">
                     免费使用
                   </a>
@@ -596,7 +607,7 @@ function Home() {
             </p>
             <p>一对一专属客户服务</p>
             <div className={styles.linkBtn}>
-              <Button style={{border: 'none'}}>
+              <Button style={{border: 'none'}} onClick={toBmsSite}>
                 <a href={siteConfig.url + '/user/register'} target="_blank">
                   免费使用
                 </a>
