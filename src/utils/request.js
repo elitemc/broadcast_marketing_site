@@ -1,6 +1,8 @@
 import axios from 'axios';
 import {message, notification} from 'antd';
 
+let logger = {};
+
 const codeMessage = {
   400: '发出的请求有错误，服务器没有进行新建或修改数据的操作',
   401: '用户没有权限（令牌、用户名、密码错误）',
@@ -29,6 +31,12 @@ axios.interceptors.response.use(
     }
   },
   error => {
+    console.log(logger.response, 'error');
+    window.sls.pushLog({
+      url: logger?.response?.url,
+      payload: JSON.stringify(logger?.response?.data || {}),
+      method: logger?.response?.method,
+    });
     if (error.response) {
       const {
         status,
@@ -50,6 +58,7 @@ axios.interceptors.response.use(
 
 export default function request(obj) {
   let {url, method, data} = obj;
+  logger.response = obj;
   return axios({
     url,
     method,

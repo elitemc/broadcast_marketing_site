@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useCallback} from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
@@ -43,6 +43,20 @@ const Purchase = () => {
       btn: '提交需求',
     },
   ];
+
+  const pushLog = useCallback(type => {
+    // return console.log(type);
+    let log = [
+      'The user clicked free use',
+      'The user clicked on the standard package',
+      'User clicks to submit request',
+    ];
+    // 日志埋点
+    window.sls.pushLog({
+      level: 'INFO',
+      message: log[type],
+    });
+  });
 
   return (
     <Layout
@@ -89,7 +103,10 @@ const Purchase = () => {
                         <a
                           href={`${siteConfig.url}/user/register`}
                           target="_blank">
-                          <Button size="large" className={styles.btn}>
+                          <Button
+                            size="large"
+                            className={styles.btn}
+                            onClick={() => pushLog(index)}>
                             {list.btn}
                           </Button>
                         </a>
@@ -110,7 +127,8 @@ const Purchase = () => {
                             style={{
                               backgroundColor: index === 1 ? '#0d6fde' : '#fff',
                               color: index === 1 ? '#fff' : '#0d6fde',
-                            }}>
+                            }}
+                            onClick={() => pushLog(index)}>
                             {list.btn}
                           </Button>
                         </Link>
