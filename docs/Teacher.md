@@ -146,6 +146,36 @@ title: 我是老师
 
 ## **常见问题及处理**
 
+### **下载了桌面客户端安装包却无法安装或打开**
+
+1、检查是否下载对应的电脑系统版本。
+
+2、如果Windows电脑安装时弹窗提示【Window已保护你的电脑】。
+
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200707/anzhuang1.png" style={{border:'1px solid #eff0f2'}} />
+<br/>
+<br/>
+
+__操作方法：更多信息--仍要运行。设置完成即可安装打开运行。__ 
+
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200707/anzhuang2.png" style={{border:'1px solid #eff0f2'}} />
+<br/>
+<br/>
+3、如果苹果电脑安装后无法打开并提示【打不开“英荔播课”，因为它来自不明的开发者】。
+<br/>
+<br/>
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200707/anzhuang3.png" style={{border:'1px solid #eff0f2'}} />
+<br/>
+<br/>
+
+__操作方法：打开苹果电脑系统偏好设置--安全性与隐私--通用--仍要打开。设置完成后重新打开英荔播课电脑桌面端即可。__ 
+
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200707/anzhuang4.png" style={{border:'1px solid #eff0f2'}} />
+<br/>
+<br/>
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200707/anzhuang5.png" style={{border:'1px solid #eff0f2'}} />
+
+
 ### **摄像头检测正常，但是没有显示拍摄画面**
 请点击右上角设置图标进行摄像头设置，检查是否选择正确的摄像头设备，和是否有拍摄到画面。
 
