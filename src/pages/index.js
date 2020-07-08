@@ -47,11 +47,11 @@ function Home() {
     scrollNotice(clientList.current, {marginLeft: -liWidth}, 60000);
   }, []);
 
-  const toBmsSite = useCallback(() => {
+  const pushLog = useCallback(message => {
     // 日志埋点
     window.sls.pushLog({
       level: 'INFO',
-      message: 'The user clicked free use',
+      message,
     });
   });
 
@@ -81,7 +81,7 @@ function Home() {
                 <Button
                   className={styles.freeUse}
                   style={{border: 'none'}}
-                  onClick={toBmsSite}>
+                  onClick={() => pushLog('The user clicked free use')}>
                   <a href={siteConfig.url + '/user/register'} target="_blank">
                     免费使用
                   </a>
@@ -607,12 +607,16 @@ function Home() {
             </p>
             <p>一对一专属客户服务</p>
             <div className={styles.linkBtn}>
-              <Button style={{border: 'none'}} onClick={toBmsSite}>
+              <Button
+                style={{border: 'none'}}
+                onClick={() => pushLog('The user clicked free use')}>
                 <a href={siteConfig.url + '/user/register'} target="_blank">
                   免费使用
                 </a>
               </Button>
-              <Button style={{backgroundColor: '#0d6fde', color: '#fff'}}>
+              <Button
+                style={{backgroundColor: '#0d6fde', color: '#fff'}}
+                onClick={() => pushLog(`The user clicked on the quote query`)}>
                 <Link to="/purchase">报价查询</Link>
               </Button>
             </div>
