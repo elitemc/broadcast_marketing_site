@@ -21,6 +21,18 @@ const codeMessage = {
 axios.interceptors.response.use(
   response => {
     let res = (response && response.data) || '';
+
+    try {
+      window.sls.pushLog({
+        url: logger?.response?.url,
+        payload: JSON.stringify(logger?.response?.data || {}),
+        method: logger?.response?.method,
+        message: `请求成功 ${logger?.response?.url}`,
+        level: res?.code === 20000 ? 'INFO' : 'DEBUG',
+      });
+    } catch (e) {
+      console.log('接口报错咯', e);
+    }
     switch (res && res.code) {
       case 20018:
         message.error('token过期，请重新获取', 1);
@@ -31,17 +43,13 @@ axios.interceptors.response.use(
     }
   },
   error => {
-    console.log(logger.response, 'error');
     window.sls.pushLog({
       url: logger?.response?.url,
       payload: JSON.stringify(logger?.response?.data || {}),
       method: logger?.response?.method,
+      message: `请求错误 ${logger?.response?.url}`,
     });
     if (error.response) {
-      const {
-        status,
-        config: {url},
-      } = error.response;
       if (codeMessage[status]) {
         notification.error({
           message: `请求错误 ${status}: ${url}`,
