@@ -59,9 +59,14 @@
 
   const SLS = new AliLogTracker(
     'cn-shenzhen.log.aliyuncs.com',
-    'yingliboke',
-    'test',
+    'yingliboke-dev',
+    'frontend',
   );
+  // (
+  //   'cn-shenzhen.log.aliyuncs.com',
+  //   'yingliboke',
+  //   'test',
+  // );
 
   SLS.fillZero = num => (num < 10 ? `0${num}` : num);
   SLS.pushLog = function(data = {}) {
@@ -90,7 +95,7 @@
       //   value +
       //   '&';
       this.push(
-        /method|payload|url/.test(key) ? `${key}` : key,
+        /method|payload|url/.test(key) ? `request-${key}` : key,
         key === 'payload' ? JSON.stringify(value) : value,
       );
     });
@@ -117,7 +122,7 @@
   错误详情：${errorObj}
   报错路径：${window.location.href}`;
     // 日志上报，此时无法得知请求的路由，方法和参数，因此如果页面在奔溃时机的情况下我们只需要上传 message 即可，但是数据越详细越好
-    console.log(errDetail);
+    // console.log(errDetail);
     this.sls.pushLog({
       message: errDetail,
     });
