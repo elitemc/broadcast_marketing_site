@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React, { useCallback, useState, useEffect } from 'react';
+import React, {useCallback, useState, useEffect} from 'react';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -19,11 +19,11 @@ import useThemeContext from '@theme/hooks/useThemeContext';
 import useHideableNavbar from '@theme/hooks/useHideableNavbar';
 import useLockBodyScroll from '@theme/hooks/useLockBodyScroll';
 import 'antd/dist/antd.css';
-import { Button } from 'antd';
+import {Button} from 'antd';
 
 import styles from './styles.module.css';
 
-function NavLink({ to, href, label, position, ...props }) {
+function NavLink({to, href, label, position, ...props}) {
   const toUrl = useBaseUrl(to);
 
   return (
@@ -31,50 +31,50 @@ function NavLink({ to, href, label, position, ...props }) {
       className="navbar__item navbar__link"
       {...(href
         ? {
-          target: '_blank',
-          rel: 'noopener noreferrer',
-          href,
-        }
+            target: '_blank',
+            rel: 'noopener noreferrer',
+            href,
+          }
         : {
-          activeClassName:
-            to === '#solution' || to === '#case' ? '' : styles.activeLink,
-          to: toUrl,
-        })}
+            activeClassName:
+              to === '#solution' || to === '#case' ? '' : styles.activeLink,
+            to: toUrl,
+          })}
       {...props}>
       {position === 'right' ? (
         <div
           className={
-            label === '免费使用' ? styles.navbarBtn : styles.navbarLogin
+            label === '立即体验' ? styles.navbarBtn : styles.navbarLogin
           }>
           {label}
         </div>
       ) : (
-          label
-        )}
+        label
+      )}
     </Link>
   );
 }
 
 function Navbar() {
   const context = useDocusaurusContext();
-  const { siteConfig = {} } = context;
-  const { baseUrl, themeConfig = {} } = siteConfig;
-  const { navbar = {}, disableDarkMode = false } = themeConfig;
-  const { title, logo = {}, links = [], hideOnScroll = false } = navbar;
+  const {siteConfig = {}} = context;
+  const {baseUrl, themeConfig = {}} = siteConfig;
+  const {navbar = {}, disableDarkMode = false} = themeConfig;
+  const {title, logo = {}, links = [], hideOnScroll = false} = navbar;
 
   const [sidebarShown, setSidebarShown] = useState(false);
   const [isSearchBarExpanded, setIsSearchBarExpanded] = useState(false);
   const [isHomePage, setIsHomePage] = useState(false);
   const [showBanner, setShowBanner] = useState(true);
 
-  const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext();
-  const { navbarRef, isNavbarVisible } = useHideableNavbar(hideOnScroll);
+  const {isDarkTheme, setLightTheme, setDarkTheme} = useThemeContext();
+  const {navbarRef, isNavbarVisible} = useHideableNavbar(hideOnScroll);
 
   useLockBodyScroll(sidebarShown);
   const handler = () => {
     const banner = document.getElementById('homeBanner');
     if (isHomePage) {
-      const { left, right, top, bottom } = banner.getBoundingClientRect();
+      const {left, right, top, bottom} = banner.getBoundingClientRect();
       // console.log({left, right, top, bottom});
       const innerHeight = window.innerHeight,
         innerWidth = window.innerWidth;
@@ -174,9 +174,9 @@ function Navbar() {
   const isExternalLogoLink = /http/.test(logoLink);
   const logoLinkProps = isExternalLogoLink
     ? {
-      rel: 'noopener noreferrer',
-      target: '_blank',
-    }
+        rel: 'noopener noreferrer',
+        target: '_blank',
+      }
     : null;
   const logoSrc = logo.srcDark && isDarkTheme ? logo.srcDark : logo.src;
   const logoImageUrl = useBaseUrl(logoSrc);
@@ -204,9 +204,8 @@ function Navbar() {
         className="navbar__inner"
         style={{
           maxWidth: '1440px',
-          margin: '0 auto'
-        }}
-      >
+          margin: '0 auto',
+        }}>
         <div className="navbar__items">
           <div
             aria-label="Navigation bar toggle"
@@ -216,7 +215,7 @@ function Navbar() {
             onClick={showSidebar}
             onKeyDown={showSidebar}>
             <svg
-              style={isHomePage && showBanner ? { color: '#FFFFFF' } : {}}
+              style={isHomePage && showBanner ? {color: '#FFFFFF'} : {}}
               xmlns="http://www.w3.org/2000/svg"
               width="30"
               height="30"
@@ -243,13 +242,13 @@ function Navbar() {
                   onClick={asyncHandler}
                 />
               ) : (
-                  <img
-                    className={classnames('navbar__logo', styles.logoImg)}
-                    src={logoImageUrl}
-                    alt={logo.alt}
-                    onClick={asyncHandler}
-                  />
-                ))}
+                <img
+                  className={classnames('navbar__logo', styles.logoImg)}
+                  src={logoImageUrl}
+                  alt={logo.alt}
+                  onClick={asyncHandler}
+                />
+              ))}
             {title != null && (
               <strong
                 className={isSearchBarExpanded ? styles.hideLogoText : ''}>
@@ -257,8 +256,7 @@ function Navbar() {
               </strong>
             )}
           </Link>
-          <div
-            className={styles.blue_item}>
+          <div className={styles.blue_item}>
             {links
               .filter(linkItem => linkItem.position !== 'right')
               .map((linkItem, i) => (
@@ -266,7 +264,7 @@ function Navbar() {
                   onClick={asyncHandler}
                   {...linkItem}
                   key={i}
-                  style={{ padding: '18px 0', margin: '0 20px', height: '60px' }}
+                  style={{padding: '18px 0', margin: '0 20px', height: '60px'}}
                 />
               ))}
           </div>
@@ -281,7 +279,7 @@ function Navbar() {
               <NavLink
                 {...linkItem}
                 key={i}
-                style={{ marginLeft: '50px', padding: '0' }}
+                style={{marginLeft: '50px', padding: '0'}}
               />
             ))}
           {!disableDarkMode && (

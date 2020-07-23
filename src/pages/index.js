@@ -83,7 +83,7 @@ function Home() {
                   style={{border: 'none'}}
                   onClick={() => pushLog('The user clicked free use')}>
                   <a href={siteConfig.url + '/user/register'} target="_blank">
-                    免费使用
+                    立即体验
                   </a>
                 </Button>
               </div>
@@ -107,8 +107,7 @@ function Home() {
                     <b>高质量低付费，大幅节省培训成本</b>
                     <p style={{marginBottom: 10}}>
                       轻松组织异地多人远程培训，单场节省超过 *80%
-                      培训费用。价格优势明显，收费模式灵活，50
-                      人内「免费使用」，全面体验高性价比直播服务，快速实现培训数字化转型。
+                      培训费用。价格优势明显，收费模式灵活，全面体验高性价比直播服务，快速实现培训数字化转型。
                     </p>
                     <span>*数据源自英荔播课的医药行业客户使用调研。</span>
                   </div>
@@ -611,7 +610,7 @@ function Home() {
                 style={{border: 'none'}}
                 onClick={() => pushLog('The user clicked free use')}>
                 <a href={siteConfig.url + '/user/register'} target="_blank">
-                  免费使用
+                  立即体验
                 </a>
               </Button>
               <Button
