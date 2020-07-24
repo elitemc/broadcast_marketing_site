@@ -35,7 +35,7 @@ function About() {
           <div className={styles.callTit}>
             <h4>联系我们</h4>
             <div className={styles.row + ' row'}>
-              <div class="col col--5">
+              <div className="col col--5">
                 <div className={styles.linkItem}>
                   <b>广东英荔国际教育科技有限公司</b>
                   <p>地址：广州市天河区天河北路 233 号中信广场写字楼 1005 室</p>
@@ -49,23 +49,23 @@ function About() {
                 </div>
               </div>
 
-              <div class="col col--5">
+              <div className="col col--5">
                 <div className={styles.linkItem}>
                   <b>商务合作</b>
                   <p className={styles.cooperate}>
-                    <span class={styles.cooperateItem}>
+                    <span className={styles.cooperateItem}>
                       黄小姐：
                       <a href="tel:156 261 02305" style={{color: 'inherit'}}>
                         156 2610 2305
                       </a>
                     </span>
-                    <span class={styles.cooperateItem}>
+                    <span className={styles.cooperateItem}>
                       廖小姐：
                       <a href="tel:139 289 68545" style={{color: 'inherit'}}>
                         139 2896 8545
                       </a>
                     </span>
-                    <span class={styles.cooperateItem}>
+                    <span className={styles.cooperateItem}>
                       孙小姐：
                       <a href="tel:153 188 61202" style={{color: 'inherit'}}>
                         153 1886 1202
@@ -74,13 +74,13 @@ function About() {
                   </p>
                 </div>
               </div>
-              <div class="col col--5">
+              <div className="col col--5">
                 <div className={styles.linkItem}>
                   <b>邮箱</b>
                   <p>support@yingliboke.cn</p>
                 </div>
               </div>
-              <div class="col col--5">
+              <div className="col col--5">
                 <div className={styles.linkItem}>
                   <b>邮编</b>
                   <p>510620</p>

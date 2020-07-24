@@ -9,8 +9,15 @@ import 'antd/dist/antd.css';
 import {} from 'antd';
 
 import SideBar from '../sidebar';
-const download = url => {
+const download = (url, device) => {
   window.open(url);
+  //日志埋点
+  window.sls.pushLog({
+    level: 'INFO',
+    message: `Downloading Yingli Broadcasting Class for ${(
+      device || ''
+    ).toUpperCase()}`,
+  });
 };
 const downloadDesk = (key, e) => {
   let downloadUrl = '';
@@ -20,6 +27,11 @@ const downloadDesk = (key, e) => {
   } else if (key === 'mac') {
     downloadUrl = baseUrl + 'www英荔播课-2.5.1.dmg';
   }
+  // 日志埋点
+  window.sls.pushLog({
+    level: 'INFO',
+    message: `Downloading Yingli Broadcasting Class for ${key.toUpperCase()}`,
+  });
   // 创建a标签，触发点击
   const a = document.createElement('a');
   a.href = downloadUrl;
@@ -81,6 +93,7 @@ function Download() {
                     onClick={() =>
                       download(
                         'https://apps.apple.com/cn/app/%E8%8B%B1%E8%8D%94%E6%92%AD%E8%AF%BE/id1467718115',
+                        'ios',
                       )
                     }>
                     <img src={useBaseUrl('img/ios_down.png')} alt="下载" />
@@ -89,6 +102,7 @@ function Download() {
                     onClick={() =>
                       download(
                         'https://apps.apple.com/cn/app/%E8%8B%B1%E8%8D%94%E6%92%AD%E8%AF%BE/id1467718115',
+                        'ios',
                       )
                     }>
                     点击或扫描二维码下载
