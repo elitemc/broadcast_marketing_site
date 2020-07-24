@@ -17,11 +17,11 @@ import Footer from '@theme/Footer';
 import './styles.css';
 
 function Layout(props) {
-  const { siteConfig = {} } = useDocusaurusContext();
+  const {siteConfig = {}} = useDocusaurusContext();
   const {
     favicon,
     title: siteTitle,
-    themeConfig: { image: defaultImage },
+    themeConfig: {image: defaultImage},
     url: siteUrl,
   } = siteConfig;
   const {
