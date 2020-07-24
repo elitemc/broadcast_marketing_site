@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React, { useCallback, useState, useEffect } from 'react';
+import React, {useCallback, useState, useEffect} from 'react';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -19,27 +19,100 @@ import useThemeContext from '@theme/hooks/useThemeContext';
 import useHideableNavbar from '@theme/hooks/useHideableNavbar';
 import useLockBodyScroll from '@theme/hooks/useLockBodyScroll';
 import 'antd/dist/antd.css';
-import { Button } from 'antd';
+import {Button} from 'antd';
+// import sls from '../../utils/slsLogger';
 
 import styles from './styles.module.css';
 
-function NavLink({ to, href, label, position, ...props }) {
+function NavLink({to, href, label, position, ...props}) {
   const toUrl = useBaseUrl(to);
+  useEffect(() => {
+    const SLS = new (window.Tracker || function() {})(
+      'cn-shenzhen.log.aliyuncs.com',
+      'yingliboke-dev',
+      'frontend',
+    );
+    // (
+    //   'cn-shenzhen.log.aliyuncs.com',
+    //   'yingliboke',
+    //   'test',
+    // );
+
+    SLS.fillZero = num => (num < 10 ? `0${num}` : num);
+    SLS.pushLog = function(data = {}) {
+      let now = new Date();
+      Object.assign(data, {
+        user: 0,
+        'user-agent': navigator.userAgent,
+        asctime: `${this.fillZero(now.getFullYear())}-${this.fillZero(
+          now.getMonth() + 1,
+        )}-${this.fillZero(now.getDate())} ${this.fillZero(
+          now.getHours(),
+        )}:${this.fillZero(now.getMinutes())}:${this.fillZero(
+          now.getSeconds(),
+        )},${(now.getMilliseconds() + '').padStart(3, 0)}`,
+        platform: 'MKT',
+        level: data.level || 'ERROR',
+        //此处写固定且动态的参数
+      });
+
+      // DEBUG
+      // let str = '';
+      Object.entries(data).forEach(([key, value]) => {
+        // str +=
+        //   (/method|payload|url/.test(key) ? `request-${key}` : key) +
+        //   '=' +
+        //   value +
+        //   '&';
+        this.push(
+          /method|payload|url/.test(key) ? `request-${key}` : key,
+          key === 'payload' ? JSON.stringify(value) : value,
+        );
+      });
+      this.logger();
+      // console.log('测试提交的log', str);
+    };
+
+    // 防止 对象 被修改，对 sls 进行冻结
+    window.sls = Object.freeze(SLS);
+
+    // 页面奔溃上传
+    window.onerror = function(
+      errorMessage,
+      scriptURI,
+      lineNumber,
+      columnNumber,
+      errorObj,
+    ) {
+      let errDetail = `
+    错误信息：${errorMessage}
+    出错文件：${scriptURI}
+    lineNumber:${lineNumber}
+    出错列号：${columnNumber}
+    错误详情：${errorObj}
+    报错路径：${window.location.href}`;
+      // 日志上报，此时无法得知请求的路由，方法和参数，因此如果页面在奔溃时机的情况下我们只需要上传 message 即可，但是数据越详细越好
+      // console.log(errDetail);
+      this.sls.pushLog({
+        message: errDetail,
+      });
+    };
+  }, []);
 
   return (
     <Link
       className="navbar__item navbar__link"
       {...(href
         ? {
-          target: '_blank',
-          rel: 'noopener noreferrer',
-          href,
-        }
+            target: '_blank',
+            rel: 'noopener noreferrer',
+            href,
+          }
         : {
-          activeClassName:
-            to === '#solution' || to === '#case' ? '' : styles.activeLink,
-          to: toUrl,
-        })}
+            activeClassName:
+              to === '#solution' || to === '#case' ? '' : styles.activeLink,
+            to: toUrl,
+          })}
       {...props}>
       {position === 'right' ? (
         <div
@@ -49,32 +122,32 @@ function NavLink({ to, href, label, position, ...props }) {
           {label}
         </div>
       ) : (
-          label
-        )}
+        label
+      )}
     </Link>
   );
 }
 
 function Navbar() {
   const context = useDocusaurusContext();
-  const { siteConfig = {} } = context;
-  const { baseUrl, themeConfig = {} } = siteConfig;
-  const { navbar = {}, disableDarkMode = false } = themeConfig;
-  const { title, logo = {}, links = [], hideOnScroll = false } = navbar;
+  const {siteConfig = {}} = context;
+  const {baseUrl, themeConfig = {}} = siteConfig;
+  const {navbar = {}, disableDarkMode = false} = themeConfig;
+  const {title, logo = {}, links = [], hideOnScroll = false} = navbar;
 
   const [sidebarShown, setSidebarShown] = useState(false);
   const [isSearchBarExpanded, setIsSearchBarExpanded] = useState(false);
   const [isHomePage, setIsHomePage] = useState(false);
   const [showBanner, setShowBanner] = useState(true);
 
-  const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext();
-  const { navbarRef, isNavbarVisible } = useHideableNavbar(hideOnScroll);
+  const {isDarkTheme, setLightTheme, setDarkTheme} = useThemeContext();
+  const {navbarRef, isNavbarVisible} = useHideableNavbar(hideOnScroll);
 
   useLockBodyScroll(sidebarShown);
   const handler = () => {
     const banner = document.getElementById('homeBanner');
     if (isHomePage) {
-      const { left, right, top, bottom } = banner.getBoundingClientRect();
+      const {left, right, top, bottom} = banner.getBoundingClientRect();
       // console.log({left, right, top, bottom});
       const innerHeight = window.innerHeight,
         innerWidth = window.innerWidth;
@@ -174,9 +247,9 @@ function Navbar() {
   const isExternalLogoLink = /http/.test(logoLink);
   const logoLinkProps = isExternalLogoLink
     ? {
-      rel: 'noopener noreferrer',
-      target: '_blank',
-    }
+        rel: 'noopener noreferrer',
+        target: '_blank',
+      }
     : null;
   const logoSrc = logo.srcDark && isDarkTheme ? logo.srcDark : logo.src;
   const logoImageUrl = useBaseUrl(logoSrc);
@@ -204,9 +277,8 @@ function Navbar() {
         className="navbar__inner"
         style={{
           maxWidth: '1440px',
-          margin: '0 auto'
-        }}
-      >
+          margin: '0 auto',
+        }}>
         <div className="navbar__items">
           <div
             aria-label="Navigation bar toggle"
@@ -216,7 +288,7 @@ function Navbar() {
             onClick={showSidebar}
             onKeyDown={showSidebar}>
             <svg
-              style={isHomePage && showBanner ? { color: '#FFFFFF' } : {}}
+              style={isHomePage && showBanner ? {color: '#FFFFFF'} : {}}
               xmlns="http://www.w3.org/2000/svg"
               width="30"
               height="30"
@@ -243,13 +315,13 @@ function Navbar() {
                   onClick={asyncHandler}
                 />
               ) : (
-                  <img
-                    className={classnames('navbar__logo', styles.logoImg)}
-                    src={logoImageUrl}
-                    alt={logo.alt}
-                    onClick={asyncHandler}
-                  />
-                ))}
+                <img
+                  className={classnames('navbar__logo', styles.logoImg)}
+                  src={logoImageUrl}
+                  alt={logo.alt}
+                  onClick={asyncHandler}
+                />
+              ))}
             {title != null && (
               <strong
                 className={isSearchBarExpanded ? styles.hideLogoText : ''}>
@@ -257,8 +329,7 @@ function Navbar() {
               </strong>
             )}
           </Link>
-          <div
-            className={styles.blue_item}>
+          <div className={styles.blue_item}>
             {links
               .filter(linkItem => linkItem.position !== 'right')
               .map((linkItem, i) => (
@@ -266,7 +337,7 @@ function Navbar() {
                   onClick={asyncHandler}
                   {...linkItem}
                   key={i}
-                  style={{ padding: '18px 0', margin: '0 20px', height: '60px' }}
+                  style={{padding: '18px 0', margin: '0 20px', height: '60px'}}
                 />
               ))}
           </div>
@@ -281,7 +352,7 @@ function Navbar() {
               <NavLink
                 {...linkItem}
                 key={i}
-                style={{ marginLeft: '50px', padding: '0' }}
+                style={{marginLeft: '50px', padding: '0'}}
               />
             ))}
           {!disableDarkMode && (
