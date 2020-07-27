@@ -39,7 +39,7 @@ module.exports = {
         },
         {
           href: 'https://bms.yingliboke.cn/user/register',
-          label: '免费使用',
+          label: '立即体验',
           position: 'right',
         },
       ],
