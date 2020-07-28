@@ -16,7 +16,10 @@ module.exports = {
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   scripts: [
-    'http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/attach/31752/cn_zh/1462870126706/loghub-tracking.js?spm=a2c4g.11186623.2.16.12525ad1iUg852&file=loghub-tracking.js',
+    {
+      src:
+        'http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/attach/31752/cn_zh/1462870126706/loghub-tracking.js?spm=a2c4g.11186623.2.16.12525ad1iUg852&file=loghub-tracking.js',
+    },
     // './src/utils/slsLogger.js',
   ],
   themeConfig: {
