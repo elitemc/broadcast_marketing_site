@@ -117,7 +117,7 @@ function NavLink({to, href, label, position, ...props}) {
       {position === 'right' ? (
         <div
           className={
-            label === '免费使用' ? styles.navbarBtn : styles.navbarLogin
+            label === '立即体验' ? styles.navbarBtn : styles.navbarLogin
           }>
           {label}
         </div>
