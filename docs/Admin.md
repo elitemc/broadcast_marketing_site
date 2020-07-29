@@ -67,22 +67,25 @@ title: 我是管理员
 
 ## **套餐管理**
 
-### **领取免费版套餐**
+### **领取体验版套餐**
 
-进入充值消费 - 套餐详情页面，您可领取 50 人免费版套餐去体验开播。
+进入充值消费 - 套餐详情页面，您可领取 5 人体验版套餐去体验开播。
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E9%A2%86%E5%8F%96%E5%85%8D%E8%B4%B9%E7%89%88%E5%A5%97%E9%A4%90.png" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/我是管理员-领取体验版套餐1.png" style={{border:'1px solid #eff0f2'}} />
+<br/>
+<br/>
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/我是管理员-领取体验版套餐2.png" style={{border:'1px solid #eff0f2'}} />
 
 ### **购买标准版套餐**
-进入充值消费 - 套餐详情页面，选择【购买标准版】，购买套餐时可使用微信支付、支付宝来付款。购买后您可支付差价升级套餐。
+进入充值消费 - 套餐详情页面，选择【购买标准版】，购买套餐时可使用微信支付和支付宝来付款。购买后您可支付差价升级套餐。
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E8%B4%AD%E4%B9%B0%E6%A0%87%E5%87%86%E7%89%88%E5%A5%97%E9%A4%90.png" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/我是管理员-购买标准版套餐1.png" style={{border:'1px solid #eff0f2'}} />
 <br/>
 <br/>
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E8%B4%AD%E4%B9%B0%E6%A0%87%E5%87%86%E5%A5%97%E9%A4%902.png" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/我是管理员-购买标准版套餐2.png" style={{border:'1px solid #eff0f2'}} />
 <br/>
 <br/>
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E8%B4%AD%E4%B9%B0%E6%A0%87%E5%87%86%E7%89%88%E5%A5%97%E9%A4%90%203.png" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/我是管理员-购买标准版套餐3.png" style={{border:'1px solid #eff0f2'}} />
 
 ### **升级套餐**
 
