@@ -23,9 +23,9 @@ const downloadDesk = (key, e) => {
   let downloadUrl = '';
   let baseUrl = 'https://yingliboke.oss-cn-shenzhen.aliyuncs.com/app/';
   if (key === 'win') {
-    downloadUrl = baseUrl + '英荔播课%20Setup%202.5.1.exe';
+    downloadUrl = baseUrl + '英荔播课%20Setup%203.0.0.exe';
   } else if (key === 'mac') {
-    downloadUrl = baseUrl + 'www英荔播课-2.5.1.dmg';
+    downloadUrl = baseUrl + 'www英荔播课-3.0.0.dmg';
   }
   // 日志埋点
   window.sls.pushLog({
@@ -61,7 +61,7 @@ function Download() {
                     className={styles.downIcon}
                     onClick={() =>
                       download(
-                        'https://yingliboke.oss-cn-shenzhen.aliyuncs.com/android/www%E8%8B%B1%E8%8D%94%E6%92%AD%E8%AF%BE2.5.1-07-17_1526_251_jiagu_sign.apk',
+                        'https://yingliboke.oss-cn-shenzhen.aliyuncs.com/android/www%E8%8B%B1%E8%8D%94%E6%92%AD%E8%AF%BE3.0.0-07-28_2007_300_jiagu_sign.apk',
                       )
                     }>
                     <img
@@ -72,7 +72,7 @@ function Download() {
                   <small
                     onClick={() =>
                       download(
-                        'https://yingliboke.oss-cn-shenzhen.aliyuncs.com/android/www%E8%8B%B1%E8%8D%94%E6%92%AD%E8%AF%BE2.5.1-07-17_1526_251_jiagu_sign.apk',
+                        'https://yingliboke.oss-cn-shenzhen.aliyuncs.com/android/www%E8%8B%B1%E8%8D%94%E6%92%AD%E8%AF%BE3.0.0-07-28_2007_300_jiagu_sign.apk',
                       )
                     }>
                     点击或扫描二维码下载
