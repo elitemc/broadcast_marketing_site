@@ -8,7 +8,7 @@
   }
   function AliLogTracker(host, project, logstore) {
     this.uri_ =
-      'http://' +
+      'https://' +
       project +
       '.' +
       host +
