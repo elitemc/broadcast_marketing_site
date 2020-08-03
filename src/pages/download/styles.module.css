@@ -33,7 +33,6 @@
   line-height: 21px;
   letter-spacing: 0px;
   color: rgba(132, 148, 166, 1);
-
 }
 
 .downloadContainer {
@@ -45,17 +44,18 @@
   text-align: center;
 }
 
-.downloadContainer>div {
-  width: 48.412%;
+.downloadContainer > div {
+  /* width: 48.412%; */
+  width: 100%;
   box-sizing: border-box;
   padding: 47px 83px;
-  transition: all .3s;
+  transition: all 0.3s;
   border-radius: 4px;
   border: solid 1px #eff2f6;
 }
 
-.downloadContainer>div:hover {
-  /* box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08); */
+.downloadContainer > div + div {
+  margin-top: 30px;
 }
 
 .downloadContainer h5 {
@@ -71,7 +71,7 @@
 .downList {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .downList .downItem {
@@ -101,7 +101,6 @@
   font-stretch: normal;
   letter-spacing: 0px;
   color: rgba(73, 91, 112, 1);
-
 }
 
 .downItem:hover .downCode {
@@ -118,7 +117,7 @@
   visibility: hidden;
   opacity: 0;
   background: white;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .downCode .downIcon {
@@ -128,7 +127,9 @@
   height: 100px;
   cursor: pointer;
 }
-
+.exe_down_img {
+  width: 80px;
+}
 .teacher .downItem .downCode .downIcon {
   width: 80px;
   height: 90px;
@@ -152,28 +153,28 @@
 }
 
 @media screen and (max-width: 1180px) {
-  .downloadContainer>div {
+  .downloadContainer > div {
     width: 62.412%;
     margin: 20px auto;
   }
 }
 
 @media screen and (max-width: 980px) {
-  .downloadContainer>div {
+  .downloadContainer > div {
     width: 82.412%;
     margin: 20px auto;
   }
 }
 
 @media screen and (max-width: 880px) {
-  .downloadContainer>div {
+  .downloadContainer > div {
     width: 92.412%;
     margin: 20px auto;
   }
 }
 
 @media screen and (max-width: 880px) {
-  .downloadContainer>div {
+  .downloadContainer > div {
     width: 92.412%;
     margin: 20px auto;
   }
@@ -186,7 +187,6 @@
     margin: 30px;
   }
 }
-
 
 @media screen and (max-width: 620px) {
   .downloadHeader {

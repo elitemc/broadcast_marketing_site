@@ -27,19 +27,9 @@ title: 我是管理员
 
 如果账号已被加入了组织，则无需创建组织。如果账号被加入了多个组织，登录成功后需要选择即将进入的组织。
 
-每个账号最多可以创建 7 个组织，被加入的组织不限数量。
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E9%80%89%E6%8B%A9%E5%88%87%E6%8D%A2%E7%BB%84%E7%BB%87%20-%201.jpg" style={{border:'1px solid #eff0f2'}} />
-<br/>
-<br/>
-进入组织后，在当前页面右上角可以进入切换组织。
-<br/>
-<br/>
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E9%80%89%E6%8B%A9%E5%88%87%E6%8D%A2%E7%BB%84%E7%BB%87%20-%202.jpg" style={{border:'1px solid #eff0f2'}} />
-<br/>
-<br/>
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E9%80%89%E6%8B%A9%E5%88%87%E6%8D%A2%E7%BB%84%E7%BB%87%20-%203.jpg" style={{border:'1px solid #eff0f2'}} />
+每个账号最多可以创建 7 个组织，被加入的组织不限数量。 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E9%80%89%E6%8B%A9%E5%88%87%E6%8D%A2%E7%BB%84%E7%BB%87%20-%201.jpg" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> 进入组织后，在当前页面右上角可以进入切换组织。 <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E9%80%89%E6%8B%A9%E5%88%87%E6%8D%A2%E7%BB%84%E7%BB%87%20-%202.jpg" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E9%80%89%E6%8B%A9%E5%88%87%E6%8D%A2%E7%BB%84%E7%BB%87%20-%203.jpg" style={{border:'1px solid #eff0f2'}} />
 
-## **账号管理** 
+## **账号管理**
 
 管理员可设置公司组织架构和为员工添加账号，对组织账号做统一管理。添加的账号可以登录「管理后台」，或登录 App 观看直播。
 
@@ -51,10 +41,7 @@ title: 我是管理员
 
 （注意：新注册的账号首次登录需要修改密码。）
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E6%B7%BB%E5%8A%A0%E8%B4%A6%E5%8F%B7%20-1.png" style={{border:'1px solid #eff0f2'}} />
-<br/>
-<br/>
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E6%B7%BB%E5%8A%A0%E8%B4%A6%E5%8F%B7%20-2.png" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E6%B7%BB%E5%8A%A0%E8%B4%A6%E5%8F%B7%20-1.png" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E6%B7%BB%E5%8A%A0%E8%B4%A6%E5%8F%B7%20-2.png" style={{border:'1px solid #eff0f2'}} />
 
 ## **权限管理**
 
@@ -64,28 +51,19 @@ title: 我是管理员
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%20-1.jpg" style={{border:'1px solid #eff0f2'}} />
 
-
 ## **套餐管理**
 
 ### **领取体验版套餐**
 
 进入充值消费 - 套餐详情页面，您可领取 5 人体验版套餐去体验开播。
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/我是管理员-领取体验版套餐1.png" style={{border:'1px solid #eff0f2'}} />
-<br/>
-<br/>
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/我是管理员-领取体验版套餐2.png" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/我是管理员-领取体验版套餐1.png" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/我是管理员-领取体验版套餐2.png" style={{border:'1px solid #eff0f2'}} />
 
 ### **购买标准版套餐**
+
 进入充值消费 - 套餐详情页面，选择【购买标准版】，购买套餐时可使用微信支付和支付宝来付款。购买后您可支付差价升级套餐。
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/我是管理员-购买标准版套餐1.png" style={{border:'1px solid #eff0f2'}} />
-<br/>
-<br/>
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/我是管理员-购买标准版套餐2.png" style={{border:'1px solid #eff0f2'}} />
-<br/>
-<br/>
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/我是管理员-购买标准版套餐3.png" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/我是管理员-购买标准版套餐1.png" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/我是管理员-购买标准版套餐2.png" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/我是管理员-购买标准版套餐3.png" style={{border:'1px solid #eff0f2'}} />
 
 ### **升级套餐**
 
@@ -111,25 +89,13 @@ title: 我是管理员
 
 1、选择预约时间后创建直播，填写直播间信息。
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E5%88%9B%E5%BB%BA%E7%9B%B4%E6%92%AD%E9%97%B4%20-1.png" style={{border:'1px solid #eff0f2'}} />
-<br/>
-<br/>
-2、设置直播间是否对外公开，是否开启录制，设置观看权限，设置完成后创建直播，进入下一步设置。
-<br/>
-<br/>
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E5%88%9B%E5%BB%BA%E7%9B%B4%E6%92%AD%E9%97%B4%20-2.jpg" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E5%88%9B%E5%BB%BA%E7%9B%B4%E6%92%AD%E9%97%B4%20-1.png" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> 2、设置直播间是否对外公开，是否开启录制，设置观看权限，设置完成后创建直播，进入下一步设置。 <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E5%88%9B%E5%BB%BA%E7%9B%B4%E6%92%AD%E9%97%B4%20-2.jpg" style={{border:'1px solid #eff0f2'}} />
 
 ### **编辑直播间内容**
 
 1、在未开播的直播间里点击【设置】，对直播信息进行编辑。
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%BC%96%E8%BE%91%E7%9B%B4%E6%92%AD%E5%86%85%E5%AE%B9.png" style={{border:'1px solid #eff0f2'}} />
-<br/>
-<br/>
-2、注意：预定时间只能在距离开播时间 72 小时之前才可以更改。
-<br/>
-<br/>
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%BC%96%E8%BE%91%E7%9B%B4%E6%92%AD%E5%86%85%E5%AE%B92.png" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%BC%96%E8%BE%91%E7%9B%B4%E6%92%AD%E5%86%85%E5%AE%B9.png" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> 2、注意：预定时间只能在距离开播时间 72 小时之前才可以更改。 <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%BC%96%E8%BE%91%E7%9B%B4%E6%92%AD%E5%86%85%E5%AE%B92.png" style={{border:'1px solid #eff0f2'}} />
 
 ### **添加白名单**
 
@@ -162,10 +128,10 @@ title: 我是管理员
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E4%B8%8A%E4%BC%A0%E8%A7%86%E9%A2%91.png" style={{border:'1px solid #eff0f2'}} />
 
 ### **更换主持人**
+
 更换直播间的主持人，可以自定义主持人的昵称、头像和标签，如有需要可对主持人分配开播工具的权限，点击【保存】即刻生效。更换主持人后，如果上一位主持人正在直播，将会被强行退出登录。
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E6%9B%B4%E6%8D%A2%E4%B8%BB%E6%8C%81%E4%BA%BA%20-1.jpg" style={{border:'1px solid #eff0f2'}} />
-
 
 ### **分享直播间**
 
@@ -183,20 +149,7 @@ title: 我是管理员
 
 直播结束后，管理员在直播列表页面点击相应直播的【数据】按钮，可以进入该直播的数据页面。
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200417/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE.jpg" style={{border:'1px solid #eff0f2'}} />
-<br/>
-<br/>
-直播数据页面包含直播的基本信息、直播间实时人数统计、以及签到、投票、习题、抽奖的详细数据。支持精简版 PDF 报告、完整版 PDF 报告、全场数据 Excel 、以及聊天数据 Excel 四种类型的数据下载功能；
-<br/>
-<br/>
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200427/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE.jpg" style={{border:'1px solid #eff0f2'}} />
-<br/>
-<br/>
-在观看详情页面还可以查看详细的观众观看时长数据
-<br/>
-<br/>
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200427/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE2.jpg" style={{border:'1px solid #eff0f2'}} />
-
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200417/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE.jpg" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> 直播数据页面包含直播的基本信息、直播间实时人数统计、以及签到、投票、习题、抽奖的详细数据。支持精简版 PDF 报告、完整版 PDF 报告、全场数据 Excel 、以及聊天数据 Excel 四种类型的数据下载功能； <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200427/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE.jpg" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> 在观看详情页面还可以查看详细的观众观看时长数据 <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200427/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E7%9B%B4%E6%92%AD%E6%95%B0%E6%8D%AE2.jpg" style={{border:'1px solid #eff0f2'}} />
 
 ## **回放管理**
 
@@ -204,9 +157,7 @@ title: 我是管理员
 
 已开启录制的直播间，直播结束后可在回放管理处设置该直播间是否发布，回放开放观看时间。
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E7%BC%96%E8%BE%91%E5%9B%9E%E6%94%BE%20-1.png" style={{border:'1px solid #eff0f2'}} /> 
-<br/> <br/> 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E7%BC%96%E8%BE%91%E5%9B%9E%E6%94%BE%20-2.png" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E7%BC%96%E8%BE%91%E5%9B%9E%E6%94%BE%20-1.png" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E7%BC%96%E8%BE%91%E5%9B%9E%E6%94%BE%20-2.png" style={{border:'1px solid #eff0f2'}} />
 
 ### **回放数据**
 
@@ -223,24 +174,25 @@ title: 我是管理员
 ## **常见问题及处理**
 
 ### **无法预约指定时间的直播间**
+
 无法选择预约某个时间即表示该时间段已有其他企业预约了学员较多的大规模直播间，为更好维护直播平台的稳定性，保证直播通畅，系统会错开时间预约直播，请选择其他时间段的直播。
 
-
 ### **没有进行直播却扣除了场次**
+
 预约好的直播间，因其他原因取消或延期导致该直播间没有正常开始，请取消预约或修改预约时间，以免系统自动扣除场次。
 
-
 ### **无法上传课件**
+
 请检查课件格式是否为 PPT 或 PDF 文件；检查网络是否通畅，稍等课件上传转码；文件过大也会影响上传速度，可压缩后上传。
 
-
 ### **习题/投票无法创建**
+
 请检查是否有遗漏未填的选项，如：未设置习题/投票标题，未设置作答时间，未勾选正确答案，未设置题目分数等。
 
-
 ### **视频无法上传**
+
 请检查格式是否为：WMV、MOV、MPEG、MP4、3GP、FLV、AVI 或 RMVB 等，请确保视频大小控制在 1G 内。
 
-
 ### **为什么直播结束后没有回放**
+
 在预约直播间的时候，确认自动录制是否开启，开启录制的直播间才会在直播结束后生成回放。

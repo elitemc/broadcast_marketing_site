@@ -20,7 +20,6 @@ import useHideableNavbar from '@theme/hooks/useHideableNavbar';
 import useLockBodyScroll from '@theme/hooks/useLockBodyScroll';
 import 'antd/dist/antd.css';
 import {Button} from 'antd';
-// import sls from '../../utils/slsLogger';
 
 import styles from './styles.module.css';
 
