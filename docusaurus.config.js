@@ -15,7 +15,12 @@ module.exports = {
   favicon: 'img/titlelogo.png',
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
-  scripts: ['./src/utils/slsLogger.js'],
+  scripts: [
+    {
+      src: 'https://yingliboke.oss-cn-shenzhen.aliyuncs.com/loghub-tracking.js',
+    },
+    // './src/utils/slsLogger.js',
+  ],
   themeConfig: {
     navbar: {
       title: '',

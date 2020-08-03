@@ -9,7 +9,7 @@ import 'antd/dist/antd.css';
 import {} from 'antd';
 
 import SideBar from '../sidebar';
-const download = (url, device) => {
+const download = (url, device = 'android') => {
   window.open(url);
   //日志埋点
   window.sls.pushLog({
@@ -23,9 +23,9 @@ const downloadDesk = (key, e) => {
   let downloadUrl = '';
   let baseUrl = 'https://yingliboke.oss-cn-shenzhen.aliyuncs.com/app/';
   if (key === 'win') {
-    downloadUrl = baseUrl + '英荔播课%20Setup%202.5.1.exe';
+    downloadUrl = baseUrl + '英荔播课%20Setup%203.0.0.exe';
   } else if (key === 'mac') {
-    downloadUrl = baseUrl + 'www英荔播课-2.5.1.dmg';
+    downloadUrl = baseUrl + 'www英荔播课-3.0.0.dmg';
   }
   // 日志埋点
   window.sls.pushLog({
@@ -42,6 +42,23 @@ const downloadDesk = (key, e) => {
 };
 
 function Download() {
+  /**
+   * 设置下载资源的配置
+   */
+  const Android = {
+    url:
+      'https://yingliboke.oss-cn-shenzhen.aliyuncs.com/android/www%E8%8B%B1%E8%8D%94%E6%92%AD%E8%AF%BE3.0.0-07-28_2007_300_jiagu_sign.apk',
+    qr_code: useBaseUrl('img/android_download.png'),
+    cover: useBaseUrl('img/Android.png'),
+  };
+
+  const Ios = {
+    url:
+      'https://yingliboke.oss-cn-shenzhen.aliyuncs.com/android/www%E8%8B%B1%E8%8D%94%E6%92%AD%E8%AF%BE3.0.0-07-28_2007_300_jiagu_sign.apk',
+    qr_code: useBaseUrl('img/ios_down.png'),
+    cover: useBaseUrl('img/iphone.png'),
+  };
+
   return (
     <Layout
       title={`下载`}
@@ -59,28 +76,16 @@ function Download() {
                 <div className={styles.downCode}>
                   <div
                     className={styles.downIcon}
-                    onClick={() =>
-                      download(
-                        'https://yingliboke.oss-cn-shenzhen.aliyuncs.com/android/www%E8%8B%B1%E8%8D%94%E6%92%AD%E8%AF%BE2.5.1-07-17_1526_251_jiagu_sign.apk',
-                      )
-                    }>
-                    <img
-                      src={useBaseUrl('img/android_download.png')}
-                      alt="下载"
-                    />
+                    onClick={() => download(Android.url)}>
+                    <img src={Android.qr_code} alt="下载" />
                   </div>
-                  <small
-                    onClick={() =>
-                      download(
-                        'https://yingliboke.oss-cn-shenzhen.aliyuncs.com/android/www%E8%8B%B1%E8%8D%94%E6%92%AD%E8%AF%BE2.5.1-07-17_1526_251_jiagu_sign.apk',
-                      )
-                    }>
+                  <small onClick={() => download(Android.url)}>
                     点击或扫描二维码下载
                   </small>
                 </div>
                 <div className={styles.iconContain}>
                   <div className={styles.icon}>
-                    <img src={useBaseUrl('img/Android.png')} alt="Android" />
+                    <img src={Android.cover} alt="Android" />
                   </div>
                   <small>Android</small>
                 </div>
@@ -115,11 +120,59 @@ function Download() {
                   <small>iOS</small>
                 </div>
               </div>
+
+              <div className={styles.downItem}>
+                <div
+                  className={styles.downCode}
+                  onClick={() => downloadDesk('mac_audience')}>
+                  <div className={styles.downIcon}>
+                    <img
+                      src={useBaseUrl('img/客户端.png')}
+                      alt="客户端"
+                      className={styles.exe_down_img}
+                    />
+                  </div>
+                  <small onClick={() => downloadDesk('mac_audience')}>
+                    点击下载桌面客户端
+                  </small>
+                </div>
+                <div className={styles.iconContain}>
+                  <div className={styles.icon}>
+                    <img src={useBaseUrl('img/macOS.png')} alt="macOS" />
+                  </div>
+                  <small>macOS</small>
+                </div>
+              </div>
+
+              <div className={styles.downItem}>
+                <div className={styles.downCode}>
+                  <div
+                    className={styles.downIcon}
+                    onClick={() => downloadDesk('win_audience')}>
+                    <img
+                      src={useBaseUrl('img/客户端.png')}
+                      alt="客户端"
+                      className={styles.exe_down_img}
+                    />
+                  </div>
+                  <small onClick={() => downloadDesk('win_audience')}>
+                    点击下载桌面客户端
+                  </small>
+                </div>
+                <div className={styles.iconContain}>
+                  <div className={styles.icon}>
+                    <img src={useBaseUrl('img/Windows.png')} alt="Windows" />
+                  </div>
+                  <small>Windows</small>
+                </div>
+              </div>
             </div>
           </div>
           <div className={styles.teacher}>
             <h5>讲师端</h5>
             <div className={styles.downList}>
+              <div className={styles.downItem}></div>
+
               <div className={styles.downItem}>
                 <div
                   className={styles.downCode}
@@ -157,6 +210,8 @@ function Download() {
                   <small>Windows</small>
                 </div>
               </div>
+
+              <div className={styles.downItem}></div>
             </div>
           </div>
         </div>
