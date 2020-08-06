@@ -26,7 +26,7 @@ const Purchase = () => {
     },
     {
       name: '标准版',
-      num: '83',
+      num: '42',
       mark: '单场最低价格',
       li_child: [
         '体验版全部功能',
