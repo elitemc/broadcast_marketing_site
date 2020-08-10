@@ -171,7 +171,7 @@ function Download() {
           <div className={styles.teacher}>
             <h5>讲师端</h5>
             <div className={styles.downList}>
-              <div className={styles.downItem}></div>
+              {/* <div className={styles.downItem}></div> */}
 
               <div className={styles.downItem}>
                 <div
@@ -211,7 +211,7 @@ function Download() {
                 </div>
               </div>
 
-              <div className={styles.downItem}></div>
+              {/* <div className={styles.downItem}></div> */}
             </div>
           </div>
         </div>
