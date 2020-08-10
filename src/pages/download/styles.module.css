@@ -40,7 +40,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0 13.5% 5%;
+  margin: 0 10.5% 5%;
   text-align: center;
 }
 
@@ -48,16 +48,18 @@
   /* width: 48.412%; */
   width: 100%;
   box-sizing: border-box;
-  padding: 47px 83px;
+  padding: 47px 0px;
   transition: all 0.3s;
   border-radius: 4px;
   border: solid 1px #eff2f6;
 }
 
-.downloadContainer > div + div {
-  margin-top: 30px;
+.audience {
+  width: 694px !important;
 }
-
+.teacher {
+  width: 380px !important;
+}
 .downloadContainer h5 {
   margin-bottom: 65px;
   font-family: PingFangSC-Medium;
@@ -88,8 +90,8 @@
 }
 
 .iconContain .icon {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   margin: 0 auto 12px;
   /* background: darkkhaki; */
 }
@@ -128,18 +130,18 @@
   cursor: pointer;
 }
 .exe_down_img {
-  width: 80px;
+  width: 70px;
 }
 .teacher .downItem .downCode .downIcon {
-  width: 80px;
+  width: 70px;
   height: 90px;
   margin: auto;
   cursor: pointer;
 }
 
 .teacher .downItem .downCode img {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
 }
 
 .downCode small {
@@ -148,11 +150,11 @@
   font-weight: normal;
   font-stretch: normal;
   letter-spacing: 0px;
-  color: rgba(13, 111, 222, 1);
+  color: #0d6fde;
   cursor: pointer;
 }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1380px) {
   .downloadContainer > div {
     width: 62.412%;
     margin: 20px auto;

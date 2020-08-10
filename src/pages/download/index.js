@@ -171,7 +171,7 @@ function Download() {
           <div className={styles.teacher}>
             <h5>讲师端</h5>
             <div className={styles.downList}>
-              <div className={styles.downItem}></div>
+              {/* <div className={styles.downItem}></div> */}
 
               <div className={styles.downItem}>
                 <div
@@ -181,7 +181,7 @@ function Download() {
                     <img src={useBaseUrl('img/客户端.png')} alt="客户端" />
                   </div>
                   <small onClick={() => downloadDesk('mac')}>
-                    点击下载桌面客户端
+                    点击下载开播工具
                   </small>
                 </div>
                 <div className={styles.iconContain}>
@@ -200,7 +200,7 @@ function Download() {
                     <img src={useBaseUrl('img/客户端.png')} alt="客户端" />
                   </div>
                   <small onClick={() => downloadDesk('win')}>
-                    点击下载桌面客户端
+                    点击下载开播工具
                   </small>
                 </div>
                 <div className={styles.iconContain}>
@@ -211,7 +211,7 @@ function Download() {
                 </div>
               </div>
 
-              <div className={styles.downItem}></div>
+              {/* <div className={styles.downItem}></div> */}
             </div>
           </div>
         </div>
