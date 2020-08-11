@@ -67,7 +67,9 @@
   position: sticky;
   top: calc(var(--ifm-navbar-height) + 2rem);
 }
-
+.watchPlatform{
+  border-left: 1px solid var(--ifm-contents-border-color);
+}
 .tableOfContents::-webkit-scrollbar {
   width: 7px;
 }

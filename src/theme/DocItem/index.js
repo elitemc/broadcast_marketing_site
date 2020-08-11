@@ -28,13 +28,14 @@ function DocTOC({ headings, path }) {
     <div className="col col--3">
       <div className={styles.tableOfContents}>
         {path.includes('/Student') &&
-          <div>
+          <div className={styles.watchPlatform}>
+            &#x3000;
             <a href={window.location.origin + "/docs/StudentApp"}>
-              <Button type="primary" ghost={!path.includes('/StudentApp')}>App 端</Button>
+              <Button style={{ width: '95px', backgroundColor: '#0d6fde' }} type="primary" ghost={!path.includes('/StudentApp')}>App 端</Button>
             </a>
+            &nbsp;&nbsp;
             <a href={window.location.origin + "/docs/StudentDesk"}>
-              <Button type="primary" ghost={!path.includes('/StudentDesk')}>客户端</Button>
-
+              <Button style={{ width: '95px', backgroundColor: '#0d6fde' }} type="primary" ghost={!path.includes('/StudentDesk')}>客户端</Button>
             </a>
           </div>
         }
