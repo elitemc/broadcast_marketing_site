@@ -135,9 +135,9 @@ title: 我是管理员
 
 ### **分享直播间**
 
-在分享页面找到直播房间号和参与密码（若设置），此处同时提供观众 App 端的下载功能，点击二维码或手机扫描即可完成。
+在分享页面找到直播房间号和参与密码（若设置），此处同时提供观众 App 端和客户端的下载方式，点击或扫描二维码即可下载。
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200417/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E5%88%86%E4%BA%AB%E7%9B%B4%E6%92%AD%E9%97%B4.jpg" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200811/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E5%88%86%E4%BA%AB.jpg" style={{border:'1px solid #eff0f2'}} />
 
 ### **取消预约**
 
