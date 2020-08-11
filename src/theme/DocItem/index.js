@@ -12,7 +12,9 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import DocPaginator from '@theme/DocPaginator';
 import useTOCHighlight from '@theme/hooks/useTOCHighlight';
-
+import {
+  Button
+} from 'antd';
 import classnames from 'classnames';
 import styles from './styles.module.css';
 
@@ -20,14 +22,25 @@ const LINK_CLASS_NAME = 'contents__link';
 const ACTIVE_LINK_CLASS_NAME = 'contents__link--active';
 const TOP_OFFSET = 100;
 
-function DocTOC({ headings }) {
+function DocTOC({ headings, path }) {
   useTOCHighlight(LINK_CLASS_NAME, ACTIVE_LINK_CLASS_NAME, TOP_OFFSET);
   return (
     <div className="col col--3">
       <div className={styles.tableOfContents}>
+        {path.includes('/Student') &&
+          <div>
+            <a href={window.location.origin + "/docs/StudentApp"}>
+              <Button type="primary" ghost={!path.includes('/StudentApp')}>App 端</Button>
+            </a>
+            <a href={window.location.origin + "/docs/StudentDesk"}>
+              <Button type="primary" ghost={!path.includes('/StudentDesk')}>客户端</Button>
+
+            </a>
+          </div>
+        }
         <Headings headings={headings} />
       </div>
-    </div>
+    </div >
   );
 }
 
@@ -55,7 +68,7 @@ function Headings({ headings, isChild }) {
 function DocItem(props) {
   const { siteConfig = {} } = useDocusaurusContext();
   const { url: siteUrl, title: siteTitle } = siteConfig;
-  const { content: DocContent } = props;
+  const { content: DocContent, route: { path } } = props;
   const { metadata } = DocContent;
   const {
     description,
@@ -77,6 +90,7 @@ function DocItem(props) {
 
   const metaImageUrl = siteUrl + useBaseUrl(metaImage);
 
+  console.log("path", path);
   return (
     <>
       <Head>
@@ -112,8 +126,9 @@ function DocItem(props) {
       <div className="padding-vert--lg" style={{ marginTop: '60px' }}>
         <div className="container">
           <div className="row">
+
             {!hideTableOfContents && DocContent.rightToc && (
-              <DocTOC headings={DocContent.rightToc} />
+              <DocTOC headings={DocContent.rightToc} path={path} />
             )}
             <div className={classnames('col', styles.docItemCol)}>
               <div className={styles.docItemContainer}>
