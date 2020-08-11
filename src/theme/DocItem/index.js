@@ -30,11 +30,11 @@ function DocTOC({ headings, path }) {
         {path.includes('/Student') &&
           <div className={styles.watchPlatform}>
             &#x3000;
-            <a href={window.location.origin + "/docs/StudentApp"}>
+            <a href="https://www.yingliboke.cn/docs/StudentApp">
               <Button style={{ width: '95px', backgroundColor: '#0d6fde' }} type="primary" ghost={!path.includes('/StudentApp')}>App 端</Button>
             </a>
             &nbsp;&nbsp;
-            <a href={window.location.origin + "/docs/StudentDesk"}>
+            <a href="https://www.yingliboke.cn/docs/StudentDesk">
               <Button style={{ width: '95px', backgroundColor: '#0d6fde' }} type="primary" ghost={!path.includes('/StudentDesk')}>客户端</Button>
             </a>
           </div>
