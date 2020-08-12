@@ -28,7 +28,7 @@ title: 我是老师
 
 ### **登录**
 
-按照提示下载英荔播客电脑客户端后，输入账号密码（验证码）及房间号登录进入直播间。进入直播间前自动检测本电脑的麦克风、摄像头、扬声器是否正常，亦可选择跳过检测。（建议不要跳过）
+按照提示下载英荔播课电脑客户端后，输入账号密码（验证码）及房间号登录进入直播间。进入直播间前自动检测本电脑的麦克风、摄像头、扬声器是否正常，亦可选择跳过检测。（建议不要跳过）
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88-%E8%BF%9B%E5%85%A5%E7%9B%B4%E6%92%AD%E9%97%B4.png" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88-%E8%BF%9B%E5%85%A5%E7%9B%B4%E6%92%AD%E9%97%B42.png" style={{border:'1px solid #eff0f2'}} />
 
