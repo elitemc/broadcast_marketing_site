@@ -80,7 +80,7 @@ function Download() {
                     <img src={Android.qr_code} alt="下载" />
                   </div>
                   <small onClick={() => download(Android.url)}>
-                    点击或扫描二维码下载
+                    点击或扫描下载
                   </small>
                 </div>
                 <div className={styles.iconContain}>
@@ -110,7 +110,7 @@ function Download() {
                         'ios',
                       )
                     }>
-                    点击或扫描二维码下载
+                    点击或扫描下载
                   </small>
                 </div>
                 <div className={styles.iconContain}>
@@ -133,7 +133,7 @@ function Download() {
                     />
                   </div>
                   <small onClick={() => downloadDesk('mac_audience')}>
-                    点击下载桌面客户端
+                    点击下载客户端
                   </small>
                 </div>
                 <div className={styles.iconContain}>
@@ -156,7 +156,7 @@ function Download() {
                     />
                   </div>
                   <small onClick={() => downloadDesk('win_audience')}>
-                    点击下载桌面客户端
+                    点击下载客户端
                   </small>
                 </div>
                 <div className={styles.iconContain}>
