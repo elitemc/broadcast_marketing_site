@@ -1,6 +1,6 @@
 ---
-id: Student
-title: 我是学员
+id: StudentApp
+title: 我是学员 - App 端
 ---
 
 ## **App 端下载**
@@ -18,6 +18,7 @@ title: 我是学员
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E6%B3%A8%E5%86%8C.jpg" style={{border:'1px solid #eff0f2'}} />
 
 ## **选择/切换组织**
+
 如果账号被加入了多个组织，登录成功后需要选择即将进入的组织。进入组织后，在个人信息页和设置页可以切换组织。
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98%20-%20%E9%80%89%E6%8B%A9%E5%88%87%E6%8D%A2%E7%BB%84%E7%BB%87%20-1.jpg" style={{border:'1px solid #eff0f2'}} />
@@ -77,7 +78,7 @@ title: 我是学员
 
 主持人开启问答之后，学员可以在问答区提出问题，主持人看到问题后会选择语音或者文字形式回答。此问题与文字回答仅自己和主持人可见。
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%8F%82%E4%B8%8E%E9%97%AE%E7%AD%94%E4%BA%92%E5%8A%A8.jpg" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%8F%82%E4%B8%8E%E9%97%AE%E7%AD%94%E4%BA%92%E5%8A%A82.jpg" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%8F%82%E4%B8%8E%E9%97%AE%E7%AD%94%E4%BA%92%E5%8A%A8.jpg" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200811/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-App-%E9%97%AE%E7%AD%94.png" style={{border:'1px solid #eff0f2'}} />
 
 ## **查看公告**
 
