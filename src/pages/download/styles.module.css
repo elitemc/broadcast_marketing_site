@@ -73,14 +73,22 @@
 .downList {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  justify-content: center;
 }
 
 .downList .downItem {
   position: relative;
-  width: 120px;
+  width: 100px;
   height: 140px;
+  /* margin: 0 4%; */
   /* background: darkgray; */
+}
+.audience .downList .downItem {
+  margin: 0 26px;
+}
+.teacher .downList .downItem {
+  margin: 0 15px;
 }
 
 .iconContain {
@@ -159,8 +167,37 @@
     width: 62.412%;
     margin: 20px auto;
   }
+  .audience {
+    width: 490 !important;
+  }
+  .teacher {
+    width: 300px !important;
+  }
+  .audience,
+  .teacher {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+  .audience .downList,
+  .teacher .downList {
+    justify-content: center;
+  }
+  .audience .downList .downItem {
+    margin: 0 30px;
+  }
+  .teacher .downList .downItem {
+    margin: 0 15px;
+  }
 }
-
+@media screen and (max-width: 1260px) {
+  .audience,
+  .teacher {
+    width: 100% !important;
+  }
+  .teacher .downList .downItem {
+    margin: 0 30px;
+  }
+}
 @media screen and (max-width: 980px) {
   .downloadContainer > div {
     width: 82.412%;
