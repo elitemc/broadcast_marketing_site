@@ -109,6 +109,35 @@ title: 我是学员 - 客户端
 
 ## **常见问题及处理**
 
+### **下载了桌面客户端安装包却无法安装或打开**
+
+1、检查是否下载对应的电脑系统版本。
+
+2、如果Windows电脑安装时弹窗提示【Window已保护你的电脑】。
+
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200707/anzhuang1.png" style={{border:'1px solid #eff0f2'}} />
+<br/>
+<br/>
+
+__操作方法：更多信息--仍要运行。设置完成即可安装打开运行。__ 
+
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200707/anzhuang2.png" style={{border:'1px solid #eff0f2'}} />
+<br/>
+<br/>
+3、苹果电脑系统版本高于 10.14.5 安装后无法打开并提示【无法打不开“英荔播课 观众端”...】。
+<br/>
+<br/>
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200811/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-MAC%E5%AE%89%E8%A3%85.png" style={{border:'1px solid #eff0f2'}} />
+<br/>
+<br/>
+
+ __操作方法：打开苹果电脑系统偏好设置--安全性与隐私--通用--仍要打开。设置完成后重新打开英荔播课 观众端即可。__ 
+
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200707/anzhuang4.png" style={{border:'1px solid #eff0f2'}} />
+<br/>
+<br/>
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200707/anzhuang5.png" style={{border:'1px solid #eff0f2'}} />
+
 ### **获取不到验证码**
 
 1. 检查手机是否设置短信拦截；
@@ -132,3 +161,7 @@ title: 我是学员 - 客户端
 ### **退出后再次进入**
 
 不小心退出直播间，需再次输入直播房间号搜索，或在直播中筛选查找。
+
+### **回放视频出现卡顿**
+
+部分 Windows 电脑观看回放可能会出现视频卡顿，请联系管理员处理。
