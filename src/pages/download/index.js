@@ -6,7 +6,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 import 'antd/dist/antd.css';
-import {} from 'antd';
+import { } from 'antd';
 
 import SideBar from '../sidebar';
 const download = (url, device = 'android') => {
@@ -47,14 +47,14 @@ function Download() {
    */
   const Android = {
     url:
-      'https://yingliboke.oss-cn-shenzhen.aliyuncs.com/android/www%E8%8B%B1%E8%8D%94%E6%92%AD%E8%AF%BE3.0.0-07-28_2007_300_jiagu_sign.apk',
+      'https://yingliboke.oss-cn-shenzhen.aliyuncs.com/android/www%E8%8B%B1%E8%8D%94%E6%92%AD%E8%AF%BE3.2.0-08-13_1821_320_jiagu_sign.apk',
     qr_code: useBaseUrl('img/android_download.png'),
     cover: useBaseUrl('img/Android.png'),
   };
 
   const Ios = {
     url:
-      'https://yingliboke.oss-cn-shenzhen.aliyuncs.com/android/www%E8%8B%B1%E8%8D%94%E6%92%AD%E8%AF%BE3.0.0-07-28_2007_300_jiagu_sign.apk',
+      'https://apps.apple.com/cn/app/%E8%8B%B1%E8%8D%94%E6%92%AD%E8%AF%BE/id1467718115',
     qr_code: useBaseUrl('img/ios_down.png'),
     cover: useBaseUrl('img/iphone.png'),
   };

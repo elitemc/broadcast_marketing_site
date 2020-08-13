@@ -161,14 +161,14 @@ __操作方法：更多信息--仍要运行。设置完成即可安装打开运�
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200707/anzhuang2.png" style={{border:'1px solid #eff0f2'}} />
 <br/>
 <br/>
-3、如果苹果电脑安装后无法打开并提示【打不开“英荔播课”，因为它来自不明的开发者】。
+3、如果苹果电脑安装后无法打开并提示【打不开“英荔播课 讲师端”...】。
 <br/>
 <br/>
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200707/anzhuang3.png" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200811/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88-MAC%E5%AE%89%E8%A3%85.png" style={{border:'1px solid #eff0f2'}} />
 <br/>
 <br/>
 
-__操作方法：打开苹果电脑系统偏好设置--安全性与隐私--通用--仍要打开。设置完成后重新打开英荔播课电脑桌面端即可。__ 
+__操作方法：打开苹果电脑系统偏好设置--安全性与隐私--通用--仍要打开。设置完成后重新打开英荔播课讲师端即可。__ 
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200707/anzhuang4.png" style={{border:'1px solid #eff0f2'}} />
 <br/>
