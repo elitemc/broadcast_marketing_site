@@ -88,7 +88,7 @@ title: 我是学员 - App 端
 
 ## **参与签到**
 
-主持人发起签到，学员需在主持人设定的时间内签到，签到成功会有消息提示,规定时间内未点击签到即为未签到。
+主持人发起签到，学员需在主持人设定的时间内签到，签到成功会有消息提示，规定时间内未点击签到即为未签到。
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%8F%82%E4%B8%8E%E7%AD%BE%E5%88%B0.jpg" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%8F%82%E4%B8%8E%E7%AD%BE%E5%88%B02.jpg" style={{border:'1px solid #eff0f2'}} />
 
@@ -169,7 +169,7 @@ title: 我是学员 - App 端
 
 ### **主持人暂停直播**
 
-出现不要走开，马上回来的提示则表示主持人暂停了直播，可与主持人或管理员确定继续开始直播时间再次进入观看。
+出现 “不要走开，马上回来…” 表示主持人暂停了直播，可与主持人或管理员确定继续开始直播时间再次进入观看。
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E4%B8%BB%E6%8C%81%E4%BA%BA%E6%9A%82%E5%81%9C%E7%9B%B4%E6%92%AD.jpg" style={{border:'1px solid #eff0f2'}} />
 

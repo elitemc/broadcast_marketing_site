@@ -28,7 +28,7 @@ title: 我是老师
 
 ### **登录**
 
-按照提示下载英荔播客电脑客户端后，输入账号密码（验证码）及房间号登录进入直播间。进入直播间前自动检测本电脑的麦克风、摄像头、扬声器是否正常，亦可选择跳过检测。（建议不要跳过）
+按照提示下载英荔播课电脑客户端后，输入账号密码（验证码）及房间号登录进入直播间。进入直播间前自动检测本电脑的麦克风、摄像头、扬声器是否正常，亦可选择跳过检测。（建议不要跳过）
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88-%E8%BF%9B%E5%85%A5%E7%9B%B4%E6%92%AD%E9%97%B4.png" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88-%E8%BF%9B%E5%85%A5%E7%9B%B4%E6%92%AD%E9%97%B42.png" style={{border:'1px solid #eff0f2'}} />
 
@@ -161,14 +161,14 @@ __操作方法：更多信息--仍要运行。设置完成即可安装打开运�
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200707/anzhuang2.png" style={{border:'1px solid #eff0f2'}} />
 <br/>
 <br/>
-3、如果苹果电脑安装后无法打开并提示【打不开“英荔播课”，因为它来自不明的开发者】。
+3、如果苹果电脑安装后无法打开并提示【打不开“英荔播课 讲师端”...】。
 <br/>
 <br/>
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200707/anzhuang3.png" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200811/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88-MAC%E5%AE%89%E8%A3%85.png" style={{border:'1px solid #eff0f2'}} />
 <br/>
 <br/>
 
-__操作方法：打开苹果电脑系统偏好设置--安全性与隐私--通用--仍要打开。设置完成后重新打开英荔播课电脑桌面端即可。__ 
+__操作方法：打开苹果电脑系统偏好设置--安全性与隐私--通用--仍要打开。设置完成后重新打开英荔播课讲师端即可。__ 
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200707/anzhuang4.png" style={{border:'1px solid #eff0f2'}} />
 <br/>
