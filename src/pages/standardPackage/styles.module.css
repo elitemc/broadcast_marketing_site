@@ -9,7 +9,7 @@
 }
 
 .main {
-  max-width: 640px;
+  max-width: 646px;
   width: 90%;
   padding: 48px 46px;
   background-color: #ffffff;
@@ -25,7 +25,7 @@
   margin-bottom: 28px;
 }
 
-.main>p,
+.main > p,
 h1 {
   text-align: center;
 }
