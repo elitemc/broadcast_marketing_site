@@ -179,13 +179,17 @@ class StandardPackage extends React.Component {
                   元
                 </span>
                 &nbsp;&nbsp;
-                <span
-                  style={{color: '#8494a6', textDecoration: 'line-through'}}>
-                  {this.state.suggested_price
-                    ? this.getQianNumber(this.state.suggested_price)
-                    : null}{' '}
-                  元
-                </span>
+                {this.state.selling_price != this.state.suggested_price ? (
+                  <span
+                    style={{color: '#8494a6', textDecoration: 'line-through'}}>
+                    {this.state.suggested_price
+                      ? this.getQianNumber(this.state.suggested_price)
+                      : null}{' '}
+                    元
+                  </span>
+                ) : (
+                  ''
+                )}
               </p>
             </div>
             <p>
