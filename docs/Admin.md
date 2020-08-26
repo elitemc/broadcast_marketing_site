@@ -115,6 +115,14 @@ title: 我是管理员
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E5%88%9B%E5%BB%BA%E4%B9%A0%E9%A2%98.png" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E5%88%9B%E5%BB%BA%E4%B9%A0%E9%A2%982.png" style={{border:'1px solid #eff0f2'}} />
 
+### **在回放中完成习题**
+
+在创建习题时，开启【回放时答题】的按钮，观众在观看回放时也能完成习题。创建习题后，可随时开启或关闭此功能。
+
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200826/%E7%AE%A1%E7%90%86%E5%91%98-%E5%9C%A8%E5%9B%9E%E6%94%BE%E4%B8%AD%E5%AE%8C%E6%88%90%E4%B9%A0%E9%A2%981.jpg" style={{border:'1px solid #eff0f2'}} /> 
+<br/> <br/> 
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200826/%E7%AE%A1%E7%90%86%E5%91%98-%E5%9C%A8%E5%9B%9E%E6%94%BE%E4%B8%AD%E5%AE%8C%E6%88%90%E4%B9%A0%E9%A2%982.png" style={{border:'1px solid #eff0f2'}} />
+
 ### **创建投票**
 
 创建投票，需提前设置投票时间，超时将自动提交投票结果。
@@ -161,9 +169,9 @@ title: 我是管理员
 
 ### **回放数据**
 
-管理员可在回放管理处查看回放的观看详情数据并下载表格。
+管理员可在回放管理处查看回放的观看详情数据，导出表格可看到习题和留言等数据。
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200427/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E5%9B%9E%E6%94%BE%E6%95%B0%E6%8D%AE.jpg" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200826/%E7%AE%A1%E7%90%86%E5%91%98-%E5%9B%9E%E6%94%BE%E6%95%B0%E6%8D%AE.jpg" style={{border:'1px solid #eff0f2'}} />
 
 ## **资料管理**
 

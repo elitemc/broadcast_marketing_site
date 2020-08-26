@@ -62,6 +62,16 @@ title: 我是学员 - App 端
 <br/> <br/> 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200417/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E8%A7%82%E7%9C%8B%E7%9B%B4%E6%92%AD%E4%B8%8E%E8%AF%BE%E4%BB%B64.jpg " style={{border:'1px solid #eff0f2'}} />
 
+## **直播互动记录**
+
+学员在记录标签页里可以看到主持人在直播中发起的签到、习题答案、投票结果、抽奖结果等互动记录。
+
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200826/App-%E7%9B%B4%E6%92%AD%E4%BA%92%E5%8A%A8%E8%AE%B0%E5%BD%951.png" style={{border:'1px solid #eff0f2'}} /> 
+<br/> <br/> 
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200826/App-%E7%9B%B4%E6%92%AD%E4%BA%92%E5%8A%A8%E8%AE%B0%E5%BD%952.jpg" style={{border:'1px solid #eff0f2'}} />
+
+
+
 ## **观看视频文件**
 
 主持人播放视频后，原视频拍摄画面会继续演示播放的视频，视频结束自动还原。
@@ -136,6 +146,27 @@ title: 我是学员 - App 端
 在直播间详情页可以查看该直播间的简介、资料、直播回放的下架时间。点击观看回放即可进入观看。
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%9B%9E%E6%94%BE%E7%9B%B4%E6%92%AD%E8%AF%A6%E6%83%85.jpg" style={{border:'1px solid #eff0f2'}} />
+
+## **在回放里完成习题**
+
+管理员开启允许回放时答题后，学员在回放里可以完成习题和查看答案。
+
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200826/App-%E5%9C%A8%E5%9B%9E%E6%94%BE%E9%87%8C%E5%AE%8C%E6%88%90%E4%B9%A0%E9%A2%981.png" style={{border:'1px solid #eff0f2'}} />
+<br/> 
+<br/> 
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200826/App-%E5%9C%A8%E5%9B%9E%E6%94%BE%E9%87%8C%E5%AE%8C%E6%88%90%E4%B9%A0%E9%A2%982.png" style={{border:'1px solid #eff0f2'}} />
+
+## **在回放里留言**
+
+学员在回放里可以给老师留言，只有老师才能看到留言。
+
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200826/App-%E5%9C%A8%E5%9B%9E%E6%94%BE%E9%87%8C%E7%95%99%E8%A8%80.png" style={{border:'1px solid #eff0f2'}} />
+
+<!-- ## **回放中课件不同步**
+
+在回放中如果发现课件不同步，点击【刷新】课件即可。
+
+<img src="" style={{border:'1px solid #eff0f2'}} /> -->
 
 ## **常见问题及处理**
 
