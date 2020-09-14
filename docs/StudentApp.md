@@ -162,11 +162,11 @@ title: 我是学员 - App 端
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200826/App-%E5%9C%A8%E5%9B%9E%E6%94%BE%E9%87%8C%E7%95%99%E8%A8%80.png" style={{border:'1px solid #eff0f2'}} />
 
-<!-- ## **回放中课件不同步**
+## **回放中课件不同步**
 
-在回放中如果发现课件不同步，点击【刷新】课件即可。
+在回放中如果发现课件不同步，轻按【点击刷新】课件即可。
 
-<img src="" style={{border:'1px solid #eff0f2'}} /> -->
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200911/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98/App%E5%9B%9E%E6%94%BE%E8%AF%BE%E4%BB%B6%E4%B8%8D%E5%90%8C%E6%AD%A5.png" style={{border:'1px solid #eff0f2'}} />
 
 ## **常见问题及处理**
 

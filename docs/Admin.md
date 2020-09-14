@@ -111,23 +111,39 @@ title: 我是管理员
 
 ### **创建习题**
 
-创建习题，需提前预设答题时间，题目得分，正确答案等。
+创建习题，需提前预设习题内容，题目得分，正确答案等。
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E5%88%9B%E5%BB%BA%E4%B9%A0%E9%A2%98.png" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E5%88%9B%E5%BB%BA%E4%B9%A0%E9%A2%982.png" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200911/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98/00%E5%88%9B%E5%BB%BA%E4%B9%A0%E9%A2%98-1.png" style={{border:'1px solid #eff0f2'}} /> 
+<br/> <br/> 
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200911/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98/00%E5%88%9B%E5%BB%BA%E4%B9%A0%E9%A2%98-2.png" style={{border:'1px solid #eff0f2'}} />
+
+
+### **导入习题**
+
+下载模板，根据模板填写习题内容，导入填写完成的习题文件即可完成。
+
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200911/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98/01%E5%AF%BC%E5%85%A5%E4%B9%A0%E9%A2%98.png" style={{border:'1px solid #eff0f2'}} />
+
 
 ### **在回放中完成习题**
 
-在创建习题时，开启【回放时答题】的按钮，观众在观看回放时也能完成习题。创建习题后，可随时开启或关闭此功能。
+在创建习题时，开启【回放时答题】的按钮，观众在观看回放时也能完成习题。创建习题后，可在编辑里随时开启或关闭此功能。
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200826/%E7%AE%A1%E7%90%86%E5%91%98-%E5%9C%A8%E5%9B%9E%E6%94%BE%E4%B8%AD%E5%AE%8C%E6%88%90%E4%B9%A0%E9%A2%981.jpg" style={{border:'1px solid #eff0f2'}} /> 
-<br/> <br/> 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200826/%E7%AE%A1%E7%90%86%E5%91%98-%E5%9C%A8%E5%9B%9E%E6%94%BE%E4%B8%AD%E5%AE%8C%E6%88%90%E4%B9%A0%E9%A2%982.png" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200911/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98/02%E5%9C%A8%E5%9B%9E%E6%94%BE%E4%B8%AD%E5%AE%8C%E6%88%90%E4%B9%A0%E9%A2%98.png" style={{border:'1px solid #eff0f2'}} />
 
 ### **创建投票**
 
-创建投票，需提前设置投票时间，超时将自动提交投票结果。
+创建投票，需提前设置投票内容。
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E5%88%9B%E5%BB%BA%E6%8A%95%E7%A5%A8.png" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98-%E5%88%9B%E5%BB%BA%E6%8A%95%E7%A5%A82.png" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200911/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98/03%E5%88%9B%E5%BB%BA%E6%8A%95%E7%A5%A8-1.png" style={{border:'1px solid #eff0f2'}} /> 
+<br/> <br/> 
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200911/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98/03%E5%88%9B%E5%BB%BA%E6%8A%95%E7%A5%A8-2.png" style={{border:'1px solid #eff0f2'}} />
+
+### **导入投票**
+
+下载模板，根据模板填写投票内容，导入填写完成的投票文件即可完成。
+
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200911/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98/04%E5%AF%BC%E5%85%A5%E6%8A%95%E7%A5%A8.png" style={{border:'1px solid #eff0f2'}} />
 
 ### **上传视频**
 
@@ -163,7 +179,7 @@ title: 我是管理员
 
 ### **编辑回放**
 
-已开启录制的直播间，直播结束后可在回放管理处设置该直播间是否发布，回放开放观看时间。
+已开启录制的直播间，直播结束 2 分钟后可在回放管理处设置该直播间是否发布，回放开放观看时间。
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E7%BC%96%E8%BE%91%E5%9B%9E%E6%94%BE%20-1.png" style={{border:'1px solid #eff0f2'}} /> <br/> <br/> <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E7%AE%A1%E7%90%86%E5%91%98%20-%20%E7%BC%96%E8%BE%91%E5%9B%9E%E6%94%BE%20-2.png" style={{border:'1px solid #eff0f2'}} />
 
