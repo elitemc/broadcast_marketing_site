@@ -28,7 +28,7 @@ function NavLink({ to, href, label, position, ...props }) {
   useEffect(() => {
     const SLS = new (window.Tracker || function () { })(
       'cn-shenzhen.log.aliyuncs.com',
-      'yingliboke',
+      'yingliboke-dev',
       'frontend',
     );
     // (
