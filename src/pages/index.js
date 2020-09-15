@@ -7,7 +7,7 @@
  * @format
  */
 
-import React, {useEffect, useRef, useCallback} from 'react';
+import React, { useEffect, useRef, useCallback } from 'react';
 import classnames from 'classnames';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
@@ -17,7 +17,7 @@ import styles from './styles.module.css';
 import SideBar from './sidebar';
 import axios from 'axios';
 import 'antd/dist/antd.css';
-import {Button} from 'antd';
+import { Button } from 'antd';
 function scrollNotice(container, props, time) {
   let initTime = Date.now();
 
@@ -37,14 +37,14 @@ function scrollNotice(container, props, time) {
 
 function Home() {
   const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
+  const { siteConfig = {} } = context;
   const clientList = useRef();
   const clientLi = useRef();
   useEffect(() => {
     let listWidth = clientList.current.clientWidth;
     let liWidth = clientLi.current.clientWidth;
     // console.log(listWidth, liWidth);
-    scrollNotice(clientList.current, {marginLeft: -liWidth}, 60000);
+    scrollNotice(clientList.current, { marginLeft: -liWidth }, 60000);
   }, []);
 
   const pushLog = useCallback(message => {
@@ -80,7 +80,7 @@ function Home() {
 
                 <Button
                   className={styles.freeUse}
-                  style={{border: 'none'}}
+                  style={{ border: 'none' }}
                   onClick={() => pushLog('The user clicked free use')}>
                   <a href={siteConfig.url + '/user/register'} target="_blank">
                     立即体验
@@ -105,7 +105,7 @@ function Home() {
                 <div className={styles.carDetail}>
                   <div className={styles.detail}>
                     <b>高质量低付费，大幅节省培训成本</b>
-                    <p style={{marginBottom: 10}}>
+                    <p style={{ marginBottom: 10 }}>
                       轻松组织异地多人远程培训，单场节省超过 *80%
                       培训费用。价格优势明显，收费模式灵活，全面体验高性价比直播服务，快速实现培训数字化转型。
                     </p>
@@ -121,8 +121,7 @@ function Home() {
                   <div className={styles.detail}>
                     <b>多样直播互动，更专注、更积极</b>
                     <p>
-                      直播过程中随时使用签到、抽奖、答题、聊天评论、文字问答、连麦发言等实时互动功能，有效提高专注度，调动学习积极性，还原线下培训场景。
-                    </p>
+                      直播过程中随时使用签到、抽奖、答题、聊天评论、文字问答、举手连麦发言等实时互动功能，即时查看互动结果，有效调动学习积极性。                    </p>
                   </div>
                 </div>
               </li>
@@ -134,7 +133,7 @@ function Home() {
                   <div className={styles.detail}>
                     <b>直播工具齐全，知识理解更到位</b>
                     <p>
-                      基于低延迟、高质量的视频直播服务，英荔播课提供文档分享、文档标注、白板演示、直播录制、视频上传等直播工具，协助教师高效教学。培训视频支持回放，帮助学员巩固所学。
+                      基于低延迟、高质量的视频直播服务，英荔播课提供屏幕共享、文档分享及标注、白板演示、直播录制、视频上传等工具，支持切换多个主讲人，协助教师高效教学。支持直播回放，且保留习题考核功能，帮助学员巩固所学。
                     </p>
                   </div>
                 </div>
@@ -147,8 +146,7 @@ function Home() {
                   <div className={styles.detail}>
                     <b>可视化数据统计，科学提高培训质量</b>
                     <p>
-                      培训中实时查看直播数据，支持一键导出精简版/详细版「直播报告」及「数据报表」，无需二次整理。数据细化到每个人，直观了解培训效果，方便科学地优化培训内容，提高培训质量。
-                    </p>
+                      培训中实时查看直播数据，支持一键导出精简版/详细版「直播报告」及「数据报表」，无需二次整理。数据细化到个人，直观了解培训效果，方便科学地优化培训内容，提高培训质量。                    </p>
                   </div>
                 </div>
               </li>
@@ -265,11 +263,11 @@ function Home() {
             <ul className={styles.supportList}>
               <li>
                 <div className="card-demo">
-                  <div className="card" style={{borderRadius: '10px'}}>
+                  <div className="card" style={{ borderRadius: '10px' }}>
                     <div className="card__image">
                       <img src={useBaseUrl('img/首-强-picture1.png')} alt="" />
                     </div>
-                    <div className="card__body" style={{height: 174}}>
+                    <div className="card__body" style={{ height: 174 }}>
                       <h4>全球服务，高速传输</h4>
                       <small>
                         网络节点覆盖 200
@@ -281,11 +279,11 @@ function Home() {
               </li>
               <li>
                 <div className="card-demo">
-                  <div className="card" style={{borderRadius: '0 0 10px 10px'}}>
+                  <div className="card" style={{ borderRadius: '0 0 10px 10px' }}>
                     <div className="card__image">
                       <img src={useBaseUrl('img/首-强-picture2.png')} alt="" />
                     </div>
-                    <div className="card__body" style={{height: 174}}>
+                    <div className="card__body" style={{ height: 174 }}>
                       <h4>数据安全稳定</h4>
                       <small>
                         多元区存储，异地容灾，文件就近上传，有效提升拉取速度。
@@ -297,11 +295,11 @@ function Home() {
               </li>
               <li>
                 <div className="card-demo">
-                  <div className="card" style={{borderRadius: '0 0 10px 10px'}}>
+                  <div className="card" style={{ borderRadius: '0 0 10px 10px' }}>
                     <div className="card__image">
                       <img src={useBaseUrl('img/首-强-picture3.png')} alt="" />
                     </div>
-                    <div className="card__body" style={{height: 174}}>
+                    <div className="card__body" style={{ height: 174 }}>
                       <h4>省流量，高质量</h4>
                       <small>
                         课件转码后演示，视频格式云转换，码率自定义，保障在各种网络环境下均可流畅直播。
@@ -551,9 +549,9 @@ function Home() {
           <div
             id="case"
             className={styles.case}
-            style={{marginBottom: '14%'}}></div>
+            style={{ marginBottom: '14%' }}></div>
           <div className={styles.clientComment}>
-            <h2 className={styles.title} style={{marginTop: '0'}}>
+            <h2 className={styles.title} style={{ marginTop: '0' }}>
               客户评价
             </h2>
             <ul className={styles.commentList}>
@@ -599,7 +597,7 @@ function Home() {
             <h3>零门槛搭建企业专属直播间</h3>
             <p>
               立即拨打服务热线：
-              <a href="tel:400-931-8118" style={{color: 'inherit'}}>
+              <a href="tel:400-931-8118" style={{ color: 'inherit' }}>
                 {' '}
                 400-931-8118
               </a>
@@ -607,14 +605,14 @@ function Home() {
             <p>一对一专属客户服务</p>
             <div className={styles.linkBtn}>
               <Button
-                style={{border: 'none'}}
+                style={{ border: 'none' }}
                 onClick={() => pushLog('The user clicked free use')}>
                 <a href={siteConfig.url + '/user/register'} target="_blank">
                   立即体验
                 </a>
               </Button>
               <Button
-                style={{backgroundColor: '#0d6fde', color: '#fff'}}
+                style={{ backgroundColor: '#0d6fde', color: '#fff' }}
                 onClick={() => pushLog(`The user clicked on the quote query`)}>
                 <Link to="/purchase">报价查询</Link>
               </Button>
