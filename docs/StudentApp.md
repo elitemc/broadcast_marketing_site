@@ -127,11 +127,10 @@ title: 我是学员 - App 端
 ## **连麦**
 
 主持人向观众发出连麦邀请后，观众端会显示下图中的弹窗，点击【同意】后即可加入连麦。
-主持人向观众发出邀请后，观众端会显示下图中的弹窗，点击「同意」后即可加入连麦。
  
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98%20-%20%E8%BF%9E%E9%BA%A6%20-2.jpg" style={{border:'1px solid #eff0f2'}} />
 <br/> <br/> 
-连麦结束后，点击「下麦」按钮即可断开与主持人的连麦。
+点击【下麦】按钮即可断开与主持人的连麦。
 <br/> <br/> 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98%20-%20%E8%BF%9E%E9%BA%A6%20-3.jpg" style={{border:'1px solid #eff0f2'}} />
 
