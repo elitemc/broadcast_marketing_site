@@ -80,7 +80,7 @@ title: 我是学员 - App 端
 
 ## **参与互动聊天**
 
-学员可在聊天区域发起聊天。该聊天全直播间的人员可见。
+学员可在聊天区域发起聊天，聊天内容支持文字、图片和链接。该聊天全直播间的人员可见。
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%8F%82%E4%B8%8E%E4%BA%92%E5%8A%A8%E8%81%8A%E5%A4%A9.jpg" style={{border:'1px solid #eff0f2'}} />
 
@@ -118,15 +118,17 @@ title: 我是学员 - App 端
 <br/> <br/> 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98%20-%20%E5%8F%82%E4%B8%8E%E6%8A%BD%E5%A5%96%20-3.png" style={{border:'1px solid #eff0f2'}} />
 
-## **连麦**
+## **举手**
 
-主持人开启举手功能时，会在下图显示「举手」按钮。观众点击「举手」按钮后，主持人会收到观众的举手消息。
+主持人开启举手功能时，会在下图显示【举手】按钮。观众点击【举手】按钮后，主持人会收到观众的举手消息。
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98%20-%20%E8%BF%9E%E9%BA%A6%20-1.jpg" style={{border:'1px solid #eff0f2'}} />
-<br/> 
-<br/> 
+
+## **连麦**
+
+主持人向观众发出连麦邀请后，观众端会显示下图中的弹窗，点击【同意】后即可加入连麦。
 主持人向观众发出邀请后，观众端会显示下图中的弹窗，点击「同意」后即可加入连麦。
-<br/> <br/> 
+ 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200619/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98%20-%20%E8%BF%9E%E9%BA%A6%20-2.jpg" style={{border:'1px solid #eff0f2'}} />
 <br/> <br/> 
 连麦结束后，点击「下麦」按钮即可断开与主持人的连麦。
