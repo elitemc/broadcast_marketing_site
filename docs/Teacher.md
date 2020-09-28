@@ -126,9 +126,53 @@ title: 我是老师
 
 ### **互动聊天**
 
-老师可以实时查看学员发表的聊天信息，也可编辑文字与学员互动。也可以设置全员禁言。
+老师可以实时与学员互动聊天，聊天内容支持文字、图片和链接。也可以设置全员禁言。
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200911/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88/12%E4%BA%92%E5%8A%A8%E8%81%8A%E5%A4%A9.jpg" style={{border:'1px solid #eff0f2'}} />
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200923/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88/00%E4%BA%92%E5%8A%A8%E8%81%8A%E5%A4%A9.jpg" style={{border:'1px solid #eff0f2'}} />
+<br/>
+<br/>
+截图功能，点击【截图】按钮开始截图，完成截图后自动显示在输入框里。
+<br/>
+<br/>
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200923/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88/01%E6%88%AA%E5%9B%BE.jpg" style={{border:'1px solid #eff0f2'}} />
+
+### **开启举手**
+
+开启举手功能后，老师可以实时看到学员的举手情况。
+
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200923/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88/03%E5%BC%80%E5%90%AF%E4%B8%BE%E6%89%8B.png" style={{border:'1px solid #eff0f2'}} />
+
+
+### **连麦**
+
+直播开始前，在“设置 - 连麦设置”页面选择需要的连麦方式和举手提示。
+
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200923/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88/04%E8%BF%9E%E9%BA%A6.jpg" style={{border:'1px solid #eff0f2'}} />
+<br/>
+<br/>
+直播中，在成员列表里选择学员点击【连麦】按钮，学员同意邀请后即可加入连麦。
+<br/>
+<br/>
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200923/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88/05%E8%BF%9E%E9%BA%A6.png" style={{border:'1px solid #eff0f2'}} />
+<br/>
+<br/>
+学员可以主动下麦。老师也可以通过点击【下麦】按钮帮助学员下麦。
+<br/>
+<br/>
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200923/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88/06%E8%BF%9E%E9%BA%A6.png" style={{border:'1px solid #eff0f2'}} />
+
+### **邀请学员共享屏幕**
+
+直播中，在成员列表里选择学员点击【邀请屏幕共享】按钮，学员同意邀请后即可开始共享屏幕。
+
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200923/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88/07%E9%82%80%E8%AF%B7%E5%85%B1%E4%BA%AB%E5%B1%8F%E5%B9%95.png" style={{border:'1px solid #eff0f2'}} />
+<br/>
+<br/>
+学员可以主动停止屏幕共享。老师也可以通过点击【停止屏幕共享】按钮帮助学员停止共享。
+<br/>
+<br/>
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200923/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88/08%E9%82%80%E8%AF%B7%E5%85%B1%E4%BA%AB%E5%B1%8F%E5%B9%95.png" style={{border:'1px solid #eff0f2'}} />
+
 
 ### **编辑公告**
 
@@ -144,24 +188,6 @@ title: 我是老师
 <br/>
 <br/>
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200911/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88/14%E6%9F%A5%E7%9C%8B%E6%95%B0%E6%8D%AE-2.jpg" style={{border:'1px solid #eff0f2'}} />
-
-### **连麦**
-
-直播开始前，在“设置 - 连麦设置”页面选择需要的连麦方式和举手提示。
-
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200911/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88/15%E8%BF%9E%E9%BA%A6-1.jpg" style={{border:'1px solid #eff0f2'}} />
-<br/>
-<br/>
-直播中，在用户列表选择观众点击昵称右侧的【连麦】按钮，观众同意邀请后就会加入连麦。
-<br/>
-<br/>
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200911/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88/15%E8%BF%9E%E9%BA%A6-2.jpg" style={{border:'1px solid #eff0f2'}} />
-<br/>
-<br/>
-连麦结束后，观众可以主动下麦。主持人也可以通过点击【下麦】按钮帮助观众下麦。
-<br/>
-<br/>
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200911/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88/15%E8%BF%9E%E9%BA%A6-3.png" style={{border:'1px solid #eff0f2'}} />
 
 
 ## **暂停/结束直播**

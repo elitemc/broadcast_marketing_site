@@ -30,12 +30,7 @@ function NavLink({ to, href, label, position, ...props }) {
       'cn-shenzhen.log.aliyuncs.com',
       'yingliboke-dev',
       'frontend',
-    );
-    // (
-    //   'cn-shenzhen.log.aliyuncs.com',
-    //   'yingliboke',
-    //   'test',
-    // );
+    )
 
     SLS.fillZero = num => (num < 10 ? `0${num}` : num);
     SLS.pushLog = function (data = {}) {
