@@ -65,6 +65,18 @@ title: 我是学员 - 客户端
 
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200811/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%AE%A2%E6%88%B7%E7%AB%AF-12.png" style={{border:'1px solid #eff0f2'}} />
 
+## **参与互动聊天**
+
+学员可在聊天区域发起聊天，聊天内容支持文字、图片和链接。该聊天全直播间的人员可见。
+
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200923/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%AE%A2%E6%88%B7%E7%AB%AF/00%E8%81%8A%E5%A4%A9.png" style={{border:'1px solid #eff0f2'}} />
+<br/>
+<br/>
+截图功能，点击【截图】按钮开始截图，完成截图后自动显示在输入框里。
+<br/>
+<br/>
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200923/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%AE%A2%E6%88%B7%E7%AB%AF/01%E6%88%AA%E5%9B%BE.png" style={{border:'1px solid #eff0f2'}} />
+
 ## **参与问答互动**
 
 主持人开启问答之后，学员可以在问答区提出问题，主持人看到问题后会直接回答。此问题与回答内容仅自己和主持人可见。
@@ -98,6 +110,41 @@ title: 我是学员 - 客户端
 <br/>
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200811/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%AE%A2%E6%88%B7%E7%AB%AF-19.png" style={{border:'1px solid #eff0f2'}} />
 
+## **举手**
+
+主持人开启举手功能时，会在下图显示【举手】按钮。观众点击【举手】按钮后，主持人会收到观众的举手消息。
+
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200923/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%AE%A2%E6%88%B7%E7%AB%AF/02%E4%B8%BE%E6%89%8B.png" style={{border:'1px solid #eff0f2'}} />
+
+## **连麦**
+
+主持人向观众发出连麦邀请后，观众端会显示下图中的弹窗，点击【同意】后即可加入连麦。
+
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200923/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%AE%A2%E6%88%B7%E7%AB%AF/03%E8%BF%9E%E9%BA%A6.png" style={{border:'1px solid #eff0f2'}} />
+<br/>
+<br/>
+鼠标移到自己的画面后，点击【下麦】按钮即可断开与主持人的连麦。
+<br/>
+<br/>
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200923/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%AE%A2%E6%88%B7%E7%AB%AF/04%E8%BF%9E%E9%BA%A6.png" style={{border:'1px solid #eff0f2'}} />
+
+## **屏幕共享**
+
+主持人向观众发出屏幕共享邀请后，观众端会显示下图中的弹窗，点击【同意】后即可进行屏幕共享。
+
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200923/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%AE%A2%E6%88%B7%E7%AB%AF/05%E5%B1%8F%E5%B9%95%E5%85%B1%E4%BA%AB.png" style={{border:'1px solid #eff0f2'}} />
+<br/>
+<br/>
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200923/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%AE%A2%E6%88%B7%E7%AB%AF/06%E5%B1%8F%E5%B9%95%E5%85%B1%E4%BA%AB.png" style={{border:'1px solid #eff0f2'}} />
+<br/>
+<br/>
+点击小窗口的【停止屏幕共享】按钮即可断开屏幕共享。
+<br/>
+<br/>
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200923/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%AE%A2%E6%88%B7%E7%AB%AF/07%E5%B1%8F%E5%B9%95%E5%85%B1%E4%BA%AB.png" style={{border:'1px solid #eff0f2'}} />
+
+
+
 ## **观看回放**
 
 在回放列表中查找，或点击左上角【加入回放】按钮后输入房间号进入。
@@ -106,6 +153,12 @@ title: 我是学员 - 客户端
 <br/>
 <br/>
 <img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200811/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98-%E5%AE%A2%E6%88%B7%E7%AB%AF-21.png" style={{border:'1px solid #eff0f2'}} />
+
+## **回放中课件不同步**
+
+在回放中如果发现课件不同步，点击【刷新】课件即可。
+
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200911/%E6%88%91%E6%98%AF%E5%AD%A6%E5%91%98/%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%9B%9E%E6%94%BE%E8%AF%BE%E4%BB%B6%E4%B8%8D%E5%90%8C%E6%AD%A5.png" style={{border:'1px solid #eff0f2'}} />
 
 ## **常见问题及处理**
 

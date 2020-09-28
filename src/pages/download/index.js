@@ -21,11 +21,20 @@ const download = (url, device = 'android') => {
 };
 const downloadDesk = (key, e) => {
   let downloadUrl = '';
-  let baseUrl = 'https://yingliboke.oss-cn-shenzhen.aliyuncs.com/app/';
+  let deskTopbaseUrl = 'https://yingliboke.oss-cn-shenzhen.aliyuncs.com/app/';
+  let rxdeskbaseUrl = 'https://yingliboke.oss-cn-shenzhen.aliyuncs.com/rxdeskapp/'
   if (key === 'win') {
-    downloadUrl = baseUrl + '英荔播课%20Setup%203.0.0.exe';
+    // win讲师端
+    downloadUrl = deskTopbaseUrl + '英荔播课%20讲师端%20Setup%203.4.0.exe';
   } else if (key === 'mac') {
-    downloadUrl = baseUrl + 'www英荔播课-3.0.0.dmg';
+    // mac讲师端
+    downloadUrl = deskTopbaseUrl + 'www英荔播课 讲师端-3.4.0.dmg';
+  } else if (key === 'win_audience') {
+    // win观众端
+    downloadUrl = rxdeskbaseUrl + '英荔播课%20观众端%20Setup%203.4.0.exe'
+  } else if (key === 'mac_audience') {
+    // mac观众端
+    downloadUrl = rxdeskbaseUrl + 'www英荔播课 观众端-3.4.0.dmg'
   }
   // 日志埋点
   window.sls.pushLog({
@@ -47,7 +56,7 @@ function Download() {
    */
   const Android = {
     url:
-      'https://yingliboke.oss-cn-shenzhen.aliyuncs.com/android/www%E8%8B%B1%E8%8D%94%E6%92%AD%E8%AF%BE3.2.0-08-13_1821_320_jiagu_sign.apk',
+      'https://yingliboke.oss-cn-shenzhen.aliyuncs.com/android/www%E8%8B%B1%E8%8D%94%E6%92%AD%E8%AF%BE3.4.0_340_jiagu_sign.apk',
     qr_code: useBaseUrl('img/android_download.png'),
     cover: useBaseUrl('img/Android.png'),
   };
