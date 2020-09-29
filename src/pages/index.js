@@ -185,6 +185,9 @@ function Home() {
                     <li>观看权限</li>
                     <li>直播封面图</li>
                     <li>自定义 Logo</li>
+                    <br />
+                    <li>信息导入</li>
+                    <li>管理权限分配</li>
                   </ul>
                 </div>
               </li>
@@ -193,14 +196,16 @@ function Home() {
                   <img src={useBaseUrl('img/首-全-icon3.png')} alt="" />
                 </div>
                 <div className={styles.functionItem}>
-                  <b>演示工具辅助，表达更清晰明了</b>
+                  <b>演示工具辅助，表达更清晰明</b>
                   <ul>
+                    <li>屏幕共享</li>
                     <li>PPT 演示</li>
                     <li>白板演示</li>
-                    <li>视频播放</li>
                     <br />
+                    <li>视频播放</li>
                     <li>本地录制</li>
                     <li>支持标注</li>
+                    <br />
                     <li>课件下载</li>
                   </ul>
                 </div>
@@ -219,6 +224,9 @@ function Home() {
                     <li>实时抽奖</li>
                     <li>在线投票</li>
                     <li>连麦发言</li>
+                    <br />
+                    <li>热词发送</li>
+                    <li>横屏互动</li>
                   </ul>
                 </div>
               </li>
@@ -227,7 +235,7 @@ function Home() {
                   <img src={useBaseUrl('img/首-全-icon5.png')} alt="" />
                 </div>
                 <div className={styles.functionItem}>
-                  <b>数据直观呈现，免于繁琐统计</b>
+                  <b>培训数据直观呈现，省去繁琐统计环节</b>
                   <ul>
                     <li>观看行为分析</li>
                     <li>直播报告</li>
@@ -252,6 +260,7 @@ function Home() {
                     <br />
                     <li>资料存储</li>
                     <li>直播复用</li>
+                    <li>回放做题</li>
                   </ul>
                 </div>
               </li>
