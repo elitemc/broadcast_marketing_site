@@ -279,6 +279,7 @@ body {
 }
 
 .functionItem ul li:nth-child(3):after,
+.functionItem ul li:nth-child(7):after,
 .functionItem ul li:last-child:after {
   display: none;
 }
