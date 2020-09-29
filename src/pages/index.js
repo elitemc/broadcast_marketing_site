@@ -162,12 +162,12 @@ function Home() {
                 <div className={styles.functionItem}>
                   <b>多方式呈现，满足多样化场景</b>
                   <ul>
-                    <li>网页版开播</li>
-                    <li>客户端直播</li>
-                    <li>App 观看</li>
+                    <li>客户端开播</li>
+                    <li>多设备直播</li>
+                    <li>多主讲人</li>
                     <br />
-                    <li>开播提醒</li>
                     <li>私密直播间</li>
+                    <li>开播提醒</li>
                   </ul>
                 </div>
               </li>
