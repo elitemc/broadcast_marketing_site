@@ -229,9 +229,17 @@ __操作方法：打开苹果电脑系统偏好设置--安全性与隐私--通�
 
 ### **苹果电脑无法使用屏幕共享**
 
-如果苹果电脑无法使用屏幕共享，打开 系统偏好设置--安全性与隐私--隐私--屏幕录制，把英荔播课 讲师端的选项打勾即可。
+如果苹果电脑无法正常使用屏幕共享，检查是否已开启了系统权限。操作如下：
 
-<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200911/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88/17%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8%E5%B1%8F%E5%B9%95%E5%85%B1%E4%BA%AB.png" style={{border:'1px solid #eff0f2'}} />
+操作一：打开 系统偏好设置--安全性与隐私--隐私--辅助功能，勾选「英荔播课 讲师端」的选项。
+
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200923/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88-2.png" style={{border:'1px solid #eff0f2'}} />
+<br/>
+<br/>
+操作二：打开 系统偏好设置--安全性与隐私--隐私--屏幕录制，勾选「英荔播课 讲师端」的选项。
+<br/>
+<br/>
+<img src="https://e-ducation.oss-cn-shenzhen.aliyuncs.com/yingliboke_mkt_help/20200923/%E6%88%91%E6%98%AF%E8%80%81%E5%B8%88-1.png" style={{border:'1px solid #eff0f2'}} />
 
 ### **摄像头检测正常，但是没有显示拍摄画面**
 请点击右上角设置图标进行摄像头设置，检查是否选择正确的摄像头设备，和是否有拍摄到画面。
