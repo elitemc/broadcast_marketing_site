@@ -17,6 +17,14 @@ const codeMessage = {
   504: '网关超时',
 };
 
+function header(key, value) {
+  axios.defaults.headers[key] = value;
+}
+header('Access-Control-Allow-Origin', '*');
+header('Access-Control-Allow-Headers', '*');
+header('Access-Control-Allow-Methods', '*');
+header('Content-Type', 'application/json;charset=utf-8');
+
 // 异常处理程序
 axios.interceptors.response.use(
   response => {
