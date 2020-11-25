@@ -17,9 +17,13 @@ module.exports = {
   projectName: 'docusaurus', // Usually your repo name.
   scripts: [
     {
-      src: 'https://yingliboke.oss-cn-shenzhen.aliyuncs.com/loghub-tracking.js',
+      async:true,
+      src:'https://www.googletagmanager.com/gtag/js?id=G-C9Q6H8GZT2'
     },
-    // './src/utils/slsLogger.js',
+    '/managerScript.js',
+    {
+      src: 'https://yingliboke.oss-cn-shenzhen.aliyuncs.com/loghub-tracking.js',
+    }
   ],
   themeConfig: {
     navbar: {
