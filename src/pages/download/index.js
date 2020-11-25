@@ -25,16 +25,16 @@ const downloadDesk = (key, e) => {
   let rxdeskbaseUrl = 'https://yingliboke.oss-cn-shenzhen.aliyuncs.com/rxdeskapp/'
   if (key === 'win') {
     // win讲师端
-    downloadUrl = deskTopbaseUrl + '英荔播课%20讲师端%20Setup%203.4.1.exe';
+    downloadUrl = deskTopbaseUrl + '英荔播课%20讲师端%20Setup%203.4.3.exe';
   } else if (key === 'mac') {
     // mac讲师端
-    downloadUrl = deskTopbaseUrl + 'www英荔播课 讲师端-3.4.1.dmg';
+    downloadUrl = deskTopbaseUrl + 'www英荔播课 讲师端-3.4.3.dmg';
   } else if (key === 'win_audience') {
     // win观众端
-    downloadUrl = rxdeskbaseUrl + '英荔播课%20观众端%20Setup%203.4.1.exe'
+    downloadUrl = rxdeskbaseUrl + '英荔播课%20观众端%20Setup%203.4.3.exe'
   } else if (key === 'mac_audience') {
     // mac观众端
-    downloadUrl = rxdeskbaseUrl + 'www英荔播课 观众端-3.4.1.dmg'
+    downloadUrl = rxdeskbaseUrl + 'www英荔播课 观众端-3.4.3.dmg'
   }
   // 日志埋点
   window.sls.pushLog({
