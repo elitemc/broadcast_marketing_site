@@ -12,9 +12,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import DocPaginator from '@theme/DocPaginator';
 import useTOCHighlight from '@theme/hooks/useTOCHighlight';
-import {
-  Button
-} from 'antd';
+import {Button} from 'antd';
 import classnames from 'classnames';
 import styles from './styles.module.css';
 
@@ -22,31 +20,41 @@ const LINK_CLASS_NAME = 'contents__link';
 const ACTIVE_LINK_CLASS_NAME = 'contents__link--active';
 const TOP_OFFSET = 100;
 
-function DocTOC({ headings, path }) {
+function DocTOC({headings, path}) {
   useTOCHighlight(LINK_CLASS_NAME, ACTIVE_LINK_CLASS_NAME, TOP_OFFSET);
   return (
     <div className="col col--3">
       <div className={styles.tableOfContents}>
-        {path.includes('/Student') &&
+        {path.includes('/Student') && (
           <div className={styles.watchPlatform}>
             &#x3000;
             <a href="https://www.yingliboke.cn/docs/StudentApp">
-              <Button style={{ width: '95px', backgroundColor: '#0d6fde' }} type="primary" ghost={!path.includes('/StudentApp')}>App 端</Button>
+              <Button
+                style={{width: '95px', backgroundColor: '#0d6fde'}}
+                type="primary"
+                ghost={!path.includes('/StudentApp')}>
+                App 端
+              </Button>
             </a>
             &nbsp;&nbsp;
             <a href="https://www.yingliboke.cn/docs/StudentDesk">
-              <Button style={{ width: '95px', backgroundColor: '#0d6fde' }} type="primary" ghost={!path.includes('/StudentDesk')}>客户端</Button>
+              <Button
+                style={{width: '95px', backgroundColor: '#0d6fde'}}
+                type="primary"
+                ghost={!path.includes('/StudentDesk')}>
+                客户端
+              </Button>
             </a>
           </div>
-        }
+        )}
         <Headings headings={headings} />
       </div>
-    </div >
+    </div>
   );
 }
 
 /* eslint-disable jsx-a11y/control-has-associated-label */
-function Headings({ headings, isChild }) {
+function Headings({headings, isChild}) {
   if (!headings.length) {
     return null;
   }
@@ -57,7 +65,7 @@ function Headings({ headings, isChild }) {
           <a
             href={`#${heading.id}`}
             className={LINK_CLASS_NAME}
-            dangerouslySetInnerHTML={{ __html: heading.value }}
+            dangerouslySetInnerHTML={{__html: heading.value}}
           />
           <Headings isChild headings={heading.children} />
         </li>
@@ -67,10 +75,13 @@ function Headings({ headings, isChild }) {
 }
 
 function DocItem(props) {
-  const { siteConfig = {} } = useDocusaurusContext();
-  const { url: siteUrl, title: siteTitle } = siteConfig;
-  const { content: DocContent, route: { path } } = props;
-  const { metadata } = DocContent;
+  const {siteConfig = {}} = useDocusaurusContext();
+  const {url: siteUrl, title: siteTitle} = siteConfig;
+  const {
+    content: DocContent,
+    route: {path},
+  } = props;
+  const {metadata} = DocContent;
   const {
     description,
     title,
@@ -91,7 +102,7 @@ function DocItem(props) {
 
   const metaImageUrl = siteUrl + useBaseUrl(metaImage);
 
-  console.log("path", path);
+  console.log('path', path);
   return (
     <>
       <Head>
@@ -119,15 +130,14 @@ function DocItem(props) {
         <a href="/">
           <img
             src={useBaseUrl('img/homepage_logo.png')}
-            style={{ width: '105px', height: '53.4%' }}
+            style={{width: '105px', height: '53.4%'}}
             alt=""
           />
         </a>
       </div>
-      <div className="padding-vert--lg" style={{ marginTop: '60px' }}>
+      <div className="padding-vert--lg" style={{marginTop: '60px'}}>
         <div className="container">
           <div className="row">
-
             {!hideTableOfContents && DocContent.rightToc && (
               <DocTOC headings={DocContent.rightToc} path={path} />
             )}
@@ -136,7 +146,7 @@ function DocItem(props) {
                 <article>
                   {version && (
                     <span
-                      style={{ verticalAlign: 'top' }}
+                      style={{verticalAlign: 'top'}}
                       className="badge badge--info">
                       Version: {version}
                     </span>
@@ -233,7 +243,7 @@ function DocItem(props) {
           target="_blank"
           className={styles.footLink}>
           {' '}
-          粤 ICP 备 13044168 号-7
+          粤ICP备13044168号
         </a>
       </div>
     </>
